@@ -8,11 +8,11 @@ import './player/styles.css';
 const container = document.getElementById('root');
 if (container === null) throw new Error('missing #root element in index.html');
 
-const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined;
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 createRoot(container).render(
   <StrictMode>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter {...(basename === '' ? {} : { basename })}>
       <App />
     </BrowserRouter>
   </StrictMode>,
