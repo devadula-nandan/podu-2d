@@ -1,0 +1,208 @@
+[
+  {
+    "id": 44,
+    "name": "Audino",
+    "conflicts": [
+      "mp 1(ser) vs 2(bul)",
+      "rarity C(ser) vs UC(bul)"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Rhyhorn",
+    "conflicts": [
+      "ability \"Onslaught\"(ser) vs \"Reckless Charge\"(bul)"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Weedle",
+    "conflicts": [
+      "rarity C(ser) vs UC(bul)"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Drapion",
+    "conflicts": [
+      "ability \"Battle Armor\"(ser) vs \"Diffuse Poison\"(bul)"
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Grotle",
+    "conflicts": [
+      "ability \"Foundation\"(ser) vs \"Cornerstone\"(bul)"
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Prinplup",
+    "conflicts": [
+      "ability \"Dive Entry\"(ser) vs \"Diving Entry\"(bul)"
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Electivire",
+    "conflicts": [
+      "ability \"Ace\"(ser) vs \"Grounding\"(bul)"
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Leafeon",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)"
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Croconaw",
+    "conflicts": [
+      "ability \"Biting Movement\"(ser) vs \"Bite Instinct\"(bul)"
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Exeggutor",
+    "conflicts": [
+      "ability \"Bigg Eggsplosion\"(ser) vs \"Big Eggsplosion\"(bul)"
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Delphox",
+    "conflicts": [
+      "ability \"Magic Trick_Miss\"(ser) vs \"Magic Trick\"(bul)"
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Mega Beedrill",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)"
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Mega Sceptile",
+    "conflicts": [
+      "types Grass(ser) vs Grass/Dragon(bul)"
+    ]
+  },
+  {
+    "id": 288,
+    "name": "Mega Swampert",
+    "conflicts": [
+      "ability \"Eartne Rapids\"(ser) vs \"Earthen Rapids\"(bul)"
+    ]
+  },
+  {
+    "id": 311,
+    "name": "Stunfisk",
+    "conflicts": [
+      "types Electric/Ground(ser) vs Ground/Electric(bul)"
+    ]
+  },
+  {
+    "id": 315,
+    "name": "Durant",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)",
+      "types Bug/Steel(ser) vs Steel/Bug(bul)"
+    ]
+  },
+  {
+    "id": 376,
+    "name": "Wimpod",
+    "conflicts": [
+      "ability \"Parallel Arithmatic\"(ser) vs \"Wimp Out\"(bul)"
+    ]
+  },
+  {
+    "id": 405,
+    "name": "Mega Mewtwo Y",
+    "conflicts": [
+      "ability \"Transcendant Helix\"(ser) vs \"Transcendent Helix\"(bul)"
+    ]
+  },
+  {
+    "id": 419,
+    "name": "Mega Aggron",
+    "conflicts": [
+      "ability \"Guartop Steelshell\"(ser) vs \"Guardtop Steelshell\"(bul)"
+    ]
+  },
+  {
+    "id": 433,
+    "name": "Toxapex",
+    "conflicts": [
+      "types Poison/Water(ser) vs Water/Poison(bul)"
+    ]
+  },
+  {
+    "id": 500,
+    "name": "Poipole",
+    "conflicts": [
+      "ability \"Spaceborn\"(ser) vs \"Spaceborne\"(bul)"
+    ]
+  },
+  {
+    "id": 523,
+    "name": "Stakataka",
+    "conflicts": [
+      "mp 2(ser) vs 1(bul)",
+      "types Fighting/Ghost(ser) vs Rock/Steel(bul)"
+    ]
+  },
+  {
+    "id": 542,
+    "name": "Mega Manectric",
+    "conflicts": [
+      "mp 3(ser) vs 2(bul)"
+    ]
+  },
+  {
+    "id": 543,
+    "name": "Mega Sharpedo",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)"
+    ]
+  },
+  {
+    "id": 545,
+    "name": "Mega Latios",
+    "conflicts": [
+      "ability \"Streamlined Finish\"(ser) vs \"Streamlined Flash\"(bul)"
+    ]
+  },
+  {
+    "id": 566,
+    "name": "Tyranitar",
+    "conflicts": [
+      "mp 2(ser) vs 1(bul)"
+    ]
+  },
+  {
+    "id": 581,
+    "name": "Landorus",
+    "conflicts": [
+      "types Fire/Psychic(ser) vs Ground/Flying(bul)"
+    ]
+  },
+  {
+    "id": 594,
+    "name": "Omastar",
+    "conflicts": [
+      "ability \"Speed Booster: Omaster\"(ser) vs \"Speed Booster: Omastar\"(bul)"
+    ]
+  },
+  {
+    "id": 612,
+    "name": "Snover",
+    "conflicts": [
+      "ability \"Memories of the Past\"(ser) vs \"Whiteout\"(bul)"
+    ]
+  }
+]

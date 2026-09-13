@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+data
+tools/cache
+tools/cache-bulba
+playwright-report
+test-results
+package-lock.json

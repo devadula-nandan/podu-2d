@@ -1,0 +1,176 @@
+figures fully implemented: 259/596 (43.5%), of which 124 carry no ability at all; clauses executable: 1765/2274 (77.6%); plates fully implemented: 124/152
+figuresImplemented=259 platesImplemented=124
+
+=== RANKED GAPS ===
+ 465  unimplemented
+  47  condition:unimplemented
+   6  marker:monWithThat
+   5  marker:whileThat
+   3  marker:onTheTurnInWhichTheCharge
+   1  marker:anySpecialConditionsAndCurse
+   1  marker:monThatHasABranded
+
+=== FIGURE BLOCKER COMBOS (11) ===
+only unimplemented: 280
+only condition:unimplemented: 11
+ 280  unimplemented
+  30  condition:unimplemented+unimplemented
+  11  condition:unimplemented
+   3  marker:onTheTurnInWhichTheCharge
+   3  marker:whileThat+unimplemented
+   2  marker:whileThat
+   2  marker:monWithThat
+   2  condition:unimplemented+marker:monWithThat+unimplemented
+   2  marker:monWithThat+unimplemented
+   1  marker:anySpecialConditionsAndCurse
+   1  marker:monThatHasABranded
+
+=== TOP UNIMPLEMENTED CONDITIONS ===
+   4  your Pokémon's move lands on miss
+   2  the battle opponent's Attack would inflict a marker or special condition on this Pokémon
+   2  the opponent's Attack deals more than half the damage that this Pokémon's Attack deals
+   2  one of your own Pokémon adjacent this Pokémon
+   2  it passes through Poisoned
+   2  the battle opponent is a Water Pokémon that does not have any other types
+   1  it is open
+   1  that Pokémon's attack knocks a Pokémon out that turn
+   1  the Attack for that Pokémon is a miss that turn
+   1  the opponent Pokémon is a Psychic-type
+   1  one of your Electric-type Pokémon would deal damage
+   1  you choose Onix or Scyther
+   1  any of your Sharmin becomes knocked out
+   1  any of your Rayquaza or Mega Rayquaza become knocked out
+   1  the opponent uses a plate that is not Reveal Glass
+   1  the opponent's Pokémon is knocked out
+   1  one of your Carvanha is within 2 steps of this Pokémon
+   1  a Pokémon finishes an MP move next to this Pokémon
+   1  Sweet Scent is spun on the field
+   1  the opponent's Pokémon used an MP move this turn and is next to this Pokémon
+   1  Barrage is spun
+   1  one of your own Reuniclus is within 2 steps of this Pokémon
+   1  those Pokémon are the opponent's Pokémon
+   1  it is not a Flying Pokémon
+   1  the battle opponent is Durant
+   1  they leave the field)
+   1  the moved Pokémon is one of the opponent's Pokémon
+   1  this Pokémon surrounds an opponent's Pokémon
+   1  any of your other Metang or Metagross are within 2 steps
+   1  this Pokémon cannot evolve
+   1  this Pokémon burns the battle opponent
+   1  it knocks out a Pokémon with a Cracked marker on it
+   1  it is a Rock- or Fairy Pokémon
+   1  this Pokémon leaves the field
+   1  the battle opponent's attack would inflict a marker or special condition on this Pokémon
+   1  the battle opponent is a Fairy Pokémon that is not a Steel Pokémon
+   1  the battle opponent is under an effect that increases Attack damage
+   1  any Sphere plates have been used on the battle opponent
+   1  this Pokémon moves its battle opponent by the effect of an Attack
+   1  it MP moves through opposing Pokémon that are frozen
+   1  this Pokémon makes its battle opponent poisoned or noxious
+   1  the battle opponent is a Fairy-type Pokémon that is not a Steel Pokémon
+   1  one of your other Pokémon is knocked out
+   1  the battle opponent is Mega Evolved or has evolved or changed its form during the duel
+   1  a battle opponent uses an Attack that attaches a marker or causes a special condition
+   1  this Pokémon knocks out its battle opponent with one of its Attacks
+   1  the battle opponent's MP is 0 or less
+   1  the battle opponent is a non-Flying Pokémon
+   1  it does either of these things
+   1  the Pokémon it moved over is an opposing Pokémon
+   1  its battle opponent is not evolved
+   1  your Pokémon fill either your P.C. or your opponent's P.C.
+
+=== UNIMPLEMENTED PLATES (28) ===
+
+## Quick Care (#17)
+  [unimplemented:If there is space in your P.C., move it there] If there is space in your P.C., move it there
+
+## Ballast (#19)
+  [unimplemented:For this turn, it cannot be affected by Whirlwind] For this turn, it cannot be affected by Whirlwind
+
+## Power Battle (#40)
+  [unimplemented:For this turn, if this Pokémon or its opponent spins a Purpl] For this turn, if this Pokémon or its opponent spins a Purple Attack in battle, they must both spin once again
+
+## Goal Block (#56)
+  [condition:unimplemented] Choose one of your Pokémon on the field and move it to your goal point if it is open
+
+## Force Remove (#303)
+  [condition:unimplemented, unimplemented:If that Pokémon's attack knocks a Pokémon out that turn, it ] If that Pokémon's attack knocks a Pokémon out that turn, it will be eliminated from the duel
+
+## X Accuracy (#306)
+  [condition:unimplemented, unimplemented:If the Attack for that Pokémon is a miss that turn, it will ] If the Attack for that Pokémon is a miss that turn, it will shift to the adjacent attack
+
+## Burn Drive (#312)
+  [condition:unimplemented, unimplemented:During this turn, if your Pokémon's move lands on miss, it w] During this turn, if your Pokémon's move lands on miss, it will shift to the move next to it instead
+  [unimplemented:Also, if the knocked out opposing Pokémon is a Grass-type, I] Also, if the knocked out opposing Pokémon is a Grass-type, Ice-type, Bug-type or Steel-type, the opponent will be removed from the duel
+
+## Douse Drive (#313)
+  [condition:unimplemented, unimplemented:During this turn, if your Pokémon's move lands on miss, it w] During this turn, if your Pokémon's move lands on miss, it will shift to the move next to it instead
+  [unimplemented:Also, if the knocked out opposing Pokémon is a Fire-type, Gr] Also, if the knocked out opposing Pokémon is a Fire-type, Ground-type or Rock-type, the opponent will be removed from the duel
+
+## Chill Drive (#314)
+  [condition:unimplemented, unimplemented:During this turn, if your Pokémon's move lands on miss, it w] During this turn, if your Pokémon's move lands on miss, it will shift to the move next to it instead
+  [unimplemented:Also, if the knocked out opposing Pokémon is a Grass-type, G] Also, if the knocked out opposing Pokémon is a Grass-type, Ground-type, Flying-type or Dragon-type, the opponent will be removed from the duel
+
+## Shock Drive (#315)
+  [condition:unimplemented, unimplemented:During this turn, if your Pokémon's move lands on miss, it w] During this turn, if your Pokémon's move lands on miss, it will shift to the move next to it instead
+  [unimplemented:Also, if the knocked out opposing Pokémon is a Water-type or] Also, if the knocked out opposing Pokémon is a Water-type or Flying-type, the opponent will be removed from the duel
+
+## Cosmo Energy (#320)
+  [unimplemented:During this duel, when your Deoxys is attacked, before the b] During this duel, when your Deoxys is attacked, before the battle, you may switch that Deoxys with another of your Deoxys on the field or bench
+
+## Overdrive (#323)
+  [unimplemented:Choose on of your Reshiram, Zekrom, Black Kyurem or White Ky] Choose on of your Reshiram, Zekrom, Black Kyurem or White Kyurem on the field
+  [unimplemented:(Except Wait.)] (Except Wait.)
+
+## Land's Energy (#324)
+  [unimplemented:During this duel, the effect of Land's Wrath from your Zygar] During this duel, the effect of Land's Wrath from your Zygarde becomes "Spin for all of the opponent's Pokémon on the field, excluding Flying-types
+
+## Dark Energy (#332)
+  [condition:unimplemented] During this duel, if the opponent Pokémon is a Psychic-type, your Dark-type Pokémon are not knocked out in battle, but are moved to the bench and gain Wait instead
+
+## Phantom Energy (#333)
+  [unimplemented:In addition, when one or more of your Ghost-type Pokémon sur] In addition, when one or more of your Ghost-type Pokémon surround an opposing Pokémon, if there are three or more opposing Pokémon on the field or on your opponent's bench with the same name as the surrounded Pokémon, remove the surrounded Pokémon from the game
+
+## Muscle Energy (#338)
+  [unimplemented:Remove the sleep and frozen conditions, Mp-1 and MP -2 marke] Remove the sleep and frozen conditions, Mp-1 and MP -2 markers and Wait from all of your Fight-type Pokémon
+  [unimplemented:During this duel, your Fighting-type Pokémon gain +1 to the ] During this duel, your Fighting-type Pokémon gain +1 to the damage they deal after those Pokémon move from P.C. to bench
+
+## Mud Energy (#339)
+  [unimplemented:During this duel, if there are 2 or more Water-type Pokémon ] During this duel, if there are 2 or more Water-type Pokémon and 2 or more Ground-type Pokémon on the field, your opponent's Pokémon on the field get +1 to Wait effects that they receive
+
+## Electro Energy (#340)
+  [condition:unimplemented, unimplemented:During this duel, if one of your Electric-type Pokémon would] During this duel, if one of your Electric-type Pokémon would deal damage, and there is an Electric-type Pokémon adjacent to it, that damage increased by 10
+
+## Molting Energy (#341)
+  [unimplemented:During this duel, whenever one of your Bug-type or Flying-ty] During this duel, whenever one of your Bug-type or Flying-type Pokémon moves from the P.C. to the bench, it can evolve
+
+## Metal Coat (#371)
+  [unimplemented:Choose one of your Onix, Scyther, or Steel-type Pokémon on t] Choose one of your Onix, Scyther, or Steel-type Pokémon on the field
+  [condition:unimplemented] If you choose Onix or Scyther, evolve it
+  [unimplemented:Until the end of the duel, battle opponents of the Pokémon y] Until the end of the duel, battle opponents of the Pokémon you chose, or the Pokémon that evolved from it, have the effects of their Abilities that increase or decrease Attack damage nullified
+
+## Dark Sphere (#385)
+  [unimplemented:Until the end of the duel, while that Pokémon is on the fiel] Until the end of the duel, while that Pokémon is on the field, opposing Ghost-type Pokémon and Psychic-type Pokémon cannot pass through your Dark-type Pokémon by the effects of Abilities
+
+## DNA Splicers (#390)
+  [unimplemented:Choose one of your Kyurem on the field, and one of your Zekr] Choose one of your Kyurem on the field, and one of your Zekrom or Reshiram on the field or bench in the P.C
+
+## Gracidea (#400)
+  [condition:unimplemented] If any of your Sharmin becomes knocked out, this plate returns to its unused state
+
+## Stony Sphere (#401)
+  [unimplemented:Until the end of the duel, while that Pokémon is on the fiel] Until the end of the duel, while that Pokémon is on the field, opposing Flying-type Pokémon and Fairy-type Pokémon cannot pass through your Rock-type Pokémon by the effects of Abilities
+
+## Meteoric Teachings (#406)
+  [unimplemented:That Rayquaza's Break Energy becomes Dragon Ascent 90 until ] That Rayquaza's Break Energy becomes Dragon Ascent 90 until the duel ends
+  [condition:unimplemented] If any of your Rayquaza or Mega Rayquaza become knocked out, this plate returns to its unused state
+
+## Necroizer (#424)
+  [unimplemented:Choose one of your Necrozma on the field and one of your Sol] Choose one of your Necrozma on the field and one of your Solgaleo or Lunala on the field, bench or in the P.C. That Solgaleo or Lunala moves to the Ultra Space and the Necrozma changes its form into Dusk Mane Necrozma or Dawn Wings Necrozma
+
+## Frost Sphere (#442)
+  [unimplemented:Until the end of the duel, plates with Sphere in their name,] Until the end of the duel, plates with Sphere in their name, except for Frost Sphere, have their effects negated on opposing Pokémon within 3 steps of that Pokémon
+
+## Reveal Glass (#447)
+  [unimplemented:Change the form of each Tornadus, Thundurus, and Landorus on] Change the form of each Tornadus, Thundurus, and Landorus on the field, if possible
+  [condition:unimplemented] This plate can be used again if the opponent uses a plate that is not Reveal Glass

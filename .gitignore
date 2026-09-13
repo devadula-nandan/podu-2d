@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+*.log
+playwright-report/
+test-results/
+.eslintcache
+.vite/
+.rooms/
+.scratch/
+
+# Raw scraped HTML (~54MB, 598 pages). Reproducible with `node tools/fetch-all.mjs`,
+# which is incremental and skips anything already cached. The parsed JSON in
+# data/raw/ is the committed artifact.
+tools/cache/
+tools/cache-bulba/

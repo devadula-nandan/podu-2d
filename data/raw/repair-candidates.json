@@ -1,0 +1,1066 @@
+[
+  {
+    "id": 60,
+    "slug": "60-feraligatr",
+    "name": "Feraligatr",
+    "rarity": "EX",
+    "mp": 1,
+    "types": [
+      "Water"
+    ],
+    "wheelSum": 100,
+    "segments": 5,
+    "version": "V7.0.12",
+    "kind": "over",
+    "missing": -4,
+    "wheel": [
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 24,
+        "name": "Hydro Pump",
+        "color": "white"
+      },
+      {
+        "size": 36,
+        "name": "Bite",
+        "color": "white"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 28,
+        "name": "Wash Away",
+        "color": "purple"
+      }
+    ],
+    "repair": {
+      "fromVersion": "V3.0.9",
+      "wheel": [
+        {
+          "size": 12,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 16,
+          "name": "Hydro Pump",
+          "color": "White"
+        },
+        {
+          "size": 36,
+          "name": "Bite",
+          "color": "White"
+        },
+        {
+          "size": 8,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 24,
+          "name": "Wash Away",
+          "color": "Purple"
+        }
+      ],
+      "diffs": [
+        "Hydro Pump: 24 -> 16",
+        "Miss: 4 -> 8",
+        "Wash Away: 28 -> 24"
+      ]
+    }
+  },
+  {
+    "id": 106,
+    "slug": "106-bronzong",
+    "name": "Bronzong",
+    "rarity": "UC",
+    "mp": 1,
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "wheelSum": 100,
+    "segments": 5,
+    "version": "V4.0.4",
+    "kind": "over",
+    "missing": -4,
+    "wheel": [
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 20,
+        "name": "Heavy Slam",
+        "color": "white"
+      },
+      {
+        "size": 36,
+        "name": "Extrasensory",
+        "color": "white"
+      },
+      {
+        "size": 20,
+        "name": "Confuse Ray",
+        "color": "purple"
+      },
+      {
+        "size": 20,
+        "name": "Iron Defense",
+        "color": "blue"
+      }
+    ],
+    "repair": {
+      "fromVersion": "V3.0.10",
+      "wheel": [
+        {
+          "size": 20,
+          "name": "Confusion",
+          "color": "White"
+        },
+        {
+          "size": 36,
+          "name": "Extrasensory",
+          "color": "White"
+        },
+        {
+          "size": 20,
+          "name": "Confuse Ray",
+          "color": "Purple"
+        },
+        {
+          "size": 16,
+          "name": "Iron Defense",
+          "color": "Blue"
+        },
+        {
+          "size": 4,
+          "name": "Miss",
+          "color": "Red"
+        }
+      ],
+      "diffs": [
+        "Heavy Slam: 20 -> ABSENT in V3.0.10",
+        "Iron Defense: 20 -> 16",
+        "Confusion: MISSING in latest (20 in V3.0.10)"
+      ]
+    }
+  },
+  {
+    "id": 132,
+    "slug": "132-hariyama",
+    "name": "Hariyama",
+    "rarity": "UC",
+    "mp": 2,
+    "types": [
+      "Fighting"
+    ],
+    "wheelSum": 90,
+    "segments": 4,
+    "version": "V5.0.8",
+    "kind": "under",
+    "missing": 6,
+    "wheel": [
+      {
+        "size": 24,
+        "name": "Heavy Slam",
+        "color": "white"
+      },
+      {
+        "size": 30,
+        "name": "Push Away",
+        "color": "purple"
+      },
+      {
+        "size": 24,
+        "name": "Slap Push",
+        "color": "white"
+      },
+      {
+        "size": 12,
+        "name": "Miss",
+        "color": "miss"
+      }
+    ],
+    "repair": {
+      "fromVersion": "V3.0.10",
+      "wheel": [
+        {
+          "size": 24,
+          "name": "Slap Push",
+          "color": "White"
+        },
+        {
+          "size": 32,
+          "name": "Push Away",
+          "color": "Purple"
+        },
+        {
+          "size": 24,
+          "name": "Slap Push",
+          "color": "White"
+        },
+        {
+          "size": 16,
+          "name": "Miss",
+          "color": "Red"
+        }
+      ],
+      "diffs": [
+        "Heavy Slam: 24 -> ABSENT in V3.0.10",
+        "Push Away: 30 -> 32",
+        "Miss: 12 -> 16"
+      ]
+    }
+  },
+  {
+    "id": 182,
+    "slug": "182-makuhita",
+    "name": "Makuhita",
+    "rarity": "UC",
+    "mp": 2,
+    "types": [
+      "Fighting"
+    ],
+    "wheelSum": 28,
+    "segments": 1,
+    "version": "V5.0.8",
+    "kind": "under",
+    "missing": 68,
+    "wheel": [
+      {
+        "size": 28,
+        "name": "Fake Out",
+        "color": "purple"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 208,
+    "slug": "208-infernape",
+    "name": "Infernape",
+    "rarity": "EX",
+    "mp": 2,
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "wheelSum": 100,
+    "segments": 4,
+    "version": "V7.0.7",
+    "kind": "over",
+    "missing": -4,
+    "wheel": [
+      {
+        "size": 20,
+        "name": "Detect",
+        "color": "blue"
+      },
+      {
+        "size": 36,
+        "name": "Drive Kick",
+        "color": "white"
+      },
+      {
+        "size": 16,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 28,
+        "name": "Mach Punch",
+        "color": "gold"
+      }
+    ],
+    "repair": {
+      "fromVersion": "V3.0.11",
+      "wheel": [
+        {
+          "size": 16,
+          "name": "Detect",
+          "color": "Blue"
+        },
+        {
+          "size": 36,
+          "name": "Drive Kick",
+          "color": "White"
+        },
+        {
+          "size": 16,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 28,
+          "name": "Mach Punch",
+          "color": "Gold"
+        }
+      ],
+      "diffs": [
+        "Detect: 20 -> 16"
+      ]
+    }
+  },
+  {
+    "id": 209,
+    "slug": "209-totodile",
+    "name": "Totodile",
+    "rarity": "UC",
+    "mp": 3,
+    "types": [
+      "Water"
+    ],
+    "wheelSum": 88,
+    "segments": 3,
+    "version": "V7.0.12",
+    "kind": "under",
+    "missing": 8,
+    "wheel": [
+      {
+        "size": 28,
+        "name": "Bite",
+        "color": "white"
+      },
+      {
+        "size": 12,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 48,
+        "name": "Water Gun",
+        "color": "white"
+      }
+    ],
+    "repair": {
+      "fromVersion": "V3.0.10",
+      "wheel": [
+        {
+          "size": 28,
+          "name": "Bite",
+          "color": "White"
+        },
+        {
+          "size": 20,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 48,
+          "name": "Water Gun",
+          "color": "White"
+        }
+      ],
+      "diffs": [
+        "Miss: 12 -> 20"
+      ]
+    }
+  },
+  {
+    "id": 326,
+    "slug": "326-gourgeist",
+    "name": "Gourgeist",
+    "rarity": "EX",
+    "mp": 2,
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "wheelSum": 100,
+    "segments": 6,
+    "version": "V4.0.4",
+    "kind": "over",
+    "missing": -4,
+    "wheel": [
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 20,
+        "name": "Trick-or-Tread",
+        "color": "purple"
+      },
+      {
+        "size": 16,
+        "name": "Shadow Sneak",
+        "color": "gold"
+      },
+      {
+        "size": 24,
+        "name": "Explosion",
+        "color": "purple"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 28,
+        "name": "Seed Bomb",
+        "color": "white"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 349,
+    "slug": "349-tapubulu",
+    "name": "Tapu Bulu",
+    "rarity": "EX",
+    "mp": 2,
+    "types": [
+      "Grass",
+      "Fairy"
+    ],
+    "wheelSum": 100,
+    "segments": 6,
+    "version": "V7.0.12",
+    "kind": "over",
+    "missing": -4,
+    "wheel": [
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 28,
+        "name": "Full Swing",
+        "color": "white"
+      },
+      {
+        "size": 8,
+        "name": "Dodge",
+        "color": "blue"
+      },
+      {
+        "size": 28,
+        "name": "Smash",
+        "color": "white"
+      },
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 20,
+        "name": "Ula'Ula Wish",
+        "color": "blue"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 365,
+    "slug": "365-torracat",
+    "name": "Torracat",
+    "rarity": "R",
+    "mp": 3,
+    "types": [
+      "Fire"
+    ],
+    "wheelSum": 80,
+    "segments": 4,
+    "version": "V5.0",
+    "kind": "under",
+    "missing": 16,
+    "wheel": [
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 40,
+        "name": "Playful Punch",
+        "color": "white"
+      },
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 24,
+        "name": "Fake Out",
+        "color": "purple"
+      }
+    ],
+    "repair": {
+      "fromVersion": "V4.0.7",
+      "wheel": [
+        {
+          "size": 8,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 56,
+          "name": "Playful Punch",
+          "color": "White"
+        },
+        {
+          "size": 8,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 24,
+          "name": "Fake Out",
+          "color": "Purple"
+        }
+      ],
+      "diffs": [
+        "Playful Punch: 40 -> 56"
+      ]
+    }
+  },
+  {
+    "id": 428,
+    "slug": "428-keldeoresoluteform",
+    "name": "Keldeo Resolute Form",
+    "rarity": "UX",
+    "mp": 3,
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "wheelSum": 100,
+    "segments": 6,
+    "version": "V6.1.1",
+    "kind": "over",
+    "missing": -4,
+    "wheel": [
+      {
+        "size": 12,
+        "name": "Water Jump",
+        "color": "blue"
+      },
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 24,
+        "name": "Secret Sword",
+        "color": "purple"
+      },
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 12,
+        "name": "Water Jump",
+        "color": "blue"
+      },
+      {
+        "size": 36,
+        "name": "Aqua Jet",
+        "color": "gold"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 436,
+    "slug": "436-marshadow",
+    "name": "Marshadow",
+    "rarity": "EX",
+    "mp": 3,
+    "types": [
+      "Fighting",
+      "Ghost"
+    ],
+    "wheelSum": 66,
+    "segments": 4,
+    "version": "V7.0.14",
+    "kind": "under",
+    "missing": 30,
+    "wheel": [
+      {
+        "size": 36,
+        "name": "Spectral Thief",
+        "color": "white"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 2,
+        "name": "Shadow Sneak",
+        "color": "gold"
+      },
+      {
+        "size": 24,
+        "name": "Dodge",
+        "color": "blue"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 449,
+    "slug": "449-arcanine",
+    "name": "Arcanine",
+    "rarity": "EX",
+    "mp": 2,
+    "types": [
+      "Fire"
+    ],
+    "wheelSum": 56,
+    "segments": 4,
+    "version": "V6.0.4",
+    "kind": "under",
+    "missing": 40,
+    "wheel": [
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 20,
+        "name": "Searing Shot",
+        "color": "purple"
+      },
+      {
+        "size": 24,
+        "name": "Flare Blitz",
+        "color": "white"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 456,
+    "slug": "456-mareanie",
+    "name": "Mareanie",
+    "rarity": "UC",
+    "mp": 2,
+    "types": [
+      "Poison",
+      "Water"
+    ],
+    "wheelSum": 88,
+    "segments": 4,
+    "version": "V5.0.6",
+    "kind": "under",
+    "missing": 8,
+    "wheel": [
+      {
+        "size": 20,
+        "name": "Sludge Bomb",
+        "color": "white"
+      },
+      {
+        "size": 28,
+        "name": "Poison Sting",
+        "color": "purple"
+      },
+      {
+        "size": 28,
+        "name": "Spike Cannon",
+        "color": "white"
+      },
+      {
+        "size": 12,
+        "name": "Miss",
+        "color": "miss"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 461,
+    "slug": "461-scrafty",
+    "name": "Scrafty",
+    "rarity": "R",
+    "mp": 2,
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "wheelSum": 92,
+    "segments": 5,
+    "version": "V7.0",
+    "kind": "under",
+    "missing": 4,
+    "wheel": [
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 28,
+        "name": "High Jump Kick",
+        "color": "white"
+      },
+      {
+        "size": 24,
+        "name": "Dragon Dance",
+        "color": "white"
+      },
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 28,
+        "name": "Fake Out",
+        "color": "purple"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 468,
+    "slug": "468-fanrotom",
+    "name": "Fan Rotom",
+    "rarity": "R",
+    "mp": 2,
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "wheelSum": 92,
+    "segments": 7,
+    "version": "V6.0.12",
+    "kind": "under",
+    "missing": 4,
+    "wheel": [
+      {
+        "size": 20,
+        "name": "Air Slash",
+        "color": "white"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 8,
+        "name": "Revert",
+        "color": "blue"
+      },
+      {
+        "size": 24,
+        "name": "Discharge",
+        "color": "white"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 8,
+        "name": "Revert",
+        "color": "blue"
+      },
+      {
+        "size": 24,
+        "name": "Air Slash",
+        "color": "white"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 493,
+    "slug": "493-drilbur",
+    "name": "Drilbur",
+    "rarity": "UC",
+    "mp": 2,
+    "types": [
+      "Ground"
+    ],
+    "wheelSum": 36,
+    "segments": 1,
+    "version": "V6.0.4",
+    "kind": "under",
+    "missing": 60,
+    "wheel": [
+      {
+        "size": 36,
+        "name": "Dig",
+        "color": "purple"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 513,
+    "slug": "513-shinyvaporeon",
+    "name": "Shiny Vaporeon",
+    "rarity": "R",
+    "mp": 3,
+    "types": [
+      "Water"
+    ],
+    "wheelSum": 0,
+    "segments": 0,
+    "version": null,
+    "kind": "no-data",
+    "missing": 96,
+    "wheel": [],
+    "repair": null,
+    "reason": "no tabs"
+  },
+  {
+    "id": 524,
+    "slug": "524-blacephalon",
+    "name": "Blacephalon",
+    "rarity": "UX",
+    "mp": 2,
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "wheelSum": 68,
+    "segments": 5,
+    "version": "V7.0.12",
+    "kind": "under",
+    "missing": 28,
+    "wheel": [
+      {
+        "size": 8,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 24,
+        "name": "Mind Blown",
+        "color": "purple"
+      },
+      {
+        "size": 4,
+        "name": "Dodge",
+        "color": "blue"
+      },
+      {
+        "size": 28,
+        "name": "Shadow Beam",
+        "color": "white"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 527,
+    "slug": "527-vaporeon",
+    "name": "Vaporeon",
+    "rarity": "UX",
+    "mp": 3,
+    "types": [
+      "Water"
+    ],
+    "wheelSum": 122,
+    "segments": 5,
+    "version": "V6.2.0",
+    "kind": "over",
+    "missing": -26,
+    "wheel": [
+      {
+        "size": 24,
+        "name": "Hydro Pump",
+        "color": "white"
+      },
+      {
+        "size": 32,
+        "name": "Water Slide",
+        "color": "purple"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 50,
+        "name": "Quick Attack",
+        "color": "gold"
+      },
+      {
+        "size": 12,
+        "name": "Dodge",
+        "color": "blue"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 558,
+    "slug": "558-alakazam",
+    "name": "Alakazam",
+    "rarity": "EX",
+    "mp": 2,
+    "types": [
+      "Psychic"
+    ],
+    "wheelSum": 112,
+    "segments": 5,
+    "version": "V7.0",
+    "kind": "over",
+    "missing": -16,
+    "wheel": [
+      {
+        "size": 24,
+        "name": "Stillblind",
+        "color": "purple"
+      },
+      {
+        "size": 4,
+        "name": "Miss",
+        "color": "miss"
+      },
+      {
+        "size": 40,
+        "name": "Psychic",
+        "color": "white"
+      },
+      {
+        "size": 24,
+        "name": "Psyshock",
+        "color": "purple"
+      },
+      {
+        "size": 20,
+        "name": "Psycho Shift",
+        "color": "blue"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 621,
+    "slug": "621-bounsweet",
+    "name": "Bounsweet",
+    "rarity": "UC",
+    "mp": 2,
+    "types": [
+      "Grass"
+    ],
+    "wheelSum": 88,
+    "segments": 3,
+    "version": "V7.0.14",
+    "kind": "under",
+    "missing": 8,
+    "wheel": [
+      {
+        "size": 24,
+        "name": "Mystery Scent",
+        "color": "purple"
+      },
+      {
+        "size": 40,
+        "name": "Rapid Spin",
+        "color": "white"
+      },
+      {
+        "size": 24,
+        "name": "Sweet Scent",
+        "color": "purple"
+      }
+    ],
+    "repair": null,
+    "reason": "no sound tab"
+  },
+  {
+    "id": 628,
+    "slug": "628-shinymimikyu",
+    "name": "Shiny Mimikyu",
+    "rarity": "R",
+    "mp": 2,
+    "types": [
+      "Ghost",
+      "Fairy"
+    ],
+    "wheelSum": 0,
+    "segments": 0,
+    "version": "V6.2.0",
+    "kind": "no-data",
+    "missing": 96,
+    "wheel": [],
+    "repair": {
+      "fromVersion": "V6.1.1",
+      "wheel": [
+        {
+          "size": 8,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 20,
+          "name": "Curse",
+          "color": "Purple"
+        },
+        {
+          "size": 24,
+          "name": "Shadow Claw",
+          "color": "White"
+        },
+        {
+          "size": 4,
+          "name": "Miss",
+          "color": "Red"
+        },
+        {
+          "size": 40,
+          "name": "Play Rough",
+          "color": "White"
+        }
+      ],
+      "diffs": [
+        "Miss: MISSING in latest (8 in V6.1.1)",
+        "Curse: MISSING in latest (20 in V6.1.1)",
+        "Shadow Claw: MISSING in latest (24 in V6.1.1)",
+        "Miss: MISSING in latest (4 in V6.1.1)",
+        "Play Rough: MISSING in latest (40 in V6.1.1)"
+      ]
+    }
+  }
+]

@@ -1,0 +1,85 @@
+actions emitted      : 3990
+  compiled           : 3988  (99.9%)
+  unimplemented      : 2
+guards emitted       : 442  (1 unimplemented)
+
+=== ACTIONS BY KIND ===
+    614  applyCondition
+    514  move
+    478  attachMarker
+    289  spinCheck
+    287  knockOut
+    222  modifyDamage
+    152  modifyMp
+    141  optional
+    136  prevent
+    118  exclude
+    109  grantMovement
+    100  cureConditions
+     98  endTurn
+     90  select
+     88  respin
+     57  adjustZGauge
+     54  recolorAttacks
+     40  nullify
+     40  tag
+     40  usageGate
+     34  changeForm
+     33  megaEvolve
+     18  replaceSegment
+     17  shiftSpinResult
+     16  forceNextTurn
+     15  evolve
+     14  denyPassThrough
+     13  armTrigger
+     11  setBattleRange
+     10  removeMarker
+     10  noStack
+      9  nullifyInUsePlate
+      8  consumePlate
+      8  refreshPlate
+      7  modifyStars
+      6  rotateWheel
+      6  setMp
+      6  setType
+      5  redirectInflictions
+      5  surviveByClearing
+      5  forceBattle
+      4  resetToStart
+      4  grantLeap
+      4  claimSpot
+      4  restrictMoves
+      3  spendOnce
+      3  repeatFor
+      3  transferConditions
+      3  adjustMegaTurns
+      3  surviveByForm
+      3  lockGoal
+      2  denyDeploy
+      2  grantStraightMp
+      2  invertAbilityIncreases
+      2  restrictDeploy
+      2  treatAsNewlyMoved
+      2  unimplemented
+      2  bonusRespin
+      2  copyType
+      2  fuse
+      1  grantExtraBattle
+      1  repeatTimes
+      1  copyPlateEffects
+      1  forceFullMp
+      1  copyReceivedCondition
+      1  seizeMoveEffects
+      1  readyImmediately
+      1  scaleAttackEffects
+      1  floorMp
+      1  stripKoPrevention
+      1  denyAdjacentPass
+      1  revertForm
+      1  denyNamedGrant
+      1  markBattled
+      1  reorderPc
+
+=== TOP UNCOMPILED PATTERNS (2 distinct) ===
+     1  undergoes branching evolution
+     1  while {mon} is on the field, the start-of-turn z-move gauge increase of each player is boosted for each of that player's pokémon that is affected by a

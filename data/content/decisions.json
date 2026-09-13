@@ -1,0 +1,128 @@
+[
+  {
+    "id": 44,
+    "name": "Audino",
+    "field": "mp",
+    "value": 2,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 44,
+    "name": "Audino",
+    "field": "rarity",
+    "value": "UC",
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 90,
+    "name": "Weedle",
+    "field": "rarity",
+    "value": "UC",
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 179,
+    "name": "Leafeon",
+    "field": "mp",
+    "value": 3,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 279,
+    "name": "Mega Beedrill",
+    "field": "mp",
+    "value": 3,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 284,
+    "name": "Mega Sceptile",
+    "field": "types",
+    "value": "Grass/Dragon",
+    "reason": "National Dex typing (was Grass/Dragon); order is not load-bearing"
+  },
+  {
+    "id": 311,
+    "name": "Stunfisk",
+    "field": "types",
+    "value": "Ground/Electric",
+    "reason": "National Dex typing (was Ground/Electric); order is not load-bearing"
+  },
+  {
+    "id": 315,
+    "name": "Durant",
+    "field": "types",
+    "value": "Bug/Steel",
+    "reason": "National Dex typing (was Steel/Bug); order is not load-bearing"
+  },
+  {
+    "id": 315,
+    "name": "Durant",
+    "field": "mp",
+    "value": 3,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 433,
+    "name": "Toxapex",
+    "field": "types",
+    "value": "Poison/Water",
+    "reason": "National Dex typing (was Water/Poison); order is not load-bearing"
+  },
+  {
+    "id": 461,
+    "name": "Scrafty",
+    "field": "wheel",
+    "value": "+4 Miss",
+    "reason": "both sources and 11 archived snapshots agree on 92/96; padded with a neutral Miss"
+  },
+  {
+    "id": 523,
+    "name": "Stakataka",
+    "field": "types",
+    "value": "Rock/Steel",
+    "reason": "National Dex typing (was Rock/Steel); order is not load-bearing"
+  },
+  {
+    "id": 523,
+    "name": "Stakataka",
+    "field": "mp",
+    "value": 1,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 542,
+    "name": "Mega Manectric",
+    "field": "mp",
+    "value": 2,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 543,
+    "name": "Mega Sharpedo",
+    "field": "mp",
+    "value": 3,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 557,
+    "name": "Pikachu",
+    "field": "zMoveColor",
+    "value": "Catastropika -> white",
+    "reason": "Serebii labels the row bare \"Z-Move\"; Bulbapedia gives movecol=white for the same figure and move, and an empty damage cell rules out Purple (all 172 Purple Z-Moves carry stars)"
+  },
+  {
+    "id": 566,
+    "name": "Tyranitar",
+    "field": "mp",
+    "value": 1,
+    "reason": "two witnesses disagree and neither can be outvoted; took Bulbapedia by default rule - flagged contested"
+  },
+  {
+    "id": 581,
+    "name": "Landorus",
+    "field": "types",
+    "value": "Ground/Flying",
+    "reason": "National Dex typing (was Ground/Flying); order is not load-bearing"
+  }
+]

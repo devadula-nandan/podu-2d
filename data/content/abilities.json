@@ -1,0 +1,1912 @@
+[
+  {
+    "name": "Time Distortion",
+    "text": "If there are other Pokémon on your bench, this Pokémon cannot enter the field using an MP move. This Pokémon is not knocked out in battle—if it would be, it moves to the bench instead.",
+    "source": "figure"
+  },
+  {
+    "name": "Swift Swim",
+    "text": "If there is an adjacent Water Pokémon, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Spicy Scent",
+    "text": "This Pokémon gains +20 damage in battles in your turn.",
+    "source": "figure"
+  },
+  {
+    "name": "Plus",
+    "text": "When Minun is adjacent to this Pokémon, the White Attacks of your Electric Pokémon gain: The battle opponent becomes paralyzed. In addition, the damage this Pokémon deals is increased by 30 for each Minun adjacent to it.",
+    "source": "figure"
+  },
+  {
+    "name": "Rapid Calculation",
+    "text": "While this Pokémon is on the field, the effects of Abilities which allow one to respin or force respins in battle are nullified. If this Pokémon has evolved, it gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Sticky Web",
+    "text": "Other Pokémon cannot use Fly Away to pass over this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Run Off",
+    "text": "Before using this Pokémon, you can switch its position with another one of your own Pokémon in an adjacent space.",
+    "source": "figure"
+  },
+  {
+    "name": "Sand Veil",
+    "text": "If this Pokémon is attacked, it can move under the opponent's Pokémon to another space next to it. (A battle does not occur.)",
+    "source": "figure"
+  },
+  {
+    "name": "Huge Power",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, it deals +50 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Blue Spark",
+    "text": "The Dodges of opposing Pokémon adjacent to this Pokémon become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Marine Rage",
+    "text": "The damage that this Pokémon deals is increased by 10 for each Water Pokémon in either player's P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Wall-Climb",
+    "text": "While on the bench, this Pokémon can MP move over non-Ghost Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Band Attack",
+    "text": "This Pokémon deals +10 damage for each Hydreigon, Zweilous or Deino on the field. If this Pokémon has evolved, it gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Thicket Slip",
+    "text": "This Pokémon can MP Move past Grass Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Serene Light",
+    "text": "If this Pokémon is knocked out, move the following Pokémon to the bench (not including Pokémon with this Ability): Pokémon in your P.C., your Fire Pokémon in the Ultra Space, and your Fire-type Pokémon that have been excluded from the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Assist",
+    "text": "Any Pokémon adjacent to this Pokémon will do +30 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Guts",
+    "text": "If this Pokémon has a Special Condition|special condition, it deals +50 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Primal Rage",
+    "text": "When there are opposing Groudon, Kyogre, or Rayquaza on the field, this Pokémon deals +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Migraine",
+    "text": "If your opponent spins a Purple Attack, you can force them to respin once a turn.",
+    "source": "figure"
+  },
+  {
+    "name": "Own Tempo",
+    "text": "This Pokémon cannot be Special Condition|confused.",
+    "source": "figure"
+  },
+  {
+    "name": "Bide",
+    "text": "This Pokémon cannot battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Space Distortion",
+    "text": "If there are other Pokémon on your bench, this Pokémon cannot enter the field using an MP move. This Pokémon is not knocked out in battle—if it would be, it moves to the bench instead",
+    "source": "figure"
+  },
+  {
+    "name": "Spontaneous Evolution",
+    "text": "Whenever this Pokémon moves from a P.C. to the bench, it can evolve.",
+    "source": "figure"
+  },
+  {
+    "name": "Minus",
+    "text": "When Plusle is adjacent to this Pokémon, the White Attacks of your Electric Pokémon gain: The battle opponent becomes paralyzed. In addition, the damage this Pokémon deals is increased by 30 for each Plusle adjacent to it.",
+    "source": "figure"
+  },
+  {
+    "name": "Speed Booster",
+    "text": "When this Pokémon evolves, it will gain +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Battle Armor",
+    "text": "Restored Pokémon. If the battle opponent spins an Attack of 10 or more damage, you may force them to respin but only once per turn.",
+    "source": "figure"
+  },
+  {
+    "name": "Healing Seed",
+    "text": "While this Pokémon is on the field, your Grass and Poison Pokémon cannot become poisoned or noxious.",
+    "source": "figure"
+  },
+  {
+    "name": "Bad Dreams",
+    "text": "Sleeping opposing Pokémon next to this Pokémon are knocked out. (Pokémon passed while moving do not count.)",
+    "source": "figure"
+  },
+  {
+    "name": "Insomnia",
+    "text": "This Pokémon cannot be affected by sleep.",
+    "source": "figure"
+  },
+  {
+    "name": "Gooey",
+    "text": "Pokémon that battle with this Pokémon gain Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "High Flying",
+    "text": "This Pokémon can attack Pokémon that are 2 steps away, provided that there is a Pokémon between them. While it does, this Pokémon's Attacks have Range 2.",
+    "source": "figure"
+  },
+  {
+    "name": "Swarm",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon may move one of your Ledyba or Ledian on the field next to itself. If opposing Pokémon do not occupy all of your entry points, you may move one of your Ledyba or Ledian on the bench next to this Pokémon. In either case, your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Reckless Charge",
+    "text": "This Pokémon can move up to 2 steps in a straight line.",
+    "source": "figure"
+  },
+  {
+    "name": "Fire Leak",
+    "text": "Any Grass Pokémon or Bug Pokémon that battles this Pokémon will become burned.",
+    "source": "figure"
+  },
+  {
+    "name": "Immunity",
+    "text": "This Pokémon cannot be Special Condition|poisoned or Special Condition|noxious.",
+    "source": "figure"
+  },
+  {
+    "name": "Diffuse Poison",
+    "text": "When this Pokémon is on the field, all poisoned Pokémon will do a further −20 damage. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Run Away",
+    "text": "When this Pokémon is attacked, it can move to the bench. If it does, it gains Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Chemical Pollen",
+    "text": "When this Pokémon is on the field, all poisoned and noxious Pokémon have MP –1. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Rapid Approach",
+    "text": "All the Blue Attacks of this Pokémon's battle opponents become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Slime Barrier",
+    "text": "This Pokémon negates status effects for your opponent's White Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Compound Eyes",
+    "text": "If this Pokémon has evolved, and its Attack lands on Miss, it will shift to an Attack next to it instead.",
+    "source": "figure"
+  },
+  {
+    "name": "Ice Wall",
+    "text": "This Pokémon cannot be burned or frozen.",
+    "source": "figure"
+  },
+  {
+    "name": "Team Play",
+    "text": "This Pokémon deals +20 damage for each friendly Weavile on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Group Attack",
+    "text": "If one of your Carvanha is within 2 steps of this Pokémon, this Pokémon's White Attacks become Gold Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Mold Breaker",
+    "text": "This Pokémon negates abilities that boost or lower attack damage for your opponent.",
+    "source": "figure"
+  },
+  {
+    "name": "(Pre 1.1)Run Away",
+    "text": "When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",
+    "source": "figure"
+  },
+  {
+    "name": "Connection",
+    "text": "This Pokémon's damage is increased by +10 for every Electric Pokémon it is connected to.",
+    "source": "figure"
+  },
+  {
+    "name": "Land's Call",
+    "text": "Your Ground Pokémon deal +10 damage when this Pokémon is on the field, unless this Pokémon is affected by a Special Condition|special condition.",
+    "source": "figure"
+  },
+  {
+    "name": "Still",
+    "text": "This Pokémon cannot be moved by the Attacks of other Pokémon (except by Sweet Scent). This Pokémon cannot be affected by Special Condition|special conditions other than asleep.",
+    "source": "figure"
+  },
+  {
+    "name": "Infiltrator",
+    "text": "On the field, this Pokémon can pass through other Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Truant",
+    "text": "This Pokémon cannot attack in the same turn as it made an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Justified",
+    "text": "This Pokémon deals +10 damage for each opposing Dark Pokémon on the field. When this Pokémon is knocked out in battle, it may change its form to Keldeo Resolute Form without moving to the P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Distort",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon may move through an adjacent Pokémon to a point 1–2 steps away from that Pokémon. When it does, this Pokémon may change its form. If it changes its form, until the end of your next turn, any effects of its battle opponent's Ability that would increase damage decrease that damage instead. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Surprise Back",
+    "text": "When attacked, you can move this Pokémon back two steps without battling. It gains Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Rally",
+    "text": "This Pokémon's Ember gains +20 damage for each Pokémon in your P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Force Balance",
+    "text": "When placed adjacent to this Pokémon, your Pokémon will be boosted from 0-1 MP to 2 MP, and your opponent's Pokémon will be reduced from 3+ MP to 2 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Darkness Shield",
+    "text": "While this Pokémon is on the field, opposing Ghost Pokémon cannot use the effect of an Ability to pass through your Dark Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Spinning Pattern",
+    "text": "Your opponent's spins are shifted by two segments in a clockwise direction.",
+    "source": "figure"
+  },
+  {
+    "name": "Irritating Sting",
+    "text": "Any Psychic Pokémon that battles this Pokémon will become confused.",
+    "source": "figure"
+  },
+  {
+    "name": "Raid",
+    "text": "At the start of your turn, instead of using an MP move, this Pokémon can route move to a point that is three steps away and adjacent to an opponent's Pokémon. If it does, it must attack, if able.",
+    "source": "figure"
+  },
+  {
+    "name": "Arm Thrust Evolution",
+    "text": "If this Pokémon spins Arm Thrust three or more times in a battle, it may evolve after the battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Gaseous Form",
+    "text": "This Pokémon cannot surround the opponent's Pokémon, and cannot be surrounded itself. It can also move through other Pokémon when making an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Metamorphosis",
+    "text": "If this Pokémon is not knocked out in battle, it can evolve.",
+    "source": "figure"
+  },
+  {
+    "name": "Form Herd",
+    "text": "The 3-Pokémon limit does not apply to this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Open Circuit",
+    "text": "Any Water Pokémon that battles this Pokémon will become Paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Cornerstone",
+    "text": "Your Pokémon can move over this Pokémon when using an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Diving Entry",
+    "text": "When moving this Pokémon from the bench, it can only move to one space away from the entry point. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Mud Coating",
+    "text": "When this Pokémon is on the field, if there are 3 or more Water Pokémon on the field, your Ground Pokémon with MP1 or lower get +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Electric Fur",
+    "text": "If this Pokémon is not affected a special condition, all of the Blue Attacks of non-Ground battle opponents of this Pokémon become Misses. This Pokémon cannot be paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Grounding",
+    "text": "This Pokémon cannot be paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Sand Blizzard",
+    "text": "Your opponent's Fly Away effects are nullified. When this Pokémon is on the field and has evolved, the Soar effects of Pokémon on the field are nullified.",
+    "source": "figure"
+  },
+  {
+    "name": "Purity Veil",
+    "text": "Your opponent's Dark Pokémon will do -20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Beat Down",
+    "text": "All the Blue Attacks of the battle opponents of this Pokémon become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Balloon Body",
+    "text": "If a Pokémon finishes an MP move next to this Pokémon, this Pokémon moves 1 space away.",
+    "source": "figure"
+  },
+  {
+    "name": "Bite Instinct",
+    "text": "This Pokémon must battle if possible after making an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Gluttony",
+    "text": "When in a P.C., this Pokémon will move back to the bench if Sweet Scent is spun on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Refraction",
+    "text": "Friendly Pokémon next to this Pokémon cannot be affected by any new status effects.",
+    "source": "figure"
+  },
+  {
+    "name": "Thunder Rush",
+    "text": "This Pokémon can MP move past paralyzed Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Hypnotic Stare",
+    "text": "Any Pokémon that battles this Pokémon will become confused.",
+    "source": "figure"
+  },
+  {
+    "name": "Spellbind",
+    "text": "While this Pokémon is on the field, the Sleep condition is not removed by the effects of other Abilities.",
+    "source": "figure"
+  },
+  {
+    "name": "Rapid Evolution",
+    "text": "When this Pokémon faints in battle, you can evolve it without sending it to the P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Silver Fist",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, it is not knocked out by Gold Attacks from its battle opponents.",
+    "source": "figure"
+  },
+  {
+    "name": "Hypnotic Voice",
+    "text": "The next turn after using this Pokémon, your opponent will be unable to use Plates.",
+    "source": "figure"
+  },
+  {
+    "name": "Territoriality",
+    "text": "While this Pokémon is on the bench, it gains +1 MP. Your opponent's Pokémon cannot pass by this Pokémon with an MP move. Any opposing Pokémon that has used an MP move to move next to this Pokémon must attack it on that turn, if possible.",
+    "source": "figure"
+  },
+  {
+    "name": "Big Chorus",
+    "text": "If there are 3 or more Politoed on the field (including this Pokémon), the opposing player cannot use plates.",
+    "source": "figure"
+  },
+  {
+    "name": "Ghost Sensor",
+    "text": "Opposing Pokémon cannot MP move through this Pokémon using the effect of an Ability.",
+    "source": "figure"
+  },
+  {
+    "name": "Vibrating Sound",
+    "text": "Your opponent's Pokémon cannot pass by this Pokémon with an MP move. If the opponent's Pokémon used an MP move this turn and is next to this Pokémon, it cannot attack.",
+    "source": "figure"
+  },
+  {
+    "name": "Cut Off",
+    "text": "When this Pokémon is on the field, it can move to your goal point instead of making an MP move (ends your turn).",
+    "source": "figure"
+  },
+  {
+    "name": "Cross Wind",
+    "text": "While this Pokémon is on the bench, it gains +1 MP. The 3-Pokémon limit does not apply to this Pokémon in your deck.",
+    "source": "figure"
+  },
+  {
+    "name": "Big Eggsplosion",
+    "text": "Before battle, allows one friendly Exeggcute to be chosen. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is knocked out.",
+    "source": "figure"
+  },
+  {
+    "name": "Doze",
+    "text": "At the start of your turn, you may remove the asleep condition from this Pokémon. To do so, use this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Refreshing Aroma",
+    "text": "When this Pokémon moves from the bench to the field, remove any Special Condition|special conditions from all of your Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Reflective Laser",
+    "text": "Once per turn, you can force your opponent to spin again. The 3-Pokémon limit does not apply to this Pokémon in your deck.",
+    "source": "figure"
+  },
+  {
+    "name": "Ocean's Gift",
+    "text": "If this Pokémon is on the field, your Water Pokémon deal +30 damage. While this Pokémon is on the field, your Water-type Pokémon cannot become burned.",
+    "source": "figure"
+  },
+  {
+    "name": "Surprise Strike",
+    "text": "If there is an opponent's Pokémon on your entry point, and this Pokémon is on the bench, at the beginning of your turn, this Pokémon can move next to that Pokémon and battle. After the battle, if this Pokémon is not knocked out, move it to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Invisible Wall",
+    "text": "Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Shelter",
+    "text": "This Pokémon and your Pokémon next to it will be protected from instant knock out effects of Attacks. The 3-Pokémon limit does not apply to this Pokémon in your deck.",
+    "source": "figure"
+  },
+  {
+    "name": "Purification",
+    "text": "When this Pokémon moves from the bench to the field, remove any special conditions and Curse markers from all the Pokémon you have in the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Dark Stone",
+    "text": "This Pokémon gains Wait 9 at the start of the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Nonstop",
+    "text": "This Pokémon cannot have Wait. Can MP Move through Pokémon on the field that are paralyzed or have Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Hallucination",
+    "text": "If this Pokémon is knocked out, it is removed from the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Hoverjet",
+    "text": "May MP move over your Pokémon on the field. If any of your Drive plates have been used, then, when this Pokémon is knocked out, one of them becomes usable (other than a plate still in use on that turn).",
+    "source": "figure"
+  },
+  {
+    "name": "Max Vital Spirit",
+    "text": "This Pokémon must MP Move as far as its MP range will allow.",
+    "source": "figure"
+  },
+  {
+    "name": "Prey Scent",
+    "text": "If an opponent's Pokémon has a Special Condition|special condition, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Gale Wings",
+    "text": "In its first battle after moving to the field, all of this Pokémon's White Attacks become Gold Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Fire Rush",
+    "text": "Can MP Move past burned Pokémon. This Pokémon on the bench gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Shed Skin",
+    "text": "At the beginning of your turn, you may remove all Special Condition|special conditions from this Pokémon. When you do, you may evolve this Pokémon, if possible. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Lava Therapy",
+    "text": "This Pokémon cannot be Frozen or put to Asleep|Sleep.",
+    "source": "figure"
+  },
+  {
+    "name": "Magic Trick",
+    "text": "If this Pokémon spins Miss in battle, one of your Plates will switch from used to unused.",
+    "source": "figure"
+  },
+  {
+    "name": "Synchronize",
+    "text": "When this Pokémon becomes poisoned, noxious, paralyzed, burned etc. by an Attack, the Pokémon that caused the condition will also become it.",
+    "source": "figure"
+  },
+  {
+    "name": "Flame Acceleration",
+    "text": "This Pokémon gains +1 MP and +10 damage for each Pokémon in your P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Behavioral Prediction",
+    "text": "This Pokémon gains +1 ★.",
+    "source": "figure"
+  },
+  {
+    "name": "Coral Power",
+    "text": "If this Pokémon is not poisoned or noxious, while this Pokémon is on the field, your non-Corsola, Water Pokémon with MP1 gain +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Light Stone",
+    "text": "This Pokémon gains Wait 9 at the start of the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Arena Trap",
+    "text": "Any Pokémon adjacent to it, except for Flying Pokémon, will be unable to use MP Move. (You can still pass by, though.)",
+    "source": "figure"
+  },
+  {
+    "name": "Inner Focus",
+    "text": "This Pokémon cannot gain Wait while it is on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Soar",
+    "text": "This Pokémon may MP move over Pokémon on the field that don't have Soar. If this Pokémon has a Charge marker, it gains +1 MP and deals +30 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Cruel Blossom's Incursion",
+    "text": "This Pokémon can MP move over poisoned and noxious Pokémon. Pokémon that this Pokémon moved over are temporarily excluded from the duel, returning to the bench 7 turns later. Your Grass Pokémon and Poison Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Inferno Ladder",
+    "text": "When this Pokémon appears as a Mega Evolution, remove the frozen condition from all of your Pokémon. Pokémon knocked out by the Attacks of this Pokémon are temporarily removed from the duel, returning to the bench 7 turns later. Your Fire Pokémon deal +10 damage and your Dragon Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Blue Skies Captor",
+    "text": "This Pokémon can use an MP move to fly over Pokémon on the field that don't have Soar. Move opposing Pokémon surrounded by this Pokémon to your P.C. Your Fire Pokémon deal +10 damage and your Flying Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Intense Shell Cannon",
+    "text": "This Pokémon deals +10 damage for each Water Pokémon on the field. Your Water-type Pokémon each deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Poisoning Order",
+    "text": "While this Pokémon is on the field, the Misses of your Beedrill become: the battle opponent becomes noxious. Your Bug Pokémon deal +10 damage and your Poison Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Forest Leap",
+    "text": "At the start of your turn, instead of an MP move, you can move this Pokémon to a spot next to an adjacent Grass Pokémon. If there is a succession of Grass types adjacent to the first, you may instead move this Pokémon to a spot adjacent to any of them.",
+    "source": "figure"
+  },
+  {
+    "name": "Forest Regeneration",
+    "text": "When this Pokémon moves from the bench to the field, or when this Pokémon appears as a Mega Evolution, move {{t|Grass}}-, {{t|Flying}}-, and Bug Pokémon from your P.C. to the bench. Your Grass-type Pokémon and your Dragon Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Blaze Boogie",
+    "text": "This Pokémon can MP move over other Pokémon on the field. Opposing Pokémon moved over in this way are now burned. Your Fire Pokémon and your Fighting Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Earthen Rapids",
+    "text": "This Pokémon can MP move under other Pokémon on the field. While this Pokémon is on the field, your Water Pokémon and your Ground Pokémon get +1 MP (up to a maximum of MP3). Your Water-type Pokémon and your Ground-type Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Trainee",
+    "text": "This Pokémon gains Wait 10 at the start of the duel. When this Pokémon faints in battle, you can evolve it without sending it to the P.C. If you do, move 1 of the Pokémon in your P.C. to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Bullet Speed",
+    "text": "This Pokémon can MP move through Pokémon that have Wait. If this Pokémon has evolved, this Pokémon on your bench gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Scarlet Bladewings",
+    "text": "Pokémon that this Pokémon moves over using Fly are knocked out. Your Dragon Pokémon deal +10 damage and your Flying Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Grudge Stone",
+    "text": "When this Pokémon moves from the bench to the field, spin a Pokémon. If it spins a White Attack, attach a Curse marker to it. Your Pokémon on the field can pass through this Pokémon when using an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Long Lick",
+    "text": "At the start of your turn, instead of an MP move, you can force an opponent's Pokémon that is two steps away from this Pokémon to spin. If you do, this Pokémon gains Wait 3. If the result of that spin is a White Attack, that Pokémon gains Wait 3.",
+    "source": "figure"
+  },
+  {
+    "name": "Poison Touch",
+    "text": "Any Pokémon that battles this Pokémon will become poisoned.",
+    "source": "figure"
+  },
+  {
+    "name": "Fairy Powder",
+    "text": "Any Dragon Pokémon that battles this Pokémon will become paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Strong Breeze",
+    "text": "Before using this Pokémon, you can switch its position with another one of your own Pokémon in an adjacent space.",
+    "source": "figure"
+  },
+  {
+    "name": "Power Spot",
+    "text": "If this Pokémon is at an entry point, this Pokémon deals +30 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Dual Brains",
+    "text": "If your Reuniclus, Duosion, or Solosis is adjacent to this Pokémon, deal damage ×2.",
+    "source": "figure"
+  },
+  {
+    "name": "Psychic Net",
+    "text": "In battles on your turn, you may respin × the number of your other Reuniclus on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Power Draw",
+    "text": "When this Pokémon is on the field, your other Pokémon deal +1 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Electric Web",
+    "text": "The opponent's Pokémon that have passed over this Pokémon by using Fly Away, Fly or Soar become paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Electric Mat",
+    "text": "Other Pokémon can move over this Pokémon when using an MP move. If those Pokémon are the opponent's Pokémon, those Pokémon become paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Team Fight",
+    "text": "If there is an adjacent Durant, this Pokémon's White Attacks become Gold Attacks. While this Pokémon is on the field, it can move over other Durant. The 3-Pokémon limit does not apply to this Pokémon in your deck.",
+    "source": "figure"
+  },
+  {
+    "name": "Iron Heart",
+    "text": "This Pokémon and your Pokémon adjacent to this Pokémon are not knocked out by Gold Attacks from their battle opponents.",
+    "source": "figure"
+  },
+  {
+    "name": "Step Work",
+    "text": "This Pokémon can move over non-Flying Pokémon on the field using MP moves.",
+    "source": "figure"
+  },
+  {
+    "name": "No Guard: Spectral",
+    "text": "This Pokémon may MP move through other Pokémon on the field. If this Pokémon or its battle opponent spins a Blue Attack, shift the spin to an Attack next to it instead.",
+    "source": "figure"
+  },
+  {
+    "name": "Upside-Down Evolution",
+    "text": "Whenever this Pokémon moves from a P.C. to the bench, it can evolve.",
+    "source": "figure"
+  },
+  {
+    "name": "Enigmatic Signal",
+    "text": "For effects that move this Pokémon's battle opponent, you decide whether it is used, which Pokémon is targeted, and where the targeted Pokémon will be moved to.",
+    "source": "figure"
+  },
+  {
+    "name": "Forest Mischief",
+    "text": "On the field, this Pokémon can pass through other Pokémon. Attach a Forest Mischief marker to any Psychic Pokémon that battles this Pokémon. (While that marker is attached, that Pokémon is not subject to Energy effects.)",
+    "source": "figure"
+  },
+  {
+    "name": "Forest Mystery",
+    "text": "Pokémon that have battled this Pokémon become {{t|Grass}} type while they are on the field (but they stop being Grass type if they leave the field). Your Pokémon on the field can move over this Pokémon when using an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Harvest Festival",
+    "text": "If this Pokémon is knocked out, Pokémon that have Pumpkin markers are also knocked out. This Pokémon can MP move through other Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Ice Scramble",
+    "text": "Before using this Pokémon, you may move this Pokémon on the bench next to one of your Avalugg on the field. If you do, this Pokémon's MP is 1. Frozen Pokémon next to this Pokémon cannot be tagged.",
+    "source": "figure"
+  },
+  {
+    "name": "Ice Breaker",
+    "text": "Before using this Pokémon, you can switch its position with an adjacent Ice Pokémon or frozen Pokémon. Your Ice-type Pokémon can move over this Pokémon when using an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Sonic Blast",
+    "text": "When this Pokémon moves from the bench to the field, remove Wait from all your Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Supersonic Speed",
+    "text": "If this Pokémon has evolved, all the Gold Attacks of battle opponents of this Pokémon become White Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Stance Change: B",
+    "text": "This Pokémon can only be set as a form in a deck. At the start of your turn, this Pokémon may change its form to Shield Forme. On the turn this Pokémon appears with its form changed, this Pokémon's MP is 2, and it can attack Pokémon that are 2 steps away (when it does, this Pokémon's Attacks have Range 2). Your Pokémon on the field may MP move through this Pokémon. When this Pokémon leaves the field, its form changes to Shield Forme.",
+    "source": "figure"
+  },
+  {
+    "name": "Stance Change: S",
+    "text": "This Pokémon may MP move through other Pokémon on the field. Before using this Pokémon, you may change its form to Blade Forme.",
+    "source": "figure"
+  },
+  {
+    "name": "Crimson Alloy",
+    "text": "This Pokémon can MP move over other Pokémon on the field. If a battle opponent of this Pokémon spins an Attack of 120 or more damage, attach a Cracked marker to the battle opponent. Your Bug and Steel Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Otherworldly Talons",
+    "text": "This Pokémon can MP move through other Pokémon on the field. Pokémon next to this Pokémon cannot move using the effects of Attacks, Abilities, or Energy. Opposing Pokémon next to this Pokémon cannot make MP moves. Your Ghost and Poison Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Electric Surge",
+    "text": "This Ability is only valid on your turn. This Pokémon can MP Move past non-Fairy Pokémon on the field. When this Pokémon is on the field, your Electric Pokémon deal +30 damage (this effect is not cumulative). It removes the Asleep condition from Pokémon within 2 steps of this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Spark Noise",
+    "text": "When this Pokémon moves from the bench to the field, the Pokémon on the opponent's bench spin. Pokémon that spin a Purple Attack gain Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Enhanced Core",
+    "text": "When this Pokémon is on the field, your Pokémon that are both {{t|Electric}} and {{t|Steel}} type deal +20 damage. If this Pokémon has evolved, it gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Full Metal Body",
+    "text": "The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle. If this Pokémon is not affected by a Special Condition|special condition, markers from the Attacks of the battle opponent cannot be attached to this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Psychic Surge",
+    "text": "This Ability is only valid on your turn. This Pokémon can MP move past non-Fairy Pokémon on the field. When this Pokémon is on the field, your Psychic Pokémon gain a +1 ★. (This effect is not cumulative.) The Gold Attacks of Pokémon within 2 steps of this Pokémon become White Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Steel Breaker",
+    "text": "If a battle opponent of this Pokémon spins an Attack of 130 or more damage, attach a Cracked marker to the battle opponent.",
+    "source": "figure"
+  },
+  {
+    "name": "Shadow Shield",
+    "text": "The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle. If this Pokémon is not affected by a Special Condition|special condition, the Attack damage dealt to this Pokémon by its opponents is cut in half. This Pokémon can MP move through other Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Night Stalker",
+    "text": "This Pokémon can pass through other Pokémon when it MP moves. If it passes through Poisoned, noxious, or sleeping Pokémon, they will faint.",
+    "source": "figure"
+  },
+  {
+    "name": "Soul Burner",
+    "text": "If this Pokémon is knocked out by Attack damage, you may exclude it from the duel. If you do, exclude opposing Pokémon that have a Branded marker from the duel. This Pokémon can MP move through other Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Entry Shot",
+    "text": "When this Pokémon moves from the bench to the field, or appears as an evolution, spin for each opposing Pokémon on an entry point. If a Purple Attack is spun, knock that opposing Pokémon out. This Pokémon can MP move through other Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Bust In",
+    "text": "This Pokémon can MP Move from the bench past Ghost Pokémon and Pokémon affected by Special Condition|special conditions.",
+    "source": "figure"
+  },
+  {
+    "name": "Grassy Surge",
+    "text": "This Ability is only valid on your turn. This Pokémon can MP move past non-Fairy Pokémon on the field. When this Pokémon is on the field, your Grass Pokémon ignore knockout- and movement-causing effects of opponents' Attacks. Removes the Wait condition from Pokémon within two steps of this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Open Sea Singer",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, while this Pokémon is on the field, the effect of Round becomes: Damage is multiplied by the number of your own Pokémon on the field that also have Round or Sing.",
+    "source": "figure"
+  },
+  {
+    "name": "Misty Surge",
+    "text": "This Ability is only valid on your turn. This Pokémon can MP move past non-Fairy Pokémon on the field. When this Pokémon is on the field, whenever your Water Pokémon move from the bench, they may only move to a point one step away from an entry point. This ends your turn. Pokémon within two steps of this Pokémon are not affected by new Special Condition|special conditions.",
+    "source": "figure"
+  },
+  {
+    "name": "Soul-Heart",
+    "text": "This Pokémon deals +10 damage for each time one of your Pokémon has been knocked out. This Pokémon can remove Curse markers, Cracked markers, and Special Condition|special conditions by tagging.",
+    "source": "figure"
+  },
+  {
+    "name": "Snowy Transformation",
+    "text": "At the start of your turn, instead of an MP move, if this Pokémon is on the field, it may switch with a frozen Pokémon, or if this Pokémon is on the bench, it may switch with one of your frozen Pokémon. If it does, your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Aftermath Switch",
+    "text": "When this Pokémon is knocked out, you may knock out one of your Voltorb on the field and all Pokémon adjacent to it.",
+    "source": "figure"
+  },
+  {
+    "name": "Electromagnetic Barrier",
+    "text": "This Pokémon is not subject to spin-inducing effects of Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Cosmic Surfer",
+    "text": "Instead of an MP move, you can move this Pokémon through an adjacent Electric Pokémon and a succession of Electric-type Pokémon adjacent to that Pokémon to another spot. This ends your turn.",
+    "source": "figure"
+  },
+  {
+    "name": "Black Core",
+    "text": "This Pokémon cannot be surrounded by your opponent's Pokémon. If this Pokémon surrounds an opponent's Pokémon, this Pokémon may evolve. While this Pokémon is on the field, effects of Energy plates are negated.",
+    "source": "figure"
+  },
+  {
+    "name": "Emergency Exit",
+    "text": "When this Pokémon is attacked, it may switch with a Pokémon on your bench that is neither Wimpod nor Golisopod (no battles are triggered). If it does, this Pokémon and the Pokémon that it switched with both gain Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Magnetic Body",
+    "text": "At the start of your turn, if any of your other Metang or Metagross are within 2 steps, you may move this Pokémon to a point 2 steps away instead of an MP move. If you do, your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Hacking Gems",
+    "text": "This Pokémon can pass through other Pokémon when it MP moves. When this Pokémon is on the field, opposing Pokémon deal −1 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Disguise",
+    "text": "When this Pokémon moves from the bench to the field, attach a Disguise marker to this Pokémon. While that marker is attached to it, this Pokémon is not knocked out in battle (instead of knocking it out, remove the marker and any Special Condition|special conditions affecting it). This Pokémon can MP move through other Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Fire Bell",
+    "text": "If this Pokémon is knocked out, all Grass-type Pokémon within two steps become burne.d",
+    "source": "figure"
+  },
+  {
+    "name": "Come Here",
+    "text": "When this Pokémon moves from the bench to the field, or appears as an Evolution, each player moves one Benched Pokémon to its respective entry point (your opponent goes first).",
+    "source": "figure"
+  },
+  {
+    "name": "Artificial Turf",
+    "text": "If this Pokémon is on the field and is not affected by a Special Condition|special condition, your MP1 Grass Pokémon gain +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Proactive",
+    "text": "In battles on your turn, this Pokémon deals +20 damage. If this Pokémon has evolved, it gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Volt Absorb",
+    "text": "When this Pokémon becomes paralyzed, attach a Volt Absorb marker to it. While that marker is attached to it, this Pokémon is not knocked out in battle. Instead of knocking it out, remove the marker and any Special Condition|special conditions affecting this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Sprinkler",
+    "text": "If this Pokémon is on the field and is not affected by a Special Condition|special condition, your Water Pokémon can MP move through other Water-type Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Battery",
+    "text": "Your Electric Pokémon next to this Pokémon gain +1 MP (to a maximum of MP3).",
+    "source": "figure"
+  },
+  {
+    "name": "Pom-Pom",
+    "text": "When this Pokémon is one the field, your Electric Pokémon deal +1 damage for each Electric-type Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Wimp Out",
+    "text": "When this Pokémon is attacked, it may switch with a Pokémon on your bench that is neither Wimpod nor Golisopod (no battles are triggered). If it does, this Pokémon and the Pokémon that it switched with both gain Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Pa'u",
+    "text": "When this Pokémon is on the field, your Psychic Pokémon deal +1 damage for each Psychic-type Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Floating Candle",
+    "text": "When this Pokémon moves from the bench, it can only move to a point 1 step away from an entry point. Your turn ends. Your Pokémon on the field can pass through this Pokémon when using an MP move. If this Pokémon burns the battle opponent, it may evolve.",
+    "source": "figure"
+  },
+  {
+    "name": "Dark Light",
+    "text": "Can MP move through other Pokémon on the field. Attach a Branded marker to burned Pokémon that have been moved through by this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Sensu",
+    "text": "This Pokémon can MP move through other Pokémon on the field. When this Pokémon is on the field, your Ghost Pokémon deal +1 damage for each Ghost-type Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Fire Alert",
+    "text": "The battle opponent's Gold Attacks become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Slippery",
+    "text": "Just once, before this Pokémon would be surrounded, it may switch places with an adjacent Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Baile",
+    "text": "When this Pokémon is on the field, your Fire Pokémon deal +1 damage for each Fire-type Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Balloon Trick",
+    "text": "All the Purple Attacks of battle opponents of this Pokémon become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Deliver",
+    "text": "Whenever this Pokémon moves from a P.C. to the bench, one of your used Mega Evolution plates becomes usable.",
+    "source": "figure"
+  },
+  {
+    "name": "Sap Sipper",
+    "text": "If the battle opponent is a Grass Pokémon, this Pokémon is not knocked out in battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Lightning Rod",
+    "text": "If the battle opponent is an Electric Pokémon, the damage it deals to this Pokémon is reduced by 30.",
+    "source": "figure"
+  },
+  {
+    "name": "Water Weed",
+    "text": "Your Bug Pokémon can move over this Pokémon when using an MP move.",
+    "source": "figure"
+  },
+  {
+    "name": "Air Lock",
+    "text": "While this Pokémon is on the bench, it gains +1 MP. While this Pokémon is on the field, your Pokémon do not move to the Ultra Space from the effects of Abilities and Attacks of opposing Pokémon",
+    "source": "figure"
+  },
+  {
+    "name": "Cleansing Fire",
+    "text": "If this Pokémon is knocked out, opposing Ghost-type Pokémon on the field spin. Those that spin a Purple Attack are knocked out.",
+    "source": "figure"
+  },
+  {
+    "name": "Cerebral Embrace",
+    "text": "Opposing Pokémon cannot MP move through this Pokémon using the effect of an Ability. At the start of your turn, this Pokémon may switch places with one of your Pokémon on the field, bench, or in a P.C. Your {{t|Psychic}} and Fairy Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Miraculous Cry",
+    "text": "This Pokémon can MP move over other Pokémon on the field. If this Pokémon is knocked out, all of your Pokémon that have been excluded from the duel and all of your Pokémon in Ultra Space move to your bench. Your Dragon Pokémon and Fairy Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "White Noise",
+    "text": "When this Pokémon moves to the field, the effects of Energy plates are lost, and they count as having been used. In its first battle after moving to the field, all of this Pokémon's White Attacks become Gold Attacks. If this Pokémon is knocked out, it moves to the Ultra Space outside of the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Transcendent Helix",
+    "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. When this Pokémon battles, this Pokémon's number of Mega Evolution turns increases by 2. Your Psychic Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Ultra Pump Up",
+    "text": "Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point by moving over an adjacent Pokémon instead of using an MP move. Your turn ends. This Pokémon deals +29 Attack damage for each Pokémon in the Ultra Space.",
+    "source": "figure"
+  },
+  {
+    "name": "Two-Sword Strike",
+    "text": "This Pokémon can attack Pokémon that are 2 steps away. While it does, this Pokémon's Attacks have Range 2. Your Psychic Pokémon and your Fighting Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Ruinous Helix",
+    "text": "This Pokémon is not knocked out in battle (if it would be, it moves to the bench instead). When this Pokémon battles, this Pokémon's number of Mega Evolution turns increases by 2. Your Psychic Pokémon deal +10 damage and your Fighting Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Ultra Sprint",
+    "text": "In this Pokémon's first battle after moving to the field, any effects of the battle opponent's Ability that increase or decrease damage are nullified. This Pokémon gets +1 MP for each Pokémon in the Ultra Space (to a maximum of MP4).",
+    "source": "figure"
+  },
+  {
+    "name": "Intimidating Aura",
+    "text": "If this Pokémon is on the field and is not affected by a Special Condition|special condition, the opposing player cannot use plates. Your Dark Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Darkness Crystal",
+    "text": "This Pokémon can MP move through other Pokémon on the field. This Pokémon is not knocked out by battle damage. This Pokémon is not affected by effects of the battle opponent that would apply any markers to this Pokémon or that would inflict any Special Condition|special conditions on this Pokémon, and any such effects are applied to the battle opponent instead. Your Dark Pokémon and Ghost Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Spiteful Maze",
+    "text": "This Pokémon can MP move through other Pokémon on the field. The Gold Attacks of this Pokémon's battle opponents become White Attacks. This Pokémon deals +10 damage for each of your Banette and Shuppet that have been knocked out during the duel. Your Ghost Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Billows of the Fell Dragon",
+    "text": "When this Pokémon moves from the bench to the field, or appears as an Evolution, it removes the burned condition from your Pokémon. While this Pokémon is on the field, your Pokémon cannot be burned. Your Water and Dark Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Blackout",
+    "text": "When this Pokémon moves to the field, the effects of Energy plates are lost, and they count as having been used. While this Pokémon is on the field, Pokémon that become paralyzed gain Wait 3. In this Pokémon's first battle after moving to the field, Pokémon that battle it will become paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Rocket Ride",
+    "text": "In its first battle after moving to the field, this Pokémon's Flamethrower becomes Flame Gun (the battle opponent and one Pokémon directly behind it are knocked out). At the start of your turn, instead of an MP move, you may move an adjacent Pokémon to a point 3 steps away from this Pokémon. If you do, this Pokémon moves to the Ultra Space. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Homeward Lights",
+    "text": "When this Pokémon appears as a Mega Evolution, and again when its Mega Evolution ends, you may move one of your Pokémon in the Ultra Space or P.C. next to this Pokémon. Your Electric and your Dragon Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Paper Sword",
+    "text": "In this Pokémon's first battle after moving to the field, it can attack Pokémon that are two steps away. When it does, this Pokémon's Attacks have Range 2. If it knocks out a Pokémon with a Cracked marker on it, that Pokémon (excluding Fire Pokémon) moves to the Ultra Space outside of the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Thankfulness",
+    "text": "This Pokémon can MP move over non-Flying Pokémon on the field. While this Pokémon is on the field, MP1 or lower Pokémon on your bench, and MP1 or lower Pokémon within 2 steps of this Pokémon gain +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Guardtop Steelshell",
+    "text": "This Pokémon can MP move under other Pokémon. Opposing Fairy Pokémon on the field that MP move within 2 steps of this Pokémon move to the P.C. after the end of that turn. Your Steel Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Crumbletop Rockshell",
+    "text": "If the battle opponent spins a Blue Attack, that Pokémon on the field moves to the bench after the turn ends and gains Wait. Your Rock and Dark Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Teravolt",
+    "text": "This Pokémon can only be set as a form in a deck. The effects of Abilities of the battle opponent that increase or decrease Attack damage are nullified. This Pokémon can MP move over other Pokémon. When this Pokémon is knocked out in battle, it can change form to Kyurem without moving to the P.C. If it does, and there are any of your Zekrom that have been excluded from the duel, move one of the Zekrom to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Turboblaze",
+    "text": "This Pokémon can only be set as a form in the deck. The effects of Abilities of the battle opponent that increase or decrease Attack damage are nullified. This Pokémon can MP move over other Pokémon. When this Pokémon is knocked out in battle, it can change form to Kyurem without moving to the P.C. If it does, and there are any of your Reshiram that have been excluded from the duel, move one of the Reshiram to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Icy Armor",
+    "text": "When this Pokémon is knocked out, it returns to being {{TFG ID|Duel|Glalie|471}} without moving to the P.C. Your Ice Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Marked by the Aura",
+    "text": "While this Pokémon is on the field, and unless they are affected by Special Condition|special conditions, your Fighting Pokémon and your Steel Pokémon are not knocked out by Gold Attacks from their battle opponents. Your Fighting-type and Steel-type Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Desolate Land",
+    "text": "When this Pokémon is on the field, Ultra Beasts knocked out by its Attack damage are excluded from the duel (without moving to the Ultra Space), returning to the bench if this Pokémon leaves the field. When this Pokémon is knocked out in battle, it may go back to being Groudon without moving to the P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Slow Start",
+    "text": "This Pokémon gets +1 MP for each species of Regirock, Regice, and Registeel on the field. This Pokémon cannot be moved by Plates, Abilities or other Pokémon's attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Primordial Sea",
+    "text": "While this Pokémon is on the field, Ultra Beasts do not move from the Ultra Space to the field by the effects of Abilities or Attacks. When this Pokémon is knocked out in battle, it may go back to being Kyogre without moving to the P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Sacred Fencer",
+    "text": "This Ability is only valid on your turn. When this Pokémon is on the field, Sword of Justice from your Pokémon deals +30 damage. The battle opponents of those Pokémon cannot move by effects other than the Attack effects of those Pokémon until the end of the battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Breath of the Abyss",
+    "text": "While this Pokémon is on the field, your Dark and Fire Pokémon each deal +10 damage for each burned Pokémon on the field. Pokémon that battle this Pokémon become burned. Your Dark-type and Fire-type Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Guardian",
+    "text": "This Pokémon has MP 3 if it is confused. When this Pokémon is knocked out in battle, you can move one of your Pokémon that is in the Ultra Space to the point where this Pokémon was.",
+    "source": "figure"
+  },
+  {
+    "name": "Fight Song",
+    "text": "When this Pokémon is on the field, your Dragon Pokémon and your Flying Pokémon deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Crescent Veil",
+    "text": "If this Pokémon is on the field and not affected by a Special Condition|special condition, Moonblast from any of your Pokémon deals +50 damage. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Poisonous Bunker",
+    "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. Grass Pokémon and Fairy Pokémon cannot pass by this Pokémon by means of the effects of their Abilities. When this Pokémon is on the field, the Abilities of poisoned and noxious Pokémon that allow passing by other Pokémon are nullified.",
+    "source": "figure"
+  },
+  {
+    "name": "Psychic Sensor",
+    "text": "Battle opponents have the in-battle effects of their Abilities nullified.",
+    "source": "figure"
+  },
+  {
+    "name": "Fluffy",
+    "text": "The damage dealt to this Pokémon by its battle opponents (excluding Fire Pokémon) is cut in half.",
+    "source": "figure"
+  },
+  {
+    "name": "Gloomdweller",
+    "text": "This Pokémon can MP move through other Pokémon on the field. While this Pokémon is on the field, opposing Pokémon deal −20 damage for each of your Ghost Pokémon adjacent to them. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Illusion",
+    "text": "When this Pokémon is on the bench or has not yet engaged in its first battle after moving to the field, and another of your Pokémon—that has the same MP or less than this Pokémon and has not yet engaged in its first battle after moving to the field—is attacked, before the battle, that Pokémon may switch places with this Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Aftermath Soul",
+    "text": "This Pokémon can MP move through other Pokémon on the field. When this Pokémon is knocked out, you may knock out one of your Drifloon on the field and all Pokémon adjacent to it.",
+    "source": "figure"
+  },
+  {
+    "name": "Electric Upsurge",
+    "text": "While this Pokémon is on the field, your Electric Pokémon deal +10 damage for each paralyzed Pokémon on the field. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Electrobind",
+    "text": "While this Pokémon is on the field, the effects of Abilities of opposing Electric Pokémon and opposing paralyzed Pokémon that allow passing by other Pokémon with MP moves are negated. At the start of your turn, instead of an MP move, this Pokémon may switch places with an adjacent Electric-type Pokémon or paralyzed Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Flower Carpet",
+    "text": "While this Pokémon is not affected by a Special Condition|special condition and is on an entry point, Mega Evolution does not end via passage of turns for the Pokémon of the player whose entry point it is.",
+    "source": "figure"
+  },
+  {
+    "name": "Green Power",
+    "text": "This Pokémon cannot be paralyzed. If this Pokémon is on the field and is not affected by a Special Condition|special condition, your Grass Pokémon deal +5 damage for each Grass-type Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Lock On: Blue",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon can force opposing Pokémon within 2 steps of it to spin. If the spin results in a Blue Attack, attach a Lock-On marker to that Pokémon. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Leaf Guard",
+    "text": "This Pokémon cannot be affected by Special Condition|special conditions other than sleep. Do not attach markers to this Pokémon from the Attacks of its battle opponent.",
+    "source": "figure"
+  },
+  {
+    "name": "Lock-On: Purple",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon can force opposing Pokémon within 2 steps of it to spin. If the spin results in a Purple Attack, attach a Lock-On marker to that Pokémon. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Permafrost",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, then the frozen condition of Pokémon within two steps of this Pokémon cannot be removed by tagging.",
+    "source": "figure"
+  },
+  {
+    "name": "Lock On: Gold",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon can force opposing Pokémon within 2 steps of it to spin. If the spin results in a Gold Attack, attach a Lock-On marker to that Pokémon. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Flame Turbine",
+    "text": "Can MP move past Fire Pokémon and burned Pokémon. If the battle opponent is affected by a Special Condition|special condition, the battle opponent's spins are shifted by one segment clockwise.",
+    "source": "figure"
+  },
+  {
+    "name": "Malevolent Fire",
+    "text": "While this Pokémon is on the field, your Fire Pokémon each deal +10 damage for each burned Pokémon on the field. If this Pokémon is burned, Pokémon that battle it become burned.",
+    "source": "figure"
+  },
+  {
+    "name": "Shell Armor",
+    "text": "This Pokémon is not knocked out by the knockout-causing Attack effects of opponents.",
+    "source": "figure"
+  },
+  {
+    "name": "Marvel Scale",
+    "text": "When this Pokémon moves from the bench to the field, or appears as an Evolution, it removes the burned condition from your Pokémon. If this Pokémon is affected by a Special Condition|special condition, its opponents deal −50 Attack damage to it.",
+    "source": "figure"
+  },
+  {
+    "name": "Indiscriminate Poison",
+    "text": "When this Pokémon is on the field, Pokémon that are not Poison Pokémon or Steel Pokémon deal 10 less damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Dry Skin",
+    "text": "If the battle opponent is a Water Pokémon that does not have any other types, this Pokémon is not knocked out in battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Special Delivery",
+    "text": "When this Pokémon is knocked out, you may move one of your Pokémon that has Special Delivery and has been excluded from the duel to the bench. This Pokémon is excluded from the duel (without moving to the P.C.).",
+    "source": "figure"
+  },
+  {
+    "name": "Rubbery Repulsion",
+    "text": "If the battle opponent of this Pokémon spins an Attack of 130 or more damage, this Pokémon is not knocked out. Instead, while the battle opponent is on the field, that Pokémon deals −10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Bone Bearer",
+    "text": "This Pokémon can MP move over opposing non-Flying Pokémon on the field. If this Pokémon moves its battle opponent by the effect of an Attack, you may attach a Weak Armor marker to this Pokémon. The Pokémon with that marker has MP-1 and is not knocked out in battle. The marker and any Special Condition|special conditions on the Pokémon are removed instead of it being knocked out.",
+    "source": "figure"
+  },
+  {
+    "name": "Electroswap",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon may switch places with an adjacent Electric Pokémon or paralyzed Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Sentry",
+    "text": "This Pokémon can MP move over opposing non-Flying Pokémon on the field. When this Pokémon surrounds an opposing Pokémon, if there are three or more opposing Pokémon on the field or bench with the same name as the surrounded Pokémon is excluded from the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Sneaky Steps",
+    "text": "If there are no opposing Pokémon within two steps of this Pokémon, this Pokémon has MP 3 while on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Entangle",
+    "text": "If there are no Pokémon next to this Pokémon, instead of an MP move, you can force an opposing Pokémon that is two steps away from this Pokémon to spin. If you do, this Pokémon gains Wait 3. If the spin results in a White Attack, the opposing Pokémon comes one step closer and gains Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Headwind",
+    "text": "If this Pokémon is on the field and is not affected by a Special Condition|special condition, attack damage-increasing effects on Flying battle opponents of your Flying-type Pokémon are negated.",
+    "source": "figure"
+  },
+  {
+    "name": "Loyalty",
+    "text": "At the start of your turn, if this Pokémon is on the field, it may move to the bench. You can use this Pokémon immediately. If this Pokémon has evolved, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Antagonism",
+    "text": "This Pokémon spins when it attacks its battle opponent. If it spins a miss, your turn ends (in which case a battle does not occur). If this Pokémon has evolved, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Carry Home",
+    "text": "This Pokémon can MP move through other Pokémon on the field. If it MP moves through opposing Pokémon that are frozen, those Pokémon move to your P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Frost Tag",
+    "text": "If this Pokémon is on the field and not affected by a Special Condition|special condition, opposing Ice Pokémon next to your Ice-type Pokémon get MP -1. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Tunnel Construction A",
+    "text": "When this Pokémon moves from the bench, it may move to a point 1 step away from an entry point. If it does, your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Snow Cloak",
+    "text": "If this Pokémon is attacked, it may move under the attacking Pokémon to a point next to it. (A battle does not occur.) This Pokémon can MP move past Ice Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Bite Down",
+    "text": "The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of the battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Thermostat",
+    "text": "If this Pokémon is on the field and not affected by a Special Condition|special condition, your Fire Pokémon take 30 less damage from the Attacks of Fire-type battle opponents. This effect does not stack.",
+    "source": "figure"
+  },
+  {
+    "name": "Cotton Bird Song",
+    "text": "When this Pokémon is on the field, your Normal Pokémon and your Flying Pokémon take −10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Poisonous Evolution",
+    "text": "If this Pokémon makes its battle opponent poisoned or noxious, it may evolve.",
+    "source": "figure"
+  },
+  {
+    "name": "Bone Diaper",
+    "text": "When this Pokémon moves from the bench to the field, attach a Weak Armor marker to it. The Pokémon with that marker has MP-1 and is not knocked out in battle. The marker and any Special Condition|special conditions on the Pokémon are removed instead of it being knocked out.",
+    "source": "figure"
+  },
+  {
+    "name": "Greenhouse",
+    "text": "This Pokémon cannot be paralyzed. If this Pokémon is on the field and is not affected by a Special Condition|special condition, your MP1 Grass Pokémon on the field gain +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Regenerator",
+    "text": "If one of your other Pokémon is knocked out, and this Pokémon is in the P.C., this Pokémon moves to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Bug Trap",
+    "text": "This Pokémon may MP move over non-Flying Pokémon on the field. At the beginning of your turn, instead of MP moving, you may move an adjacent, opposing Bug Pokémon that has MP 0 or lower, or that cannot MP move or battle, to your P.C. If you do, your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Survive",
+    "text": "This Pokémon cannot be excluded from the duel (aside from movement to the Ultra Space).",
+    "source": "figure"
+  },
+  {
+    "name": "Tunnel Construction B",
+    "text": "At the start of your turn, instead of an MP move, you may move this Pokémon to a point 2 steps away. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Infernal Hunt",
+    "text": "This Pokémon and Pokémon that battle it become burned after battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Evolution to Beauty",
+    "text": "When this Pokémon is knocked out in battle, it may evolve without moving to the P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Gulp",
+    "text": "This Pokémon gains +1 MP after moving to the bench or field until its first battle. At the start of your turn, instead of using an MP move, this Pokémon may move to a point by passing through adjacent Pokémon that have Wait. If it does, those adjacent Pokémon move to the Ultra Space outside of the field. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Prism Armor",
+    "text": "Ultra Beast. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. If this Pokémon is not affected by a Special Condition|special condition, any effects of the battle opponent's Ability that increase or decrease Attack damage are nullified.",
+    "source": "figure"
+  },
+  {
+    "name": "Ripped Sky Reign",
+    "text": "This Pokémon can MP move over other Pokémon on the field. While this Pokémon is on the field, all the Blue Attacks of battle opponents of your Dragon Pokémon become Misses. Your Dragon-type and Flying Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Spaceborne",
+    "text": "Ultra Beast. When this Pokémon is on the field, at the start of your turn, your Ultra Beasts on the field are treated as though they have newly moved to the field (any Special Condition|special conditions and markers remain). Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point three steps away instead of using an MP move (this ends your turn).",
+    "source": "figure"
+  },
+  {
+    "name": "Pulsar Venom",
+    "text": "Ultra Beast. When this Pokémon moves to the field, or appears as an Evolution, it excludes each player's used plates from the duel. After its first battle since moving to the field, it poisons its battle opponent and each Pokémon that has a Special Condition|special condition.",
+    "source": "figure"
+  },
+  {
+    "name": "Prism Armor: Dusk",
+    "text": "Ultra Beast. When this Pokémon appears with its form changed, it may attach a Photon marker to an opposing Pokémon within X+1 steps, where X is the number of Pokémon in the Ultra Space. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. The battle opponent's Attacks cannot attach markers to this Pokémon. When this Pokémon is knocked out in battle, it may change its form to Necrozma without moving to the P.C. If it does and any of your Solgaleo are in the Ultra Space, move one of them to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Prism Armor: Dawn",
+    "text": "Ultra Beast. When this Pokémon appears with its form changed, it may attach a Photon marker to an opposing Pokémon within X+1 steps, where X is the number of Pokémon in the Ultra Space. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. This Pokémon can MP move through other Pokémon on the field. When this Pokémon is knocked out in battle, it may change its form to Necrozma without moving to the P.C. If it does and any of your Lunala are in the Ultra Space, move one of them to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Superjammer",
+    "text": "When this Pokémon moves from the bench to the field, or when this Pokémon appears as an Evolution, the Abilities of opposing Pokémon that have a cracked marker are lost while those Pokémon are on the field. Your Psychic and Steel Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Ultra Stack",
+    "text": "Ultra Beast. Until the end of this Pokémon's first battle after moving to the field, the Blue Attacks of your Steel Pokémon are not lost from the effects of Abilities or Z-Moves. The added damage and number of persistent turns of Attack effects of this Pokémon are multiplied by X+1, where X is the number of Pokémon in the Ultra Space.",
+    "source": "figure"
+  },
+  {
+    "name": "Surprise",
+    "text": "Ultra Beast. Until this Pokémon engages in its first battle after moving to the field, the Purple Attacks of your Fire Pokémon gain +1 ★. If this Pokémon knocks out its battle opponent with one of its Attacks, the opponent's Z-Move gauge is reduced by half its max value. This Pokémon can MP move through other Pokémon on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Neuroforce",
+    "text": "Ultra Beast. This Pokémon can only be set as a form in a deck. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. Any effect of this Pokémon's battle opponent's Ability that would increase Attack damage decrease it instead.",
+    "source": "figure"
+  },
+  {
+    "name": "Bright Arrow",
+    "text": "Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the bench.",
+    "source": "figure"
+  },
+  {
+    "name": "Water Arrow",
+    "text": "It can MP move through your Pokémon, and through opposing Fire Pokémon and opposing Ground Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Thunder Spear",
+    "text": "It can MP move through your Pokémon, and through opposing Water Pokémon and opposing Flying Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Fire Arrow",
+    "text": "It can MP move through your Pokémon, and through opposing Grass Pokémon and opposing Ice Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Psychic Arrow",
+    "text": "This Pokémon can MP move through your Pokémon and opposing Fighting and Poison Pokémon. If there are opposing Pokémon on all entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Dark Arrow",
+    "text": "This Pokémon can MP move through your Pokémon and opposing Psychic and Ghost Pokémon. If there are opposing Pokémon on all entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Leaf Arrow",
+    "text": "This Pokémon can MP move through your own Pokémon, and opposing Water Pokémon and Rock Pokémon. If there are opposing Pokémon on all your entry points, this Pokémon gets MP +1.",
+    "source": "figure"
+  },
+  {
+    "name": "Frost Arrow",
+    "text": "This Pokémon can MP move through your Pokémon and opposing Ground and Flying Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Mystic Arrow",
+    "text": "This Pokémon can MP move through your Pokémon and opposing Dragon and Dark Pokémon. If there are opposing Pokémon on all your entry points, this Pokémon gains +1 MP.",
+    "source": "figure"
+  },
+  {
+    "name": "Meditative Alchemy",
+    "text": "Your Psychic Pokémon deal +20 damage. If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's Attacks have Range 2. When this Pokémon moves to the field or appears as a Mega Evolution, choose a Pokémon on the field and attach an Alchemy marker to it. The White Attacks of the Pokémon with that marker become Gold Attacks and its Gold attacks become White attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Family Bond",
+    "text": "Before battle, any effects on the battle opponent that prevent it from being knocked out in battle are negated, and the battle opponent loses any markers with effects that prevent it from being knocked out in battle. This Pokémon cannot be knocked out if it's not affected by a Special Condition|special condition and its battle opponent is a Ghost Pokémon. Your Normal Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Barbed Horns",
+    "text": "This Pokémon can MP move through other Pokémon on the field. If this Pokémon is on the field, opposing Pokémon cannot tag any other Pokémon. All Gold Attacks of battle opponents with MP-reducing markers attached will all be Misses. Your Bug and Flying Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Winged Terror",
+    "text": "Restored Pokémon. If this Pokémon is not affected by a Special Condition|special condition, it may MP move over Pokémon on the field that don't have Soar. While this Pokémon is on the field, opposing Pokémon that are not {{t|Ghost}}- or Ground cannot MP move through this Pokémon using the effect of an Ability. Your Rock and Flying Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Tectonic Tunnel",
+    "text": "Your Steel and Ground Pokémon each deal +10 damage. This Pokémon cannot be surrounded by your opponent's Pokémon. At the start of your turn, instead of an MP move, this Pokémon may move through an adjacent Pokémon to a point 1–2 steps away from that Pokémon. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Impermeable Mail",
+    "text": "This Pokémon can MP move over any Pokémon on the field that is not a {{t|Flying}} type. After a battle, attach a Cracked marker to opposing Pokémon adjacent to this Pokémon. Add +1 spin to the spin-again Attacks of your Pokémon. Your Bug and Fighting Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Wily Jaws",
+    "text": "Plates cannot be used on opposing Pokémon next to this Pokémon. Opposing Pokémon next to this Pokémon cannot be moved by the Abilities or Attacks of opposing Pokémon. This Pokémon cannot be moved by the Attacks of its battle opponents. Your Steel and Fairy Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Voltage Zone",
+    "text": "If this Pokémon is on the field, opposing Pokémon become paralyzed when they move to the field. While this Pokémon is on the field, opposing paralyzed Pokémon have MP −1. Your Electric Pokémon deal +20 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Jet Current",
+    "text": "If this Pokémon is on the field, your Water Pokémon that are not affected by Special Condition|special conditions may MP move through other Pokémon. Your Water-type and Dark Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Streamlined Mirage",
+    "text": "When this Pokémon is on the field, the Gold Attacks of battle opponents of your Dragon and Psychic Pokémon become White Attacks. Your Dragon-type and Psychic-type Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Streamlined Flash",
+    "text": "When this Pokémon is on the field, the effects of Abilities that decrease damage that your Dragon and Psychic Pokémon deal are nullified. Your Dragon-type and Psychic-type Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Sonic Tyranny",
+    "text": "This Pokémon can MP move under other Pokémon. If this Pokémon is attacked, it may move under the attacking Pokémon to a point next to it. (A battle does not occur.) If it does, that Pokémon becomes burned. All the Blue Attacks of this Pokémon's battle opponents become Misses. Your Dragon and Ground Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Fearsome Frost Tree",
+    "text": "While this Pokémon is on the field, opposing Flying and Dragon Pokémon each have MP −1. Your Grass and Ice Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Flawless Jewel",
+    "text": "If this Pokémon is on the field, your Pokémon cannot become affected by Special Condition|special conditions, and your Fairy Pokémon that are not affected by a special condition are not knocked out either by Attack damage from Dragon Pokémon or by knockout-causing Attack effects from Dark Pokémon. Your Rock and Fairy-type Pokémon each deal +10 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Raging Wind",
+    "text": "This Pokémon may MP move past other Pokémon on the field. While this Pokémon is on the field, the Gold Attacks of burned opposing Pokémon become Misses. Opposing Pokémon adjacent to this Pokémon cannot change forms with an Ability.",
+    "source": "figure"
+  },
+  {
+    "name": "Stormy Anger",
+    "text": "This Pokémon may MP move through other Pokémon on the field. Opposing Pokémon that have MP moved next to this Pokémon on this turn cannot attack. If this Pokémon is on the field, all the Purple Attacks of opposing, paralyzed Pokémon become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Earthen Rage",
+    "text": "Opposing Pokémon cannot MP move through a point next to this Pokémon to pass it. If this Pokémon is on the field, all the Blue Attacks of opposing Pokémon that are affected by a Special Condition|special condition become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Enforcer",
+    "text": "This Pokémon can only be set as a form in a deck. The Ability of the Pokémon that battles this Pokémon is nullified while that Pokémon is on the field. If this Pokémon is knocked out, it is excluded from the duel. When this Pokémon leaves the field, it returns to the form it was before it changed forms.",
+    "source": "figure"
+  },
+  {
+    "name": "Multitype",
+    "text": "When this Pokémon moves to the field, choose one Pokémon on the field. While this Pokémon is on the field, this Pokémon's type becomes the type of the chosen Pokémon. This Pokémon is not excluded from the duel by the Attack effects of opposing Pokémon. This Pokémon is not moved to the Ultra Space by the Attack effects of opposing Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Time Slide",
+    "text": "This Pokémon cannot have Wait while it is on the field. If this Pokémon is knocked out by damage in battle, the next turn will always be yours.",
+    "source": "figure"
+  },
+  {
+    "name": "Space Slide",
+    "text": "When this Pokémon is knocked out by damage in battle, it recovers from any Special Condition|special conditions, and it moves to one of your entry points if possible. If it does, this Pokémon gains Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Dark Slumber",
+    "text": "This Pokémon can MP move over non-Flying Pokémon on the field. While this Pokémon is on the field, the asleep condition is not removed by the effects of Abilities. If this Pokémon is not affected by a Special Condition|special condition, sleeping Pokémon within 2 steps of it cannot be tagged.",
+    "source": "figure"
+  },
+  {
+    "name": "Electrical Charge",
+    "text": "If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Psychic Amplifier",
+    "text": "If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's Attacks have Range 2.",
+    "source": "figure"
+  },
+  {
+    "name": "Scrappy",
+    "text": "This Pokémon cannot be knocked out if it's not affected by a Special Condition|special condition and its battle opponent is a Ghost Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "King Spike",
+    "text": "Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks.",
+    "source": "figure"
+  },
+  {
+    "name": "Rampager",
+    "text": "This Pokémon may MP move through other Pokémon on the field. Pokémon that are knocked out by the Attacks of this Pokémon are temporarily excluded from the duel and can move to their P.C. after 5 turns.",
+    "source": "figure"
+  },
+  {
+    "name": "Air Power",
+    "text": "Restored Pokémon. If this Pokémon is not affected by a Special Condition|special condition, it may MP move over Pokémon on the field that don't have Soar. Opposing Pokémon that are not {{t|Ghost}}- or Ground cannot MP move through this Pokémon using the effect of an Ability. If this Pokémon is on the field, opposing Pokémon cannot use the effect of Air Balloon to MP move over other Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "High-Speed Drill",
+    "text": "When this Pokémon moves from the bench, it may move to a point 1 step away from an entry point. At the start of your turn, instead of an MP move, you may move this Pokémon through an adjacent Pokémon to a point next to that Pokémon. If it does either of these things, your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "King Horn",
+    "text": "If this Pokémon is on the field, add +1 spin to the spin-again Attacks of your Pokémon. While a Cracked marker is attached, the battle opponent's Blue Attacks become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "Time Travel",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, it can MP move over opposing non-Flying Pokémon on the field. You may use this Ability at the start of your turn. If you do, return the duel to the start of your previous turn, and exclude this Pokémon from the duel. Neither player's remaining time changes. Until the end of your opponent's next turn, neither player can use Time Travel.",
+    "source": "figure"
+  },
+  {
+    "name": "Fang Trap",
+    "text": "Opposing Pokémon next to this Pokémon cannot be moved by the Abilities or Attacks of opposing Pokémon. This Pokémon cannot be moved by the Attacks of its battle opponent.",
+    "source": "figure"
+  },
+  {
+    "name": "Volt Swap",
+    "text": "Before using this Pokémon from the bench, you may have it switch places with one of your paralyzed or Electric Pokémon on the field. When it does, any opposing Pokémon on your entry points become paralyzed.",
+    "source": "figure"
+  },
+  {
+    "name": "Rough Skin",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, attach a Cracked marker to any Pokémon that battle it.",
+    "source": "figure"
+  },
+  {
+    "name": "Building Spite",
+    "text": "This Pokémon can MP move through other Pokémon on the field. This Pokémon deals +10 damage for each of your Banette and Shuppet that have been knocked out during the duel.",
+    "source": "figure"
+  },
+  {
+    "name": "Pressure",
+    "text": "While this Pokémon is on the field, Wait lasts 1 turn longer for opposing Pokémon when you cause them to gain Wait.",
+    "source": "figure"
+  },
+  {
+    "name": "Bonfire",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon may move over an adjacent Pokémon to a point 1 step away from that Pokémon. If the Pokémon it moved over is an opposing Pokémon, that Pokémon becomes burned. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Victory Star",
+    "text": "If this Pokémon is not affected by a Special Condition|special condition, it may MP move over opposing non-Flying Pokémon on the field. This Pokémon may respin just once in battles on your turn.",
+    "source": "figure"
+  },
+  {
+    "name": "Double-Edged Axe",
+    "text": "When this Pokémon sustains an effect from a battle opponent’s White Attack that would knock it out, the battle opponent is knocked out instead.",
+    "source": "figure"
+  },
+  {
+    "name": "Whims of the Wind",
+    "text": "This Pokémon cannot win you the duel by moving to the goal point but can MP move through other Pokémon on the field. While this Pokémon is on the field, burned Pokémon have MP +1 to a maximum of MP 4.",
+    "source": "figure"
+  },
+  {
+    "name": "Stormbringer's Mischief",
+    "text": "This Pokémon cannot win you the duel by moving to the goal point. This Pokémon may MP move through other Pokémon on the field. While this Pokémon is on the field, paralyzed Pokémon deal +30 damage.",
+    "source": "figure"
+  },
+  {
+    "name": "Earthen Blessings",
+    "text": "This Pokémon cannot win you the duel by moving to the goal point. This Pokémon may MP move through other Pokémon on the field. While this Pokémon is on the field, the start-of-turn Z-Move gauge increase of each player is boosted for each of that player's Pokémon that is affected by a Special Condition|special condition.",
+    "source": "figure"
+  },
+  {
+    "name": "Apex Predator",
+    "text": "Restored Pokémon (if evolved). If its battle opponent is not evolved, and this Pokémon is not affected by a Special Condition|special condition, this Pokémon cannot be knocked out in battle. If this Pokémon is knocked out, it is excluded from the duel. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible.",
+    "source": "figure"
+  },
+  {
+    "name": "Ice Shield",
+    "text": "Restored Pokémon (if evolved). At the start of your turn, instead of an MP move, you may freeze one of your Restored Pokémon that has been excluded from the duel and move it to a point 1–2 steps away from this Pokémon. Your turn ends. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible.",
+    "source": "figure"
+  },
+  {
+    "name": "Slime Touch",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon may attach a Slime marker to one of your adjacent Pokémon. If it does, your turn ends. The Ability of a Pokémon that has that marker becomes Slime Barrier (any effects of its battle opponent's White attacks that would give this Pokémon a Special Condition|special condition are nullified), and the effects of its original Ability are nullified.",
+    "source": "figure"
+  },
+  {
+    "name": "Power Construct",
+    "text": "If your Pokémon fill either your P.C. or your opponent's P.C., this Pokémon may change its form to Zygarde Complete Forme without moving to the P.C. when it is knocked out by damage in battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Diamond Aura",
+    "text": "If this Pokémon is on the field, your Fairy Pokémon that are not affected by a Special Condition|special condition are not knocked out either by Attack damage from Dragon Pokémon or by knockout-causing Attack effects from Dark Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Queenly Majesty",
+    "text": "All Gold Attacks of opposing Pokémon adjacent to this Pokémon become Misses.",
+    "source": "figure"
+  },
+  {
+    "name": "RKS System",
+    "text": "This Pokémon may MP move over non-Flying Pokémon on the field. When this Pokémon moves to the field or appears as an Evolution, choose one Pokémon on the field. While this Pokémon is on the field, this Pokémon's type becomes the type of the chosen Pokémon. This Pokémon cannot be surrounded by Ultra Beasts. This Pokémon is not moved to the Ultra Space by the Attack effects of opposing Pokémon.",
+    "source": "figure"
+  },
+  {
+    "name": "Sturdy",
+    "text": "If this Pokémon is not affected by a Special Condition, it is not knocked out by knockout-causing Attack effects",
+    "source": "figure"
+  },
+  {
+    "name": "Rush In",
+    "text": "At the start of your turn, this Pokémon may route move to a point 1–4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends.",
+    "source": "figure"
+  },
+  {
+    "name": "Speed Booster: Omastar",
+    "text": "Restored Pokémon (if evolved). If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible.",
+    "source": "figure"
+  },
+  {
+    "name": "Soar: Aerodactyl",
+    "text": "Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.",
+    "source": "figure"
+  },
+  {
+    "name": "Whiteout",
+    "text": "Opposing Flying Pokémon and Dragon Pokémon within 2 steps of this Pokémon have MP −1.",
+    "source": "figure"
+  },
+  {
+    "name": "Mummy",
+    "text": "Your Pokémon on the field can MP move through this Pokémon. If this Pokémon is not affected by a Special Condition|special condition, attach a Mummy marker to non-Ghost, non-Dark Pokémon that battle it. The Ability of the Pokémon with that marker becomes Mummy (the effects of its original Ability are nullified).",
+    "source": "figure"
+  },
+  {
+    "name": "Stench",
+    "text": "Opposing Grass and Fairy Pokémon within 2 steps of this Pokémon have MP-1.",
+    "source": "figure"
+  },
+  {
+    "name": "Fire Scales",
+    "text": "This Pokémon may MP move over non-Flying Pokémon on the field. If this Pokémon is evolved, any Pokémon that battle this Pokémon are burned after the battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Control Mask",
+    "text": "This Pokémon is not moved to the Ultra Space by the Attack effects of opposing Pokémon. If this Pokémon is not affected by a Special Condition|special condition, it is not knocked out by knockout-causing Attack effects.",
+    "source": "figure"
+  },
+  {
+    "name": "Oblivious",
+    "text": "This Pokémon cannot be paralyzed. This Pokémon is not affected by Taunt.",
+    "source": "figure"
+  },
+  {
+    "name": "Emergent Evolution",
+    "text": "Restored Pokémon. After this Pokémon battles, it may evolve if it's on the field.",
+    "source": "figure"
+  },
+  {
+    "name": "Static",
+    "text": "Opposing Pokémon that battle this Pokémon will be paralyzed after the battle.",
+    "source": "figure"
+  },
+  {
+    "name": "Memories of the Past",
+    "text": "This Pokémon may MP move through other Pokémon on the field. Your Pokémon next to this Pokémon cannot be affected by any new Special Condition|special conditions.",
+    "source": "figure"
+  },
+  {
+    "name": "Flame Evolution",
+    "text": "When this Pokémon is knocked out in battle, it may evolve without moving to the P.C.",
+    "source": "figure"
+  },
+  {
+    "name": "Transcendant Helix",
+    "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. When this Pokémon battles, this Pokémon's number of Mega Evolution turns increases by 2. Your Psychic-type Pokémon deal +20 damage",
+    "source": "figure"
+  },
+  {
+    "name": "Ace",
+    "text": "This Pokémon can't be Paralyzed",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Bigg Eggsplosion",
+    "text": "Before battle, allows one of friendly Exeggcute to be choosed. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is Knocked Out",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Biting Movement",
+    "text": "This Pokémon can always attack after moving",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Dive Entry",
+    "text": "This Pokémon can move one additional space on the board when moving from the bench",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Eartne Rapids",
+    "text": "This Pokémon can MP move under other Pokémon on the field. While this Pokémon is on the field, your Water-type Pokémon and Ground-type Pokémon get +1MP (up to a maximum of MP3). Your Water-type Pokémon and your Ground-type Pokémon deal +10 da,age",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Foundation",
+    "text": "Your Pokémon may move over this Pokémon",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Guartop Steelshell",
+    "text": "This Pokémon can MP move under other Pokémon. Opposing Fairy-type Pokémon on the field that MP move within 2 stops of this Pokémon move to the P.C. after the end of that turn. Your Steel-type Pokémon deal +20 damage",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Lock On: Purple",
+    "text": "At the start of your turn, instead of an MP move, this Pokémon can force opposing Pokémon within 2 steps of it to spin. If the spin results in a Purple Attack, attach a Lock-on Marker to that Pokémon. Your turn ends",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Magic Trick_Miss",
+    "text": "If this Pokémon spins Miss in battle, one of your plates will switch from used to unused.",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Non-Stop",
+    "text": "This Pokémon cannot have Wait. Can MP Move through Pokémon on the field that are paralyzed or have Wait.",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Onslaught",
+    "text": "This Pokémon can move up to 2 steps in a straight line.",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "P'au",
+    "text": "When this Pokémon is on the field, your Psychic-type Pokémon deal +1 damage for each Psychic-type Pokémon on the field.",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Parallel Arithmatic",
+    "text": "When this Pokémon is on the field, your Pokémon deal +1 damage for each Pokémon on the field. While this Pokémon is on the bench, it gains +1 MP",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Spaceborn",
+    "text": "Ultra Beast. When this Pokémon is on the field, at the start of your turn, your Ultra Beasts on the field are treated as though they have newly moved to the field (any special conditions and markers remain). Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point three steps away instead of using an MP move (this ends your turn)",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Speed Booster: Omaster",
+    "text": "Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible",
+    "source": "serebii-listing"
+  },
+  {
+    "name": "Streamlined Finish",
+    "text": "When this Pokémon is on the field, the effect of its Abilities that decrease damage that your Dragon-type and Psychic-type Pokémon deal, and the effects of abilities that increase dmaage that battle opponents of your Dragon-type and Psychic-type Pokémon deal, are nullified. Your Dragon-type and Psychic-type Pokémon each deal +10 damage",
+    "source": "serebii-listing"
+  }
+]

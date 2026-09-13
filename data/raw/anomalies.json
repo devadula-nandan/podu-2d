@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "60-feraligatr",
+    "issue": "wheel sums to 100, not 96"
+  },
+  {
+    "slug": "106-bronzong",
+    "issue": "wheel sums to 100, not 96"
+  },
+  {
+    "slug": "121-snorlax",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "132-hariyama",
+    "issue": "wheel sums to 90, not 96"
+  },
+  {
+    "slug": "182-makuhita",
+    "issue": "wheel sums to 28, not 96"
+  },
+  {
+    "slug": "208-infernape",
+    "issue": "wheel sums to 100, not 96"
+  },
+  {
+    "slug": "209-totodile",
+    "issue": "wheel sums to 88, not 96"
+  },
+  {
+    "slug": "326-gourgeist",
+    "issue": "wheel sums to 100, not 96"
+  },
+  {
+    "slug": "338-tapukoko",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "338-tapukoko",
+    "issue": "unparsed damage \"??\""
+  },
+  {
+    "slug": "341-solgaleo",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "342-tapulele",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "342-tapulele",
+    "issue": "unparsed damage \"??\""
+  },
+  {
+    "slug": "347-decidueye",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "348-incineroar",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "349-tapubulu",
+    "issue": "wheel sums to 100, not 96"
+  },
+  {
+    "slug": "349-tapubulu",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "349-tapubulu",
+    "issue": "unparsed damage \"??\""
+  },
+  {
+    "slug": "350-primarina",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "351-tapufini",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "351-tapufini",
+    "issue": "unparsed damage \"??\""
+  },
+  {
+    "slug": "363-mimikyu",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "365-torracat",
+    "issue": "wheel sums to 80, not 96"
+  },
+  {
+    "slug": "428-keldeoresoluteform",
+    "issue": "wheel sums to 100, not 96"
+  },
+  {
+    "slug": "436-marshadow",
+    "issue": "wheel sums to 66, not 96"
+  },
+  {
+    "slug": "436-marshadow",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "449-arcanine",
+    "issue": "wheel sums to 56, not 96"
+  },
+  {
+    "slug": "456-mareanie",
+    "issue": "wheel sums to 88, not 96"
+  },
+  {
+    "slug": "461-scrafty",
+    "issue": "wheel sums to 92, not 96"
+  },
+  {
+    "slug": "468-fanrotom",
+    "issue": "wheel sums to 92, not 96"
+  },
+  {
+    "slug": "493-drilbur",
+    "issue": "wheel sums to 36, not 96"
+  },
+  {
+    "slug": "503-duskmanenecrozma",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "513-shinyvaporeon",
+    "issue": "wheel sums to 0, not 96"
+  },
+  {
+    "slug": "513-shinyvaporeon",
+    "issue": "no wheel segments parsed"
+  },
+  {
+    "slug": "524-blacephalon",
+    "issue": "wheel sums to 68, not 96"
+  },
+  {
+    "slug": "525-ultranecrozma",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "527-vaporeon",
+    "issue": "wheel sums to 122, not 96"
+  },
+  {
+    "slug": "557-pikachu",
+    "issue": "unmapped color \"Z-Move\""
+  },
+  {
+    "slug": "558-alakazam",
+    "issue": "wheel sums to 112, not 96"
+  },
+  {
+    "slug": "621-bounsweet",
+    "issue": "wheel sums to 88, not 96"
+  },
+  {
+    "slug": "628-shinymimikyu",
+    "issue": "wheel sums to 0, not 96"
+  },
+  {
+    "slug": "628-shinymimikyu",
+    "issue": "no wheel segments parsed"
+  }
+]

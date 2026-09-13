@@ -1,0 +1,61 @@
+{
+  "totalClauses": 3863,
+  "distinct": 1311,
+  "curve": [
+    {
+      "topK": 10,
+      "clausesCovered": 724,
+      "pct": 18.7
+    },
+    {
+      "topK": 25,
+      "clausesCovered": 1354,
+      "pct": 35.1
+    },
+    {
+      "topK": 50,
+      "clausesCovered": 1738,
+      "pct": 45
+    },
+    {
+      "topK": 100,
+      "clausesCovered": 2106,
+      "pct": 54.5
+    },
+    {
+      "topK": 150,
+      "clausesCovered": 2325,
+      "pct": 60.2
+    },
+    {
+      "topK": 200,
+      "clausesCovered": 2493,
+      "pct": 64.5
+    },
+    {
+      "topK": 300,
+      "clausesCovered": 2734,
+      "pct": 70.8
+    },
+    {
+      "topK": 400,
+      "clausesCovered": 2934,
+      "pct": 76
+    },
+    {
+      "topK": 500,
+      "clausesCovered": 3052,
+      "pct": 79
+    },
+    {
+      "topK": 750,
+      "clausesCovered": 3302,
+      "pct": 85.5
+    },
+    {
+      "topK": 1000,
+      "clausesCovered": 3552,
+      "pct": 91.9
+    }
+  ]
+}

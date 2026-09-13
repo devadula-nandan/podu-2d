@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "types": ["vitest/globals", "node"],
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    // Relative imports use explicit `.js` extensions throughout. The exception is the
+    // content schema chain, which `tools/validate.mjs` imports directly via Node's
+    // native type stripping - and Node does not rewrite `.js` to `.ts`, so those two
+    // specifiers must name the real file. Permitted only because `noEmit` is on.
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] }
+  },
+  "include": [
+    "src",
+    "tools",
+    "tests",
+    "vitest.config.ts",
+    "vite.config.ts",
+    "playwright.config.ts",
+    "playwright.vite.config.ts"
+  ]
+}

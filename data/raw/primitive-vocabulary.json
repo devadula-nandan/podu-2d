@@ -1,0 +1,106 @@
+{
+  "conditions": {
+    "paralyzed": 163,
+    "burned": 157,
+    "confused": 132,
+    "poisoned": 106,
+    "frozen": 94,
+    "asleep": 48,
+    "noxious/toxic": 44
+  },
+  "markers": {
+    "Wait": 420,
+    "generic marker": 253,
+    "MP-1": 65,
+    "Cracked": 50,
+    "MP-2": 46,
+    "Curse": 12,
+    "MP+1": 5
+  },
+  "selectors": {
+    "this Pokémon": 1630,
+    "battle opponent": 1458,
+    "on the field": 673,
+    "adjacent to": 327,
+    "N steps away": 209,
+    "within N steps": 199,
+    "all opposing Pokémon": 107,
+    "straight line behind": 104,
+    "succession": 78,
+    "Ultra Space": 50,
+    "on the bench": 21,
+    "your entry point": 12,
+    "Ultra Beast": 9,
+    "within N steps' range": 6,
+    "goal": 5,
+    "connected": 3
+  },
+  "primitives": {
+    "spin": 816,
+    "knock out": 608,
+    "damage +N": 171,
+    "move to bench": 170,
+    "Evolve": 143,
+    "after battle": 139,
+    "prevent/cannot": 114,
+    "turn ends": 90,
+    "spin again / respin": 76,
+    "Mega Evolve": 67,
+    "Z-Move gauge": 58,
+    "may (optional)": 52,
+    "temporarily excluded": 50,
+    "nullify (general)": 43,
+    "change form": 38,
+    "at the start of your turn": 35,
+    "instead of an MP move": 22,
+    "swap places": 18,
+    "when knocked out": 16,
+    "plate lock": 9,
+    "drawn N steps closer": 6,
+    "before using this Pokémon": 6,
+    "MP change": 5,
+    "cure/remove conditions": 4,
+    "damage -N": 3,
+    "jump over": 3,
+    "damage halved": 2,
+    "damage doubled": 1
+  },
+  "ranges": {
+    "Wait N": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "within N steps": [
+      2,
+      3
+    ],
+    "N steps away": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "damage +N": [
+      1,
+      5,
+      10,
+      20,
+      30,
+      50,
+      60
+    ],
+    "Mega Evolve N turns": [
+      7
+    ],
+    "knocked back N": [],
+    "excluded N turns": [
+      7
+    ]
+  },
+  "unmatchedCount": 88
+}

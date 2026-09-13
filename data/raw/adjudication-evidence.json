@@ -1,0 +1,1190 @@
+[
+  {
+    "id": 44,
+    "name": "Audino",
+    "conflicts": [
+      "mp 1(ser) vs 2(bul)",
+      "rarity C(ser) vs UC(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "C",
+      "serebiiPage": "C",
+      "bulbapedia": "UC"
+    },
+    "types": {
+      "serebii": [
+        "Normal"
+      ],
+      "bulbapedia": [
+        "Normal"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Assist",
+        "text": "Any Pokemon adjacent to this Pokemon will do +30 damage."
+      },
+      "bulbapedia": {
+        "name": "Assist",
+        "text": "Any Pokémon adjacent to this Pokémon will do +30 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.10",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "1.0.0"
+    }
+  },
+  {
+    "id": 86,
+    "name": "Rhyhorn",
+    "conflicts": [
+      "ability \"Onslaught\"(ser) vs \"Reckless Charge\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "C",
+      "serebiiPage": "C",
+      "bulbapedia": "C"
+    },
+    "types": {
+      "serebii": [
+        "Ground",
+        "Rock"
+      ],
+      "bulbapedia": [
+        "Ground",
+        "Rock"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Onslaught",
+        "text": "This Pokémon can move up to 2 steps in a straight line."
+      },
+      "bulbapedia": {
+        "name": "Reckless Charge",
+        "text": "This Pokémon can move up to 2 steps in a straight line."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.10",
+      "bulbapediaDisk": "7.0.10",
+      "bulbapediaIntro": "1.0.0"
+    }
+  },
+  {
+    "id": 90,
+    "name": "Weedle",
+    "conflicts": [
+      "rarity C(ser) vs UC(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "C",
+      "serebiiPage": "C",
+      "bulbapedia": "UC"
+    },
+    "types": {
+      "serebii": [
+        "Bug",
+        "Poison"
+      ],
+      "bulbapedia": [
+        "Bug",
+        "Poison"
+      ]
+    },
+    "ability": {
+      "serebii": null,
+      "bulbapedia": null
+    },
+    "version": {
+      "serebiiWheel": "V3.0.10",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "1.0.0"
+    }
+  },
+  {
+    "id": 91,
+    "name": "Drapion",
+    "conflicts": [
+      "ability \"Battle Armor\"(ser) vs \"Diffuse Poison\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "R",
+      "serebiiPage": "R",
+      "bulbapedia": "R"
+    },
+    "types": {
+      "serebii": [
+        "Poison",
+        "Dark"
+      ],
+      "bulbapedia": [
+        "Poison",
+        "Dark"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Battle Armor",
+        "text": "If your battle opponent spins an Attack with 10 or more damage, you can force them top spin again once per turn"
+      },
+      "bulbapedia": {
+        "name": "Diffuse Poison",
+        "text": "When this Pokémon is on the field, all poisoned Pokémon will do a further −20 damage. This effect does not stack."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.11",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "1.0.0"
+    }
+  },
+  {
+    "id": 161,
+    "name": "Grotle",
+    "conflicts": [
+      "ability \"Foundation\"(ser) vs \"Cornerstone\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "C",
+      "serebiiPage": "C",
+      "bulbapedia": "C"
+    },
+    "types": {
+      "serebii": [
+        "Grass"
+      ],
+      "bulbapedia": [
+        "Grass"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Foundation",
+        "text": "Your Pokémon may move over this Pokémon"
+      },
+      "bulbapedia": {
+        "name": "Cornerstone",
+        "text": "Your Pokémon can move over this Pokémon when using an MP move."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.11",
+      "bulbapediaDisk": "6.2.9",
+      "bulbapediaIntro": "1.3.2"
+    }
+  },
+  {
+    "id": 166,
+    "name": "Prinplup",
+    "conflicts": [
+      "ability \"Dive Entry\"(ser) vs \"Diving Entry\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "C",
+      "serebiiPage": "C",
+      "bulbapedia": "C"
+    },
+    "types": {
+      "serebii": [
+        "Water"
+      ],
+      "bulbapedia": [
+        "Water"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Dive Entry",
+        "text": "This Pokémon can move one additional space on the board when moving from the bench"
+      },
+      "bulbapedia": {
+        "name": "Diving Entry",
+        "text": "When moving this Pokémon from the bench, it can only move to one space away from the entry point. Your turn ends."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.10",
+      "bulbapediaDisk": "6.2.9",
+      "bulbapediaIntro": "1.3.2"
+    }
+  },
+  {
+    "id": 171,
+    "name": "Electivire",
+    "conflicts": [
+      "ability \"Ace\"(ser) vs \"Grounding\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "EX",
+      "serebiiPage": "EX",
+      "bulbapedia": "EX"
+    },
+    "types": {
+      "serebii": [
+        "Electric"
+      ],
+      "bulbapedia": [
+        "Electric"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Ace",
+        "text": "This Pokémon can't be Paralyzed"
+      },
+      "bulbapedia": {
+        "name": "Grounding",
+        "text": "This Pokémon cannot be paralyzed."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": "7.0.12",
+      "bulbapediaIntro": "1.2.2"
+    }
+  },
+  {
+    "id": 179,
+    "name": "Leafeon",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "R",
+      "serebiiPage": "R",
+      "bulbapedia": "R"
+    },
+    "types": {
+      "serebii": [
+        "Grass"
+      ],
+      "bulbapedia": [
+        "Grass"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Thicket Slip",
+        "text": "This Pokémon can MP Move past Grass-type Pokémon on the field."
+      },
+      "bulbapedia": {
+        "name": "Thicket Slip",
+        "text": "This Pokémon can MP Move past Grass Pokémon on the field."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.11",
+      "bulbapediaDisk": "6.2.9",
+      "bulbapediaIntro": "2.0.2"
+    }
+  },
+  {
+    "id": 180,
+    "name": "Croconaw",
+    "conflicts": [
+      "ability \"Biting Movement\"(ser) vs \"Bite Instinct\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "C",
+      "serebiiPage": "C",
+      "bulbapedia": "C"
+    },
+    "types": {
+      "serebii": [
+        "Water"
+      ],
+      "bulbapedia": [
+        "Water"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Biting Movement",
+        "text": "This Pokémon can always attack after moving"
+      },
+      "bulbapedia": {
+        "name": "Bite Instinct",
+        "text": "This Pokémon must battle if possible after making an MP move."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": "7.0.12",
+      "bulbapediaIntro": "1.3.2"
+    }
+  },
+  {
+    "id": 220,
+    "name": "Exeggutor",
+    "conflicts": [
+      "ability \"Bigg Eggsplosion\"(ser) vs \"Big Eggsplosion\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "UC",
+      "serebiiPage": "UC",
+      "bulbapedia": "UC"
+    },
+    "types": {
+      "serebii": [
+        "Grass",
+        "Psychic"
+      ],
+      "bulbapedia": [
+        "Grass",
+        "Psychic"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Bigg Eggsplosion",
+        "text": "Before battle, allows one of friendly Exeggcute to be choosed. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is Knocked Out"
+      },
+      "bulbapedia": {
+        "name": "Big Eggsplosion",
+        "text": "Before battle, allows one friendly Exeggcute to be chosen. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is knocked out."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "3.0.0"
+    }
+  },
+  {
+    "id": 253,
+    "name": "Delphox",
+    "conflicts": [
+      "ability \"Magic Trick_Miss\"(ser) vs \"Magic Trick\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "EX",
+      "serebiiPage": "EX",
+      "bulbapedia": "EX"
+    },
+    "types": {
+      "serebii": [
+        "Fire",
+        "Psychic"
+      ],
+      "bulbapedia": [
+        "Fire",
+        "Psychic"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Magic Trick_Miss",
+        "text": "If this Pokémon spins Miss in battle, one of your plates will switch from used to unused."
+      },
+      "bulbapedia": {
+        "name": "Magic Trick",
+        "text": "If this Pokémon spins Miss in battle, one of your Plates will switch from used to unused."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V6.2.5",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "1.4.0"
+    }
+  },
+  {
+    "id": 279,
+    "name": "Mega Beedrill",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Bug",
+        "Poison"
+      ],
+      "bulbapedia": [
+        "Bug",
+        "Poison"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Poisoning Order",
+        "text": "While this Pokémon is on the field, the misses of your Beedrill become the battle opponent becomes noxious. Your Bug-type Pokémon deal +10 damage and your Poison-type Pokémon deal +10 damage"
+      },
+      "bulbapedia": {
+        "name": "Poisoning Order",
+        "text": "While this Pokémon is on the field, the Misses of your Beedrill become: the battle opponent becomes noxious. Your Bug Pokémon deal +10 damage and your Poison Pokémon deal +10 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.11",
+      "bulbapediaDisk": "7.0.11",
+      "bulbapediaIntro": "4.0.0"
+    }
+  },
+  {
+    "id": 284,
+    "name": "Mega Sceptile",
+    "conflicts": [
+      "types Grass(ser) vs Grass/Dragon(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 3,
+      "serebiiPage": 3,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Grass"
+      ],
+      "bulbapedia": [
+        "Grass",
+        "Dragon"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Forest Regeneration",
+        "text": "When this Pokémon moves from the bench to the field, or when this Pokémon appears as a Mega Evolution, move Grass, Flying and Bug-type Pokémon from your P.C. to the bench. Your Grass-type Pokémon and your Dragon-type Pokémon deal +10 damage"
+      },
+      "bulbapedia": {
+        "name": "Forest Regeneration",
+        "text": "When this Pokémon moves from the bench to the field, or when this Pokémon appears as a Mega Evolution, move {{t|Grass}}-, {{t|Flying}}-, and Bug Pokémon from your P.C. to the bench. Your Grass-type Pokémon and your Dragon Pokémon deal +10 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V5.0",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "5.0.0"
+    }
+  },
+  {
+    "id": 288,
+    "name": "Mega Swampert",
+    "conflicts": [
+      "ability \"Eartne Rapids\"(ser) vs \"Earthen Rapids\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Water",
+        "Ground"
+      ],
+      "bulbapedia": [
+        "Water",
+        "Ground"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Eartne Rapids",
+        "text": "This Pokémon can MP move under other Pokémon on the field. While this Pokémon is on the field, your Water-type Pokémon and Ground-type Pokémon get +1MP (up to a maximum of MP3).  Your Water-type Pokémon and your Ground-type Pokémon deal +10 da,age"
+      },
+      "bulbapedia": {
+        "name": "Earthen Rapids",
+        "text": "This Pokémon can MP move under other Pokémon on the field. While this Pokémon is on the field, your Water Pokémon and your Ground Pokémon get +1 MP (up to a maximum of MP3). Your Water-type Pokémon and your Ground-type Pokémon deal +10 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": "7.0.12",
+      "bulbapediaIntro": "5.0.0"
+    }
+  },
+  {
+    "id": 311,
+    "name": "Stunfisk",
+    "conflicts": [
+      "types Electric/Ground(ser) vs Ground/Electric(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "R",
+      "serebiiPage": "R",
+      "bulbapedia": "R"
+    },
+    "types": {
+      "serebii": [
+        "Electric",
+        "Ground"
+      ],
+      "bulbapedia": [
+        "Ground",
+        "Electric"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Electric Mat",
+        "text": "Other Pokémon can move over this Pokémon when using an MP move. If those Pokémon are the opponent's Pokémon, those Pokémon become Paralyzed."
+      },
+      "bulbapedia": {
+        "name": "Electric Mat",
+        "text": "Other Pokémon can move over this Pokémon when using an MP move. If those Pokémon are the opponent's Pokémon, those Pokémon become paralyzed."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.10",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "3.0.10"
+    }
+  },
+  {
+    "id": 315,
+    "name": "Durant",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)",
+      "types Bug/Steel(ser) vs Steel/Bug(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UC",
+      "serebiiPage": "UC",
+      "bulbapedia": "UC"
+    },
+    "types": {
+      "serebii": [
+        "Bug",
+        "Steel"
+      ],
+      "bulbapedia": [
+        "Steel",
+        "Bug"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Team Fight",
+        "text": "If there is an adjacent Durant, this Pokémon's White Attacks become Gold Attacks. While this Pokémon is on the field, it can move over other Durant. The 3-Pokémon limit does not apply to this Pokémon in your deck"
+      },
+      "bulbapedia": {
+        "name": "Team Fight",
+        "text": "If there is an adjacent Durant, this Pokémon's White Attacks become Gold Attacks. While this Pokémon is on the field, it can move over other Durant. The 3-Pokémon limit does not apply to this Pokémon in your deck."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V3.0.10",
+      "bulbapediaDisk": "7.0.10",
+      "bulbapediaIntro": "3.0.8"
+    }
+  },
+  {
+    "id": 376,
+    "name": "Wimpod",
+    "conflicts": [
+      "ability \"Parallel Arithmatic\"(ser) vs \"Wimp Out\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 3,
+      "serebiiPage": 3,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UC",
+      "serebiiPage": "UC",
+      "bulbapedia": "UC"
+    },
+    "types": {
+      "serebii": [
+        "Bug",
+        "Water"
+      ],
+      "bulbapedia": [
+        "Bug",
+        "Water"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Parallel Arithmatic",
+        "text": "When this Pokémon is on the field, your Pokémon deal +1 damage for each Pokémon on the field. While this Pokémon is on the bench, it gains +1 MP"
+      },
+      "bulbapedia": {
+        "name": "Wimp Out",
+        "text": "When this Pokémon is attacked, it may switch with a Pokémon on your bench that is neither Wimpod nor Golisopod (no battles are triggered). If it does, this Pokémon and the Pokémon that it switched with both gain Wait."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V5.0",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "5.0.0"
+    }
+  },
+  {
+    "id": 405,
+    "name": "Mega Mewtwo Y",
+    "conflicts": [
+      "ability \"Transcendant Helix\"(ser) vs \"Transcendent Helix\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 3,
+      "serebiiPage": 3,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Psychic"
+      ],
+      "bulbapedia": [
+        "Psychic"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Transcendant Helix",
+        "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. When this Pokémon battles, this Pokémon's number of Mega Evolution turns increases by 2. Your Psychic-type Pokémon deal +20 damage"
+      },
+      "bulbapedia": {
+        "name": "Transcendent Helix",
+        "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. When this Pokémon battles, this Pokémon's number of Mega Evolution turns increases by 2. Your Psychic Pokémon deal +20 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0",
+      "bulbapediaDisk": "7.0.14",
+      "bulbapediaIntro": "5.0.6"
+    }
+  },
+  {
+    "id": 419,
+    "name": "Mega Aggron",
+    "conflicts": [
+      "ability \"Guartop Steelshell\"(ser) vs \"Guardtop Steelshell\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Steel"
+      ],
+      "bulbapedia": [
+        "Steel"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Guartop Steelshell",
+        "text": "This Pokémon can MP move under other Pokémon. Opposing Fairy-type Pokémon on the field that MP move within 2 stops of this Pokémon move to the P.C. after the end of that turn. Your Steel-type Pokémon deal +20 damage"
+      },
+      "bulbapedia": {
+        "name": "Guardtop Steelshell",
+        "text": "This Pokémon can MP move under other Pokémon. Opposing Fairy Pokémon on the field that MP move within 2 steps of this Pokémon move to the P.C. after the end of that turn. Your Steel Pokémon deal +20 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.7",
+      "bulbapediaDisk": "7.0.7",
+      "bulbapediaIntro": "6.0.4"
+    }
+  },
+  {
+    "id": 433,
+    "name": "Toxapex",
+    "conflicts": [
+      "types Poison/Water(ser) vs Water/Poison(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "EX",
+      "serebiiPage": "EX",
+      "bulbapedia": "EX"
+    },
+    "types": {
+      "serebii": [
+        "Poison",
+        "Water"
+      ],
+      "bulbapedia": [
+        "Water",
+        "Poison"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Poisonous Bunker",
+        "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. Grass-type Pokémon and Fairy-type Pokémon cannot pass by this Pokémon by means of effects of their Abilities. When this Pokémon is  on the field, the abilities of poisoned and noxious Grass-type Pokémon and Fairy-type Pokémon cease providing the capability to pass by other Pokémon"
+      },
+      "bulbapedia": {
+        "name": "Poisonous Bunker",
+        "text": "This Pokémon cannot be moved by the Attacks of other Pokémon. Grass Pokémon and Fairy Pokémon cannot pass by this Pokémon by means of the effects of their Abilities. When this Pokémon is on the field, the Abilities of poisoned and noxious Pokémon that allow passing by other Pokémon are nullified."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": "7.0.12",
+      "bulbapediaIntro": "5.0.6"
+    }
+  },
+  {
+    "id": 500,
+    "name": "Poipole",
+    "conflicts": [
+      "ability \"Spaceborn\"(ser) vs \"Spaceborne\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Poison"
+      ],
+      "bulbapedia": [
+        "Poison"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Spaceborn",
+        "text": "Ultra Beast. When this Pokémon is on the field, at the start of your turn, your Ultra Beasts on the field are treated as though they have newly moved to the field (any special conditions and markers remain). Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point three steps away instead of using an MP move (this ends your turn)"
+      },
+      "bulbapedia": {
+        "name": "Spaceborne",
+        "text": "Ultra Beast. When this Pokémon is on the field, at the start of your turn, your Ultra Beasts on the field are treated as though they have newly moved to the field (any Special Condition|special conditions and markers remain). Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point three steps away instead of using an MP move (this ends your turn)."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V6.2.3",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "6.2.3"
+    }
+  },
+  {
+    "id": 523,
+    "name": "Stakataka",
+    "conflicts": [
+      "mp 2(ser) vs 1(bul)",
+      "types Fighting/Ghost(ser) vs Rock/Steel(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Fighting",
+        "Ghost"
+      ],
+      "bulbapedia": [
+        "Rock",
+        "Steel"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Ultra Stack",
+        "text": "Ultra Beast. Until the end of this Pokémon's first battle after moving to the field, the Blue Attacks of your Steel-type Pokémon are not lost from the effects of Abilities or Z-Moves. The added damage and number of persistent turns of Attack effects of this Pokémon are additively increased for each Pokémon in the Ultra Space"
+      },
+      "bulbapedia": {
+        "name": "Ultra Stack",
+        "text": "Ultra Beast. Until the end of this Pokémon's first battle after moving to the field, the Blue Attacks of your Steel Pokémon are not lost from the effects of Abilities or Z-Moves. The added damage and number of persistent turns of Attack effects of this Pokémon are multiplied by X+1, where X is the number of Pokémon in the Ultra Space."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.7",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.7"
+    }
+  },
+  {
+    "id": 542,
+    "name": "Mega Manectric",
+    "conflicts": [
+      "mp 3(ser) vs 2(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 3,
+      "serebiiPage": 3,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Electric"
+      ],
+      "bulbapedia": [
+        "Electric"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Voltage Zone",
+        "text": "If this Pokémon is on the field, opposing Pokémon become paralyzed when they move to the field. While this Pokémon is on the field, opposing paralyzed Pokémon have MP-1. Your Electric-type Pokémon each deal +20 damage"
+      },
+      "bulbapedia": {
+        "name": "Voltage Zone",
+        "text": "If this Pokémon is on the field, opposing Pokémon become paralyzed when they move to the field. While this Pokémon is on the field, opposing paralyzed Pokémon have MP −1. Your Electric Pokémon deal +20 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.12"
+    }
+  },
+  {
+    "id": 543,
+    "name": "Mega Sharpedo",
+    "conflicts": [
+      "mp 2(ser) vs 3(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Water",
+        "Dark"
+      ],
+      "bulbapedia": [
+        "Water",
+        "Dark"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Jet Current",
+        "text": "If this Pokémon is on the field, your Water-type Pokémon that are not affected by special conditions may MP move through other Pokémon. Your Water-type and Dark-type Pokémon each deal +10 damage"
+      },
+      "bulbapedia": {
+        "name": "Jet Current",
+        "text": "If this Pokémon is on the field, your Water Pokémon that are not affected by Special Condition|special conditions may MP move through other Pokémon. Your Water-type and Dark Pokémon each deal +10 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.12"
+    }
+  },
+  {
+    "id": 545,
+    "name": "Mega Latios",
+    "conflicts": [
+      "ability \"Streamlined Finish\"(ser) vs \"Streamlined Flash\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 3,
+      "serebiiPage": 3,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "UX",
+      "serebiiPage": "UX",
+      "bulbapedia": "UX"
+    },
+    "types": {
+      "serebii": [
+        "Dragon",
+        "Psychic"
+      ],
+      "bulbapedia": [
+        "Dragon",
+        "Psychic"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Streamlined Finish",
+        "text": "When this Pokémon is on the field, the effect of its Abilities that decrease damage that your Dragon-type and  Psychic-type Pokémon deal, and the effects of abilities that increase dmaage that battle opponents of your Dragon-type and Psychic-type Pokémon deal, are nullified. Your Dragon-type and Psychic-type Pokémon each deal +10 damage"
+      },
+      "bulbapedia": {
+        "name": "Streamlined Flash",
+        "text": "When this Pokémon is on the field, the effects of Abilities that decrease damage that your Dragon and Psychic Pokémon deal are nullified. Your Dragon-type and Psychic-type Pokémon each deal +10 damage."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V6.2.3",
+      "bulbapediaDisk": "7.0.0",
+      "bulbapediaIntro": "6.2.3"
+    }
+  },
+  {
+    "id": 566,
+    "name": "Tyranitar",
+    "conflicts": [
+      "mp 2(ser) vs 1(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "EX",
+      "serebiiPage": "EX",
+      "bulbapedia": "EX"
+    },
+    "types": {
+      "serebii": [
+        "Rock",
+        "Dark"
+      ],
+      "bulbapedia": [
+        "Rock",
+        "Dark"
+      ]
+    },
+    "ability": {
+      "serebii": null,
+      "bulbapedia": null
+    },
+    "version": {
+      "serebiiWheel": "V7.0.14",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.14"
+    }
+  },
+  {
+    "id": 581,
+    "name": "Landorus",
+    "conflicts": [
+      "types Fire/Psychic(ser) vs Ground/Flying(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 3,
+      "serebiiPage": 3,
+      "bulbapedia": 3
+    },
+    "rarity": {
+      "serebiiIndex": "EX",
+      "serebiiPage": "EX",
+      "bulbapedia": "EX"
+    },
+    "types": {
+      "serebii": [
+        "Fire",
+        "Psychic"
+      ],
+      "bulbapedia": [
+        "Ground",
+        "Flying"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Earthen Blessings",
+        "text": "This Pokémon cannot win you the duel by moving to the goal point. This Pokémon may MP move through other Pokémon on the field. While this Pokémon is on the field, the start-of-turn Z-Move gauge increase of each player is boosted for each of that player's Pokémon that is affectred by a special condition"
+      },
+      "bulbapedia": {
+        "name": "Earthen Blessings",
+        "text": "This Pokémon cannot win you the duel by moving to the goal point. This Pokémon may MP move through other Pokémon on the field. While this Pokémon is on the field, the start-of-turn Z-Move gauge increase of each player is boosted for each of that player's Pokémon that is affected by a Special Condition|special condition."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.14",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.14"
+    }
+  },
+  {
+    "id": 594,
+    "name": "Omastar",
+    "conflicts": [
+      "ability \"Speed Booster: Omaster\"(ser) vs \"Speed Booster: Omastar\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 1,
+      "serebiiPage": 1,
+      "bulbapedia": 1
+    },
+    "rarity": {
+      "serebiiIndex": "R",
+      "serebiiPage": "R",
+      "bulbapedia": "R"
+    },
+    "types": {
+      "serebii": [
+        "Rock",
+        "Water"
+      ],
+      "bulbapedia": [
+        "Rock",
+        "Water"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Speed Booster: Omaster",
+        "text": "Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible"
+      },
+      "bulbapedia": {
+        "name": "Speed Booster: Omastar",
+        "text": "Restored Pokémon (if evolved). If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.12",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.12"
+    }
+  },
+  {
+    "id": 612,
+    "name": "Snover",
+    "conflicts": [
+      "ability \"Memories of the Past\"(ser) vs \"Whiteout\"(bul)"
+    ],
+    "mp": {
+      "serebiiIndex": 2,
+      "serebiiPage": 2,
+      "bulbapedia": 2
+    },
+    "rarity": {
+      "serebiiIndex": "UC",
+      "serebiiPage": "UC",
+      "bulbapedia": "UC"
+    },
+    "types": {
+      "serebii": [
+        "Grass",
+        "Ice"
+      ],
+      "bulbapedia": [
+        "Grass",
+        "Ice"
+      ]
+    },
+    "ability": {
+      "serebii": {
+        "name": "Memories of the Past",
+        "text": "This Pokémon may MP move through other Pokémon on the field. Your Pokémon next to this Pokémon cannot be affected by any new special conditions"
+      },
+      "bulbapedia": {
+        "name": "Whiteout",
+        "text": "Opposing Flying Pokémon and Dragon Pokémon within 2 steps of this Pokémon have MP −1."
+      }
+    },
+    "version": {
+      "serebiiWheel": "V7.0.10",
+      "bulbapediaDisk": null,
+      "bulbapediaIntro": "7.0.10"
+    }
+  }
+]
