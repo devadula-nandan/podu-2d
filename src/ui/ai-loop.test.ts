@@ -7,7 +7,7 @@ import { actorOf } from './model.js';
 import { aiShouldAct, drainAi, rejectNeedlessConcede } from './ai-loop.js';
 
 describe('ai loop helpers', () => {
-  it('refuses concede when another command is legal', () => {
+  it('refuses concede when another command is legal', async () => {
     const legal: Command[] = [
       { kind: 'declinePlate', player: 1 },
       { kind: 'concede', player: 1 },
@@ -17,7 +17,7 @@ describe('ai loop helpers', () => {
   });
 
   it('replays the same Easy replies for the same seed and human commands', async () => {
-    const engine = bootEngine();
+    const engine = await bootEngine();
     const starters = starterFigureIds(engine);
     const setup = {
       seed: 2,

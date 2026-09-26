@@ -1,0 +1,100 @@
+{
+  "ability": {
+    "effect_ids": [],
+    "name": "Impermeable Mail",
+    "note": "This Pokémon can MP move over any Pokémon on the field that is not a Flying-type. After a battle, attach a Cracked marker to opposing Pokémon adjacent to this Pokémon. Add +1 spin to the spin-again Attacks of your Pokémon. Your Bug-type and Fighting-type Pokémon each deal +10 damage."
+  },
+  "auto_fit_model": true,
+  "available_in_roster": false,
+  "display_name": "Mega Heracross UX",
+  "evolution_stage": 0,
+  "evolves_from_figure_ids": [],
+  "evolves_to_figure_ids": [],
+  "figure_id": "mega_heracross_540",
+  "icon": "res://data/figures/heracross/mega_heracross_ux/540 - Mega Heracross - Rarity_UX.png",
+  "is_mega_evolution": true,
+  "model": "res://assets/figures/models/heracross/mega_heracross_ux/540 - Mega Heracross - Rarity_UX.fbx",
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "movement_points": 2,
+  "rarity": "UX",
+  "source_data": {
+    "app_figure_id": 540,
+    "first_appear": "7.0.11",
+    "last_update": "7.0.11",
+    "max_movement": 2,
+    "national_dex": 214,
+    "pokemon_id_raw": "214 mega",
+    "rarity": "UX",
+    "source_evolves_from": [],
+    "source_evolves_to": [
+      541.0
+    ],
+    "variant": "mega",
+    "wheel_total": 96,
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "All-Out Pummeling"
+    ]
+  },
+  "target_model_height": 0.9,
+  "types": [
+    "BUG",
+    "FIGHTING"
+  ],
+  "wheel": [
+    {
+      "damage": 0,
+      "name": "Miss",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "RED"
+    },
+    {
+      "damage": 60,
+      "name": "Pin Missile",
+      "note": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins.",
+      "size": 28,
+      "source_damage_or_stars": "60x",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "WHITE"
+    },
+    {
+      "damage": 170,
+      "name": "Megahorn",
+      "note": "",
+      "size": 32,
+      "source_damage_or_stars": "170",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "WHITE"
+    },
+    {
+      "damage": 0,
+      "name": "Heavy Hurl",
+      "note": "The battle opponent is moved to a point 2 steps away and has an MP -3 marker attached.",
+      "size": 32,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "BLUE"
+    }
+  ]
+}

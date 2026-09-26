@@ -6,8 +6,17 @@ export function playerPrompt(view: PlayerView, legal: readonly Command[]): strin
   if (view.result !== null) {
     return view.result.winner === null ? 'Draw' : 'Duel over';
   }
-  if (view.pending !== null) return 'Choose a Pokémon';
   const you = view.you;
+  if (view.pending !== null && view.pending.chooser === you) {
+    if (view.pending.kind === 'optionalAction') {
+      return view.pending.prompt === 'move' ? 'Switch places?' : 'Use the effect?';
+    }
+    if (view.pending.kind === 'chooseNode') return 'Select a point';
+    if (view.pending.kind === 'choosePlate') return 'Select a plate';
+    return 'Select a Pokémon';
+  }
+  if (view.turn.player !== you) return 'Rival is moving';
+  if (view.pending !== null) return 'Rival is choosing';
   if (findKind(legal, 'spin', you) !== null) return 'Spin!';
   if (findKind(legal, 'useRespin', you) !== null || findKind(legal, 'declineRespin', you) !== null) {
     return 'Spin again?';
@@ -30,7 +39,7 @@ export function playerPrompt(view: PlayerView, legal: readonly Command[]): strin
     case 'preSelect':
       return 'Before you move…';
     case 'action':
-      return 'Choose a Pokémon';
+      return 'Choose a Pokémon to move';
     case 'surroundCheck':
       return 'Surround!';
     case 'battleDecision':
@@ -47,4 +56,3 @@ export function playerPrompt(view: PlayerView, legal: readonly Command[]): strin
       return 'Duel over';
   }
 }
-

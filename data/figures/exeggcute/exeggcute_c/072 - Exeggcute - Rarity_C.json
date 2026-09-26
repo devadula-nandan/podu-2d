@@ -1,0 +1,96 @@
+{
+  "figure_id": "exeggcute_072",
+  "display_name": "Exeggcute C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "PSYCHIC"
+  ],
+  "icon": "072 - Exeggcute - Rarity_C.png",
+  "model": "res://assets/figures/models/exeggcute/exeggcute_c/072 - Exeggcute - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    },
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 72,
+    "pokemon_id_raw": "102",
+    "national_dex": 102,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      73
+    ],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Shattered Psyche"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "figure_id": "weavile_225",
+  "display_name": "Weavile R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "ICE"
+  ],
+  "icon": "225 - Weavile - Rarity_R.png",
+  "model": "res://assets/figures/models/weavile/weavile_r/225 - Weavile - Rarity_R.fbx",
+  "ability": {
+    "name": "Team Play",
+    "note": "This Pokémon deals +20 damage for each friendly [CTRL FID 225][Weavile] on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Taunt",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Until the end of your next turn, if the Pokémon hit by this Attack spins a Purple Attack or Blue Attack, shift the result clockwise until a non-Purple, non-Blue attack comes up."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ice Punch",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Ice Shard",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Opposing Pokémon within 2 steps of this Pokémon spin. If the result is anything other than a Blue Attack, the effects of Sphere plates used on those Pokémon are nullified."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 225,
+    "pokemon_id_raw": "461",
+    "national_dex": 461,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Subzero Slammer"
+    ]
+  }
+}

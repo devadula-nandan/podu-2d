@@ -1,0 +1,82 @@
+{
+  "figure_id": "azumarill_369",
+  "display_name": "Azumarill R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "FAIRY"
+  ],
+  "icon": "369 - Azumarill - Rarity_R.png",
+  "model": "res://assets/figures/models/azumarill/azumarill_r/369 - Azumarill - Rarity_R.fbx",
+  "ability": {
+    "name": "Huge Power",
+    "note": "If this Pokémon is not affected by a special condition, it deals +50 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Aqua Jet",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Play Rough",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*On your next turn, your opponent cannot use plates."
+    },
+    {
+      "name": "Belly Drum",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Attaches a Final Song marker to this Pokémon. The Pokémon with that marker is knocked out 5 turns later. Your [CTRL QL Belly Drum][Pokémon] that have Belly Drum deal +50 damage while that Pokémon is on the field."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 369,
+    "pokemon_id_raw": "184",
+    "national_dex": 184,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.4",
+    "last_update": "7.0.4",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "figure_id": "mime_jr_242",
+  "display_name": "Mime Jr. UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "PSYCHIC",
+    "FAIRY"
+  ],
+  "icon": "242 - Mime Jr - Rarity_UC.png",
+  "model": "res://assets/figures/models/mime_jr/mime_jr_uc/242 - Mime Jr - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Mime",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All adjacent Pokémon now have Wait 3. This Pokémon may move to the bench.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Baton Pass",
+      "type": "BLUE",
+      "size": 28,
+      "note": "If one of your Pokémon neighbors this Pokémon, the two switch places."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Confusion",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 242,
+    "pokemon_id_raw": "439",
+    "national_dex": 439,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "5.0.3",
+    "last_update": "5.0.3",
+    "evolves_from": [
+      113
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Shattered Psyche"
+    ]
+  }
+}

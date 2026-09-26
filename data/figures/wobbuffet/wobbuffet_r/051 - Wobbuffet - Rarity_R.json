@@ -1,0 +1,73 @@
+{
+  "figure_id": "wobbuffet_051",
+  "display_name": "Wobbuffet R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "051 - Wobbuffet - Rarity_R.png",
+  "model": "res://assets/figures/models/wobbuffet/wobbuffet_r/051 - Wobbuffet - Rarity_R.fbx",
+  "ability": {
+    "name": "Bide",
+    "note": "This Pokémon cannot battle.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Counter",
+      "type": "WHITE",
+      "size": 60,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If the battle opponent's Attack is 20 or more, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 28
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 51,
+    "pokemon_id_raw": "202",
+    "national_dex": 202,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 May",
+    "evolves_from": [
+      50
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "figure_id": "flareon_529",
+  "display_name": "Flareon UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "res://data/figures/flareon/flareon_ux/529 - Flareon - Rarity_UX.png",
+  "model": "res://assets/figures/models/flareon/flareon_ux/529 - Flareon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Fire Arrow",
+    "note": "It can MP move through your Pokémon and through opposing Grass-type Pokémon and opposing Ice-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Will-O-Wisp",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 529,
+    "pokemon_id_raw": "136 ux",
+    "national_dex": 136,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      530
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ],
+    "material": 5000,
+    "first_appear": "6.2.1",
+    "last_update": "6.2.1"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "figure_id": "aggron_207",
+  "display_name": "Aggron EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "STEEL",
+    "ROCK"
+  ],
+  "icon": "207 - Aggron - Rarity_EX.png",
+  "model": "res://assets/figures/models/aggron/aggron_ex/207 - Aggron - Rarity_EX.fbx",
+  "ability": {
+    "name": "Territoriality",
+    "note": "While this Pokémon is on the bench, it gains +1 MP. Your opponent's Pokémon cannot pass by this Pokémon with an MP move. Any opposing Pokémon that has used an MP move to move next to this Pokémon must attack it on that turn, if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Heavy Slam",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If the battle opponent has MP 3 or higher, this Pokémon takes no damage and the battle opponent is knocked out."
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Brutal Swing",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Adjacent opposing Pokémon are knocked 1 step back. Those Pokémon gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Iron Tail",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 207,
+    "pokemon_id_raw": "306",
+    "national_dex": 306,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "6.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      472
+    ],
+    "z_move_keys": [
+      "Continental Crush",
+      "Corkscrew Crash"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "figure_id": "zapdos_269",
+  "display_name": "Zapdos EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "FLYING"
+  ],
+  "icon": "269 - Zapdos - Rarity_EX.png",
+  "model": "res://assets/figures/models/zapdos/zapdos_ex/269 - Zapdos - Rarity_EX.fbx",
+  "ability": {
+    "name": "Soar",
+    "note": "This Pokémon [CTRL NOTE][on the field] can fly over Pokémon that don't have [CTRL QL Soar][Soar] using an MP move. If this Pokémon has a Charge marker, it gains +1 MP and deals +30 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Steel Wing",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Thunder Crash",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Roost",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon recovers from all status effects. In exchange, it must then Wait 3."
+    },
+    {
+      "name": "Thunder Charge",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon gains a Charge marker. You may remove the Charge marker at the start of your turn. On the turn in which the Charge marker is removed, this Pokémon instead of attacking, may cause an adjacent opposing Pokémon and a succession of Pokémon adjacent to it (other than this Pokémon) to become paralyzed (without attacking). If it does, your turn ends.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 269,
+    "pokemon_id_raw": "145",
+    "national_dex": 145,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "3.0",
+    "last_update": "7.0.7",
+    "evolves_from": [
+      268
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Supersonic Skystrike"
+    ]
+  }
+}

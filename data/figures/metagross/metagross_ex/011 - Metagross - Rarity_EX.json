@@ -1,0 +1,111 @@
+{
+  "figure_id": "metagross_011",
+  "display_name": "Metagross EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "STEEL",
+    "PSYCHIC"
+  ],
+  "icon": "011 - Metagross - Rarity_EX.png",
+  "model": "res://assets/figures/models/metagross/metagross_ex/011 - Metagross - Rarity_EX.fbx",
+  "ability": {
+    "name": "Rapid Calculation",
+    "note": "While this Pokémon is on the field, the effects of Abilities that allow one to respin or force respins in battle are nullified. If this Pokémon has evolved, it gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Hyper Beam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Bullet Punch",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 11,
+    "pokemon_id_raw": "376",
+    "national_dex": 376,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.7",
+    "evolves_from": [
+      10
+    ],
+    "evolves_to": [
+      12
+    ],
+    "z_move_keys": [
+      "Shattered Psyche",
+      "Corkscrew Crash"
+    ]
+  }
+}

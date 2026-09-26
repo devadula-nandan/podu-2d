@@ -1,0 +1,84 @@
+{
+  "figure_id": "virizion_318",
+  "display_name": "Virizion EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "FIGHTING"
+  ],
+  "icon": "318 - Virizion - Rarity_EX.png",
+  "model": "res://assets/figures/models/virizion/virizion_ex/318 - Virizion - Rarity_EX.fbx",
+  "ability": {
+    "name": "Step Work",
+    "note": "This Pokémon [CTRL NOTE][on the field] can move over non-Flying-type Pokémon on the field using MP moves.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Sword of Justice",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 101,
+      "source_damage_or_stars": "101"
+    },
+    {
+      "name": "Typhoon Slash",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon may switch places with its battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 318,
+    "pokemon_id_raw": "640",
+    "national_dex": 640,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.6",
+    "last_update": "3.0.6",
+    "evolves_from": [],
+    "evolves_to": [
+      319,
+      "319 ex"
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Bloom Doom"
+    ]
+  }
+}

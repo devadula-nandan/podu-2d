@@ -1,0 +1,81 @@
+{
+  "figure_id": "spearow_076",
+  "display_name": "Spearow C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "icon": "076 - Spearow - Rarity_C.png",
+  "model": "res://assets/figures/models/spearow/spearow_c/076 - Spearow - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    },
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    },
+    {
+      "name": "Fly Away",
+      "type": "PURPLE",
+      "size": 44,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands on a surrounding point."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 76,
+    "pokemon_id_raw": "021",
+    "national_dex": 21,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 May",
+    "evolves_from": [
+      75
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Breakneck Blitz"
+    ]
+  }
+}

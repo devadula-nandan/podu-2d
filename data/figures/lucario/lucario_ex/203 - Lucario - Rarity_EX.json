@@ -1,0 +1,78 @@
+{
+  "figure_id": "lucario_203",
+  "display_name": "Lucario EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIGHTING",
+    "STEEL"
+  ],
+  "icon": "203 - Lucario - Rarity_EX.png",
+  "model": "res://assets/figures/models/lucario/lucario_ex/203 - Lucario - Rarity_EX.fbx",
+  "ability": {
+    "name": "Silver Fist",
+    "note": "If this Pokémon is not affected by a special condition, it is not knocked out by Gold Attacks from its battle opponents.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 24
+    },
+    {
+      "name": "Aura Sphere",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Either the battle opponent or a Pokémon behind it in a straight line from this Pokémon is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 203,
+    "pokemon_id_raw": "448",
+    "national_dex": 448,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.3",
+    "last_update": "6.0.7",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Corkscrew Crash"
+    ]
+  }
+}

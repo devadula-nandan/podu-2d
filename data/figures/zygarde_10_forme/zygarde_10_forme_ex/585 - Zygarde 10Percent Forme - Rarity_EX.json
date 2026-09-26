@@ -1,0 +1,97 @@
+{
+  "figure_id": "zygarde_10_forme_585",
+  "display_name": "Zygarde 10% Forme EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "DRAGON",
+    "GROUND"
+  ],
+  "icon": "585 - Zygarde 10Percent Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/zygarde_10_forme/zygarde_10_forme_ex/585 - Zygarde 10Percent Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Power Construct",
+    "note": "If your Pokémon fill either your P.C. or your opponent's P.C., this Pokémon may change its form to [CTRL FID 552][Zygarde Complete Forme] without moving to the P.C. when it is knocked out by damage in battle.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Thousand Arrows",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*All opposing Pokémon on the field spin. Those that spin a Purple Attack are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Glare",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 36,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 585,
+    "pokemon_id_raw": "718 10-percent",
+    "national_dex": 718,
+    "variant": "10-percent",
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      586
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Tectonic Rage",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

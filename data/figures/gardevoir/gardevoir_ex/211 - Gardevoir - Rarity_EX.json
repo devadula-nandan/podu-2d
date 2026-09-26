@@ -1,0 +1,87 @@
+{
+  "figure_id": "gardevoir_211",
+  "display_name": "Gardevoir EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FAIRY"
+  ],
+  "icon": "211 - Gardevoir - Rarity_EX.png",
+  "model": "res://assets/figures/models/gardevoir/gardevoir_ex/211 - Gardevoir - Rarity_EX.fbx",
+  "ability": {
+    "name": "Ghost Sensor",
+    "note": "Opposing Pokémon cannot MP move through this Pokémon using the effect of an Ability.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Warp Hole",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Switches the battle opponent for a Pokémon on the field, bench or P.C. Then, those Pokémon gain Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    },
+    {
+      "name": "Super Psy",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes confused.",
+      "source_effect_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 211,
+    "pokemon_id_raw": "282",
+    "national_dex": 282,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "6.2.5",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Shattered Psyche"
+    ]
+  }
+}

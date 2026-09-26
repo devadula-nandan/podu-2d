@@ -1,0 +1,79 @@
+{
+  "figure_id": "croconaw_180",
+  "display_name": "Croconaw C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "180 - Croconaw - Rarity_C.png",
+  "model": "res://assets/figures/models/croconaw/croconaw_c/180 - Croconaw - Rarity_C.fbx",
+  "ability": {
+    "name": "Bite Instinct",
+    "note": "This Pokémon must battle if possible after making an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Scary Face",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 80,
+      "source_damage_or_stars": "80"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 180,
+    "pokemon_id_raw": "159",
+    "national_dex": 159,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      179
+    ],
+    "evolves_to": [
+      181
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "figure_id": "litwick_379",
+  "display_name": "Litwick UC",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "GHOST",
+    "FIRE"
+  ],
+  "icon": "379 - Litwick - Rarity_UC.png",
+  "model": "res://assets/figures/models/litwick/litwick_uc/379 - Litwick - Rarity_UC.fbx",
+  "ability": {
+    "name": "Floating Candle",
+    "note": "When this Pokémon moves from the bench, it can only move to a point 1 step away from an entry point. Your turn ends. Your Pokémon on the field can pass through this Pokémon when using an MP move. If this Pokémon burns the battle opponent, it may evolve.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Will-O-Wisp",
+      "type": "PURPLE",
+      "size": 56,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Ember",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 379,
+    "pokemon_id_raw": "607",
+    "national_dex": 607,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 1,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "4.0.4",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Never-Ending Nightmare"
+    ]
+  }
+}

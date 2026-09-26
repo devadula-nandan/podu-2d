@@ -1,0 +1,95 @@
+{
+  "figure_id": "lycanroc_midday_form_469",
+  "display_name": "Lycanroc Midday Form R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK"
+  ],
+  "icon": "469 - Lycanroc Midday Form - Rarity_R.png",
+  "model": "res://assets/figures/models/lycanroc_midday_form/lycanroc_midday_form_r/469 - Lycanroc Midday Form - Rarity_R.fbx",
+  "ability": {
+    "name": "Loyalty",
+    "note": "At the start of your turn, if this Pokémon is on the field, it may move to the bench. You can use this Pokémon immediately. If this Pokémon has evolved, this Pokémon gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Roar",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Stone Edge",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Accelerock",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 469,
+    "pokemon_id_raw": "745 midday",
+    "national_dex": 745,
+    "variant": "midday",
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.4",
+    "last_update": "6.0.4",
+    "evolves_from": [
+      193
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Continental Crush",
+      "Splintered Stormshards"
+    ]
+  }
+}

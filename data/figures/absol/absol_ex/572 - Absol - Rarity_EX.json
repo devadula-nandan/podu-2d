@@ -1,0 +1,77 @@
+{
+  "figure_id": "absol_572",
+  "display_name": "Absol EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK"
+  ],
+  "icon": "572 - Absol - Rarity_EX.png",
+  "model": "res://assets/figures/models/absol/absol_ex/572 - Absol - Rarity_EX.fbx",
+  "ability": {
+    "name": "Pressure",
+    "note": "When this Pokémon is on the field, Wait lasts 1 turn longer for opposing Pokémon when you cause them to gain Wait.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 44,
+      "damage": 80,
+      "source_damage_or_stars": "80"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Swords Dance",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 0,
+      "note": "Spin again until an attack other than Swords Dance is spun. Damage Attacks deal ×2 damage."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 24
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 572,
+    "pokemon_id_raw": "359 ex",
+    "national_dex": 359,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      573
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

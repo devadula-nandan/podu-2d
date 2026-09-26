@@ -1,0 +1,82 @@
+{
+  "figure_id": "celebi_567",
+  "display_name": "Celebi EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "PSYCHIC",
+    "GRASS"
+  ],
+  "icon": "567 - Celebi - Rarity_EX.png",
+  "model": "res://assets/figures/models/celebi/celebi_ex/567 - Celebi - Rarity_EX.fbx",
+  "ability": {
+    "name": "Time Travel",
+    "note": "If this Pokémon is not affected by a special condition, it can MP move over opposing non-Flying-type Pokémon on the field. You may use this Ability at the start of your turn. If you do, return the duel to the start of your previous turn, and exclude this Pokémon from the duel. Neither player's remaining time changes. Until the end of your opponent's next turn, neither player can use Time Travel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Energy Ball",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While the battle opponent is on the field, all of that Pokémon's Blue Attacks that are not Dodge become Misses."
+    },
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Backtrack",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon may move to the bench. If it does, its battle opponent moves to the bench and returns to the figure it was at the start of the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 567,
+    "pokemon_id_raw": "251",
+    "national_dex": 251,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [
+      566
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Shattered Psyche"
+    ]
+  }
+}

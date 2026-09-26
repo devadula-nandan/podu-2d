@@ -1,0 +1,91 @@
+{
+  "figure_id": "incineroar_348",
+  "display_name": "Incineroar EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "DARK"
+  ],
+  "icon": "348 - Incineroar - Rarity_EX.png",
+  "model": "res://assets/figures/models/incineroar/incineroar_ex/348 - Incineroar - Rarity_EX.fbx",
+  "ability": {
+    "name": "Bust In",
+    "note": "This Pokémon can MP move from the bench past Ghost-type Pokémon and Pokémon affected by special conditions.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Darkest Lariat",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*If the battle opponent is knocked out, move the Pokémon adjacent to the battle opponent (excluding this one) to their bench."
+    },
+    {
+      "name": "Suplex",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Moves the battle opponent to a point one step behind this Pokémon. The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 348,
+    "pokemon_id_raw": "727",
+    "national_dex": 727,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.7",
+    "last_update": "5.0.9",
+    "evolves_from": [
+      347
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Inferno Overdrive",
+      "Malicious Moonsault"
+    ]
+  }
+}

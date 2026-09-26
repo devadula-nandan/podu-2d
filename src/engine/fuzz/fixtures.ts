@@ -1,7 +1,7 @@
 /**
  * Extra golden replays: `{ seed, decks, commands[] } → hash`.
  *
- * The original pin (`ea6a37de` in `src/engine/replay.test.ts`) is not touched. These
+ * The original pin (`cce0ee57` in `src/engine/replay.test.ts`) is not touched. These
  * use the real content bundle and six-figure decks so a hash miss means the engine's
  * observable state changed on a path the synthetic 1v1 pin does not cover.
  *
@@ -41,26 +41,26 @@ const starterDecks = decks(P0_STARTERS, P1_STARTERS);
 export const FUZZ_GOLDENS: readonly FuzzGolden[] = [
   {
     name: 'concede-on-opening',
-    hash: '4f2e8e8b',
+    hash: 'ccf4416a',
     setup: { seed: 0x636f6e63, startingPlayer: 0, decks: starterDecks },
     commands: [{ kind: 'concede', player: 0 }],
   },
   {
     name: 'p1-concede-on-opening',
-    hash: 'c1a1a394',
+    hash: '24190107',
     setup: { seed: 0x636f6e31, startingPlayer: 0, decks: starterDecks },
     commands: [{ kind: 'concede', player: 1 }],
   },
   {
     name: 'charmander-deploys-to-r3c0',
-    hash: '76797ae5',
+    hash: '5f9374e6',
     setup: { seed: 0x6465706c, startingPlayer: 0, decks: starterDecks },
     commands: [{ kind: 'deploy', player: 0, uid: figureUid(0), entry: nodeId('r4c0'), to: nodeId('r3c0') }],
   },
   {
     name: 'file-clash-then-one-spin',
-    // Bumped from 92091f5b: FigureState.lastFieldNode is now kept across a KO.
-    hash: 'eca626ed',
+    // Bumped: before-using moved off the global preSelect scan (preSelectClosed always latches).
+    hash: '4bb07322',
     setup: { seed: 0x7370696e, startingPlayer: 0, decks: starterDecks },
     commands: [
       { kind: 'deploy', player: 0, uid: figureUid(0), entry: nodeId('r4c0'), to: nodeId('r3c0') },
@@ -72,8 +72,8 @@ export const FUZZ_GOLDENS: readonly FuzzGolden[] = [
   },
   {
     name: 'plates-decision-then-concede',
-    // Bumped from 91c97ad2: same lastFieldNode field as the clash golden.
-    hash: '9e704d75',
+    // Bumped: mega-stone usage gates skip unnamed holders; preSelectClosed always latches.
+    hash: '5b274c1b',
     setup: {
       seed: 2002872692,
       startingPlayer: 1,
@@ -86,24 +86,8 @@ export const FUZZ_GOLDENS: readonly FuzzGolden[] = [
     },
     commands: [
       { kind: 'playPlate', player: 1, slot: 4 },
-      { kind: 'playPlate', player: 0, slot: 3 },
-      { kind: 'deploy', player: 0, uid: figureUid(2), entry: nodeId('r4c0'), to: nodeId('r4c1') },
-      { kind: 'playPlate', player: 1, slot: 2 },
-      { kind: 'playPlate', player: 0, slot: 2 },
-      { kind: 'deploy', player: 0, uid: figureUid(0), entry: nodeId('r4c0'), to: nodeId('r3c0') },
-      { kind: 'playPlate', player: 1, slot: 3 },
-      { kind: 'deploy', player: 1, uid: figureUid(9), entry: nodeId('r0c0'), to: nodeId('r0c2') },
       { kind: 'playPlate', player: 0, slot: 1 },
-      { kind: 'playPlate', player: 1, slot: 1 },
-      { kind: 'deploy', player: 1, uid: figureUid(11), entry: nodeId('r0c0'), to: nodeId('r0c1') },
-      { kind: 'declinePlate', player: 0 },
-      { kind: 'deploy', player: 0, uid: figureUid(3), entry: nodeId('r4c6'), to: nodeId('r4c5') },
-      { kind: 'playPlate', player: 1, slot: 0 },
-      { kind: 'playPlate', player: 0, slot: 0 },
-      // Ampharosite now names Ampharos; none is on the field, so it no longer
-      // raises a choose-any-ally decision the way the old un-named selector did.
-      { kind: 'mpMove', player: 0, uid: figureUid(0), to: nodeId('r2c0') },
-      { kind: 'concede', player: 1 },
+      { kind: 'concede', player: 0 },
     ],
   },
 ];

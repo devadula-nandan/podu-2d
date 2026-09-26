@@ -1,0 +1,87 @@
+{
+  "figure_id": "shiny_mega_gardevoir_506",
+  "display_name": "Shiny Mega Gardevoir UX",
+  "available_in_roster": false,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FAIRY"
+  ],
+  "icon": "res://data/figures/shiny_gardevoir/shiny_mega_gardevoir_ux/506 - Shiny Mega Gardevoir - Rarity_UX.png",
+  "model": "res://assets/figures/models/shiny_gardevoir/shiny_mega_gardevoir_ux/506 - Shiny Mega Gardevoir - Rarity_UX.fbx",
+  "ability": {
+    "name": "Cerebral Embrace",
+    "note": "Opposing Pokémon cannot MP move through this Pokémon using the effect of an Ability. At the start of your turn, this Pokémon may switch places with one of your Pokémon on the field, bench, or in a P.C. Your Psychic and Fairy-type Pokémon each deal +10 damage",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Warp Hole",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Switches the battle opponent for a Pokémon on the field, bench or P.C. Then, those Pokémon must wait 3.",
+      "source_effect_ids": [
+        7.0
+      ]
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Blue Hole",
+      "type": "BLUE",
+      "size": 32,
+      "note": "You may exclude this Pokémon and the battle opponent from the duel."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 506,
+    "pokemon_id_raw": "282 mega",
+    "national_dex": 282,
+    "variant": "mega shiny",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Shattered Psyche"
+    ],
+    "cloned_from_figure_id": 402,
+    "asset_only_variant_clone": true
+  },
+  "is_mega_evolution": true,
+  "rarity": "UX",
+  "evolution_stage": 0,
+  "evolves_from_figure_ids": [],
+  "evolves_to_figure_ids": []
+}

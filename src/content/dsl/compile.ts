@@ -349,6 +349,10 @@ const RULES: readonly Rule[] = [
   { re: /^(?:you may )?use this ability at the start of your turn$/i, build: () => ({ do: 'tag', tag: 'activableStartOfTurn' }) },
   { re: /^neither player's remaining time changes$/i, build: () => ({ do: 'tag', tag: 'preserveClocks' }) },
   {
+    re: /start-of-turn z-move gauge increase of each player is boosted for each of that player's pok[eé]mon that is affected by a special condition/i,
+    build: () => ({ do: 'boostZTurnGain', per: 'specialCondition' }),
+  },
+  {
     re: /until the end of your opponent's next turn, neither player can use time travel/i,
     build: () => ({ do: 'tag', tag: 'lockTimeTravel' }),
   },
@@ -1609,6 +1613,38 @@ const RULES: readonly Rule[] = [
   {
     re: /can mp move through other pok[eé]mon on the field/i,
     build: (_m, subject) => ({ do: 'grantMovement', target: subject, grant: 'throughOthers' }),
+  },
+  {
+    // UX Eevee Arrow line: through allies, plus named opposing types. Must beat the
+    // generic "can MP move through" catch-all, which would grant unrestricted pass.
+    re: /(?:it|this pok[eé]mon) can mp move through your(?: own)? pok[eé]mon(?:,)?(?: and(?: through)? opposing (.+?))?$/i,
+    build: (m, subject) => {
+      const types = parseTypes(m[1] ?? '');
+      const allies = {
+        kind: 'all' as const,
+        where: [
+          { kind: 'allegiance' as const, of: 'ally' as const },
+          { kind: 'inZone' as const, zones: ['field' as const] },
+        ],
+      };
+      const over = types.length === 0
+        ? allies
+        : {
+            kind: 'union' as const,
+            of: [
+              allies,
+              {
+                kind: 'all' as const,
+                where: [
+                  { kind: 'allegiance' as const, of: 'opposing' as const },
+                  { kind: 'hasType' as const, types },
+                  { kind: 'inZone' as const, zones: ['field' as const] },
+                ],
+              },
+            ],
+          };
+      return { do: 'grantMovement', target: subject, grant: 'throughOthers', over };
+    },
   },
   {
     re: /can mp move from the bench past ghost pok[eé]mon and pok[eé]mon affected by special conditions/i,
@@ -3241,6 +3277,20 @@ const RULES: readonly Rule[] = [
     },
   },
   {
+    re: /your ([^.]*?) pok[eé]mon (?:can|may) (?:mp )?move over this pok[eé]mon/i,
+    build: (m) => {
+      const types = parseTypes(m[1] ?? '');
+      const where: Filter[] = [{ kind: 'allegiance', of: 'ally' }];
+      if (types.length > 0) where.push({ kind: 'hasType', types });
+      return {
+        do: 'grantMovement',
+        target: { kind: 'all', where },
+        grant: 'overOthers',
+        over: { kind: 'self' },
+      };
+    },
+  },
+  {
     re: /^(.*?)(?:can|may)\s+(?:also\s+)?(?:mp\s+)?move\s+(through|over|under|past)\b/i,
     build: (m, subject) => ({
       do: 'grantMovement',
@@ -3334,7 +3384,7 @@ const RULES: readonly Rule[] = [
       do: 'modifyMp',
       target: (m[1] ?? '').trim() ? parseSelector(m[1] as string) : subject,
       delta: num(m[2], 1),
-      duration: INSTANT,
+      duration: { kind: 'untilEndOfDuel' },
     }),
   },
   {
@@ -3462,6 +3512,16 @@ const RULES: readonly Rule[] = [
     },
   },
   {
+    re: /removes? all special conditions from (that pok[eé]mon|it|.*)/i,
+    build: (m) => ({
+      do: 'cureConditions',
+      target: /^(?:that pok[eé]mon|it)$/i.test((m[1] ?? '').trim())
+        ? { kind: 'antecedent' }
+        : parseSelector(m[1] ?? 'that Pokémon'),
+      conditions: [],
+    }),
+  },
+  {
     re: /any special conditions are removed from (.*)/i,
     build: (m) => ({ do: 'cureConditions', target: parseSelector(m[1] ?? ''), conditions: [] }),
   },
@@ -3484,11 +3544,49 @@ const RULES: readonly Rule[] = [
     build: () => ({ do: 'reorderPc', player: 'controller' }),
   },
   {
-    re: /(?:choose two of your pok[eé]mon on the field or bench and switch their positions|switch 1 of your pok[eé]mon with another of your pok[eé]mon on the field)/i,
+    re: /choose two of your pok[eé]mon on the field or bench and switch their positions/i,
     build: () => ({
       do: 'move',
-      target: { kind: 'choose', count: 1, upTo: false, chooser: 'controller', where: [{ kind: 'allegiance', of: 'ally' }] },
-      to: { kind: 'swapWith', with: { kind: 'choose', count: 1, upTo: false, chooser: 'controller', where: [{ kind: 'allegiance', of: 'ally' }] } },
+      target: {
+        kind: 'choose',
+        count: 1,
+        upTo: false,
+        chooser: 'controller',
+        where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field', 'bench'] }],
+      },
+      to: {
+        kind: 'swapWith',
+        with: {
+          kind: 'choose',
+          count: 1,
+          upTo: false,
+          chooser: 'controller',
+          where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field', 'bench'] }],
+        },
+      },
+    }),
+  },
+  {
+    re: /switch 1 of your pok[eé]mon with another of your pok[eé]mon on the field/i,
+    build: () => ({
+      do: 'move',
+      target: {
+        kind: 'choose',
+        count: 1,
+        upTo: false,
+        chooser: 'controller',
+        where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field'] }],
+      },
+      to: {
+        kind: 'swapWith',
+        with: {
+          kind: 'choose',
+          count: 1,
+          upTo: false,
+          chooser: 'controller',
+          where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field'] }],
+        },
+      },
     }),
   },
   {
@@ -3500,7 +3598,11 @@ const RULES: readonly Rule[] = [
     }),
   },
   {
-    re: /move it to your goal point/i,
+    re: /(?:choose|select) (.+?) and move it to your goal point/i,
+    build: (m) => ({ do: 'move', target: parseSelector(m[1] ?? ''), to: { kind: 'goal' } }),
+  },
+  {
+    re: /^move it to your goal point/i,
     build: () => ({ do: 'move', target: { kind: 'antecedent' }, to: { kind: 'goal' } }),
   },
   {
@@ -3747,7 +3849,7 @@ const RULES: readonly Rule[] = [
     build: (m) => ({ do: 'modifyMp', target: { kind: 'antecedent' }, delta: num(m[1], 1), duration: { kind: 'untilEndOfTurn' } }),
   },
   {
-    re: /get \+(\d+) mp\b/i,
+    re: /(?:gets?|gains?) \+(\d+)\s*mp\b/i,
     build: (m, subject) => ({ do: 'modifyMp', target: subject, delta: num(m[1], 1), duration: { kind: 'untilEndOfDuel' } }),
   },
   { re: /this ability is only valid on your turn/i, build: () => ({ do: 'usageGate' }) },
@@ -4075,10 +4177,6 @@ const RULES: readonly Rule[] = [
     build: () => ({ do: 'adjustZGauge', target: 'opponent', fractionOfMax: -2 / 3, flat: null }),
   },
   { re: /^move it there$/i, build: () => ({ do: 'move', target: { kind: 'antecedent' }, to: { kind: 'zone', zone: 'pc' } }) },
-  {
-    re: /(?:choose|select) (.+?) and move it to your goal point/i,
-    build: (m) => ({ do: 'move', target: parseSelector(m[1] ?? ''), to: { kind: 'goal' } }),
-  },
   {
     re: /it will shift to the (?:move|attack) next to it/i,
     build: () => ({
@@ -4755,6 +4853,7 @@ const RULES: readonly Rule[] = [
   },
   { re: /^\(?a battle does not occur\.?\)?$/i, build: () => ({ do: 'tag', tag: 'noBattle' }) },
   { re: /^(?:it |this pok[eé]mon )?(?:may |can )?evolve(?:s)?(?: this pok[eé]mon| it)?$/i, build: (_m, subject) => ({ do: 'evolve', target: subject }) },
+  { re: /undergoes branching evolution/i, build: (_m, subject) => ({ do: 'evolve', target: subject }) },
   {
     re: /when you do, (?:you may )?evolve this pok[eé]mon/i,
     build: (_m, subject) => ({ do: 'evolve', target: subject }),
@@ -5118,17 +5217,24 @@ function extractTrigger(text: string): { trigger: Trigger; rest: string } {
     || /type becomes the type of the chosen pok[eé]mon/i.test(text)
     || /the marker and any special conditions/i.test(text)
     || /your [a-z]+ pok[eé]mon receive a \+\d+ boost/i.test(text)
-    || /(?:may|can) (?:mp )?move over/i.test(text)
+    || (
+      /(?:may|can)(?: also)? (?:mp )?move (?:over|through|under|past)/i.test(text)
+      && !/is attacked/i.test(text)
+      && !/when attacked/i.test(text)
+      && !/instead of (?:using |making )?(?:an )?mp move/i.test(text)
+    )
     || /can use an mp move to fly over/i.test(text)
     || /this pok[eé]mon cannot battle/i.test(text)
-    || /(?:may|can) (?:mp )?move past/i.test(text)
     || /all poisoned and noxious pok[eé]mon have mp/i.test(text)
     || /any pok[eé]mon adjacent to this pok[eé]mon will do/i.test(text)
     || /the damage that this pok[eé]mon deals is increased/i.test(text)
     || /the attack damage dealt to this pok/i.test(text)
     || /protected from instant knock out/i.test(text)
     || /must mp move as far as its mp range/i.test(text)
-    || /can mp move through other pok/i.test(text)
+    || /can mp move through/i.test(text)
+    || /can pass through/i.test(text)
+    || /gains? \+\d+\s*mp/i.test(text)
+    || /is evolved, it has mp/i.test(text)
     || /can mp move from the bench past/i.test(text)
     || /do not attach markers to this pok/i.test(text)
     || /within two steps of this pok[eé]mon are not affected by new special/i.test(text)
@@ -5296,9 +5402,6 @@ function extractTrigger(text: string): { trigger: Trigger; rest: string } {
   if (/cannot move by effects other than/i.test(text)) {
     return { trigger: 'duringBattle', rest: text };
   }
-  if (/^if it changes its form/i.test(text)) {
-    return { trigger: 'startOfTurn', rest: text };
-  }
   if (/the opponent'?s attack deals more than half/i.test(text)) {
     return { trigger: 'afterBattle', rest: text };
   }
@@ -5336,7 +5439,6 @@ function extractTrigger(text: string): { trigger: Trigger; rest: string } {
     || /the (?:asleep|sleep) condition is not removed/i.test(text)
     || /loses any ability effects that allow it to mp move through/i.test(text)
     || /opposing ghost pok[eé]mon cannot use the effect of an ability/i.test(text)
-    || /can move to your goal point instead of making an? mp move/i.test(text)
   ) {
     return { trigger: 'passive', rest: text };
   }
@@ -5390,6 +5492,12 @@ export function parseCondition(raw: string): Condition {
   }
   if (/there is space in your p\.c/i.test(t)) {
     return { kind: 'pcHasSpace', whose: 'controller' };
+  }
+  if (/this pok[eé]mon cannot evolve/i.test(t)) {
+    return { kind: 'canEvolve', target: { kind: 'self' }, value: false };
+  }
+  if (/^(?:this pok[eé]mon|it) changes its form$/i.test(t)) {
+    return { kind: 'hasChangedForm', target: { kind: 'self' } };
   }
   if (/your pok[eé]mon fill either your p\.c\. or your opponent'?s p\.c/i.test(t)) {
     return {
@@ -5517,6 +5625,9 @@ export function parseCondition(raw: string): Condition {
       op: 'gte',
       value: 3,
     };
+  }
+  if (/there are opposing pok[eé]mon on all(?: of)?(?: your)? entry points/i.test(t)) {
+    return { kind: 'entryPointsFilled', whose: 'controller', by: 'opposing' };
   }
   if ((g = t.match(/^there (?:are|is) (.+)$/i))) {
     return { kind: 'targetExists', selector: parseSelector(g[1] ?? '') };
@@ -5695,7 +5806,7 @@ export function parseCondition(raw: string): Condition {
   if (/opposing pok[eé]mon do not occupy all of your entry points/i.test(t)) {
     return { kind: 'not', of: { kind: 'entryPointsFilled', whose: 'controller', by: 'opposing' } };
   }
-  if (/there are opposing pok[eé]mon on all your entry points/i.test(t)) {
+  if (/there are opposing pok[eé]mon on all(?: of)?(?: your)? entry points/i.test(t)) {
     return { kind: 'entryPointsFilled', whose: 'controller', by: 'opposing' };
   }
   if ((g = t.match(/there are no opposing pok[eé]mon within (\d+) steps/i))) {
@@ -5830,6 +5941,10 @@ const ACTION_BEARING_IF = /lands on miss|is a miss that turn|will shift to|would
 
 /** Pull an `if ...` guard off the clause, whether it leads or trails. */
 function extractGuard(text: string): { when: Condition[]; rest: string } {
+  const whenDoes = text.match(/^when it does,?\s*(.+)$/i);
+  if (whenDoes?.[1]) {
+    return { when: [{ kind: 'precedingActionTaken' }], rest: whenDoes[1] };
+  }
   if (/if this pok[eé]mon is on the field and is not affected by a special condition/i.test(text)) {
     const stripped = text.replace(/if this pok[eé]mon is on the field and is not affected by a special condition,?\s*/i, '');
     if (stripped !== text) {
@@ -5957,6 +6072,9 @@ function extractGuard(text: string): { when: Condition[]; rest: string } {
   if (/,\s*if able\.?$/i.test(text)) {
     return extractGuard(text.replace(/,\s*if able\.?$/i, ''));
   }
+  if (/\bfor this turn\b/i.test(text) && /\b(?:spin again|respin)\b/i.test(text)) {
+    return { when: [], rest: text };
+  }
   if (/^when you do,?\s+/i.test(text)) {
     const inner = extractGuard(text.replace(/^when you do,?\s+/i, ''));
     return { when: [{ kind: 'precedingActionTaken' }, ...inner.when], rest: inner.rest };
@@ -5992,8 +6110,6 @@ function extractGuard(text: string): { when: Condition[]; rest: string } {
   if (leading?.[1] && leading[2] && !/^possible\b/i.test(leading[1]) && !ACTION_BEARING_IF.test(leading[1])) {
     return { when: [parseCondition(leading[1])], rest: leading[2] };
   }
-  // "Deals +50 damage if the battle opponent is a Dragon Pokemon" - the guard trails the
-  // action here, and discarding it would have applied the bonus unconditionally.
   const trailing = text.match(/^(.+?)\s+if\s+([^,]+)$/i);
   if (
     trailing?.[1]
@@ -6058,7 +6174,7 @@ export function compileClause(raw: string): Clause {
     && actions[0]?.do !== 'tag'
     && actions[0]?.do !== 'readyImmediately'
     && actions[0]?.do !== 'surviveByForm'
-    && !(actions[0]?.do === 'respin' && /you can choose to respin once/i.test(source))
+    && !(actions[0]?.do === 'respin' && /you can choose to respin once|spin again once|make any battle opponent/i.test(source))
   ) {
     const then = /\bjust once\b/i.test(source) ? [...actions, { do: 'spendOnce' as const }] : actions;
     actions = [{ do: 'optional', chooser: 'controller', then }];
@@ -6604,6 +6720,51 @@ export function compileEffect(text: string): Clause[] {
       };
       continue;
     }
+    if (prev && prevOptional?.do === 'optional' && clause.when.some((cond) => cond.kind === 'hasChangedForm')) {
+      out[prevIndex] = {
+        ...prev,
+        actions: prev.actions.map((action) => {
+          if (action.do !== 'optional') return action;
+          const nested = action.then.find(
+            (inner) => inner.do === 'optional' && inner.then.some((child) => child.do === 'changeForm'),
+          );
+          if (nested?.do === 'optional') {
+            return {
+              ...action,
+              then: action.then.map((inner) =>
+                inner === nested ? { ...nested, then: [...nested.then, ...clause.actions] } : inner,
+              ),
+            };
+          }
+          if (action.then.some((inner) => inner.do === 'changeForm')) {
+            return { ...action, then: [...action.then, ...clause.actions] };
+          }
+          return action;
+        }),
+      };
+      continue;
+    }
+    if (
+      prev
+      && /^your turn ends$/i.test(clause.source)
+      && /instead of (?:using |making )?(?:an )?mp move/i.test(prev.source)
+    ) {
+      out[prevIndex] = {
+        ...prev,
+        actions: prev.actions.map((action) =>
+          action.do === 'optional' && !action.then.some((inner) => inner.do === 'endTurn')
+            ? { ...action, then: [...action.then, { do: 'endTurn' as const }] }
+            : action.do === 'optional'
+              ? action
+              : action,
+        ).concat(
+          prev.actions.some((action) => action.do === 'optional')
+            ? []
+            : [{ do: 'endTurn' as const }],
+        ),
+      };
+      continue;
+    }
     const prevArm = prev?.actions.find((action) => action.do === 'armTrigger');
     if (prev && prevArm?.do === 'armTrigger' && clause.when.some((cond) => cond.kind === 'precedingActionTaken')) {
       out[prevIndex] = {
@@ -6618,7 +6779,125 @@ export function compileEffect(text: string): Clause[] {
     }
     out.push(clause);
   }
-  return foldReadyImmediately(out);
+  return foldReadyImmediately(hoistPlateUsageGates(out));
+}
+
+/** Goal Block is illegal unless your goal is open and you have a Pokémon on the field. */
+function hoistGoalBlockGate(clauses: readonly Clause[]): Clause[] {
+  if (clauses.some((clause) => clause.trigger === 'usageRestriction')) return [...clauses];
+  const blocksGoal = clauses.some((clause) =>
+    clause.when.some((condition) => condition.kind === 'goalOpen')
+    && clause.actions.some((action) => action.do === 'move' && action.to.kind === 'goal'),
+  );
+  if (!blocksGoal) return [...clauses];
+  return [
+    usageRestrictionClause('goal point if it is open', [
+      { kind: 'goalOpen', whose: 'controller' },
+      {
+        kind: 'targetExists',
+        selector: {
+          kind: 'all',
+          where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field'] }],
+        },
+      },
+    ]),
+    ...clauses,
+  ];
+}
+
+function usageRestrictionClause(source: string, when: readonly Condition[]): Clause {
+  return {
+    id: nextId(),
+    trigger: 'usageRestriction',
+    when,
+    actions: [{ do: 'usageGate' }],
+    layer: 0,
+    noStackKey: null,
+    source,
+  };
+}
+
+function hoistPlateUsageGates(clauses: readonly Clause[]): Clause[] {
+  let out = hoistGoalBlockGate(clauses);
+  const add = (clause: Clause): void => {
+    if (out.some((existing) => existing.trigger === 'usageRestriction' && existing.source === clause.source)) {
+      return;
+    }
+    out = [clause, ...out];
+  };
+
+  const fieldAlly: Selector = {
+    kind: 'all',
+    where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field'] }],
+  };
+  const pcAlly: Selector = {
+    kind: 'all',
+    where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['pc'] }],
+  };
+
+  for (const clause of out) {
+    for (const action of clause.actions) {
+      if (action.do === 'cureConditions') {
+        const conditions = action.conditions.length > 0 ? action.conditions : [...SPECIAL_CONDITIONS];
+        add(usageRestrictionClause('a Pokémon has that special condition', [
+          {
+            kind: 'targetExists',
+            selector: {
+              kind: 'all',
+              where: [
+                { kind: 'allegiance', of: 'ally' },
+                { kind: 'inZone', zones: ['field'] },
+                { kind: 'hasCondition', conditions },
+              ],
+            },
+          },
+        ]));
+      }
+      if (action.do === 'select' && selectorFieldOnly(action.target)) {
+        add(usageRestrictionClause('a matching Pokémon on the field', [
+          { kind: 'targetExists', selector: chooseAsAll(action.target) },
+        ]));
+      }
+      if (action.do === 'move' && selectorFieldOnly(action.target)) {
+        add(usageRestrictionClause('a matching Pokémon on the field', [
+          { kind: 'targetExists', selector: chooseAsAll(action.target) },
+        ]));
+      }
+      if (
+        (action.do === 'select' && selectorMentionsZone(action.target, 'pc'))
+        || (action.do === 'move' && selectorMentionsZone(action.target, 'pc'))
+      ) {
+        add(usageRestrictionClause('a Pokémon in the P.C.', [{ kind: 'targetExists', selector: pcAlly }]));
+      }
+      if (
+        action.do === 'move'
+        && action.to.kind === 'swapWith'
+        && selectorFieldOnly(action.target)
+        && selectorFieldOnly(action.to.with)
+      ) {
+        add(usageRestrictionClause('two Pokémon on the field', [
+          { kind: 'targetCount', selector: fieldAlly, op: 'gte', value: 2 },
+        ]));
+      }
+    }
+  }
+  return out;
+}
+
+function selectorFieldOnly(selector: Selector): boolean {
+  return selectorMentionsZone(selector, 'field') && !selectorMentionsZone(selector, 'bench');
+}
+
+function chooseAsAll(selector: Selector): Selector {
+  return selector.kind === 'choose' ? { kind: 'all', where: selector.where } : selector;
+}
+
+function selectorMentionsZone(selector: Selector, zone: Zone): boolean {
+  if (selector.kind === 'choose' || selector.kind === 'all') {
+    return selector.where.some((filter) => filter.kind === 'inZone' && filter.zones.includes(zone));
+  }
+  if (selector.kind === 'union') return selector.of.some((inner) => selectorMentionsZone(inner, zone));
+  return false;
 }
 
 function clauseMovesToBench(clause: Clause): boolean {

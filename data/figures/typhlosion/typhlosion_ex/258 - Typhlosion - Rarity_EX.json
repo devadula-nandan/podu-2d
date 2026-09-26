@@ -1,0 +1,95 @@
+{
+  "figure_id": "typhlosion_258",
+  "display_name": "Typhlosion EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "258 - Typhlosion - Rarity_EX.png",
+  "model": "res://assets/figures/models/typhlosion/typhlosion_ex/258 - Typhlosion - Rarity_EX.fbx",
+  "ability": {
+    "name": "Flame Acceleration",
+    "note": "This Pokémon gains +1 MP and +10 damage for each Pokémon in your P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Ember",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Hot Air",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All neighbor Pokémon become burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Ember",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fire Blast",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 258,
+    "pokemon_id_raw": "157",
+    "national_dex": 157,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "1.3",
+    "last_update": "3.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      259
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

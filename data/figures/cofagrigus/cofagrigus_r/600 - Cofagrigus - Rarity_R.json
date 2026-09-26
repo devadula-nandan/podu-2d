@@ -1,0 +1,98 @@
+{
+  "figure_id": "cofagrigus_600",
+  "display_name": "Cofagrigus R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "GHOST"
+  ],
+  "icon": "600 - Cofagrigus - Rarity_R.png",
+  "model": "res://assets/figures/models/cofagrigus/cofagrigus_r/600 - Cofagrigus - Rarity_R.fbx",
+  "ability": {
+    "name": "Mummy",
+    "note": "Your Pokémon on the field can MP move through this Pokémon. If this Pokémon is not affected by a special condition, attach a Mummy marker to non-Ghost, non-Dark-type Pokémon that battle it. The Ability of the Pokémon with that marker becomes Mummy (the effects of its original Ability are nullified).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Hex",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "If the battle opponent has a status condition, damage is ×2."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shadow Ball",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent or one opposing Pokémon adjacent to the battle opponent spins. If that Pokémon spins a Purple Attack or Miss, it moves to its P.C. and gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Eerie Light",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 600,
+    "pokemon_id_raw": "563",
+    "national_dex": 563,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 1,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.15",
+    "last_update": "7.0.15",
+    "evolves_from": [
+      599
+    ],
+    "evolves_to": [
+      601
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare"
+    ]
+  }
+}

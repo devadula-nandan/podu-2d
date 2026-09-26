@@ -1,0 +1,87 @@
+{
+  "figure_id": "wash_rotom_371",
+  "display_name": "Wash Rotom R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "WATER"
+  ],
+  "icon": "371 - Wash Rotom - Rarity_R.png",
+  "model": "res://assets/figures/models/wash_rotom/wash_rotom_r/371 - Wash Rotom - Rarity_R.fbx",
+  "ability": {
+    "name": "Sprinkler",
+    "note": "If this Pokémon is on the field and is not affected by a special condition, your Water-type Pokémon can MP move through other Water-type Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Discharge",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 371,
+    "pokemon_id_raw": "479 wash",
+    "national_dex": 479,
+    "variant": "wash",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.2.0",
+    "last_update": "6.2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      372
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Hydro Vortex"
+    ]
+  }
+}

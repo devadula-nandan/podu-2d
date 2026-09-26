@@ -1,0 +1,86 @@
+{
+  "figure_id": "dialga_554",
+  "display_name": "Dialga UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "DRAGON"
+  ],
+  "icon": "res://data/figures/dialga/dialga_ux/554 - Dialga - Rarity_UX.png",
+  "model": "res://assets/figures/models/dialga/dialga_ux/554 - Dialga - Rarity_UX.fbx",
+  "ability": {
+    "name": "Time Slide",
+    "note": "This Pokémon cannot have Wait while it is on the field. If this Pokémon is knocked out by damage in battle, the next turn will always be yours.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "4-D Drive",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*Moves the battle opponent to its P.C. The battle opponent is not knocked out."
+    },
+    {
+      "name": "Roar of Time",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 180,
+      "source_damage_or_stars": "180",
+      "note": "*Return the battle opponent to their start-of-the-duel state (excluding evolution)."
+    },
+    {
+      "name": "Aura Sphere",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Either the battle opponent or a Pokémon behind it in a straight line from this Pokémon is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 554,
+    "pokemon_id_raw": "483 ux",
+    "national_dex": 483,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      555
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Corkscrew Crash",
+      "Clangorous Soulblaze"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.15",
+    "last_update": "7.0.15"
+  }
+}

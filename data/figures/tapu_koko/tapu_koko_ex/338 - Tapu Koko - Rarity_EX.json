@@ -1,0 +1,90 @@
+{
+  "figure_id": "tapu_koko_338",
+  "display_name": "Tapu Koko EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC",
+    "FAIRY"
+  ],
+  "icon": "338 - Tapu Koko - Rarity_EX.png",
+  "model": "res://assets/figures/models/tapu_koko/tapu_koko_ex/338 - Tapu Koko - Rarity_EX.fbx",
+  "ability": {
+    "name": "Electric Surge",
+    "note": "This Ability is only valid on your turn. This Pokémon can MP move past non-Fairy-type Pokémon on the field. When this Pokémon is on the field, your Electric-type Pokémon deal +30 damage (this effect is not cumulative). It removes the asleep condition from Pokémon within 2 steps of this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Wild Charge",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 69,
+      "source_damage_or_stars": "69",
+      "note": "*This Pokémon gains Wait."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Melemele Wish",
+      "type": "BLUE",
+      "size": 20,
+      "note": "You may select 1 of your Pokémon. If you do, this Pokémon is excluded from the duel. Until the end of the duel, the selected Pokémon gets MP 3 and when on the field can use an MP move to fly over Pokémon that don't have [CTRL QL Soar][Soar]."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 338,
+    "pokemon_id_raw": "785",
+    "national_dex": 785,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "4.0.2",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Twinkle Tackle",
+      "Guardian of Alola"
+    ]
+  }
+}

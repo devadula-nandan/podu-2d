@@ -1,0 +1,93 @@
+{
+  "figure_id": "ampharos_440",
+  "display_name": "Ampharos EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "440 - Ampharos - Rarity_EX.png",
+  "model": "res://assets/figures/models/ampharos/ampharos_ex/440 - Ampharos - Rarity_EX.fbx",
+  "ability": {
+    "name": "Electric Upsurge",
+    "note": "While this Pokémon is on the field, your Electric-type Pokémon deal +10 damage for each paralyzed Pokémon on the field. This effect does not stack.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dragon Pulse",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "Deals +50 damage if the battle opponent is a Dragon-type Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Override",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*All adjacent Pokémon become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Beacon Light",
+      "type": "BLUE",
+      "size": 20,
+      "note": "Removes Wait from all your Pokémon on the field."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 440,
+    "pokemon_id_raw": "181",
+    "national_dex": 181,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.10",
+    "last_update": "5.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      113
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "figure_id": "lugia_030",
+  "display_name": "Lugia EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FLYING"
+  ],
+  "icon": "030 - Lugia - Rarity_EX.png",
+  "model": "res://assets/figures/models/lugia/lugia_ex/030 - Lugia - Rarity_EX.fbx",
+  "ability": {
+    "name": "Marine Rage",
+    "note": "The damage that this Pokémon deals is increased by 10 for each Water-type Pokémon in either player's P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Aeroblast",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    },
+    {
+      "name": "Cyclone",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 4,
+      "source_damage_or_stars": "☆☆☆☆",
+      "note": "The battle opponent is moved to the bench and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Aeroblast",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 30,
+    "pokemon_id_raw": "249",
+    "national_dex": 249,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.1",
+    "last_update": "6.1.1",
+    "evolves_from": [
+      29
+    ],
+    "evolves_to": [
+      31
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Shattered Psyche"
+    ]
+  }
+}

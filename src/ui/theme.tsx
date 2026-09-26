@@ -17,13 +17,14 @@ function applyTheme(theme: ThemeName): void {
 
 interface ThemeApi {
   readonly theme: ThemeName;
+  readonly setTheme: (theme: ThemeName) => void;
   readonly toggle: () => void;
 }
 
 const ThemeContext = createContext<ThemeApi | null>(null);
 
 export function ThemeProvider({ children }: { readonly children: ReactNode }) {
-  const [theme, setTheme] = useState<ThemeName>(() => {
+  const [theme, setThemeState] = useState<ThemeName>(() => {
     const initial = readTheme();
     if (typeof document !== 'undefined') applyTheme(initial);
     return initial;
@@ -34,11 +35,15 @@ export function ThemeProvider({ children }: { readonly children: ReactNode }) {
     window.localStorage.setItem(STORAGE_KEY, theme);
   }, [theme]);
 
-  const toggle = useCallback(() => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  const setTheme = useCallback((next: ThemeName) => {
+    setThemeState(next);
   }, []);
 
-  const value = useMemo<ThemeApi>(() => ({ theme, toggle }), [theme, toggle]);
+  const toggle = useCallback(() => {
+    setThemeState((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  }, []);
+
+  const value = useMemo<ThemeApi>(() => ({ theme, setTheme, toggle }), [theme, setTheme, toggle]);
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 }
 

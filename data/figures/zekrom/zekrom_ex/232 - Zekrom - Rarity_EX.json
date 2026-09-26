@@ -1,0 +1,101 @@
+{
+  "figure_id": "zekrom_232",
+  "display_name": "Zekrom EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON",
+    "ELECTRIC"
+  ],
+  "icon": "232 - Zekrom - Rarity_EX.png",
+  "model": "res://assets/figures/models/zekrom/zekrom_ex/232 - Zekrom - Rarity_EX.fbx",
+  "ability": {
+    "name": "Dark Stone",
+    "note": "This Pokémon gains Wait 9 at the start of the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Bolt Strike",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Fusion Bolt",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If this Pokémon is not affected by a special condition, and if any of your other [CTRL QL Fusion Flare][Pokémon] on the field has the Fusion Flare Attack, exclude Pokémon knocked out by this Attack from the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 232,
+    "pokemon_id_raw": "644",
+    "national_dex": 644,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.3",
+    "last_update": "6.2.3",
+    "evolves_from": [
+      231
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Gigavolt Havoc",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

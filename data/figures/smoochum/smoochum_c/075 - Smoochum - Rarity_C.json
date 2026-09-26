@@ -1,0 +1,92 @@
+{
+  "figure_id": "smoochum_075",
+  "display_name": "Smoochum C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ICE",
+    "PSYCHIC"
+  ],
+  "icon": "075 - Smoochum - Rarity_C.png",
+  "model": "res://assets/figures/models/smoochum/smoochum_c/075 - Smoochum - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Pound",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Sweet Kiss",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Lick",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 20,
+      "source_damage_or_stars": "20",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        10
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 75,
+    "pokemon_id_raw": "238",
+    "national_dex": 238,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "4.0",
+    "evolves_from": [
+      74
+    ],
+    "evolves_to": [
+      76
+    ],
+    "z_move_keys": [
+      "Subzero Slammer",
+      "Shattered Psyche"
+    ]
+  }
+}

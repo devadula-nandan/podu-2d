@@ -1,0 +1,75 @@
+{
+  "figure_id": "aipom_015",
+  "display_name": "Aipom UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "015 - Aipom - Rarity_UC.png",
+  "model": "res://assets/figures/models/aipom/aipom_uc/015 - Aipom - Rarity_UC.fbx",
+  "ability": {
+    "name": "Run Off",
+    "note": "Before using this Pokémon, you can switch its position with another one of your own Pokémon in an adjacent space.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    },
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Tail Smack",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 15,
+    "pokemon_id_raw": "190",
+    "national_dex": 190,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      14
+    ],
+    "evolves_to": [
+      "015 mega"
+    ],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ]
+  }
+}

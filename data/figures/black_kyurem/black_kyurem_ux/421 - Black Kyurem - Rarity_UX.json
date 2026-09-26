@@ -1,0 +1,102 @@
+{
+  "figure_id": "black_kyurem_421",
+  "display_name": "Black Kyurem UX",
+  "available_in_roster": false,
+  "movement_points": 3,
+  "types": [
+    "DRAGON",
+    "ICE"
+  ],
+  "icon": "res://data/figures/black_kyurem/black_kyurem_ux/421 - Black Kyurem - Rarity_UX.png",
+  "model": "res://assets/figures/models/black_kyurem/black_kyurem_ux/421 - Black Kyurem - Rarity_UX.fbx",
+  "ability": {
+    "name": "Teravolt",
+    "note": "This Pokémon can only be set as a form in the deck. The effects of Abilities of the battle opponent that increase or decrease Attack damage are nullified. This Pokémon can MP move over other Pokémon. When this Pokémon is knocked out [CTRL NOTE][in battle], it can change form to [CTRL FID 447][Kyurem] without moving to the P.C. If it does, and there are any of your [CTRL FID 232][Zekrom] that have been excluded from the duel, move one of the [CTRL FID 232][Zekrom] to the bench.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Freeze Shock",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*The battle opponent becomes paralyzed. If the battle opponent has Wait, the battle opponent is knocked out instead of this Pokémon.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Fusion Bolt",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*If this Pokémon is not affected by a special condition, and if any of your other [CTRL QL Fusion Flare][Pokémon] on the field has the Fusion Flare Attack, exclude Pokémon knocked out by this Attack from the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 421,
+    "pokemon_id_raw": "646 black",
+    "national_dex": 646,
+    "variant": "black",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [
+      420
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Subzero Slammer",
+      "Clangorous Soulblaze"
+    ],
+    "material": 5000,
+    "first_appear": "6.0.0",
+    "last_update": "6.0.11"
+  }
+}

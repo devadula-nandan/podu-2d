@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Command, Engine, GameEvent } from '../engine/index.js';
 import { contentPlateId, figureUid } from '../engine/index.js';
-import { describeSurroundEvents, endTurnCommand, recentPlayLines } from './model.js';
+import { describeSurroundEvents, endTurnCommand, playLogLines, recentPlayLines, viewSeatName, viewingWin } from './model.js';
 
 describe('describeSurroundEvents', () => {
   it('names the KO and the P.C. move', () => {
@@ -43,6 +43,33 @@ describe('recentPlayLines', () => {
     );
     expect(lines).toEqual(['Your turn', 'Played X Attack']);
   });
+
+  it('keeps the full chronological log', () => {
+    const engine = {
+      content: { plates: new Map([[contentPlateId(12), { plate: { name: 'X Attack' } }]]) },
+    } as unknown as Engine;
+    expect(
+      playLogLines(
+        engine,
+        [],
+        [
+          { kind: 'turnBegan', player: 0, number: 1 },
+          { kind: 'platePlayed', player: 0, slot: 0, plateId: contentPlateId(12) },
+          { kind: 'turnBegan', player: 1, number: 2 },
+        ],
+        0,
+      ),
+    ).toEqual(['Your turn', 'Played X Attack', "Rival's turn"]);
+  });
+});
+
+describe('viewSeatName', () => {
+  it('names the near-edge viewer You and the far seat Rival', () => {
+    expect(viewSeatName(0, 0)).toBe('You');
+    expect(viewSeatName(1, 0)).toBe('Rival');
+    expect(viewSeatName(1, 1)).toBe('You');
+    expect(viewSeatName(0, 1)).toBe('Rival');
+  });
 });
 
 describe('endTurnCommand', () => {
@@ -53,5 +80,14 @@ describe('endTurnCommand', () => {
     expect(endTurnCommand([declinePlate, concede], 0)).toBeNull();
     expect(endTurnCommand([declineBattle, declinePlate, concede], 0)).toEqual(declineBattle);
     expect(endTurnCommand([declineBattle, concede], 1)).toBeNull();
+  });
+});
+
+describe('viewingWin', () => {
+  it('is you when the near-edge seat won, rival when they lost', () => {
+    expect(viewingWin({ winner: 'attacker', decidedBy: 'damage', reason: '70 > 20' }, true)).toBe('you');
+    expect(viewingWin({ winner: 'defender', decidedBy: 'damage', reason: '20 < 70' }, true)).toBe('rival');
+    expect(viewingWin({ winner: 'defender', decidedBy: 'purple', reason: 'status' }, false)).toBe('you');
+    expect(viewingWin({ winner: null, decidedBy: 'draw', reason: 'tie' }, true)).toBe('draw');
   });
 });

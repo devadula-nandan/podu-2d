@@ -1,0 +1,93 @@
+{
+  "figure_id": "garchomp_190",
+  "display_name": "Garchomp EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON",
+    "GROUND"
+  ],
+  "icon": "190 - Garchomp - Rarity_EX.png",
+  "model": "res://assets/figures/models/garchomp/garchomp_ex/190 - Garchomp - Rarity_EX.fbx",
+  "ability": {
+    "name": "Sand Veil",
+    "note": "If this Pokémon is attacked, it can move under the opponent's Pokémon to another space next to it. (A battle does not occur.)",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fire Fang",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*The battle opponent becomes burned. The battle opponent now has Wait.",
+      "source_effect_ids": [
+        3,
+        7
+      ]
+    },
+    {
+      "name": "Dragon Rush",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 160,
+      "source_damage_or_stars": "160"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Double Flight",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands on a surrounding point. If the opposing Pokémon is affected by a special condition, it is knocked out. After moving, this Pokémon may attack an opposing Pokémon again, but just once."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 190,
+    "pokemon_id_raw": "445",
+    "national_dex": 445,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.3",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      424
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Tectonic Rage",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

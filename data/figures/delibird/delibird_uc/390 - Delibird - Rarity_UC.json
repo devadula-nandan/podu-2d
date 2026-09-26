@@ -1,0 +1,80 @@
+{
+  "figure_id": "delibird_390",
+  "display_name": "Delibird UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ICE",
+    "FLYING"
+  ],
+  "icon": "390 - Delibird - Rarity_UC.png",
+  "model": "res://assets/figures/models/delibird/delibird_uc/390 - Delibird - Rarity_UC.fbx",
+  "ability": {
+    "name": "Deliver",
+    "note": "Whenever this Pokémon moves from a P.C. to the bench, one of your used Mega Evolution plates becomes usable.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    },
+    {
+      "name": "Present",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "The battle opponent, and a succession of opposing Pokémon adjacent to it, spin. Those that spin Blue Attacks are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    },
+    {
+      "name": "Take Flight",
+      "type": "BLUE",
+      "size": 24,
+      "note": "This Pokémon is elminated from the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 390,
+    "pokemon_id_raw": "225",
+    "national_dex": 225,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "5.0",
+    "last_update": "5.0",
+    "evolves_from": [],
+    "evolves_to": [
+      391
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Subzero Slammer"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "wheel": [
+    {
+      "name": "Earthquake",
+      "source_damage_or_stars": "140",
+      "source_effect_ids": [],
+      "note": "All Pokémon on the field spin, except this one. Those that spin Miss are knocked out."
+    },
+    {
+      "name": "Rock Slide",
+      "source_damage_or_stars": "100",
+      "source_effect_ids": [],
+      "note": "All neighboring Pokémon spin. Those that spin Miss are knocked out."
+    },
+    {
+      "name": "Miss",
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "note": ""
+    }
+  ]
+}

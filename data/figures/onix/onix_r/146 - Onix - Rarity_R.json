@@ -1,0 +1,81 @@
+{
+  "figure_id": "onix_146",
+  "display_name": "Onix R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "icon": "146 - Onix - Rarity_R.png",
+  "model": "res://assets/figures/models/onix/onix_r/146 - Onix - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Rock Slide",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*All neighbor Pokémon spin - those that miss are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dig",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "You can move this Pokémon to an open spot next to an adjacent figure (or adjacent figures in succession to the first)."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 146,
+    "pokemon_id_raw": "095",
+    "national_dex": 95,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0",
+    "last_update": "7.0.7",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Continental Crush"
+    ]
+  }
+}

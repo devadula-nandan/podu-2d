@@ -1,0 +1,94 @@
+{
+  "figure_id": "naganadel_501",
+  "display_name": "Naganadel UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "POISON",
+    "DRAGON"
+  ],
+  "icon": "res://data/figures/naganadel/naganadel_ux/501 - Naganadel - Rarity_UX.png",
+  "model": "res://assets/figures/models/naganadel/naganadel_ux/501 - Naganadel - Rarity_UX.fbx",
+  "ability": {
+    "name": "Pulsar Venom",
+    "note": "Ultra Beast. When this Pokémon moves to the field, or appears as an Evolution, it excludes each player's used plates from the duel. After its first battle since moving to the field, it poisons its battle opponent and each Pokémon that has a special condition.",
+    "effect_ids": [
+      0
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "U-turn",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Dragon Pulse",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 83,
+      "source_damage_or_stars": "83",
+      "note": "Deals +50 damage if the battle opponent is a Dragon-type Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ultra Sting",
+      "type": "BLUE",
+      "size": 28,
+      "note": "If there are any Pokémon in the Ultra Space, an opposing Pokémon on the field spins. If it spins a White Attack, it becomes noxious. Repeat this effect for each Pokémon in the Ultra Space.",
+      "source_effect_ids": [
+        1
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 501,
+    "pokemon_id_raw": "804",
+    "national_dex": 804,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      502
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Acid Downpour",
+      "Clangorous Soulblaze"
+    ],
+    "material": 5000,
+    "first_appear": "6.2.3",
+    "last_update": "6.2.3"
+  }
+}

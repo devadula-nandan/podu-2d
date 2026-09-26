@@ -49,11 +49,11 @@ async function actOnce(page: Page): Promise<void> {
 }
 
 async function openAndReady(page: Page): Promise<void> {
-  await page.goto('/2d?seed=4242', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=4242', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   expect(page.url()).not.toContain('relay=');
-  await expect(page.getByTestId('network-invite-url')).toHaveText(/\/2d\?seed=4242$/);
-  await page.getByTestId('use-starters').click();
+  await expect(page.getByTestId('network-invite-url')).toHaveText(/\/3d\?seed=4242$/);
+  await page.getByTestId('deck-slot-load-0').click();
   await expect(page.getByTestId('start-duel')).toBeEnabled({ timeout: 10_000 });
   await page.getByTestId('start-duel').click();
 }
@@ -100,7 +100,7 @@ test('two contexts share seed 4242, reclaim a vacant seat, and reject a third pl
 
   const c3 = await browser.newContext();
   const p3 = await c3.newPage();
-  await p3.goto('/2d?seed=4242', { waitUntil: 'domcontentloaded' });
+  await p3.goto('/3d?seed=4242', { waitUntil: 'domcontentloaded' });
   await expect(p3.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(p3.getByTestId('play-duel')).toHaveAttribute('data-role', 'home');
   await expect.poll(async () => occupancy(p3)).toBe(board);
@@ -128,7 +128,7 @@ test('two contexts share seed 4242, reclaim a vacant seat, and reject a third pl
 
   const c4 = await browser.newContext();
   const p4 = await c4.newPage();
-  await p4.goto('/2d?seed=4242', { waitUntil: 'domcontentloaded' });
+  await p4.goto('/3d?seed=4242', { waitUntil: 'domcontentloaded' });
   await expect(p4.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(p4.getByTestId('play-duel')).toHaveAttribute('data-role', 'spectator');
   await expect(p4.getByTestId('table-full')).toBeVisible();

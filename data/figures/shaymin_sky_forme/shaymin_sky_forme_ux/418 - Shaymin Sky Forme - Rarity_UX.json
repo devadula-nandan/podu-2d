@@ -1,0 +1,89 @@
+{
+  "figure_id": "shaymin_sky_forme_418",
+  "display_name": "Shaymin Sky Forme UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GRASS",
+    "FLYING"
+  ],
+  "icon": "res://data/figures/shaymin_sky_forme/shaymin_sky_forme_ux/418 - Shaymin Sky Forme - Rarity_UX.png",
+  "model": "res://assets/figures/models/shaymin_sky_forme/shaymin_sky_forme_ux/418 - Shaymin Sky Forme - Rarity_UX.fbx",
+  "ability": {
+    "name": "Thankfulness",
+    "note": "This Pokémon can MP move over non-Flying-type Pokémon on the field. While this Pokémon is on the field, MP1 or lower Pokémon on your bench, and MP1 or lower Pokémon within 2 steps of this Pokémon gain +1 MP. When this Pokémon becomes frozen or when it is knocked out, this Pokémon changes its form to [CTRL FID 442][Land Forme], if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Seed Flare",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "If there are any poisoned and/or noxious Pokémon, this damage is multiplied by the number of those Pokémon. *Removes all Poisoned and Noxious conditions from all Pokémon."
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dazzling Gleam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 79,
+      "source_damage_or_stars": "79",
+      "note": "*Opposing Pokémon adjacent to this Pokémon spin, and if they spin a Gold Attack then they are knocked out."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 418,
+    "pokemon_id_raw": "492 sky",
+    "national_dex": 492,
+    "variant": "sky",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      419
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Bloom Doom"
+    ],
+    "material": 5000,
+    "first_appear": "6.0.4",
+    "last_update": "6.0.12"
+  }
+}

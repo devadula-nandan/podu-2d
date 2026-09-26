@@ -1,0 +1,80 @@
+{
+  "figure_id": "rowlet_384",
+  "display_name": "Rowlet UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GRASS",
+    "FLYING"
+  ],
+  "icon": "384 - Rowlet - Rarity_UC.png",
+  "model": "res://assets/figures/models/rowlet/rowlet_uc/384 - Rowlet - Rarity_UC.fbx",
+  "ability": {
+    "name": "Rapid Approach",
+    "note": "All the Blue Attacks of this Pokémon's battle opponents become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Leafage",
+      "type": "WHITE",
+      "size": 60,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 384,
+    "pokemon_id_raw": "722",
+    "national_dex": 722,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "4.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      "384 mega"
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Bloom Doom"
+    ]
+  }
+}

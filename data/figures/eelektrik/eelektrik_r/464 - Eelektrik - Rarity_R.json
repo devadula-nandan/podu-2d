@@ -1,0 +1,83 @@
+{
+  "figure_id": "eelektrik_464",
+  "display_name": "Eelektrik R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "464 - Eelektrik - Rarity_R.png",
+  "model": "res://assets/figures/models/eelektrik/eelektrik_r/464 - Eelektrik - Rarity_R.fbx",
+  "ability": {
+    "name": "Electroswap",
+    "note": "At the start of your turn, instead of an MP move, this Pokémon may switch places with an adjacent Electric-type Pokémon or paralyzed Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Volt Switch",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Shocking Suction Cups",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes Paralyzed.",
+      "source_effect_ids": [
+        10
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 464,
+    "pokemon_id_raw": "603",
+    "national_dex": 603,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.10",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      112
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

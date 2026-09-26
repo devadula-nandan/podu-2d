@@ -1,0 +1,88 @@
+{
+  "figure_id": "kabuto_062",
+  "display_name": "Kabuto UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "WATER"
+  ],
+  "icon": "062 - Kabuto - Rarity_UC.png",
+  "model": "res://assets/figures/models/kabuto/kabuto_uc/062 - Kabuto - Rarity_UC.fbx",
+  "ability": {
+    "name": "Battle Armor",
+    "note": "If your battle opponent spins an Attack with 10 or more damage, you can force them to spin again once per turn.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Mud Shot",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Attach MP -1 marker to the battle opponent."
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Aqua Jet",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 62,
+    "pokemon_id_raw": "140",
+    "national_dex": 140,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0.7",
+    "evolves_from": [
+      61
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Continental Crush",
+      "Hydro Vortex"
+    ]
+  }
+}

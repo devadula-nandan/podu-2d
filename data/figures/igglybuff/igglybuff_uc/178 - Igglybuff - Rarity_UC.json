@@ -1,0 +1,79 @@
+{
+  "figure_id": "igglybuff_178",
+  "display_name": "Igglybuff UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FAIRY"
+  ],
+  "icon": "178 - Igglybuff - Rarity_UC.png",
+  "model": "res://assets/figures/models/igglybuff/igglybuff_uc/178 - Igglybuff - Rarity_UC.fbx",
+  "ability": {
+    "name": "Balloon Body",
+    "note": "If a Pokémon finishes an MP move next to this Pokémon, this Pokémon moves 1 space away. ",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Sing",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Pound",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 178,
+    "pokemon_id_raw": "174",
+    "national_dex": 174,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "7.0.4",
+    "evolves_from": [
+      177
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Breakneck Blitz"
+    ]
+  }
+}

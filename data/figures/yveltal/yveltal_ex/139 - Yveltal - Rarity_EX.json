@@ -1,0 +1,93 @@
+{
+  "figure_id": "yveltal_139",
+  "display_name": "Yveltal EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "FLYING"
+  ],
+  "icon": "139 - Yveltal - Rarity_EX.png",
+  "model": "res://assets/figures/models/yveltal/yveltal_ex/139 - Yveltal - Rarity_EX.fbx",
+  "ability": {
+    "name": "Darkness Shield",
+    "note": "While this Pokémon is on the field, opposing Ghost-type Pokémon cannot use the effect of an Ability to pass through your Dark-type Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Draining Wind",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "One Pokémon within 3 steps' range is drawn 1-2 steps closer to this Pokémon and is given an MP -1 marker."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Oblivion Wing",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 151,
+      "source_damage_or_stars": "151"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dark Mist",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "While this Pokémon is on the field, your Dark-type Pokémon receive a +10 boost to attack damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 139,
+    "pokemon_id_raw": "717",
+    "national_dex": 717,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "7.0.0",
+    "evolves_from": [
+      138
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Supersonic Skystrike"
+    ]
+  }
+}

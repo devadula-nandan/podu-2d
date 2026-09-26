@@ -1,0 +1,74 @@
+{
+  "figure_id": "metapod_155",
+  "display_name": "Metapod UC",
+  "available_in_roster": true,
+  "movement_points": 0,
+  "types": [
+    "BUG"
+  ],
+  "icon": "155 - Metapod - Rarity_UC.png",
+  "model": "res://assets/figures/models/metapod/metapod_uc/155 - Metapod - Rarity_UC.fbx",
+  "ability": {
+    "name": "Metamorphosis",
+    "note": "If this Pokémon is not knocked out in battle, it can evolve.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Harden",
+      "type": "WHITE",
+      "size": 68,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If the battle opponent spins an Attack of 100 damage or less, this Pokémon is not knocked out. While this Pokémon is on the field, the Attacks of this Pokémon, other than Harden, deal +10 damage."
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 155,
+    "pokemon_id_raw": "011",
+    "national_dex": 11,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 0,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.12",
+    "last_update": "3.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      156
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out"
+    ]
+  }
+}

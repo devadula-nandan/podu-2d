@@ -1,0 +1,87 @@
+{
+  "figure_id": "dragonair_280",
+  "display_name": "Dragonair R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "280 - Dragonair - Rarity_R.png",
+  "model": "res://assets/figures/models/dragonair/dragonair_r/280 - Dragonair - Rarity_R.fbx",
+  "ability": {
+    "name": "Shed Skin",
+    "note": "At beginning of your turn, you may remove all special conditions from this Pokémon. When you do, you may evolve this Pokémon, if possible. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Magnetic Storm",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and all neighbor Pokémon become Paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Dragon Tail",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*Benches your battle opponent (except when opponent has Fainted). Your battle opponent must then Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 280,
+    "pokemon_id_raw": "148",
+    "national_dex": 148,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "7.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      281
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

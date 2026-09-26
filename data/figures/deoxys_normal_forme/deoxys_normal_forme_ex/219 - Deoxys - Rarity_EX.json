@@ -1,0 +1,92 @@
+{
+  "figure_id": "deoxys_normal_forme_219",
+  "display_name": "Deoxys Normal Forme EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "219 - Deoxys - Rarity_EX.png",
+  "model": "res://assets/figures/models/deoxys_normal_forme/deoxys_normal_forme_ex/219 - Deoxys - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Psycho Boost",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 219,
+    "pokemon_id_raw": "386",
+    "national_dex": 386,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.2",
+    "evolves_from": [
+      218
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

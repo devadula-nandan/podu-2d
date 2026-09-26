@@ -59,11 +59,11 @@ async function expectSameBoard(a: Page, b: Page): Promise<void> {
 }
 
 async function readyHotseat(page: Page, seed: number): Promise<void> {
-  await page.goto(`/2d?seed=${String(seed)}`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`/3d?seed=${String(seed)}`, { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await expect(page.getByTestId('human-seat')).toHaveCount(0);
   expect(page.url()).not.toContain('relay=');
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await expect(page.getByTestId('start-duel')).toBeEnabled({ timeout: 10_000 });
   await page.getByTestId('start-duel').click();
 }
@@ -130,19 +130,19 @@ test('two tabs on the same seed are opposite sides, both bottom-oriented', async
   expect(page.url()).not.toContain('relay=');
 
   const watcher = await context.newPage();
-  await watcher.goto('/2d?seed=2118', { waitUntil: 'domcontentloaded' });
+  await watcher.goto('/3d?seed=2118', { waitUntil: 'domcontentloaded' });
   await expect(watcher.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(watcher.getByTestId('play-duel')).toHaveAttribute('data-role', 'spectator');
   await expect(watcher.getByTestId('table-full')).toBeVisible();
 });
 
-test('/2d vs-AI has no seat picker and keeps the human at the bottom', async ({ page }) => {
+test('/3d vs-AI has no seat picker and keeps the human at the bottom', async ({ page }) => {
   test.setTimeout(60_000);
-  await page.goto('/2d?seed=2116', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2116', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await page.getByTestId('mode-vs-ai').check();
   await expect(page.getByTestId('human-seat')).toHaveCount(0);
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(page.getByTestId('play-duel')).toHaveAttribute('data-mode', 'vsAi');

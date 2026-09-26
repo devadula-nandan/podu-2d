@@ -1,0 +1,91 @@
+{
+  "figure_id": "sentret_012",
+  "display_name": "Sentret C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "012 - Sentret - Rarity_C.png",
+  "model": "res://assets/figures/models/sentret/sentret_c/012 - Sentret - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Step Away",
+      "type": "BLUE",
+      "size": 28,
+      "note": "This Pokémon moves 1-3 steps back."
+    },
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Tail Smack",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 12,
+    "pokemon_id_raw": "161",
+    "national_dex": 161,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      11
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ]
+  }
+}

@@ -7,6 +7,7 @@
  */
 import { PLATE_COST_BUDGET, PLATE_DECK_SLOTS } from '../rules/constants.js';
 import type { Clause } from '../content/dsl/effects.js';
+import type { Zone } from '../content/dsl/primitives.js';
 import type { Figure, Plate } from '../content/schema.js';
 import { FIGURE_COPY_LIMIT } from './constants.js';
 import type { FigureUid, PlayerId } from './ids.js';
@@ -79,6 +80,17 @@ export function isVoluntaryFormClause(clause: Clause): boolean {
 
 export function isPreSelectClause(clause: Clause): boolean {
   return /before using this pok/i.test(clause.source);
+}
+
+/**
+ * Original Duel fires "Before using this Pokémon" when that figure is used, from the
+ * zone the text names. Ice Breaker is a field swap; Bergmite / Plusle-style text is a
+ * bench placement. Running every bench copy at turn start hung Wait Trap on Avalugg.
+ */
+export function preSelectZoneOk(clause: Clause, zone: Zone): boolean {
+  if (!isPreSelectClause(clause)) return false;
+  const benchText = /from the bench|\bon the bench\b/i.test(clause.source);
+  return benchText ? zone === 'bench' : zone === 'field';
 }
 
 export function isActivableAbilityClause(clause: Clause): boolean {

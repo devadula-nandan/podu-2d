@@ -1,0 +1,84 @@
+{
+  "figure_id": "golem_013",
+  "display_name": "Golem UC",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "icon": "013 - Golem - Rarity_UC.png",
+  "model": "res://assets/figures/models/golem/golem_uc/013 - Golem - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Rock Throw",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Rock Blast",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 60,
+      "source_damage_or_stars": "60x",
+      "note": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins."
+    },
+    {
+      "name": "Rockwall",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30",
+      "note": "*If the battle opponent's Attack is 120 damage or below, this Pokémon cannot be knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 13,
+    "pokemon_id_raw": "076",
+    "national_dex": 76,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 1,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0.8",
+    "evolves_from": [],
+    "evolves_to": [
+      14
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Continental Crush"
+    ]
+  }
+}

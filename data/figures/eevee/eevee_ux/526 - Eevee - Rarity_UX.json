@@ -1,0 +1,90 @@
+{
+  "figure_id": "eevee_526",
+  "display_name": "Eevee UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "res://data/figures/eevee/eevee_ux/526 - Eevee - Rarity_UX.png",
+  "model": "res://assets/figures/models/eevee/eevee_ux/526 - Eevee - Rarity_UX.fbx",
+  "ability": {
+    "name": "Bright Arrow",
+    "note": "Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the bench.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Baby-Doll Eyes",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The Blue Attacks of the Pokémon hit by this Attack will be Misses during the next turn."
+    },
+    {
+      "name": "Take Down",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 80,
+      "source_damage_or_stars": "80"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Double-Edge",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and the battle opponent are knocked out."
+    },
+    {
+      "name": "Last Resort",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 526,
+    "pokemon_id_raw": "133 ux",
+    "national_dex": 133,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [
+      525
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz",
+      "Extreme Evoboost"
+    ],
+    "material": 5000,
+    "first_appear": "6.2.1",
+    "last_update": "6.2.1"
+  }
+}

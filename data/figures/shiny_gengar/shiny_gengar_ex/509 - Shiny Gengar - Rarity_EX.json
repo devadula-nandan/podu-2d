@@ -1,0 +1,83 @@
+{
+  "figure_id": "shiny_gengar_509",
+  "display_name": "Shiny Gengar EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "POISON"
+  ],
+  "icon": "509 - Shiny Gengar - Rarity_EX.png",
+  "model": "res://assets/figures/models/shiny_gengar/shiny_gengar_ex/509 - Shiny Gengar - Rarity_EX.fbx",
+  "ability": {
+    "name": "Night Stalker",
+    "note": "This Pokémon [CTRL NOTE][on the field] can pass through other Pokémon when it MP moves. If it passes through poisoned, noxious, or sleeping Pokémon, they will faint.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Contagious Terror",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent, and a succession of opposing Pokémon adjacent to it, gain Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    },
+    {
+      "name": "Night Shade",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 509,
+    "pokemon_id_raw": "094 shiny",
+    "national_dex": 94,
+    "variant": "shiny",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.2",
+    "last_update": "6.0.2",
+    "evolves_from": [],
+    "evolves_to": [
+      510
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Acid Downpour"
+    ]
+  }
+}

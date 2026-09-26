@@ -1,0 +1,102 @@
+{
+  "figure_id": "glalie_471",
+  "display_name": "Glalie R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ICE"
+  ],
+  "icon": "471 - Glalie - Rarity_R.png",
+  "model": "res://assets/figures/models/glalie/glalie_r/471 - Glalie - Rarity_R.fbx",
+  "ability": {
+    "name": "Inner Focus",
+    "note": "This Pokémon cannot gain Wait while it is on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Ice Shard",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*Opposing Pokémon within 2 steps of this Pokémon spin. If the result is anything other than a Blue Attack, the effects of Sphere plates used on those Pokémon are nullified."
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Freeze-Dry",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Deals +50 damage if the battle opponent is a Water-type Pokémon. The battle opponent and all opposing Pokémon adjacent to it spin, and if they spin a Blue Attack, they become frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Diamond Dust",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 471,
+    "pokemon_id_raw": "362",
+    "national_dex": 362,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.11",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      133,
+      "133 ux"
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Subzero Slammer"
+    ]
+  }
+}

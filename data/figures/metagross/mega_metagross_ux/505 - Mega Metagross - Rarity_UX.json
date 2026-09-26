@@ -1,0 +1,152 @@
+{
+  "ability": {
+    "effect_ids": [],
+    "name": "Superjammer",
+    "note": "When this Pokémon moves from the bench to the field, or when this Pokémon appears as an Evolution, the Abilities of opposing Pokémon that have a Cracked marker are lost while those Pokémon are on the field. Your Psychic-type and Steel-type Pokémon each deal +10 damage."
+  },
+  "auto_fit_model": true,
+  "available_in_roster": false,
+  "display_name": "Mega Metagross UX",
+  "evolution_stage": 0,
+  "evolves_from_figure_ids": [],
+  "evolves_to_figure_ids": [],
+  "figure_id": "mega_metagross_505",
+  "icon": "res://data/figures/metagross/mega_metagross_ux/505 - Mega Metagross - Rarity_UX.png",
+  "is_mega_evolution": true,
+  "model": "res://assets/figures/models/metagross/mega_metagross_ux/505 - Mega Metagross - Rarity_UX.fbx",
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "movement_points": 3,
+  "rarity": "UX",
+  "source_data": {
+    "app_figure_id": 505,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7",
+    "max_movement": 3,
+    "national_dex": 376,
+    "pokemon_id_raw": "376 mega",
+    "rarity": "UX",
+    "source_evolves_from": [
+      504.0
+    ],
+    "source_evolves_to": [],
+    "variant": "mega",
+    "wheel_total": 96,
+    "z_move_keys": [
+      "Shattered Psyche",
+      "Corkscrew Crash"
+    ]
+  },
+  "target_model_height": 0.9,
+  "types": [
+    "STEEL",
+    "PSYCHIC"
+  ],
+  "wheel": [
+    {
+      "damage": 0,
+      "name": "Miss",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "RED"
+    },
+    {
+      "damage": 0,
+      "name": "Dodge",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "BLUE"
+    },
+    {
+      "damage": 100,
+      "name": "Bullet Punch",
+      "note": "",
+      "size": 16,
+      "source_damage_or_stars": "100",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "GOLD"
+    },
+    {
+      "damage": 0,
+      "name": "Dodge",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "BLUE"
+    },
+    {
+      "damage": 160,
+      "name": "Meteor Mash",
+      "note": "*After this battle, this Pokémon deals +30 damage while it is on the field.",
+      "size": 28,
+      "source_damage_or_stars": "160",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "WHITE"
+    },
+    {
+      "damage": 0,
+      "name": "Dodge",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "BLUE"
+    },
+    {
+      "damage": 100,
+      "name": "Bullet Punch",
+      "note": "",
+      "size": 16,
+      "source_damage_or_stars": "100",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "GOLD"
+    },
+    {
+      "damage": 0,
+      "name": "Dodge",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "BLUE"
+    },
+    {
+      "damage": 0,
+      "name": "Teleport Beam",
+      "note": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+      "size": 16,
+      "source_damage_or_stars": "☆☆",
+      "source_effect_ids": [
+        6.0
+      ],
+      "stars": 2,
+      "type": "PURPLE"
+    }
+  ]
+}

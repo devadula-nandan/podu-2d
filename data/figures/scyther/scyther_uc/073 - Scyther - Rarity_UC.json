@@ -1,0 +1,82 @@
+{
+  "figure_id": "scyther_073",
+  "display_name": "Scyther UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FLYING"
+  ],
+  "icon": "073 - Scyther - Rarity_UC.png",
+  "model": "res://assets/figures/models/scyther/scyther_uc/073 - Scyther - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "False Swipe",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Slash",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Swords Dance",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 0,
+      "note": "Spin again until an attack other than Swords Dance is spun. Damage Attacks deal ×2 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 73,
+    "pokemon_id_raw": "123",
+    "national_dex": 123,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      72
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Supersonic Skystrike"
+    ]
+  }
+}

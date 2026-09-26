@@ -1,0 +1,82 @@
+{
+  "figure_id": "seedot_010",
+  "display_name": "Seedot C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "010 - Seedot - Rarity_C.png",
+  "model": "res://assets/figures/models/seedot/seedot_c/010 - Seedot - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Explosion",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and all neighbor Pokémon faint."
+    },
+    {
+      "name": "Bullet Seed",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 20,
+      "source_damage_or_stars": "20x",
+      "note": "Spin again until Bullet Seed does not land - damage is multiplied by the number of Bullet Seed spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 10,
+    "pokemon_id_raw": "273",
+    "national_dex": 273,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      11
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

@@ -1,10 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
-import { WHEEL_TOTAL_UNITS } from '../rules/constants.js';
-import { drawWheel } from '../render/draw-wheel.js';
-import { FigureSprite } from '../ui/FigureSprite.js';
-import { describeSegment, landedSegment, type BattleSnap } from '../ui/model.js';
-import { easeOutCubic, motionMs, RESULT_HOLD_MS, SPIN_HOLD_MS, SPIN_MS } from './motion.js';
+import { drawWheel, spinTargetDegrees } from '../render/draw-wheel.js';
+import {
+  landedPower,
+  landedSegment,
+  viewingWin,
+  winBanner,
+  type BattleSnap,
+} from '../ui/model.js';
+import { CLASH_MS, motionMs, RESULT_HOLD_MS, SPIN_HOLD_MS, SPIN_MS } from './motion.js';
 import { playSfx } from './sfx.js';
+
+/** WebGL diagonal duel: you bottom-left → NE (45°), rival top-right → SW (225°). */
+const YOU_DIAG_POINTER_TURNS = 45 / 360;
+const RIVAL_DIAG_POINTER_TURNS = 225 / 360;
 
 interface Props {
   readonly snap: BattleSnap;
@@ -12,6 +20,7 @@ interface Props {
   readonly defenderName: string;
   readonly attackerSprite: string | null;
   readonly defenderSprite: string | null;
+  readonly youAreAttacker: boolean;
   readonly awaitingRespin: boolean;
   readonly muted: boolean;
   readonly onClose: () => void;
@@ -19,27 +28,27 @@ interface Props {
 
 function WheelFace({
   label,
-  portraitUrl,
   segments,
   unit,
-  pointer,
+  pointerTurns,
+  seat,
   muted,
 }: {
   readonly label: string;
-  readonly portraitUrl: string | null;
   readonly segments: BattleSnap['attackerWheel'];
   readonly unit: number | null;
-  readonly pointer: string;
+  readonly pointerTurns: number;
+  readonly seat: 'you' | 'rival';
   readonly muted: boolean;
 }) {
   return (
     <WheelFaceInner
       key={unit === null ? 'idle' : String(unit)}
       label={label}
-      portraitUrl={portraitUrl}
       segments={segments}
       unit={unit}
-      pointer={pointer}
+      pointerTurns={pointerTurns}
+      seat={seat}
       muted={muted}
     />
   );
@@ -47,132 +56,111 @@ function WheelFace({
 
 function WheelFaceInner({
   label,
-  portraitUrl,
   segments,
   unit,
-  pointer,
+  pointerTurns,
+  seat,
   muted,
 }: {
   readonly label: string;
-  readonly portraitUrl: string | null;
   readonly segments: BattleSnap['attackerWheel'];
   readonly unit: number | null;
-  readonly pointer: string;
+  readonly pointerTurns: number;
+  readonly seat: 'you' | 'rival';
   readonly muted: boolean;
 }) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const spinRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [turns, setTurns] = useState(0);
+  const [px, setPx] = useState(480);
   const [settled, setSettled] = useState(unit === null);
-  const fromRef = useRef(0);
 
   useEffect(() => {
-    if (unit === null) return;
-    playSfx('spin', muted);
-    const target = -unit / WHEEL_TOTAL_UNITS - 2;
-    const start = fromRef.current;
-    const delta = target - start;
-    const begun = performance.now();
-    const duration = motionMs(SPIN_MS);
-    const hold = motionMs(SPIN_HOLD_MS);
-    let frame = 0;
-    let tickAt = 0;
-    let holdTimer = 0;
-    const tick = (now: number): void => {
-      const t = duration === 0 ? 1 : Math.min(1, (now - begun) / duration);
-      setTurns(start + delta * easeOutCubic(t));
-      if (now - tickAt > 70 && t < 1) {
-        playSfx('tick', muted);
-        tickAt = now;
-      }
-      if (t < 1) {
-        frame = requestAnimationFrame(tick);
-        return;
-      }
-      fromRef.current = target;
-      holdTimer = window.setTimeout(() => {
-        setSettled(true);
-      }, hold);
+    const wrap = wrapRef.current;
+    if (wrap === null) return;
+    const fit = (): void => {
+      const box = wrap.getBoundingClientRect();
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      const edge = Math.max(160, Math.floor(Math.min(box.width, box.height) * dpr));
+      setPx(edge);
     };
-    frame = requestAnimationFrame(tick);
-    return () => {
-      cancelAnimationFrame(frame);
-      window.clearTimeout(holdTimer);
-    };
-  }, [muted, unit]);
+    fit();
+    const observer = new ResizeObserver(fit);
+    observer.observe(wrap);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (canvas === null) return;
-    const size = 240;
-    canvas.width = size;
-    canvas.height = size;
+    canvas.width = px;
+    canvas.height = px;
     const ctx = canvas.getContext('2d');
     if (ctx === null) return;
-    drawWheel(ctx, { segments, rotationTurns: turns, landedUnit: settled ? unit : null, pointerLabel: pointer }, size);
-  }, [pointer, segments, settled, turns, unit]);
-
-  return (
-    <div className="play-wheel">
-      <p className="battle-face">
-        <FigureSprite url={portraitUrl} name={label} className="battle-portrait" />
-        {label}
-      </p>
-      <canvas ref={canvasRef} width={240} height={240} />
-    </div>
-  );
-}
-
-function BattleCopy({
-  snap,
-  attackerName,
-  defenderName,
-  spinning,
-  muted,
-}: {
-  readonly snap: BattleSnap;
-  readonly attackerName: string;
-  readonly defenderName: string;
-  readonly spinning: boolean;
-  readonly muted: boolean;
-}) {
-  const atkUnit = snap.attackerLanded?.unit ?? null;
-  const defUnit = snap.defenderLanded?.unit ?? null;
-  const [reveal, setReveal] = useState(false);
+    drawWheel(
+      ctx,
+      {
+        segments,
+        rotationTurns: 0,
+        landedUnit: settled ? unit : null,
+        pointerLabel: '',
+        pointerTurns,
+        labels: 'full',
+        showPointer: false,
+        hubLabel: null,
+        look: 'duel',
+      },
+      px,
+    );
+  }, [pointerTurns, px, segments, settled, unit]);
 
   useEffect(() => {
-    if (atkUnit === null || defUnit === null) return;
-    const wait = motionMs(SPIN_MS) + motionMs(SPIN_HOLD_MS);
-    const timer = window.setTimeout(() => {
-      setReveal(true);
-      playSfx('hit', muted);
-    }, wait);
-    return () => {
-      window.clearTimeout(timer);
-    };
-  }, [atkUnit, defUnit, muted]);
+    const spin = spinRef.current;
+    if (spin === null || unit === null) return;
+    playSfx('spin', muted);
+    const duration = motionMs(SPIN_MS);
+    const hold = motionMs(SPIN_HOLD_MS);
+    const target = spinTargetDegrees(unit, pointerTurns);
+    let holdTimer = 0;
+    let tickTimer = 0;
+    let endTimer = 0;
 
-  const atkSeg = landedSegment(snap.attackerWheel, snap.attackerLanded?.index ?? null);
-  const defSeg = landedSegment(snap.defenderWheel, snap.defenderLanded?.index ?? null);
-  const showLanded = reveal && spinning;
+    spin.style.transition = 'none';
+    spin.style.transform = 'rotate(0deg)';
+    void spin.offsetWidth;
+    spin.style.transition = `transform ${duration}ms cubic-bezier(0.1, 0.7, 0.08, 1)`;
+    spin.style.transform = `rotate(${target}deg)`;
+
+    const tickEvery = 70;
+    const begun = performance.now();
+    const tick = (): void => {
+      const elapsed = performance.now() - begun;
+      if (elapsed < duration) {
+        playSfx('tick', muted);
+        tickTimer = window.setTimeout(tick, tickEvery);
+      }
+    };
+    tickTimer = window.setTimeout(tick, tickEvery);
+
+    endTimer = window.setTimeout(() => {
+      holdTimer = window.setTimeout(() => {
+        setSettled(true);
+      }, hold);
+    }, duration);
+
+    return () => {
+      window.clearTimeout(tickTimer);
+      window.clearTimeout(endTimer);
+      window.clearTimeout(holdTimer);
+    };
+  }, [muted, pointerTurns, unit]);
 
   return (
-    <>
-      {showLanded ? (
-        <p className="play-landed" data-testid="play-landed">
-          {describeSegment(atkSeg)} vs {describeSegment(defSeg)}
-        </p>
-      ) : (
-        <p className="play-landed is-wait">Wheels spinning…</p>
-      )}
-      {showLanded && snap.outcome !== null ? (
-        <p data-testid="battle-outcome">
-          <strong>
-            {snap.outcome.winner === null ? 'Draw' : snap.outcome.winner === 'attacker' ? attackerName : defenderName}
-          </strong>
-          <span> · {snap.outcome.decidedBy}</span>
-        </p>
-      ) : null}
-    </>
+    <div className="play-wheel" data-seat={seat} ref={wrapRef}>
+      <div className="play-wheel-spin" ref={spinRef}>
+        <canvas ref={canvasRef} width={px} height={px} aria-label={`${seat} ${label} wheel`} />
+      </div>
+    </div>
   );
 }
 
@@ -180,8 +168,7 @@ export function PlayBattle({
   snap,
   attackerName,
   defenderName,
-  attackerSprite,
-  defenderSprite,
+  youAreAttacker,
   awaitingRespin,
   muted,
   onClose,
@@ -191,53 +178,114 @@ export function PlayBattle({
   const spinning = atkUnit !== null || defUnit !== null;
   const spinKey = spinning ? `${String(atkUnit)}-${String(defUnit)}` : 'idle';
   const onCloseRef = useRef(onClose);
+  const introOnce = useRef(false);
+  const [intro, setIntro] = useState(true);
+  const [reveal, setReveal] = useState(false);
 
   useEffect(() => {
     onCloseRef.current = onClose;
   }, [onClose]);
 
   useEffect(() => {
-    if (!spinning) return;
+    if (introOnce.current) {
+      setIntro(false);
+      return;
+    }
+    introOnce.current = true;
+    playSfx('hit', muted);
     const timer = window.setTimeout(() => {
-      onCloseRef.current();
-    }, motionMs(SPIN_MS) + motionMs(SPIN_HOLD_MS) + RESULT_HOLD_MS);
+      setIntro(false);
+    }, motionMs(CLASH_MS));
     return () => {
       window.clearTimeout(timer);
     };
-  }, [spinKey, spinning]);
+  }, [muted]);
+
+  useEffect(() => {
+    if (intro || !spinning) return;
+    const wait = motionMs(SPIN_MS) + motionMs(SPIN_HOLD_MS);
+    const timer = window.setTimeout(() => {
+      setReveal(true);
+      playSfx('hit', muted);
+    }, wait);
+    return () => {
+      window.clearTimeout(timer);
+    };
+  }, [intro, muted, spinKey, spinning]);
+
+  useEffect(() => {
+    if (intro || awaitingRespin || snap.outcome === null) return;
+    const wait = spinning
+      ? motionMs(SPIN_MS) + motionMs(SPIN_HOLD_MS) + RESULT_HOLD_MS
+      : RESULT_HOLD_MS;
+    const timer = window.setTimeout(() => {
+      onCloseRef.current();
+    }, wait);
+    return () => {
+      window.clearTimeout(timer);
+    };
+  }, [awaitingRespin, intro, snap.outcome, spinKey, spinning]);
+
+  useEffect(() => {
+    if (intro || spinning || snap.outcome === null) return;
+    setReveal(true);
+  }, [intro, snap.outcome, spinning]);
+
+  const youName = youAreAttacker ? attackerName : defenderName;
+  const rivalName = youAreAttacker ? defenderName : attackerName;
+  const youWheel = youAreAttacker ? snap.attackerWheel : snap.defenderWheel;
+  const rivalWheel = youAreAttacker ? snap.defenderWheel : snap.attackerWheel;
+  const youUnit = intro ? null : youAreAttacker ? atkUnit : defUnit;
+  const rivalUnit = intro ? null : youAreAttacker ? defUnit : atkUnit;
+  const atkSeg = landedSegment(snap.attackerWheel, snap.attackerLanded?.index ?? null);
+  const defSeg = landedSegment(snap.defenderWheel, snap.defenderLanded?.index ?? null);
+  const youSeg = youAreAttacker ? atkSeg : defSeg;
+  const rivalSeg = youAreAttacker ? defSeg : atkSeg;
+  const youDmg = youAreAttacker ? snap.attackerDamage?.final ?? null : snap.defenderDamage?.final ?? null;
+  const rivalDmg = youAreAttacker ? snap.defenderDamage?.final ?? null : snap.attackerDamage?.final ?? null;
+  const win = viewingWin(snap.outcome, youAreAttacker);
+  const showResult = reveal && spinning && win !== null;
 
   return (
     <div className="play-battle" role="dialog" aria-label="Battle wheels" data-testid="play-battle">
-      <div className="play-battle-card">
-        <p className="play-battle-kicker">Battle</p>
+      <div className="play-battle-card" data-phase={intro ? 'clash' : showResult ? 'result' : 'spin'}>
         <div className="play-wheels">
           <WheelFace
-            label={attackerName}
-            portraitUrl={attackerSprite}
-            segments={snap.attackerWheel}
-            unit={atkUnit}
-            pointer="ATK"
+            label={rivalName}
+            segments={rivalWheel}
+            unit={rivalUnit}
+            pointerTurns={RIVAL_DIAG_POINTER_TURNS}
+            seat="rival"
             muted={muted}
           />
           <WheelFace
-            label={defenderName}
-            portraitUrl={defenderSprite}
-            segments={snap.defenderWheel}
-            unit={defUnit}
-            pointer="DEF"
+            label={youName}
+            segments={youWheel}
+            unit={youUnit}
+            pointerTurns={YOU_DIAG_POINTER_TURNS}
+            seat="you"
             muted={muted}
           />
+          <div className="play-clash" aria-hidden>
+            <span className="play-clash-pin" data-testid="play-clash" />
+          </div>
         </div>
-        <BattleCopy
-          key={spinKey}
-          snap={snap}
-          attackerName={attackerName}
-          defenderName={defenderName}
-          spinning={spinning}
-          muted={muted}
-        />
-        {awaitingRespin ? <p className="play-landed is-wait">A respin is available.</p> : null}
-        <p className="play-wheel-help">W / G / P / B / M plus hatch — colour is never the only signal.</p>
+        <p className="play-landed" data-testid="play-landed" hidden={!reveal}>
+          {reveal
+            ? `${youSeg?.moveName ?? '—'} ${landedPower(youSeg, youDmg)} vs ${rivalSeg?.moveName ?? '—'} ${landedPower(rivalSeg, rivalDmg)}`
+            : `${youName} vs ${rivalName}`}
+        </p>
+        {showResult && win !== null ? (
+          <div className="play-result" data-testid="battle-outcome" data-win={win}>
+            <strong>{winBanner(win)}</strong>
+            <b>
+              {landedPower(youSeg, youDmg)}
+              <span>vs</span>
+              {landedPower(rivalSeg, rivalDmg)}
+            </b>
+          </div>
+        ) : null}
+        {awaitingRespin ? <p className="play-note">A respin is available.</p> : null}
       </div>
     </div>
   );

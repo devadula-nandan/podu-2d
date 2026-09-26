@@ -1,0 +1,96 @@
+{
+  "figure_id": "pheromosa_409",
+  "display_name": "Pheromosa UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FIGHTING"
+  ],
+  "icon": "res://data/figures/pheromosa/pheromosa_ux/409 - Pheromosa - Rarity_UX.png",
+  "model": "res://assets/figures/models/pheromosa/pheromosa_ux/409 - Pheromosa - Rarity_UX.fbx",
+  "ability": {
+    "name": "Ultra Sprint",
+    "note": "In this Pokémon's first battle after moving to the field, any effects of the battle opponent's Ability that increase or decrease damage are nullified. This Pokémon gets +1 MP for each Pokémon in the Ultra Space (to a maximum of MP4).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Low Sweep",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 103,
+      "source_damage_or_stars": "103",
+      "note": "*Attaches an MP - 1 marker to the battle opponent."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 67,
+      "source_damage_or_stars": "67",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Call Signal",
+      "type": "BLUE",
+      "size": 24,
+      "note": "Move one of your Pokémon that is in the Ultra Space to a point 2 steps away from this Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 409,
+    "pokemon_id_raw": "795",
+    "national_dex": 795,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [
+      408
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "All-Out Pummeling"
+    ],
+    "material": 5000,
+    "first_appear": "5.0.8",
+    "last_update": "5.0.8"
+  }
+}

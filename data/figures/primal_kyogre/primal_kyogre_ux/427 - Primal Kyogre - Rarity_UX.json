@@ -1,0 +1,92 @@
+{
+  "figure_id": "primal_kyogre_427",
+  "display_name": "Primal Kyogre UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "res://data/figures/primal_kyogre/primal_kyogre_ux/427 - Primal Kyogre - Rarity_UX.png",
+  "model": "res://assets/figures/models/primal_kyogre/primal_kyogre_ux/427 - Primal Kyogre - Rarity_UX.fbx",
+  "ability": {
+    "name": "Primordial Sea",
+    "note": "While this Pokémon is on the field, [CTRL QL Ultra Beasts][Ultra Beasts] do not move from the Ultra Space to the field by the effects of Abilities or Attacks. When this Pokémon is knocked out in battle, it may go back to being [CTRL FID 46][Kyogre] without moving to the P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Origin Pulse",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Spin for all opposing Pokémon on the field. If they spin a Miss (including a Miss due to paralyzed or burned conditions), they are knocked out. If they spin a Blue Attack, they move to the bench and gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 160,
+      "source_damage_or_stars": "160"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 427,
+    "pokemon_id_raw": "382 primal",
+    "national_dex": 382,
+    "variant": "primal",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      428
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ],
+    "material": 5000,
+    "first_appear": "6.1.1",
+    "last_update": "6.1.1"
+  }
+}

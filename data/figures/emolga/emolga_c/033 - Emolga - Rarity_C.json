@@ -1,0 +1,83 @@
+{
+  "figure_id": "emolga_033",
+  "display_name": "Emolga C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC",
+    "FLYING"
+  ],
+  "icon": "033 - Emolga - Rarity_C.png",
+  "model": "res://assets/figures/models/emolga/emolga_c/033 - Emolga - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    },
+    {
+      "name": "Thunder Shock",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Volt Switch",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 33,
+    "pokemon_id_raw": "587",
+    "national_dex": 587,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      32
+    ],
+    "evolves_to": [
+      34
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Supersonic Skystrike"
+    ]
+  }
+}

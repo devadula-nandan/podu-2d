@@ -1,0 +1,86 @@
+{
+  "figure_id": "shiny_ho_oh_399",
+  "display_name": "Shiny Ho-Oh EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "FLYING"
+  ],
+  "icon": "399 - Shiny Ho-Oh - Rarity_EX.png",
+  "model": "res://assets/figures/models/shiny_ho_oh/shiny_ho_oh_ex/399 - Shiny Ho-Oh - Rarity_EX.fbx",
+  "ability": {
+    "name": "Cleansing Fire",
+    "note": "If this Pokémon is knocked out, opposing Ghost-type Pokémon on the field spin. Those that spin a Purple Attack are knocked out. ",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Sacred Fire",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Fire Blast",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Rainbow Wing",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 399,
+    "pokemon_id_raw": "250 shiny",
+    "national_dex": 250,
+    "variant": "shiny",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.8",
+    "last_update": "6.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      400
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Supersonic Skystrike"
+    ]
+  }
+}

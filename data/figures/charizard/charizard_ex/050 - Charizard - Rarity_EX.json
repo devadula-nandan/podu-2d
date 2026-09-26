@@ -1,0 +1,84 @@
+{
+  "figure_id": "charizard_050",
+  "display_name": "Charizard EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "FLYING"
+  ],
+  "icon": "050 - Charizard - Rarity_EX.png",
+  "model": "res://assets/figures/models/charizard/charizard_ex/050 - Charizard - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fire Spin",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 60,
+      "source_damage_or_stars": "60x",
+      "note": "Spin again until Fire Spin does not land - damage is multiplied by the number of Fire Spin spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dragon Tail",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*Benches your battle opponent (except when opponent has Fainted). Your battle opponent must then Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 50,
+    "pokemon_id_raw": "006",
+    "national_dex": 6,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      51
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Supersonic Skystrike"
+    ]
+  }
+}

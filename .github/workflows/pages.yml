@@ -27,8 +27,13 @@ jobs:
 
       - run: npm ci
 
-      - name: Build
+      - name: Build app
         run: npm run build
+        env:
+          GITHUB_PAGES: 'true'
+
+      - name: Build Storybook
+        run: npm run build-storybook -- -o dist/storybook
         env:
           GITHUB_PAGES: 'true'
 
@@ -40,6 +45,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+
 
   deploy:
     needs: build

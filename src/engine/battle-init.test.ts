@@ -75,7 +75,38 @@ describe('battle initiation', () => {
     ).toThrow(IllegalCommandError);
   });
 
-  it('after deploy only, other field figures can still initiate', () => {
+  it('after deploy, only the deployed figure may initiate', () => {
+    const { engine, state } = harness({
+      p0: [makeFigure(1, { name: 'A' }), makeFigure(2, { name: 'B' })],
+      p1: [makeFigure(3, { name: 'X' }), makeFigure(4, { name: 'Y' })],
+    });
+    const placed = onField(state, [
+      [1, 'r3c6'],
+      [2, 'r3c0'],
+      [3, 'r2c6'],
+    ]);
+    const deployed = engine.dispatch(placed, {
+      kind: 'deploy',
+      player: 0,
+      uid: uid(0),
+      entry: nid('r4c0'),
+      to: nid('r4c0'),
+    });
+    expect(deployed.nextState.turn.moved).toBe(true);
+    expect(deployed.nextState.turn.movedUid).toBe(uid(0));
+    expect(deployed.nextState.phase).toBe('battleDecision');
+    expect(battlePairs(engine.legalCommands(deployed.nextState))).toEqual([[uid(0), uid(2)]]);
+    expect(() =>
+      engine.dispatch(deployed.nextState, {
+        kind: 'initiateBattle',
+        player: 0,
+        attacker: uid(1),
+        defender: uid(3),
+      }),
+    ).toThrow(IllegalCommandError);
+  });
+
+  it('after deploy with no adjacent fight, the turn ends even if another figure is adjacent', () => {
     const { engine, state } = harness({
       p0: [makeFigure(1, { name: 'A' }), makeFigure(2, { name: 'B' })],
       p1: [makeFigure(3, { name: 'X' }), makeFigure(4, { name: 'Y' })],
@@ -90,10 +121,14 @@ describe('battle initiation', () => {
       uid: uid(0),
       entry: nid('r4c0'),
       to: nid('r4c0'),
-    });
-    expect(deployed.nextState.turn.moved).toBe(true);
-    expect(deployed.nextState.turn.movedUid).toBeNull();
-    expect(battlePairs(engine.legalCommands(deployed.nextState))).toEqual([[uid(1), uid(3)]]);
+    }).nextState;
+    expect(deployed.turn.player).toBe(1);
+    expect(engine.legalCommands(deployed).some((command) => command.kind === 'declineBattle')).toBe(false);
+    expect(
+      engine.legalCommands(deployed).some(
+        (command) => command.kind === 'initiateBattle' && command.attacker === uid(1),
+      ),
+    ).toBe(false);
   });
 
   it('rejects a non-adjacent initiateBattle', () => {

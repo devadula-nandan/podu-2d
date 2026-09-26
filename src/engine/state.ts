@@ -232,8 +232,8 @@ export interface TurnState {
   readonly moved: boolean;
   readonly battled: boolean;
   /**
-   * The figure that MP-walked this turn, if any. Deploy, tag and ability actions
-   * consume `moved` but do not set this — battle lock is MP-move only.
+   * The figure that took this turn's movement (MP-walk or deploy). Battle
+   * initiation locks to that figure; if it has no adjacent fight the turn ends.
    */
   readonly movedUid: FigureUid | null;
   /** Occupied figures the last MP path crossed. Cleared at turn start. */
@@ -246,6 +246,8 @@ export interface TurnState {
   readonly extraBattle?: true;
   /** Latches after the preSelect window has been offered once this turn. */
   readonly preSelectClosed?: true;
+  /** Figures whose "Before using this Pokémon" ability already fired this turn. */
+  readonly preSelectOffered?: readonly FigureUid[];
 }
 
 // ---------------------------------------------------------------------------

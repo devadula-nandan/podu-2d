@@ -1,0 +1,87 @@
+{
+  "figure_id": "haxorus_577",
+  "display_name": "Haxorus EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "577 - Haxorus - Rarity_EX.png",
+  "model": "res://assets/figures/models/haxorus/haxorus_ex/577 - Haxorus - Rarity_EX.fbx",
+  "ability": {
+    "name": "Double-Edged Axe",
+    "note": "When this Pokémon sustains an effect from a battle opponent's White Attack that would knock it out, the battle opponent is knocked out instead.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Outrage",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*This Pokémon becomes confused."
+    },
+    {
+      "name": "Dragon Claw",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Guillotine",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 577,
+    "pokemon_id_raw": "612",
+    "national_dex": 612,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.2.2",
+    "last_update": "6.2.2",
+    "evolves_from": [],
+    "evolves_to": [
+      578
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

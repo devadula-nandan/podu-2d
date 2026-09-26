@@ -48,7 +48,7 @@ export type PlayMode = 'hotseat' | 'vsAi';
 /**
  * `allowUnimplemented` is a `createGame` flag, not a `createEngine` flag.
  * The app boots one engine. Flipping the /dev debug toggle and starting is a
- * new session (new `createGame`) on that same engine. /2d always starts with
+ * new session (new `createGame`) on that same engine. /3d always starts with
  * the flag on so any printed figure or plate can sit; gaps stay on state.
  */
 export interface DuelConfig {
@@ -64,6 +64,7 @@ export interface DuelConfig {
 export interface CommandLogEntry {
   readonly id: number;
   readonly who: 'human' | 'ai';
+  readonly player: PlayerId;
   readonly label: string;
   readonly turn: number;
   readonly kind: Command['kind'];
@@ -147,6 +148,11 @@ function toSetup(config: DuelConfig): GameSetup {
 }
 
 function openGame(engine: Engine, config: DuelConfig): { state: GameState; events: readonly GameEvent[] } {
+  try {
+    sessionStorage.removeItem(`podu:match-intro:${config.seed >>> 0}`);
+  } catch {
+    /* private mode */
+  }
   const opened = engine.createGame(toSetup(config));
   return { state: opened.nextState, events: opened.events };
 }
@@ -176,6 +182,7 @@ export function rebuildFromCommands(
       log.push({
         id,
         who,
+        player: row.command.player,
         label: surroundText === null ? baseLabel : `${baseLabel} — ${surroundText}`,
         turn: before.turn.number,
         kind: row.command.kind,
@@ -366,6 +373,7 @@ export function useDuel(engine: Engine, config: DuelConfig, options: DuelHostOpt
         const entry: CommandLogEntry = {
           id: logIdRef.current,
           who,
+          player: command.player,
           label: surroundText === null ? baseLabel : `${baseLabel} — ${surroundText}`,
           turn: current.turn.number,
           kind: command.kind,

@@ -1,0 +1,74 @@
+{
+  "figure_id": "feebas_495",
+  "display_name": "Feebas UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "495 - Feebas - Rarity_UC.png",
+  "model": "res://assets/figures/models/feebas/feebas_uc/495 - Feebas - Rarity_UC.fbx",
+  "ability": {
+    "name": "Evolution to Beauty",
+    "note": "When this Pokémon is knocked out in battle, it may evolve without moving to the P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Flail",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Waterfall",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 20,
+      "source_damage_or_stars": "20",
+      "note": "*If the battle opponent is a Water-type Pokémon, this Pokémon takes no damage and moves to a spot beyond the battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 495,
+    "pokemon_id_raw": "349",
+    "national_dex": 349,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "6.1.0",
+    "last_update": "6.1.0",
+    "evolves_from": [],
+    "evolves_to": [
+      496
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

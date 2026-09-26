@@ -1,0 +1,79 @@
+{
+  "figure_id": "sceptile_283",
+  "display_name": "Sceptile EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "283 - Sceptile - Rarity_EX.png",
+  "model": "res://assets/figures/models/sceptile/sceptile_ex/283 - Sceptile - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Leaf Blade",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 90,
+      "source_damage_or_stars": "90+",
+      "note": "Spin again - if Leaf Blade is spun, it deals +50 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Stealth Hit",
+      "type": "BLUE",
+      "size": 28,
+      "note": "This Pokémon can jump over its battle opponent and land 1 step away."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 283,
+    "pokemon_id_raw": "254",
+    "national_dex": 254,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.6",
+    "last_update": "6.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      284
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

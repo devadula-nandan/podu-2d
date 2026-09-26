@@ -26,8 +26,8 @@ describe('figure sprites', () => {
   const coverage = spriteCoverage(figures);
 
   it('resolves a PokeAPI URL for every printed figure', () => {
-    expect(figures).toHaveLength(596);
-    expect(coverage.resolved).toBe(596);
+    expect(figures).toHaveLength(605);
+    expect(coverage.resolved).toBe(605);
     expect(coverage.fallback).toBe(0);
     expect(coverage.missingIds).toEqual([]);
   });

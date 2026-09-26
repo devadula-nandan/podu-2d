@@ -1,0 +1,96 @@
+{
+  "figure_id": "diglett_133",
+  "display_name": "Diglett UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GROUND"
+  ],
+  "icon": "133 - Diglett - Rarity_UC.png",
+  "model": "res://assets/figures/models/diglett/diglett_uc/133 - Diglett - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Feint Attack",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Dig",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "You can move this Pokémon to an open spot next to an adjacent figure (or adjacent figures in succession to the first)."
+    },
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 133,
+    "pokemon_id_raw": "050",
+    "national_dex": 50,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "3.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      134,
+      "134 ux",
+      135,
+      "135 ux",
+      136,
+      "136 ux",
+      196,
+      "196 ux",
+      197,
+      "197 ux",
+      470,
+      "470 ux",
+      471,
+      "471 ux",
+      700,
+      "700 ux"
+    ],
+    "z_move_keys": [
+      "Tectonic Rage"
+    ]
+  }
+}

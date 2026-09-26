@@ -1,0 +1,87 @@
+{
+  "figure_id": "meganium_445",
+  "display_name": "Meganium EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "445 - Meganium - Rarity_EX.png",
+  "model": "res://assets/figures/models/meganium/meganium_ex/445 - Meganium - Rarity_EX.fbx",
+  "ability": {
+    "name": "Leaf Guard",
+    "note": "This Pokémon cannot be affected by special conditions other than sleep. Do not attach markers to this Pokémon from the Attacks of its battle opponent",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Body Slam",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Petal Blizzard",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*All opposing Pokémon on the field spin. Those that spin a Miss are knocked out."
+    },
+    {
+      "name": "Synthesis",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While they are on the field, your Grass-type Pokémon deal +20 damage to the battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 445,
+    "pokemon_id_raw": "154",
+    "national_dex": 154,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14",
+    "evolves_from": [
+      444
+    ],
+    "evolves_to": [
+      "445 mega"
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

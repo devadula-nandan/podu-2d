@@ -1,0 +1,90 @@
+{
+  "figure_id": "chandelure_346",
+  "display_name": "Chandelure EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "FIRE"
+  ],
+  "icon": "346 - Chandelure - Rarity_EX.png",
+  "model": "res://assets/figures/models/chandelure/chandelure_ex/346 - Chandelure - Rarity_EX.fbx",
+  "ability": {
+    "name": "Soul Burner",
+    "note": "If this Pokémon is knocked out by Attack damage, you may exclude it from the duel. If you do, exclude opposing Pokémon that have a Branded marker from the duel. This Pokémon can MP move through other Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dark Rite",
+      "type": "BLUE",
+      "size": 20,
+      "note": "Knock out a Pokémon that has a Branded marker attached to it."
+    },
+    {
+      "name": "Branded",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "If the battle opponent is burned, attach a Branded marker to the battle opponent. The effects of abilities of Branded Pokémon that increase or decrease Attack damage are nullified."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Inferno",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 346,
+    "pokemon_id_raw": "609",
+    "national_dex": 609,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "6.2.5",
+    "evolves_from": [
+      345
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Never-Ending Nightmare"
+    ]
+  }
+}

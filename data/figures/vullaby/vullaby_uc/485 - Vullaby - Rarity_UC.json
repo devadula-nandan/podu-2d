@@ -1,0 +1,78 @@
+{
+  "figure_id": "vullaby_485",
+  "display_name": "Vullaby UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "FLYING"
+  ],
+  "icon": "485 - Vullaby - Rarity_UC.png",
+  "model": "res://assets/figures/models/vullaby/vullaby_uc/485 - Vullaby - Rarity_UC.fbx",
+  "ability": {
+    "name": "Bone Diaper",
+    "note": "When this Pokémon moves from the bench to the field, attach a Weak Armor marker to it. The Pokémon with that marker has MP-1 and is not knocked out in battle. The marker and any special conditions on the Pokémon are removed instead of it being knocked out. At the start of your turn, instead of an MP move, you may choose one of your Pokémon that has a Weak Armor maker on it. If you do, remove that marker from that Pokémon and attach it to this Pokémon. Your turn ends",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Pluck",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "Switches one of the opponent's plates from unused to used. When this Pokémon (or a Pokémon that evolved from this Pokémon) leaves the field, return any plates that were switched by this Attack since this Pokémon entered the field back to unused."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Roost",
+      "type": "BLUE",
+      "size": 28,
+      "note": "This Pokémon recovers from all status effects. In exchange, it must then Wait 3."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 485,
+    "pokemon_id_raw": "629",
+    "national_dex": 629,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Supersonic Skystrike"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "figure_id": "steelix_564",
+  "display_name": "Steelix EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "STEEL",
+    "GROUND"
+  ],
+  "icon": "564 - Steelix - Rarity_EX.png",
+  "model": "res://assets/figures/models/steelix/steelix_ex/564 - Steelix - Rarity_EX.fbx",
+  "ability": {
+    "name": "High-Speed Drill",
+    "note": "When this Pokémon moves from the bench, it may move to a point 1 step away from an entry point. At the start of your turn, instead of an MP move, you may move this Pokémon through an adjacent Pokémon to a point next to that Pokémon. If it does either of these things, your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Iron Tail",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 170,
+      "source_damage_or_stars": "170"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Rock Polish",
+      "type": "BLUE",
+      "size": 28,
+      "note": "Until the end of your next turn, the White Attacks of this Pokémon become Gold Attacks."
+    },
+    {
+      "name": "Take Away",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "If the battle opponent's MP is the same or higher than this Pokémon's MP, the battle opponent moves to your P.C. If it does, this Pokémon moves to the bench."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 564,
+    "pokemon_id_raw": "208 ex",
+    "national_dex": 208,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      565
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Corkscrew Crash"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "figure_id": "arceus_553",
+  "display_name": "Arceus UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "res://data/figures/arceus/arceus_ux/553 - Arceus - Rarity_UX.png",
+  "model": "res://assets/figures/models/arceus/arceus_ux/553 - Arceus - Rarity_UX.fbx",
+  "ability": {
+    "name": "Multitype",
+    "note": "When this Pokémon moves to the field, choose one Pokémon on the field. While this Pokémon is on the field, this Pokémon's type becomes the type of the chosen Pokémon. This Pokémon is not excluded from the duel by the Attack effects of opposing Pokémon. This Pokémon is not moved to the Ultra Space by the Attack effects of opposing Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 44,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Judgement",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 170,
+      "source_damage_or_stars": "170",
+      "note": "*Moves the battle opponent to its P.C. The battle opponent is not knocked out."
+    },
+    {
+      "name": "Return",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*Increases your Z-Move gauge by half its max value."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 553,
+    "pokemon_id_raw": "493",
+    "national_dex": 493,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      552
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7"
+  }
+}

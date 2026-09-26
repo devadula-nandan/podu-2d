@@ -1,0 +1,82 @@
+{
+  "figure_id": "honedge_319",
+  "display_name": "Honedge UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "GHOST"
+  ],
+  "icon": "319 - Honedge - Rarity_UC.png",
+  "model": "res://assets/figures/models/honedge/honedge_uc/319 - Honedge - Rarity_UC.fbx",
+  "ability": {
+    "name": "No Guard: Spectral",
+    "note": "This Pokémon may MP move through other Pokémon on the field. If this Pokémon or its battle opponent spins a Blue Attack, shift the spin to an Attack next to it instead.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Swords Dance",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 0,
+      "note": "Spin again until an attack other than Swords Dance is spun. Damage Attacks deal ×2 damage."
+    },
+    {
+      "name": "Slash",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 319,
+    "pokemon_id_raw": "679",
+    "national_dex": 679,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.9",
+    "last_update": "7.0.9",
+    "evolves_from": [
+      318
+    ],
+    "evolves_to": [
+      "319 mega"
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Corkscrew Crash"
+    ]
+  }
+}

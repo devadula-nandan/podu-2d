@@ -1,0 +1,91 @@
+{
+  "figure_id": "omanyte_609",
+  "display_name": "Omanyte UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "WATER"
+  ],
+  "icon": "609 - Omanyte - Rarity_UC.png",
+  "model": "res://assets/figures/models/omanyte/omanyte_uc/609 - Omanyte - Rarity_UC.fbx",
+  "ability": {
+    "name": "Emergent Evolution",
+    "note": "[CTRL QL Restored Pokémon][Restored Pokémon]. After this Pokémon battles, it may evolve if it's on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Bind",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40x",
+      "note": "Spin again until Bind* does not land - damage is multiplied by the number of Bind* spins. *The bttle opponent gains Wait X, where X is the number of Bind* spins.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Ancient Power",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*While they are on the field, your [CTRL QL Restored Pokémon][Restored Pokémon] deal +10 damage to the battle opponent and gain +1 ☆."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 24,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 609,
+    "pokemon_id_raw": "138",
+    "national_dex": 138,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.12",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      608
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Continental Crush",
+      "Hydro Vortex"
+    ]
+  }
+}

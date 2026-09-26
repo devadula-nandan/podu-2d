@@ -1,0 +1,81 @@
+{
+  "figure_id": "dialga_001",
+  "display_name": "Dialga EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "DRAGON"
+  ],
+  "icon": "001 - Dialga - Rarity_EX.png",
+  "model": "res://assets/figures/models/dialga/dialga_ex/001 - Dialga - Rarity_EX.fbx",
+  "ability": {
+    "name": "Time Distortion",
+    "note": "If there are other Pokémon on your bench, this Pokémon cannot enter the field using an MP move. The Pokémon is not knocked out in battle - if it would be, it moves to the bench instead.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Roar of Time",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*Return the battle opponent to their start-of-the-duel state (excluding evolution)."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dragon Claw",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 1,
+    "pokemon_id_raw": "483",
+    "national_dex": 483,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.0.11",
+    "evolves_from": [],
+    "evolves_to": [
+      2
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Corkscrew Crash",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

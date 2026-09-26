@@ -96,9 +96,9 @@ describe('board graph topology', () => {
       expect(areAdjacent(BOARD, nid(a), nid(b))).toBe(true);
     }
     if (GOAL_SIDE_DIAGONAL_ATTACHMENT === 'adjacentToGoal') {
-      expect(areAdjacent(BOARD, nid('r4c2'), nid('i2c1'))).toBe(true);
-      expect(areAdjacent(BOARD, nid('r0c4'), nid('i0c1'))).toBe(true);
-      expect(areAdjacent(BOARD, nid('r4c1'), nid('i2c1'))).toBe(false);
+      expect(areAdjacent(BOARD, nid('r4c4'), nid('i2c1'))).toBe(true);
+      expect(areAdjacent(BOARD, nid('r0c2'), nid('i0c1'))).toBe(true);
+      expect(areAdjacent(BOARD, nid('r4c5'), nid('i2c1'))).toBe(false);
     }
   });
 

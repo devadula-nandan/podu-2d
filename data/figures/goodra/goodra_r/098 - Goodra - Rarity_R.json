@@ -1,0 +1,91 @@
+{
+  "figure_id": "goodra_098",
+  "display_name": "Goodra R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "098 - Goodra - Rarity_R.png",
+  "model": "res://assets/figures/models/goodra/goodra_r/098 - Goodra - Rarity_R.fbx",
+  "ability": {
+    "name": "Slime Barrier",
+    "note": "This Pokémon negates status effects for your opponent's White Attacks.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dragon Breath",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Muddy Water",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent and one neighbor Pokémon directly behind it are knocked 1 step back [CTRL NOTE][in a straight line] and gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Flail",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 98,
+    "pokemon_id_raw": "706",
+    "national_dex": 706,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      99
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

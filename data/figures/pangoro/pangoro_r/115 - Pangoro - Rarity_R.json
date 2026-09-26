@@ -1,0 +1,94 @@
+{
+  "figure_id": "pangoro_115",
+  "display_name": "Pangoro R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIGHTING",
+    "DARK"
+  ],
+  "icon": "115 - Pangoro - Rarity_R.png",
+  "model": "res://assets/figures/models/pangoro/pangoro_r/115 - Pangoro - Rarity_R.fbx",
+  "ability": {
+    "name": "Mold Breaker",
+    "note": "This Pokémon negates abilities that boost or lower attack damage for your opponent.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Hammer Arm",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*This Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Ice Punch",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Parting Shot",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon may switch with a Pokémon on your bench. The battle opponent now has Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 115,
+    "pokemon_id_raw": "675",
+    "national_dex": 675,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      "115 mega"
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "All-Out Pummeling"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "figure_id": "gothitelle_305",
+  "display_name": "Gothitelle R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "305 - Gothitelle - Rarity_R.png",
+  "model": "res://assets/figures/models/gothitelle/gothitelle_r/305 - Gothitelle - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Squared Attack",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "If there are Pokémon at three entry points, switch this Pokémon with another Pokémon on the field."
+    },
+    {
+      "name": "Psybeam",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes confused.",
+      "source_effect_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 305,
+    "pokemon_id_raw": "576",
+    "national_dex": 576,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.2",
+    "evolves_from": [
+      304
+    ],
+    "evolves_to": [
+      306
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "figure_id": "sliggoo_239",
+  "display_name": "Sliggoo UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "239 - Sliggoo - Rarity_UC.png",
+  "model": "res://assets/figures/models/sliggoo/sliggoo_uc/239 - Sliggoo - Rarity_UC.fbx",
+  "ability": {
+    "name": "Gooey",
+    "note": "Pokémon that battle with this Pokémon gain Wait.",
+    "effect_ids": [
+      7
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Flail",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Flail",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Slippery Swap",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon switches places with its battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 239,
+    "pokemon_id_raw": "705",
+    "national_dex": 705,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "6.2.3",
+    "evolves_from": [],
+    "evolves_to": [
+      125
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

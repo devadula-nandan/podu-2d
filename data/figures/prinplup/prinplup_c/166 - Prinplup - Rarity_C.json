@@ -1,0 +1,78 @@
+{
+  "figure_id": "prinplup_166",
+  "display_name": "Prinplup C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "166 - Prinplup - Rarity_C.png",
+  "model": "res://assets/figures/models/prinplup/prinplup_c/166 - Prinplup - Rarity_C.fbx",
+  "ability": {
+    "name": "Diving Entry",
+    "note": "When moving this Pokémon from the bench, it can only move to one space away from the entry point. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 166,
+    "pokemon_id_raw": "394",
+    "national_dex": 394,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "1.4",
+    "evolves_from": [
+      165
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

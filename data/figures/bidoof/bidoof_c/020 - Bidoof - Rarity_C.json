@@ -1,0 +1,73 @@
+{
+  "figure_id": "bidoof_020",
+  "display_name": "Bidoof C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "020 - Bidoof - Rarity_C.png",
+  "model": "res://assets/figures/models/bidoof/bidoof_c/020 - Bidoof - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Cut",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Rock Smash",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 20,
+    "pokemon_id_raw": "399",
+    "national_dex": 399,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      19
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ]
+  }
+}

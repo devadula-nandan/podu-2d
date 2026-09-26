@@ -1,7 +1,7 @@
 /**
- * One host session above `/2d`, `/dev`, and `/3d`.
+ * One host session above `/3d` and `/dev`.
  *
- * `/2d` hydrates from the same-origin room. `/dev` stays on the Deck Builder
+ * `/3d` hydrates from the same-origin room. `/dev` stays on the Deck Builder
  * until Start (or a same-tab session restore). Start overwrites that seed.
  */
 import {
@@ -21,7 +21,7 @@ import type { ConfigureInput, RoomPhase } from '../net/room.js';
 import { viewingForRole, type TableRole } from '../net/seats.js';
 import { bootEngine } from './boot.js';
 import { clockAdvanceCommand } from './clock-host.js';
-import { parseSeedParam, pathWithSearch } from './seed-url.js';
+import { parseModeParam, parseSeedParam, pathWithSearch } from './seed-url.js';
 import { clearLiveSession, snapshotForUrl, writeLiveSession } from './session-persist.js';
 import {
   nextSeed,
@@ -38,6 +38,8 @@ import type { LoggedCommand } from './replay.js';
 export interface DuelSessionValue {
   readonly engine: Engine | null;
   readonly bootError: string | null;
+  /** True until the first bootEngine() settles. */
+  readonly booting: boolean;
   readonly urlSeed: number | null;
   readonly search: string;
   readonly config: DuelConfig | null;
@@ -75,19 +77,35 @@ interface Actions {
 }
 
 export function DuelSessionProvider({ children }: { readonly children: ReactNode }) {
-  const boot = useMemo(() => {
-    try {
-      return { ok: true as const, engine: bootEngine() };
-    } catch (err) {
-      return { ok: false as const, message: err instanceof Error ? err.message : String(err) };
-    }
+  const [boot, setBoot] = useState<
+    { ok: true; engine: Engine } | { ok: false; message: string } | null
+  >(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    void bootEngine()
+      .then((engine) => {
+        if (!cancelled) setBoot({ ok: true, engine });
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          setBoot({
+            ok: false,
+            message: err instanceof Error ? err.message : String(err),
+          });
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
+
   const [params, setParams] = useSearchParams();
   const { search, pathname } = useLocation();
-  const playTable = pathname === '/2d' || pathname === '/';
+  const playTable = pathname === '/3d' || pathname === '/';
   const urlSeed = parseSeedParam(params.get('seed'));
+  const [leftTable, setLeftTable] = useState(false);
   const [live, setLive] = useState<Live | null>(() => {
-    if (playTable) return null;
     const stored = snapshotForUrl(urlSeed);
     if (stored === null) return null;
     return {
@@ -99,13 +117,19 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
   const table = useTable(live?.config.seed ?? urlSeed);
 
   const writeSeed = useCallback(
-    (seed: number): void => {
+    (seed: number, mode?: 'hotseat' | 'vsAi'): void => {
       const next = new URLSearchParams(params);
       next.delete('relay');
       next.set('seed', String(seed >>> 0));
+      const keep =
+        mode ??
+        parseModeParam(params.get('mode')) ??
+        parseModeParam(new URLSearchParams(window.location.search).get('mode')) ??
+        (live?.config.mode === 'vsAi' || live?.config.mode === 'hotseat' ? live.config.mode : null);
+      if (keep !== null) next.set('mode', keep);
       setParams(next, { replace: true });
     },
-    [params, setParams],
+    [live?.config.mode, params, setParams],
   );
 
   useEffect(() => {
@@ -116,8 +140,8 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
 
   const joined = useMemo<Live | null>(() => {
     if (live !== null) return live;
-    if (playTable) {
-      if (table.snapshot === null) return null;
+    if (leftTable) return null;
+    if (playTable && table.snapshot !== null) {
       const viewing = viewingForRole(table.role, table.snapshot.config);
       return {
         config: table.snapshot.config,
@@ -132,10 +156,10 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
       epoch: 0,
       restore: { commands: stored.commands, viewing: stored.viewing },
     };
-  }, [live, playTable, table.role, table.snapshot, urlSeed]);
+  }, [leftTable, live, playTable, table.role, table.snapshot, urlSeed]);
 
   useEffect(() => {
-    if (!playTable || live !== null || table.snapshot === null) return;
+    if (leftTable || !playTable || live !== null || table.snapshot === null) return;
     writeLiveSession({
       config: table.snapshot.config,
       commands: table.snapshot.commands,
@@ -148,8 +172,9 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
       const viewing = viewingForRole(table.role, config);
       writeLiveSession({ config, commands: [], viewing });
       table.publishStart(config);
+      setLeftTable(false);
       setLive({ config, epoch: 0, restore: { commands: [], viewing } });
-      writeSeed(config.seed);
+      writeSeed(config.seed, config.mode);
     },
     [table, writeSeed],
   );
@@ -189,6 +214,7 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
   const leave = useCallback((): void => {
     table.publishLeave();
     clearLiveSession();
+    setLeftTable(true);
     setLive(null);
   }, [table]);
 
@@ -204,8 +230,9 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
     [changeSeed, configureSeat, leave, rematch, start, writeSeed],
   );
 
-  const bootError = boot.ok ? null : boot.message;
-  const engine = boot.ok ? boot.engine : null;
+  const booting = boot === null;
+  const bootError = boot === null || boot.ok ? null : boot.message;
+  const engine = boot !== null && boot.ok ? boot.engine : null;
 
   if (joined !== null && engine !== null) {
     return (
@@ -231,6 +258,7 @@ export function DuelSessionProvider({ children }: { readonly children: ReactNode
     <IdleSession
       engine={engine}
       bootError={bootError}
+      booting={booting}
       urlSeed={urlSeed}
       search={search}
       table={table}
@@ -367,6 +395,7 @@ function LiveSession({
     () => ({
       engine,
       bootError,
+      booting: false,
       urlSeed,
       search,
       config,
@@ -388,6 +417,7 @@ function LiveSession({
 function IdleSession({
   engine,
   bootError,
+  booting,
   urlSeed,
   search,
   table,
@@ -396,6 +426,7 @@ function IdleSession({
 }: {
   readonly engine: Engine | null;
   readonly bootError: string | null;
+  readonly booting: boolean;
   readonly urlSeed: number | null;
   readonly search: string;
   readonly table: TableApi;
@@ -406,6 +437,7 @@ function IdleSession({
     () => ({
       engine,
       bootError,
+      booting,
       urlSeed,
       search,
       config: null,
@@ -419,7 +451,7 @@ function IdleSession({
       tableLink: table.link,
       ...actions,
     }),
-    [actions, bootError, engine, search, table, urlSeed],
+    [actions, bootError, booting, engine, search, table, urlSeed],
   );
   return <DuelSessionContext.Provider value={value}>{children}</DuelSessionContext.Provider>;
 }

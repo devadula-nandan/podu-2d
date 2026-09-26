@@ -1,0 +1,95 @@
+{
+  "figure_id": "tapu_bulu_349",
+  "display_name": "Tapu Bulu EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "FAIRY"
+  ],
+  "icon": "349 - Tapu Bulu - Rarity_EX.png",
+  "model": "res://assets/figures/models/tapu_bulu/tapu_bulu_ex/349 - Tapu Bulu - Rarity_EX.fbx",
+  "ability": {
+    "name": "Grassy Surge",
+    "note": "This Ability is only valid on your turn. This Pokémon can MP move past non-Fairy-type Pokémon on the field. When this Pokémon is on the field, your Grass-type Pokémon ignore knockout- and movement-causing effects of opponents' Attacks. Removes the Wait condition from Pokémon within two steps of this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Full Swing",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Moves one Pokémon that is both adjacent to this Pokémon and not its battle opponent to a point three steps away. That Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Smash",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 99,
+      "source_damage_or_stars": "99"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Ula'Ula Wish",
+      "type": "BLUE",
+      "size": 20,
+      "note": "You may select one opposing Pokémon. If you do, exclude this Pokémon from the duel. The selected Pokémon and opposing Pokémon with the same name have no Abilities until the end of the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 349,
+    "pokemon_id_raw": "787",
+    "national_dex": 787,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.7",
+    "last_update": "6.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      350
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Bloom Doom",
+      "Guardian of Alola"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "figure_id": "psyduck_047",
+  "display_name": "Psyduck UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "047 - Psyduck - Rarity_UC.png",
+  "model": "res://assets/figures/models/psyduck/psyduck_uc/047 - Psyduck - Rarity_UC.fbx",
+  "ability": {
+    "name": "Migraine",
+    "note": "If your opponent spins a Purple Attack, you can force them to respin once a turn.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Water Pulse",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Super Psy",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes confused.",
+      "source_effect_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Disable",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent now has Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 47,
+    "pokemon_id_raw": "054",
+    "national_dex": 54,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0.7",
+    "evolves_from": [
+      46
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

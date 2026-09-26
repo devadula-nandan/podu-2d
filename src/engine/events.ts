@@ -234,6 +234,7 @@ export type GameEvent =
   // --- flow -----------------------------------------------------------------
   | { readonly kind: 'plateWindowClosed' }
   | { readonly kind: 'preSelectClosed' }
+  | { readonly kind: 'preSelectOffered'; readonly uid: FigureUid }
   | { readonly kind: 'actionTaken'; readonly player: PlayerId; readonly uid: FigureUid | null }
   /** An `endTurn` action fired. 90 clauses end your turn as an effect, not as a phase. */
   | { readonly kind: 'turnForcedEnd' }

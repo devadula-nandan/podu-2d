@@ -1,0 +1,87 @@
+{
+  "figure_id": "tyranitar_118",
+  "display_name": "Tyranitar R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ROCK",
+    "DARK"
+  ],
+  "icon": "118 - Tyranitar - Rarity_R.png",
+  "model": "res://assets/figures/models/tyranitar/tyranitar_r/118 - Tyranitar - Rarity_R.fbx",
+  "ability": {
+    "name": "Speed Booster",
+    "note": "When this Pokémon evolves, it will gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dragon Tail",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*Benches your battle opponent (except when opponent has Fainted). Your battle opponent must then Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Earthquake",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*All Pokémon on the field spin, except this one - if they spin a miss, they are knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 118,
+    "pokemon_id_raw": "248",
+    "national_dex": 248,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.1",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      119
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Continental Crush"
+    ]
+  }
+}

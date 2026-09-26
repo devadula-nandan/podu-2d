@@ -1,0 +1,52 @@
+{
+  "wheel": [
+    {
+      "name": "Miss",
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "note": ""
+    },
+    {
+      "name": "Petal Dance",
+      "source_damage_or_stars": "30x",
+      "source_effect_ids": [],
+      "note": "Spin again until Petal Dance does not land. Damage is multiplied by the number of Petal Dance spins."
+    },
+    {
+      "name": "Miss",
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "note": ""
+    },
+    {
+      "name": "Pin Missile",
+      "source_damage_or_stars": "40x",
+      "source_effect_ids": [],
+      "note": "Spin again until Pin Missile does not land. Damage is multiplied by the number of Pin Missile spins."
+    },
+    {
+      "name": "Miss",
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "note": ""
+    },
+    {
+      "name": "Petal Dance",
+      "source_damage_or_stars": "30x",
+      "source_effect_ids": [],
+      "note": "Spin again until Petal Dance does not land. Damage is multiplied by the number of Petal Dance spins."
+    },
+    {
+      "name": "Miss",
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "note": ""
+    },
+    {
+      "name": "Pin Missile",
+      "source_damage_or_stars": "40x",
+      "source_effect_ids": [],
+      "note": "Spin again until Pin Missile does not land. Damage is multiplied by the number of Pin Missile spins."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "figure_id": "alolan_sandslash_475",
+  "display_name": "Alolan Sandslash R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ICE",
+    "STEEL"
+  ],
+  "icon": "475 - Alolan Sandslash - Rarity_R.png",
+  "model": "res://assets/figures/models/alolan_sandslash/alolan_sandslash_r/475 - Alolan Sandslash - Rarity_R.fbx",
+  "ability": {
+    "name": "Snow Cloak",
+    "note": "If this Pokémon is attacked, it may move under the attacking Pokémon to a point next to it. (A battle does not occur.) This Pokémon can MP move past Ice-type Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Earthquake",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*All Pokémon on the field spin, except this one - if they spin a miss, they are knocked out."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Icicle Spear",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 50,
+      "source_damage_or_stars": "50x",
+      "note": "Spin again until Icicle Spear does not land - damage is multiplied by the number of Icicle Spear spins."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 475,
+    "pokemon_id_raw": "028 alola",
+    "national_dex": 28,
+    "variant": "alola",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.10",
+    "last_update": "6.0.10",
+    "evolves_from": [
+      281
+    ],
+    "evolves_to": [
+      "475 mega"
+    ],
+    "z_move_keys": [
+      "Subzero Slammer",
+      "Corkscrew Crash"
+    ]
+  }
+}

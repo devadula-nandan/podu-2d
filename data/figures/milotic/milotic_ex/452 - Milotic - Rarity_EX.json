@@ -1,0 +1,86 @@
+{
+  "figure_id": "milotic_452",
+  "display_name": "Milotic EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "452 - Milotic - Rarity_EX.png",
+  "model": "res://assets/figures/models/milotic/milotic_ex/452 - Milotic - Rarity_EX.fbx",
+  "ability": {
+    "name": "Marvel Scale",
+    "note": "When this Pokémon moves from the bench to the field, or appears as an Evolution, it removes the burned condition from your Pokémon. If this Pokémon is affected by a special condition, its opponents deal -50 damage to it.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Aqua Tail",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Magic Coat",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "If a battle opponent uses an Attack that attaches a marker or causes a special condition, that effect will be caused on the battle opponent instead."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Blue Pulse",
+      "type": "BLUE",
+      "size": 36,
+      "note": "This Pokémon may cause one Pokémon within 2 steps to become confused.",
+      "source_effect_ids": [
+        6
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 452,
+    "pokemon_id_raw": "350",
+    "national_dex": 350,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.1.0",
+    "last_update": "6.1.0",
+    "evolves_from": [
+      451
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

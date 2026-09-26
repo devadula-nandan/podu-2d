@@ -1,0 +1,77 @@
+{
+  "figure_id": "mareep_071",
+  "display_name": "Mareep C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "071 - Mareep - Rarity_C.png",
+  "model": "res://assets/figures/models/mareep/mareep_c/071 - Mareep - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Thunder Wave",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Thunder Shock",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 71,
+    "pokemon_id_raw": "179",
+    "national_dex": 179,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "5.0.10",
+    "evolves_from": [
+      70
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

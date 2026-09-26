@@ -1,0 +1,85 @@
+{
+  "figure_id": "beedrill_084",
+  "display_name": "Beedrill C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "icon": "084 - Beedrill - Rarity_C.png",
+  "model": "res://assets/figures/models/beedrill/beedrill_c/084 - Beedrill - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    },
+    {
+      "name": "Pin Missile",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 40,
+      "source_damage_or_stars": "40x",
+      "note": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Toxic",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 84,
+    "pokemon_id_raw": "015",
+    "national_dex": 15,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      85
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Acid Downpour"
+    ]
+  }
+}

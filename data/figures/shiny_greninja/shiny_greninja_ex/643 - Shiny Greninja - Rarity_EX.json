@@ -1,0 +1,83 @@
+{
+  "figure_id": "shiny_greninja_643",
+  "display_name": "Shiny Greninja EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER",
+    "DARK"
+  ],
+  "icon": "643 - Shiny Greninja - Rarity_EX.png",
+  "model": "res://assets/figures/models/shiny_greninja/shiny_greninja_ex/643 - Shiny Greninja - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 28
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Water Shuriken",
+      "type": "GOLD",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40x",
+      "note": "Spin again until Water Shuriken* attack does not land - damage is multiplied by the number of Water Shuriken* Attack spins. An opponent next to the target spins, and if it spins a Purple Attack, then it is knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 643,
+    "pokemon_id_raw": "658 shiny",
+    "national_dex": 658,
+    "variant": "shiny",
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "6.2.0",
+    "last_update": "6.2.0",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "ability": {
+    "effect_ids": [],
+    "name": "Fearsome Frost Tree",
+    "note": "While this Pokémon is on the field, opposing Flying-type and Dragon-type Pokémon each have MP -1. Your Grass-type and Ice-type Pokémon each deal +10 damage."
+  },
+  "auto_fit_model": true,
+  "available_in_roster": false,
+  "display_name": "Mega Abomasnow UX",
+  "evolution_stage": 0,
+  "evolves_from_figure_ids": [],
+  "evolves_to_figure_ids": [],
+  "figure_id": "mega_abomasnow_547",
+  "icon": "res://data/figures/abomasnow/mega_abomasnow_ux/547 - Mega Abomasnow - Rarity_UX.png",
+  "is_mega_evolution": true,
+  "model": "res://assets/figures/models/abomasnow/mega_abomasnow_ux/547 - Mega Abomasnow - Rarity_UX.fbx",
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "movement_points": 1,
+  "rarity": "UX",
+  "source_data": {
+    "app_figure_id": 547,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "max_movement": 1,
+    "national_dex": 460,
+    "pokemon_id_raw": "460 mega",
+    "rarity": "UX",
+    "source_evolves_from": [
+      546.0
+    ],
+    "source_evolves_to": [],
+    "variant": "mega",
+    "wheel_total": 96,
+    "z_move_keys": [
+      "Bloom Doom",
+      "Subzero Slammer"
+    ]
+  },
+  "target_model_height": 0.9,
+  "types": [
+    "GRASS",
+    "ICE"
+  ],
+  "wheel": [
+    {
+      "damage": 160,
+      "name": "Blizzard",
+      "note": "*If this Pokémon is knocked out, all adjacent Pokémon become frozen.",
+      "size": 24,
+      "source_damage_or_stars": "160",
+      "source_effect_ids": [
+        13.0
+      ],
+      "stars": 0,
+      "type": "WHITE"
+    },
+    {
+      "damage": 0,
+      "name": "Miss",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "RED"
+    },
+    {
+      "damage": 0,
+      "name": "Sheer Cold",
+      "note": "The battle opponent is knocked out. If the battle opponent is frozen, exclude it from the duel.",
+      "size": 24,
+      "source_damage_or_stars": "☆☆",
+      "source_effect_ids": [],
+      "stars": 2,
+      "type": "PURPLE"
+    },
+    {
+      "damage": 180,
+      "name": "Wood Hammer",
+      "note": "*An opposing Pokémon adjacent to the battle opponent is knocked 2 steps back and gains Wait 3. This Pokémon gains Wait.",
+      "size": 44,
+      "source_damage_or_stars": "180",
+      "source_effect_ids": [
+        7.0
+      ],
+      "stars": 0,
+      "type": "WHITE"
+    }
+  ]
+}

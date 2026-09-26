@@ -1,0 +1,84 @@
+{
+  "figure_id": "bagon_061",
+  "display_name": "Bagon UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "061 - Bagon - Rarity_UC.png",
+  "model": "res://assets/figures/models/bagon/bagon_uc/061 - Bagon - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Headbutt",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 61,
+    "pokemon_id_raw": "371",
+    "national_dex": 371,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      60
+    ],
+    "evolves_to": [
+      186,
+      62
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

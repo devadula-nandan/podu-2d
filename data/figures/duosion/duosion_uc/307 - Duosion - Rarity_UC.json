@@ -1,0 +1,73 @@
+{
+  "figure_id": "duosion_307",
+  "display_name": "Duosion UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "307 - Duosion - Rarity_UC.png",
+  "model": "res://assets/figures/models/duosion/duosion_uc/307 - Duosion - Rarity_UC.fbx",
+  "ability": {
+    "name": "Dual Brains",
+    "note": "If your [CTRL FID 308][Reuniclus], [CTRL FID 307][Duosion] or [CTRL FID 306][Solosis] is adjacent to this Pokémon, deal damage x2.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Light Screen",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 307,
+    "pokemon_id_raw": "578",
+    "national_dex": 578,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      308
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

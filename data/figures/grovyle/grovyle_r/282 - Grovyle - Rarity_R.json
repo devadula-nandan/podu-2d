@@ -1,0 +1,81 @@
+{
+  "figure_id": "grovyle_282",
+  "display_name": "Grovyle R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "282 - Grovyle - Rarity_R.png",
+  "model": "res://assets/figures/models/grovyle/grovyle_r/282 - Grovyle - Rarity_R.fbx",
+  "ability": {
+    "name": "Forest Leap",
+    "note": "At the start of your turn, instead of an MP move, you can move this Pokémon [CTRL NOTE][on the field] to a spot next to an adjacent Grass-type Pokémon. If there is a succession of Grass-type Pokémon adjacent to the first, you may instead move this Pokémon to a spot adjacent to any of them.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Leaf Blade",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 70,
+      "source_damage_or_stars": "70+",
+      "note": "Spin again - if Leaf Blade is spun, it deals +50 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 282,
+    "pokemon_id_raw": "253",
+    "national_dex": 253,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.6",
+    "last_update": "3.0.6",
+    "evolves_from": [
+      281
+    ],
+    "evolves_to": [
+      "282 mega"
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

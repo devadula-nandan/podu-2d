@@ -1,0 +1,81 @@
+{
+  "figure_id": "aegislash_shield_forme_332",
+  "display_name": "Aegislash Shield Forme EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "GHOST"
+  ],
+  "icon": "332 - Aegislash Shield Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/aegislash_shield_forme/aegislash_shield_forme_ex/332 - Aegislash Shield Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Stance Change: S",
+    "note": "This Pokémon may MP move through other Pokémon on the field. Before using this Pokémon, you may change its form to [CTRL FID 331][Blade Forme].",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Shadow Ball",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent or one opposing Pokémon adjacent to the battle opponent spins. If that Pokémon spins a Purple Attack or Miss, it moves to its P.C. and gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "King's Shield",
+      "type": "BLUE",
+      "size": 40,
+      "note": "This Pokémon may change its form to [CTRL FID 332][Shield Forme]. The battle opponent gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 332,
+    "pokemon_id_raw": "681",
+    "national_dex": 681,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.9",
+    "last_update": "7.0.9",
+    "evolves_from": [
+      331
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Corkscrew Crash"
+    ]
+  }
+}

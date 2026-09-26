@@ -1,0 +1,79 @@
+{
+  "figure_id": "poochyena_193",
+  "display_name": "Poochyena UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "DARK"
+  ],
+  "icon": "193 - Poochyena - Rarity_UC.png",
+  "model": "res://assets/figures/models/poochyena/poochyena_uc/193 - Poochyena - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Crunch",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Hide",
+      "type": "BLUE",
+      "size": 32,
+      "note": "If one of your own Pokémon neighbors this Pokémon, the two switch places."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 193,
+    "pokemon_id_raw": "261",
+    "national_dex": 261,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "4.0.2",
+    "evolves_from": [],
+    "evolves_to": [
+      469
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "figure_id": "xurkitree_414",
+  "display_name": "Xurkitree UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "res://data/figures/xurkitree/xurkitree_ux/414 - Xurkitree - Rarity_UX.png",
+  "model": "res://assets/figures/models/xurkitree/xurkitree_ux/414 - Xurkitree - Rarity_UX.fbx",
+  "ability": {
+    "name": "Blackout",
+    "note": "When this Pokémon moves to the field, the effects of Energy plates are lost, and they count as having been used. While this Pokémon is on the field, Pokémon that become paralyzed gain Wait 3. In this Pokémon's first battle after moving to the field, Pokémon that battle it will become paralyzed.",
+    "effect_ids": [
+      2,
+      7
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Zap Cannon",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 113,
+      "source_damage_or_stars": "113",
+      "note": "*The battle opponent, and the Pokémon in a straight line directly behind it, become paralyzed. Those Pokémon gain Wait.",
+      "source_effect_ids": [
+        2,
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Cable Lash",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 103,
+      "source_damage_or_stars": "103",
+      "note": "Deals ×2 damage if the battle opponent is paralyzed."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ultra Lightning",
+      "type": "BLUE",
+      "size": 20,
+      "note": "If there are any Pokémon in the Ultra Space, a Pokémon on the field spins. If it spins a White Attack, it becomes paralyzed. Repeat this effect for each Pokémon in the Ultra Space.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 414,
+    "pokemon_id_raw": "796",
+    "national_dex": 796,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      412
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ],
+    "material": 5000,
+    "first_appear": "5.0.10",
+    "last_update": "5.0.10"
+  }
+}

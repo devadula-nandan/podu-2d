@@ -1,7 +1,9 @@
 import { coverageSummary } from '../engine/index.js';
 import { App as DevApp } from '../ui/App.js';
 import { SeedLink, useDuelSession } from '../ui/DuelSession.js';
+import { SpriteAttribution } from '../ui/SpriteAttribution.js';
 import { MoreMenu, ThemeToggle } from '../ui/theme.js';
+import '../ui/dev-shell.css';
 
 export function DevPage() {
   const session = useDuelSession();
@@ -17,8 +19,8 @@ export function DevPage() {
               DEV
             </span>
             <div className="dev-banner-titles">
-              <p className="dev-banner-kicker">Developer table · {mode}</p>
-              <h1>Pokémon Duel</h1>
+              <h1 className="dev-title">Pokémon Duel</h1>
+              <p className="dev-banner-kicker">debugger · {mode}</p>
             </div>
           </div>
           {coverage !== null ? (
@@ -30,11 +32,15 @@ export function DevPage() {
             </div>
           ) : null}
           <span className="dev-banner-actions">
-            <SeedLink to="/2d" data-testid="dev-to-2d">
+            <SeedLink to="/3d" data-testid="dev-to-3d">
               Player table
             </SeedLink>
+            {import.meta.env.BASE_URL !== '/' ? (
+              <a href={`${import.meta.env.BASE_URL}storybook/`}>Storybook</a>
+            ) : null}
             <MoreMenu>
               <ThemeToggle className="dev-theme-toggle" />
+              <SpriteAttribution className="sprite-attrib" />
             </MoreMenu>
           </span>
         </header>

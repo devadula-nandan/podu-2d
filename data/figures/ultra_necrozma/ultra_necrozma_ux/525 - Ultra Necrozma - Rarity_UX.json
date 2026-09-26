@@ -1,0 +1,86 @@
+{
+  "figure_id": "ultra_necrozma_525",
+  "display_name": "Ultra Necrozma UX",
+  "available_in_roster": false,
+  "movement_points": 3,
+  "types": [
+    "PSYCHIC",
+    "DRAGON"
+  ],
+  "icon": "res://data/figures/ultra_necrozma/ultra_necrozma_ux/525 - Ultra Necrozma - Rarity_UX.png",
+  "model": "res://assets/figures/models/ultra_necrozma/ultra_necrozma_ux/525 - Ultra Necrozma - Rarity_UX.fbx",
+  "ability": {
+    "name": "Neuroforce",
+    "note": "Ultra Beast. This Pokémon can only be set as a form in a deck. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. Any effects of this Pokémon's battle opponent's Ability that would increase Attack damage decrease it instead.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Photon Geyser",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon may attach a Photon marker to the battle opponent. If this Pokémon has changed its form from [CTRL FID 498][Necrozma], it may attach the marker to a Pokémon within X+1 steps, where X is the number of Pokémon in the Ultra Space, instead of the battle opponent. The Ability of a Pokémon with a Photo marker is nullified."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Reflect Move",
+      "type": "BLUE",
+      "size": 24,
+      "note": "If there are any other [CTRL QL Ultra Beasts][Ultra Beasts] on the field, this Pokémon may move over its battle opponent and land 1 step away."
+    },
+    {
+      "name": "Laser Burst",
+      "type": "GOLD",
+      "size": 44,
+      "damage": 173,
+      "source_damage_or_stars": "173"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 525,
+    "pokemon_id_raw": "800 ultra",
+    "national_dex": 800,
+    "variant": "ultra",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [
+      524
+    ],
+    "evolves_to": [
+      526
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Shattered Psyche",
+      "Clangorous Soulblaze",
+      "Light That Burns the Sky"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.4",
+    "last_update": "7.0.4"
+  }
+}

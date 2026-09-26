@@ -1,0 +1,91 @@
+{
+  "figure_id": "darkrai_067",
+  "display_name": "Darkrai EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK"
+  ],
+  "icon": "067 - Darkrai - Rarity_EX.png",
+  "model": "res://assets/figures/models/darkrai/darkrai_ex/067 - Darkrai - Rarity_EX.fbx",
+  "ability": {
+    "name": "Bad Dreams",
+    "note": "Opposing Pokémon that are asleep adjacent to this Pokémon are knocked out. (Pokémon passed while moving do not count).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dark Void",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent and all opposing Pokémon adjacent to it spin, and if they spin a White Attack, they fall asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Dark Pulse",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dark Leap",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "You can move this Pokémon 2 steps. If you do, this Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 67,
+    "pokemon_id_raw": "491",
+    "national_dex": 491,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "3.0.9",
+    "evolves_from": [
+      66
+    ],
+    "evolves_to": [
+      68
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

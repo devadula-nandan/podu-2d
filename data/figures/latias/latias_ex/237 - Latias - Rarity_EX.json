@@ -1,0 +1,98 @@
+{
+  "figure_id": "latias_237",
+  "display_name": "Latias EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "DRAGON",
+    "PSYCHIC"
+  ],
+  "icon": "237 - Latias - Rarity_EX.png",
+  "model": "res://assets/figures/models/latias/latias_ex/237 - Latias - Rarity_EX.fbx",
+  "ability": {
+    "name": "Hallucination",
+    "note": "If this Pokémon is knocked out, it is removed from the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Fly Away",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands on a surrounding point."
+    },
+    {
+      "name": "Mist Ball",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    },
+    {
+      "name": "Fly Away",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands on a surrounding point."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 80,
+      "source_damage_or_stars": "80"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 237,
+    "pokemon_id_raw": "380",
+    "national_dex": 380,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "6.2.3",
+    "evolves_from": [
+      236
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Shattered Psyche",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

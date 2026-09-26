@@ -1,0 +1,92 @@
+{
+  "figure_id": "thundurus_therian_forme_550",
+  "display_name": "Thundurus Therian Forme UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "FLYING"
+  ],
+  "icon": "res://data/figures/thundurus_therian_forme/thundurus_therian_forme_ux/550 - Thundurus Therian Forme - Rarity_UX.png",
+  "model": "res://assets/figures/models/thundurus_therian_forme/thundurus_therian_forme_ux/550 - Thundurus Therian Forme - Rarity_UX.fbx",
+  "ability": {
+    "name": "Stormy Anger",
+    "note": "This Pokémon may MP move through other Pokémon on the field. Opposing Pokémon that have MP moved next to this Pokémon on this turn cannot attack. If this Pokémon is on the field, all Purple Attacks of opposing, paralyzed Pokémon become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Lightning Storm",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Elusive Master",
+      "type": "BLUE",
+      "size": 32,
+      "note": "You may move this Pokémon to the bench. When you do, change this Pokémon's form, if possible."
+    },
+    {
+      "name": "Shock Wave",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent, and a succession of Pokémon adjacent to it (excluding this one), become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 550,
+    "pokemon_id_raw": "642 therian",
+    "national_dex": 642,
+    "variant": "therian",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Supersonic Skystrike"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.12",
+    "last_update": "7.0.12"
+  }
+}

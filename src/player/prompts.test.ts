@@ -29,7 +29,24 @@ function view(phase: PlayerView['phase']): PlayerView {
 
 describe('playerPrompt', () => {
   it('translates the action window', () => {
-    expect(playerPrompt(view('action'), [])).toBe('Choose a Pokémon');
+    expect(playerPrompt(view('action'), [])).toBe('Choose a Pokémon to move');
+  });
+
+  it('says Select a Pokémon while a plate is waiting on a figure', () => {
+    const pending = view('action');
+    pending.pending = {
+      kind: 'chooseFigures',
+      chooser: 0,
+      prompt: 'choose figures',
+      figureOptions: [0],
+      nodeOptions: [],
+      minCount: 1,
+      maxCount: 1,
+      resumeToken: 't',
+      resume: { source: 0, controller: 0, remaining: [], then: [], bind: 'none' },
+      slotOptions: [],
+    } as PlayerView['pending'];
+    expect(playerPrompt(pending, [])).toBe('Select a Pokémon');
   });
 
   it('asks for a spin when that command is legal', () => {
@@ -46,5 +63,11 @@ describe('playerPrompt', () => {
     const plate = { kind: 'playPlate', player: 0, slot: 0 } as Command;
     const move = { kind: 'mpMove', player: 0, uid: 0, to: 'r3c0' } as Command;
     expect(playerPrompt(view('plateWindow'), [plate, move])).toBe('Play a plate or choose a Pokémon');
+  });
+
+  it('does not ask to choose a Pokémon on the rival\'s turn', () => {
+    const theirs = view('action');
+    theirs.turn = { ...theirs.turn, player: 1 };
+    expect(playerPrompt(theirs, [])).toBe('Rival is moving');
   });
 });

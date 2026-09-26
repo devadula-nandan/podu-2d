@@ -1,0 +1,82 @@
+{
+  "figure_id": "lanturn_370",
+  "display_name": "Lanturn R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "ELECTRIC"
+  ],
+  "icon": "370 - Lanturn - Rarity_R.png",
+  "model": "res://assets/figures/models/lanturn/lanturn_r/370 - Lanturn - Rarity_R.fbx",
+  "ability": {
+    "name": "Volt Absorb",
+    "note": "When this Pokémon becomes paralyzed, attach a Volt Absorb marker to it. While that marker is attached to it, this Pokémon is not knocked out in battle. Instead of knocking it out, remove the marker and any special conditions affecting this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Guide Light",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "One Bug-type Pokémon on the field, or one other Pokémon within 3 steps, moves 1 step. That Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Thunderbolt",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 370,
+    "pokemon_id_raw": "171",
+    "national_dex": 171,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.12",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Hydro Vortex"
+    ]
+  }
+}

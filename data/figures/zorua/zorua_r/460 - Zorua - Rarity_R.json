@@ -1,0 +1,76 @@
+{
+  "figure_id": "zorua_460",
+  "display_name": "Zorua R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "DARK"
+  ],
+  "icon": "460 - Zorua - Rarity_R.png",
+  "model": "res://assets/figures/models/zorua/zorua_r/460 - Zorua - Rarity_R.fbx",
+  "ability": {
+    "name": "Illusion",
+    "note": "When this Pokémon is on the bench or has not yet engaged in its first battle after moving to the field, and another of your Pokémon - that has the same MP or less than this Pokémon and has not yet engaged in its first battle after moving to the field - is attacked, before the battle, that Pokémon may switch places with this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Punishment",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If the battle opponent is under an effect that increases Attack damage, this Attack deals +50 damage."
+    },
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 460,
+    "pokemon_id_raw": "570",
+    "national_dex": 570,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.9",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      459
+    ],
+    "evolves_to": [
+      "460 mega"
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

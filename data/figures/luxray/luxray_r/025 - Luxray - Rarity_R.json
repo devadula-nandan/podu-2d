@@ -1,0 +1,102 @@
+{
+  "figure_id": "luxray_025",
+  "display_name": "Luxray R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "025 - Luxray - Rarity_R.png",
+  "model": "res://assets/figures/models/luxray/luxray_r/025 - Luxray - Rarity_R.fbx",
+  "ability": {
+    "name": "Blue Spark",
+    "note": "The Dodges of opposing Pokémon adjacent to this Pokémon become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Fire Fang",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*The battle opponent becomes burned. The battle opponent now has Wait.",
+      "source_effect_ids": [
+        3,
+        7
+      ]
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Ice Fang",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 25,
+    "pokemon_id_raw": "405",
+    "national_dex": 405,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "5.0.10",
+    "evolves_from": [
+      172
+    ],
+    "evolves_to": [
+      "026 alola",
+      26
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "figure_id": "cacnea_054",
+  "display_name": "Cacnea C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "054 - Cacnea - Rarity_C.png",
+  "model": "res://assets/figures/models/cacnea/cacnea_c/054 - Cacnea - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Poison Sting",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Pin Missile",
+      "type": "WHITE",
+      "size": 64,
+      "damage": 10,
+      "source_damage_or_stars": "10x",
+      "note": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 54,
+    "pokemon_id_raw": "331",
+    "national_dex": 331,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      55
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

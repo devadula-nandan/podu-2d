@@ -1,0 +1,86 @@
+{
+  "figure_id": "liepard_140",
+  "display_name": "Liepard R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK"
+  ],
+  "icon": "140 - Liepard - Rarity_R.png",
+  "model": "res://assets/figures/models/liepard/liepard_r/140 - Liepard - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Feint Attack",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Assist",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "A random Pokémon on your bench other than [CTRL FID 140][Liepard] spins. The attack that is spun takes the place of this attack."
+    },
+    {
+      "name": "Feint Attack",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 28
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 140,
+    "pokemon_id_raw": "510",
+    "national_dex": 510,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.5",
+    "last_update": "3.0.5",
+    "evolves_from": [],
+    "evolves_to": [
+      141
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

@@ -26,6 +26,7 @@ export {
   isInsteadOfAttackClause,
   isActivableAbilityClause,
   isPreSelectClause,
+  preSelectZoneOk,
   isTimeTravelClause,
 } from './plates.js';
 export {
@@ -47,7 +48,7 @@ export { hashState, canonicalJson, fnv1a } from './hash.js';
 export { createRng, nextUint32, nextInt, pick, shuffle } from './rng.js';
 export type { RngState } from './rng.js';
 
-export { BOARD, buildBoardGraph, stepDistance, nodesExactlySteps, nodesWithinSteps, areAdjacent, mpReachable, connectedComponent, straightLineBehind, OPEN_MOVEMENT } from './board/graph.js';
+export { BOARD, buildBoardGraph, stepDistance, nodesExactlySteps, nodesWithinSteps, areAdjacent, mpReachable, mpPath, connectedComponent, straightLineBehind, OPEN_MOVEMENT } from './board/graph.js';
 export type { BoardGraph, BoardNode, NodeKind, MovementPermissions } from './board/graph.js';
 
 export { indexContent, figureContent, plateContent, MissingContentError } from './content.js';
@@ -70,9 +71,18 @@ export {
   runLiveList,
   battleRangeFor,
   leapStepsFor,
+  zTurnGainBoosts,
 } from './effects/bus.js';
 
-export { buildWheel, buildZMoveWheel, spinWheel, wheelTotal, advanceClockwise, segmentAt } from './rules/wheel.js';
+export {
+  buildWheel,
+  buildZMoveWheel,
+  resolvePrintedWheel,
+  spinWheel,
+  wheelTotal,
+  advanceClockwise,
+  segmentAt,
+} from './rules/wheel.js';
 export { computeDamage, resolveColors, knocksOut, battleTargets } from './rules/battle.js';
 export type { DamageInput, DamageResult } from './rules/battle.js';
 export { startBattle, performSpins, resolveBattle, useRespin, roleOfPlayer } from './rules/battle-flow.js';
@@ -125,8 +135,21 @@ export {
 } from './state.js';
 export {
   PHASE_MACHINE_MERMAID,
+  PHASE_MACHINE_EDGES,
+  PHASE_MACHINE_NODES,
+  PHASE_END_REASONS,
   PHASES,
   WAITING_PHASES,
+  isPhaseEndReason,
+  isPhaseMachineNodeId,
   isWaitingPhase,
+  phaseMachineEdgeKey,
 } from './phase-machine.js';
-export type { WaitingPhase } from './phase-machine.js';
+export type {
+  PhaseEndReason,
+  PhaseMachineEdge,
+  PhaseMachineNode,
+  PhaseMachineNodeId,
+  PhaseMachineNodeKind,
+  WaitingPhase,
+} from './phase-machine.js';

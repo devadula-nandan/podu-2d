@@ -1,0 +1,107 @@
+{
+  "figure_id": "eelektross_441",
+  "display_name": "Eelektross EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "441 - Eelektross - Rarity_EX.png",
+  "model": "res://assets/figures/models/eelektross/eelektross_ex/441 - Eelektross - Rarity_EX.fbx",
+  "ability": {
+    "name": "Electrobind",
+    "note": "While this Pokémon is on the field, the effects of Abilities of opposing Electric-type Pokémon and opposing paralyzed Pokémon that allow passing by other Pokémon with MP moves are negated. At the start of your turn, instead of an MP move, this Pokémon may switch places with an adjacent Electric-type Pokémon or paralyzed Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Wild Charge",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*This Pokémon gains Wait."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Shock Wave",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent, and a succession of Pokémon adjacent to it (excluding this one), become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Wild Charge",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Generator",
+      "type": "BLUE",
+      "size": 20,
+      "note": "All adjacent Water-type Pokémon become paralyzed. On the next turn, this Pokémon deals +30 damage.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 441,
+    "pokemon_id_raw": "604",
+    "national_dex": 604,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "5.0.10",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

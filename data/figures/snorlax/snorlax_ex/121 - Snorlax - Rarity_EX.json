@@ -1,0 +1,89 @@
+{
+  "figure_id": "snorlax_121",
+  "display_name": "Snorlax EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "121 - Snorlax - Rarity_EX.png",
+  "model": "res://assets/figures/models/snorlax/snorlax_ex/121 - Snorlax - Rarity_EX.fbx",
+  "ability": {
+    "name": "Still",
+    "note": "This Pokémon cannot be moved by the Attacks of other Pokémon (except by Sweet Scent). This Pokémon cannot be affected by special conditions other than asleep.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Big Yawn",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon and the battle opponent fall asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Body Slam",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Giga Impact",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 180,
+      "source_damage_or_stars": "180",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the opponent's."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 121,
+    "pokemon_id_raw": "143",
+    "national_dex": 143,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "1.1",
+    "last_update": "7.0.14",
+    "evolves_from": [
+      120
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz",
+      "Pulverizing Pancake"
+    ]
+  }
+}

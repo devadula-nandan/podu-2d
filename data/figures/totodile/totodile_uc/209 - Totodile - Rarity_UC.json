@@ -1,0 +1,73 @@
+{
+  "figure_id": "totodile_209",
+  "display_name": "Totodile UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER"
+  ],
+  "icon": "209 - Totodile - Rarity_UC.png",
+  "model": "res://assets/figures/models/totodile/totodile_uc/209 - Totodile - Rarity_UC.fbx",
+  "ability": {
+    "name": "Bite Instinct",
+    "note": "This Pokémon must battle if possible after making an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    },
+    {
+      "name": "Water Gun",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 209,
+    "pokemon_id_raw": "158",
+    "national_dex": 158,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      210
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

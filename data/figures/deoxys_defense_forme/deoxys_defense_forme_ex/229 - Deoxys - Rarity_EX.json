@@ -1,0 +1,81 @@
+{
+  "figure_id": "deoxys_defense_forme_229",
+  "display_name": "Deoxys Defense Forme EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "229 - Deoxys - Rarity_EX.png",
+  "model": "res://assets/figures/models/deoxys_defense_forme/deoxys_defense_forme_ex/229 - Deoxys - Rarity_EX.fbx",
+  "ability": {
+    "name": "Shelter",
+    "note": "This Pokémon and your Pokémon next to it will be protected from instant knock out effects of Attacks. The 3 Pokémon limit does not apply to this Pokémon in your deck.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Psycho Barrier",
+      "type": "PURPLE",
+      "size": 60,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Counter",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If the battle opponent's Attack is 20 or more, the opponent is knocked out instead of this Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 229,
+    "pokemon_id_raw": "386 defense",
+    "national_dex": 386,
+    "variant": "defense",
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.2",
+    "evolves_from": [
+      228
+    ],
+    "evolves_to": [
+      "229 mega"
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

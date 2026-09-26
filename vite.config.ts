@@ -1,7 +1,10 @@
 import os from 'node:os';
+import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import react from '@vitejs/plugin-react';
 import { defineConfig, type Plugin } from 'vite';
+
+const projectRoot = fileURLToPath(new URL('.', import.meta.url));
 
 function lanIPv4(): string[] {
   const out: string[] = [];
@@ -48,7 +51,23 @@ export default defineConfig({
   base: pagesBase,
   plugins: [react(), lanHostsPlugin()],
   resolve: {
-    alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      react: path.resolve(projectRoot, 'node_modules/react'),
+      'react-dom': path.resolve(projectRoot, 'node_modules/react-dom'),
+    },
+    dedupe: ['react', 'react-dom'],
+  },
+  optimizeDeps: {
+    include: [
+      'three',
+      '@xyflow/react',
+      'react',
+      'react-dom',
+      'react-dom/client',
+      'react/jsx-runtime',
+      'react/jsx-dev-runtime',
+    ],
   },
   build: { outDir: 'dist', sourcemap: true },
   server: {

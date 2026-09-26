@@ -1,0 +1,101 @@
+{
+  "figure_id": "kyurem_447",
+  "display_name": "Kyurem EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON",
+    "ICE"
+  ],
+  "icon": "447 - Kyurem - Rarity_EX.png",
+  "model": "res://assets/figures/models/kyurem/kyurem_ex/447 - Kyurem - Rarity_EX.fbx",
+  "ability": {
+    "name": "Permafrost",
+    "note": "If this Pokémon is not affected by a special condition, then the frozen condition of Pokémon within two steps of this Pokémon cannot be removed by tagging.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Outrage",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 180,
+      "source_damage_or_stars": "180",
+      "note": "*This Pokémon becomes confused."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Glaciate",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All opposing Pokémon on the field that are not Fire-, Water-, Ice- or Steel-type spin. Attach MP -1 markers to those that spin White Attacks."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 447,
+    "pokemon_id_raw": "646",
+    "national_dex": 646,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.0",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      448
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Subzero Slammer",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

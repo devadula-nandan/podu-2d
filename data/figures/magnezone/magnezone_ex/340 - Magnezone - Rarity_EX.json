@@ -1,0 +1,93 @@
+{
+  "figure_id": "magnezone_340",
+  "display_name": "Magnezone EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "STEEL"
+  ],
+  "icon": "340 - Magnezone - Rarity_EX.png",
+  "model": "res://assets/figures/models/magnezone/magnezone_ex/340 - Magnezone - Rarity_EX.fbx",
+  "ability": {
+    "name": "Enhanced Core",
+    "note": "When this Pokémon is on the field, your Pokémon that are both Electric and Steel type deal +20 damage. If this Pokémon has evolved, it gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Flash Cannon",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shock Wave",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent, and a succession of Pokémon adjacent to it (excluding this one), become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 340,
+    "pokemon_id_raw": "462",
+    "national_dex": 462,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      339
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Corkscrew Crash"
+    ]
+  }
+}

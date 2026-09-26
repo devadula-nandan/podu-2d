@@ -1,0 +1,81 @@
+{
+  "figure_id": "xatu_124",
+  "display_name": "Xatu UC",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "PSYCHIC",
+    "FLYING"
+  ],
+  "icon": "124 - Xatu - Rarity_UC.png",
+  "model": "res://assets/figures/models/xatu/xatu_uc/124 - Xatu - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 48,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 124,
+    "pokemon_id_raw": "178",
+    "national_dex": 178,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 1,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.1",
+    "last_update": "1.1",
+    "evolves_from": [
+      238
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Shattered Psyche"
+    ]
+  }
+}

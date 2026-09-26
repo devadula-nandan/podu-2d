@@ -1,0 +1,81 @@
+{
+  "figure_id": "landorus_incarnate_forme_581",
+  "display_name": "Landorus Incarnate Forme EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GROUND",
+    "FLYING"
+  ],
+  "icon": "581 - Landorus Incarnate Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/landorus_incarnate_forme/landorus_incarnate_forme_ex/581 - Landorus Incarnate Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Earthen Blessings",
+    "note": "This Pokémon cannot win you the duel by moving to the goal point. This Pokémon may MP move through other Pokémon on the field. While this Pokémon is on the field, the start-of-turn Z-Move gauge increase of each player is boosted for each of that player's Pokémon that is affected by a special condition.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Earth Power",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Elusive Master",
+      "type": "BLUE",
+      "size": 24,
+      "note": "You may move this Pokémon to the bench. When you do, change this Pokémon's form, if possible."
+    },
+    {
+      "name": "Smack Down",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "While the battle opponent is on the field, that Pokémon loses any Ability effects that allow it to MP move through other Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 581,
+    "pokemon_id_raw": "645",
+    "national_dex": 645,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14",
+    "evolves_from": [
+      580
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Tectonic Rage"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "figure_id": "alolan_ninetales_353",
+  "display_name": "Alolan Ninetales EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ICE",
+    "FAIRY"
+  ],
+  "icon": "353 - Alolan Ninetales - Rarity_EX.png",
+  "model": "res://assets/figures/models/alolan_ninetales/alolan_ninetales_ex/353 - Alolan Ninetales - Rarity_EX.fbx",
+  "ability": {
+    "name": "Snowy Transformation",
+    "note": "At the start of your turn, instead of an MP move, if this Pokémon is on the field, it may switch with a frozen Pokémon, or if this Pokémon is on the bench, it may switch with one of your frozen Pokémon. If it does, your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Extrasensory",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Freeze-Dry",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Deals +50 damage if the battle opponent is a Water-type Pokémon. The battle opponent and all opposing Pokémon adjacent to it spin, and if they spin a Blue Attack, they become frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Icy Wind",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All adjacent opposing Pokémon on the field that are not Fire-, Water-, Ice- or Steel-type spin. Attach MP -1 markers to those that spin White Attacks."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 353,
+    "pokemon_id_raw": "038 alola",
+    "national_dex": 38,
+    "variant": "alola",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.12",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      354,
+      "354 ex"
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Subzero Slammer"
+    ]
+  }
+}

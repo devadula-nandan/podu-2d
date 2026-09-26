@@ -1,0 +1,94 @@
+{
+  "figure_id": "tapu_fini_351",
+  "display_name": "Tapu Fini EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "FAIRY"
+  ],
+  "icon": "351 - Tapu Fini - Rarity_EX.png",
+  "model": "res://assets/figures/models/tapu_fini/tapu_fini_ex/351 - Tapu Fini - Rarity_EX.fbx",
+  "ability": {
+    "name": "Misty Surge",
+    "note": "This Ability is only valid on your turn. This Pokémon can MP move past non-Fairy-type Pokémon on the field. When this Pokémon is on the field, whenever your Water-type Pokémon move from the bench, they may only move to a point one step away from an entry point. This ends your turn. Pokémon within two steps of this Pokémon are not affected by new special conditions.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dazzling Gleam",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 79,
+      "source_damage_or_stars": "79",
+      "note": "*Opposing Pokémon adjacent to this Pokémon spin, and if they spin a Gold Attack then they are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Muddy Water",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent and one neighbor Pokémon directly behind it are knocked 1 step back [CTRL NOTE][in a straight line] and gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Poni Wish",
+      "type": "BLUE",
+      "size": 12,
+      "note": "You may select one opposing Pokémon. If you do, this Pokémon and the selected opposing Pokémon are excluded from the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 351,
+    "pokemon_id_raw": "788",
+    "national_dex": 788,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0",
+    "last_update": "5.0",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Hydro Vortex",
+      "Guardian of Alola"
+    ]
+  }
+}

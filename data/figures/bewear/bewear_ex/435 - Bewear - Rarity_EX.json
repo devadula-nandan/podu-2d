@@ -1,0 +1,84 @@
+{
+  "figure_id": "bewear_435",
+  "display_name": "Bewear EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FIGHTING"
+  ],
+  "icon": "435 - Bewear - Rarity_EX.png",
+  "model": "res://assets/figures/models/bewear/bewear_ex/435 - Bewear - Rarity_EX.fbx",
+  "ability": {
+    "name": "Fluffy",
+    "note": "The damage deal to this Pokémon by its battle opponents (excluding Fire-type Pokémon) is cut in half.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Wave Arms",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*The battle opponent is moved to the bench and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Bear Hug",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*The battle opponent spins. If it spins a Blue Attack, it is knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 435,
+    "pokemon_id_raw": "760",
+    "national_dex": 760,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.8",
+    "last_update": "5.0.8",
+    "evolves_from": [
+      434
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Breakneck Blitz"
+    ]
+  }
+}

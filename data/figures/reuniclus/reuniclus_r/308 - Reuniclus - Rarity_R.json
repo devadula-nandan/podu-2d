@@ -1,0 +1,93 @@
+{
+  "figure_id": "reuniclus_308",
+  "display_name": "Reuniclus R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "308 - Reuniclus - Rarity_R.png",
+  "model": "res://assets/figures/models/reuniclus/reuniclus_r/308 - Reuniclus - Rarity_R.fbx",
+  "ability": {
+    "name": "Psychic Net",
+    "note": "In battles on your turn, you may respin x the number of your other [CTRL FID 308][Reuniclus] on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Brain Link",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "Deals ×2 damage if one of your own [CTRL FID 308][Reuniclus] is within 2 steps of this Pokémon."
+    },
+    {
+      "name": "Hyper Beam",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Confuse Ray",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 308,
+    "pokemon_id_raw": "579",
+    "national_dex": 579,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.7",
+    "evolves_from": [
+      307
+    ],
+    "evolves_to": [
+      "308 mega"
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

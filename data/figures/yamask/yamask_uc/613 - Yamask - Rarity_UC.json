@@ -1,0 +1,85 @@
+{
+  "figure_id": "yamask_613",
+  "display_name": "Yamask UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST"
+  ],
+  "icon": "613 - Yamask - Rarity_UC.png",
+  "model": "res://assets/figures/models/yamask/yamask_uc/613 - Yamask - Rarity_UC.fbx",
+  "ability": {
+    "name": "Memories of the Past",
+    "note": "This Pokémon may MP move through other Pokémon on the field. Your Pokémon next to this Pokémon cannot be affected by any new special conditions.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Night Shade",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Eerie Light",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Shadow Ball",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent or one opposing Pokémon adjacent to the battle opponent spins. If that Pokémon spins a Purple Attack or Miss, it moves to its P.C. and gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 613,
+    "pokemon_id_raw": "562",
+    "national_dex": 562,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.15",
+    "last_update": "7.0.15",
+    "evolves_from": [],
+    "evolves_to": [
+      614
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare"
+    ]
+  }
+}

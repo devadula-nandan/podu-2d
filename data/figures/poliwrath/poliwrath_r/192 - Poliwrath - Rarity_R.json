@@ -1,0 +1,83 @@
+{
+  "figure_id": "poliwrath_192",
+  "display_name": "Poliwrath R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "FIGHTING"
+  ],
+  "icon": "192 - Poliwrath - Rarity_R.png",
+  "model": "res://assets/figures/models/poliwrath/poliwrath_r/192 - Poliwrath - Rarity_R.fbx",
+  "ability": {
+    "name": "Hypnotic Stare",
+    "note": "Any Pokémon that battles this Pokémon will become confused.",
+    "effect_ids": [
+      6
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dynamic Punch",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Double Slap",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 40,
+      "source_damage_or_stars": "40+",
+      "note": "Spin again - if Double Slap is spun, it deals 20+ damage."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 192,
+    "pokemon_id_raw": "062",
+    "national_dex": 62,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.8",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      191
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Hydro Vortex"
+    ]
+  }
+}

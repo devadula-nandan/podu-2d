@@ -1,0 +1,91 @@
+{
+  "figure_id": "tangrowth_467",
+  "display_name": "Tangrowth R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "467 - Tangrowth - Rarity_R.png",
+  "model": "res://assets/figures/models/tangrowth/tangrowth_r/467 - Tangrowth - Rarity_R.fbx",
+  "ability": {
+    "name": "Entangle",
+    "note": "If there are no Pokémon next to this Pokémon, instead of an MP move you can force an opposing Pokémon that is two steps away from this Pokémon to spin. If you do, this Pokémon gains Wait 3. If the spin results in a White Attack, the opposing Pokémon comes one step closer and gains Wait.",
+    "effect_ids": [
+      7
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Energy Ball",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While the battle opponent is on the field, all of that Pokémon's Blue Attacks that are not Dodge become Misses."
+    },
+    {
+      "name": "Power Whip",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*The battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Sleep Powder",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 467,
+    "pokemon_id_raw": "465",
+    "national_dex": 465,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.0",
+    "last_update": "6.0.0",
+    "evolves_from": [
+      126
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

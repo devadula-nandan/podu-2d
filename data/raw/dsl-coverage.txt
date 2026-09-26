@@ -1,7 +1,7 @@
-actions emitted      : 3990
-  compiled           : 3988  (99.9%)
-  unimplemented      : 2
-guards emitted       : 442  (1 unimplemented)
+actions emitted      : 4143
+  compiled           : 4143  (100.0%)
+  unimplemented      : 0
+guards emitted       : 599  (0 unimplemented)
 
 === ACTIONS BY KIND ===
     614  applyCondition
@@ -10,8 +10,9 @@ guards emitted       : 442  (1 unimplemented)
     289  spinCheck
     287  knockOut
     222  modifyDamage
+    196  usageGate
     152  modifyMp
-    141  optional
+    140  optional
     136  prevent
     118  exclude
     109  grantMovement
@@ -23,13 +24,12 @@ guards emitted       : 442  (1 unimplemented)
      54  recolorAttacks
      40  nullify
      40  tag
-     40  usageGate
-     34  changeForm
+     33  changeForm
      33  megaEvolve
      18  replaceSegment
      17  shiftSpinResult
      16  forceNextTurn
-     15  evolve
+     16  evolve
      14  denyPassThrough
      13  armTrigger
      11  setBattleRange
@@ -57,10 +57,8 @@ guards emitted       : 442  (1 unimplemented)
       3  lockGoal
       2  denyDeploy
       2  grantStraightMp
-      2  invertAbilityIncreases
       2  restrictDeploy
       2  treatAsNewlyMoved
-      2  unimplemented
       2  bonusRespin
       2  copyType
       2  fuse
@@ -72,14 +70,14 @@ guards emitted       : 442  (1 unimplemented)
       1  seizeMoveEffects
       1  readyImmediately
       1  scaleAttackEffects
+      1  invertAbilityIncreases
       1  floorMp
       1  stripKoPrevention
       1  denyAdjacentPass
       1  revertForm
       1  denyNamedGrant
+      1  boostZTurnGain
       1  markBattled
       1  reorderPc
 
-=== TOP UNCOMPILED PATTERNS (2 distinct) ===
-     1  undergoes branching evolution
-     1  while {mon} is on the field, the start-of-turn z-move gauge increase of each player is boosted for each of that player's pokémon that is affected by a
+=== TOP UNCOMPILED PATTERNS (0 distinct) ===

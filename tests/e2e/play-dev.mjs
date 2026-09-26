@@ -56,7 +56,7 @@ async function playOne(page, { vsAi }) {
       .or(page.getByTestId('thinking'))
       .or(page.getByTestId('handover'))
       .or(page.getByTestId('result'))
-      .waitFor({ state: 'visible', timeout: 8_000 })
+      .waitFor({ state: 'visible', timeout: 12_000 })
       .catch(() => undefined);
     return 'Spin both wheels';
   }

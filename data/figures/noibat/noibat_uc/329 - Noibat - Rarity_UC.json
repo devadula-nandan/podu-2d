@@ -1,0 +1,103 @@
+{
+  "figure_id": "noibat_329",
+  "display_name": "Noibat UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FLYING",
+    "DRAGON"
+  ],
+  "icon": "329 - Noibat - Rarity_UC.png",
+  "model": "res://assets/figures/models/noibat/noibat_uc/329 - Noibat - Rarity_UC.fbx",
+  "ability": {
+    "name": "Sonic Blast",
+    "note": "When this Pokémon moves from the bench to the field, remove Wait from all your Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Whirlwind",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is moved to the bench and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Air Cutter",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Supersonic",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 329,
+    "pokemon_id_raw": "714",
+    "national_dex": 714,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.8",
+    "last_update": "3.0.8",
+    "evolves_from": [
+      328
+    ],
+    "evolves_to": [
+      330
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Supersonic Skystrike",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

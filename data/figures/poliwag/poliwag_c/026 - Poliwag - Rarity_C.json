@@ -1,0 +1,91 @@
+{
+  "figure_id": "poliwag_026",
+  "display_name": "Poliwag C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER"
+  ],
+  "icon": "026 - Poliwag - Rarity_C.png",
+  "model": "res://assets/figures/models/poliwag/poliwag_c/026 - Poliwag - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bubble",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Hypnosis",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Bubble",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 26,
+    "pokemon_id_raw": "060",
+    "national_dex": 60,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      "025 r",
+      "025 ux",
+      25
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

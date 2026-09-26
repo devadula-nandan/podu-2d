@@ -1,0 +1,85 @@
+{
+  "figure_id": "lombre_386",
+  "display_name": "Lombre UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "GRASS"
+  ],
+  "icon": "386 - Lombre - Rarity_UC.png",
+  "model": "res://assets/figures/models/lombre/lombre_uc/386 - Lombre - Rarity_UC.fbx",
+  "ability": {
+    "name": "Slippery",
+    "note": "Just once, before this Pokémon would be surrounded, it may switch places with an adjacent Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Bubble Beam",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Sabotage",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 386,
+    "pokemon_id_raw": "271",
+    "national_dex": 271,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.7",
+    "last_update": "4.0.7",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Hydro Vortex"
+    ]
+  }
+}

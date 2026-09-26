@@ -1,0 +1,91 @@
+{
+  "figure_id": "gible_147",
+  "display_name": "Gible UC",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "DRAGON",
+    "GROUND"
+  ],
+  "icon": "147 - Gible - Rarity_UC.png",
+  "model": "res://assets/figures/models/gible/gible_uc/147 - Gible - Rarity_UC.fbx",
+  "ability": {
+    "name": "Raid",
+    "note": "Instead of using an MP move, this Pokémon can move to a point 3 spaces away from an opponent's Pokémon. In that case, it must attack, if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Scary Face",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Slash",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 80,
+      "source_damage_or_stars": "80"
+    },
+    {
+      "name": "Scary Face",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 147,
+    "pokemon_id_raw": "443",
+    "national_dex": 443,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 1,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      148
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Tectonic Rage",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

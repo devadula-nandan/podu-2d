@@ -9,7 +9,8 @@ export function SpriteAttribution({ className }: Props) {
       <a href="https://github.com/PokeAPI/sprites" target="_blank" rel="noreferrer">
         PokeAPI
       </a>{' '}
-      (Nintendo / The Pokémon Company IP; not open-source). See ATTRIBUTION.md.
+      (Nintendo / The Pokémon Company IP; not open-source). See{' '}
+      <a href="ATTRIBUTION.md">ATTRIBUTION.md</a>.
     </p>
   );
 }

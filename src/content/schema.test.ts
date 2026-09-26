@@ -1,7 +1,7 @@
 /**
  * Parses the whole real content layer, then checks the schemas actually reject.
  *
- * The first half is the load-bearing part: if all 596 figures, 152 plates and 382
+ * The first half is the load-bearing part: if all 605 figures, 152 plates and 365
  * abilities go through `.strict()` schemas with every invariant refinement active,
  * the engine can stop defending against malformed content. The second half is the
  * part that stops the first half from being meaningless - a schema that accepts
@@ -28,15 +28,15 @@ const rawAbilities = readRaw('abilities');
 describe('the real content layer', () => {
   const bundle = parseContent({ figures: rawFigures, plates: rawPlates, abilities: rawAbilities });
 
-  it('parses all 596 figures, 152 plates and 382 abilities', () => {
-    expect(bundle.figures).toHaveLength(596);
+  it('parses all 605 figures, 152 plates and 365 abilities', () => {
+    expect(bundle.figures).toHaveLength(605);
     expect(bundle.plates).toHaveLength(152);
-    expect(bundle.abilities).toHaveLength(382);
+    expect(bundle.abilities).toHaveLength(365);
   });
 
   it('resolves every ability a figure claims', () => {
     const withAbility = bundle.figures.filter((f) => f.ability !== null);
-    expect(withAbility).toHaveLength(472);
+    expect(withAbility).toHaveLength(479);
     for (const figure of withAbility) {
       expect(bundle.abilitiesByName.has(figure.ability?.name ?? '')).toBe(true);
     }
@@ -52,10 +52,10 @@ describe('the real content layer', () => {
   it('keeps the documented shape facts true, so the schema is not merely permissive', () => {
     // Each of these was read off the real JSON; if the pipeline changes one, the
     // schema comment above it is now a lie and should be revisited.
-    // 4 inferred: 3 reconstructed wheels plus Pikachu's ruled Catastropika colour.
-    expect(bundle.figures.filter((f) => f.inferred !== undefined)).toHaveLength(4);
+    // Froakie: data/figures wheel summed to 100; restored prior 96-unit wheel.
+    expect(bundle.figures.filter((f) => f.inferred !== undefined)).toHaveLength(1);
     expect(bundle.figures.filter((f) => f.contested !== undefined)).toHaveLength(11);
-    expect(bundle.figures.filter((f) => f.types.length === 2)).toHaveLength(338);
+    expect(bundle.figures.filter((f) => f.types.length === 2)).toHaveLength(344);
     expect(new Set(bundle.figures.map((f) => f.zMoves.length))).toEqual(new Set([1, 2, 3]));
     expect(bundle.plates.filter((p) => p.cost === null)).toHaveLength(31);
   });
@@ -64,11 +64,11 @@ describe('the real content layer', () => {
     // The whole point of the tightened Z-Move schema: this used to be 65 nulls, which
     // parsed happily because the colour and star rules were applied to `wheel` only.
     const zMoves = bundle.figures.flatMap((f) => f.zMoves);
-    expect(zMoves).toHaveLength(956);
+    expect(zMoves).toHaveLength(972);
     const byColor: Record<string, number> = {};
     for (const z of zMoves) byColor[z.color] = (byColor[z.color] ?? 0) + 1;
     // Z-Moves come in exactly two colours, and Purple is always the starred one.
-    expect(byColor).toEqual({ white: 774, purple: 182 });
+    expect(byColor).toEqual({ white: 786, purple: 186 });
     expect(zMoves.filter((z) => z.damage?.kind === 'stars').every((z) => z.color === 'purple')).toBe(true);
   });
 
@@ -76,7 +76,7 @@ describe('the real content layer', () => {
     // `colorRaw` is no longer an excuse for a missing colour, so it must agree with the
     // resolved value rather than replace it.
     const withRaw = bundle.figures.flatMap((f) => f.zMoves).filter((z) => z.colorRaw !== undefined);
-    expect(withRaw).toHaveLength(65);
+    expect(withRaw).toHaveLength(67);
     for (const z of withRaw) {
       // Pikachu's Catastropika is the one row Serebii labels bare "Z-Move"; its colour
       // is adjudicated in tools/build-content.mjs rather than read off the label.
@@ -270,8 +270,9 @@ describe('the loader fails loudly', () => {
       attempt();
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
+      const moveName = String((wheel[1] as { moveName?: string }).moveName ?? '');
       expect(message).toContain('figure 461 (Scrafty)');
-      expect(message).toContain('wheel[1] "Roar of Time*"');
+      expect(message).toContain(`wheel[1] "${moveName}"`);
       expect(message).toContain('.size');
     }
   });

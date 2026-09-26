@@ -1,0 +1,96 @@
+{
+  "figure_id": "rayquaza_112",
+  "display_name": "Rayquaza EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "DRAGON",
+    "FLYING"
+  ],
+  "icon": "112 - Rayquaza - Rarity_EX.png",
+  "model": "res://assets/figures/models/rayquaza/rayquaza_ex/112 - Rayquaza - Rarity_EX.fbx",
+  "ability": {
+    "name": "Primal Rage",
+    "note": "When there are opposing [CTRL FID 80,425][Groudon], [CTRL FID 46,427][Kyogre] or [CTRL FID 112,395,499][Rayquaza] on the field, this Pokémon deals +20 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 36,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Break Energy",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*Your opponent's Energy Plate-based effects are lost."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 112,
+    "pokemon_id_raw": "384",
+    "national_dex": 384,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "1.0 May",
+    "last_update": "6.1.1",
+    "evolves_from": [
+      111
+    ],
+    "evolves_to": [
+      464
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Supersonic Skystrike",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

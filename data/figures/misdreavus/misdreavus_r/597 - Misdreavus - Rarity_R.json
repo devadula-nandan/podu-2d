@@ -1,0 +1,97 @@
+{
+  "figure_id": "misdreavus_597",
+  "display_name": "Misdreavus R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST"
+  ],
+  "icon": "597 - Misdreavus - Rarity_R.png",
+  "model": "res://assets/figures/models/misdreavus/misdreavus_r/597 - Misdreavus - Rarity_R.fbx",
+  "ability": {
+    "name": "Infiltrator",
+    "note": "On the field, this Pokémon can pass through other Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 12,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Curse",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Attach a Curse marker to the battle opponent. (A Pokémon that is knocked out in this condition is excluded from the duel.)"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 12,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Confuse Ray",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 597,
+    "pokemon_id_raw": "200",
+    "national_dex": 200,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.2.6",
+    "last_update": "6.2.6",
+    "evolves_from": [],
+    "evolves_to": [
+      598
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare"
+    ]
+  }
+}

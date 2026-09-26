@@ -1,0 +1,86 @@
+{
+  "figure_id": "heracross_036",
+  "display_name": "Heracross R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FIGHTING"
+  ],
+  "icon": "036 - Heracross - Rarity_R.png",
+  "model": "res://assets/figures/models/heracross/heracross_r/036 - Heracross - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Horn Attack",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Overhead Toss",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The opponent is moved 1 step behind this Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 36,
+    "pokemon_id_raw": "214",
+    "national_dex": 214,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.11",
+    "evolves_from": [
+      35
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "All-Out Pummeling"
+    ]
+  }
+}

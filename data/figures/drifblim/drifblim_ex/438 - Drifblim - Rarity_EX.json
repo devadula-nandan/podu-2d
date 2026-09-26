@@ -1,0 +1,89 @@
+{
+  "figure_id": "drifblim_438",
+  "display_name": "Drifblim EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "FLYING"
+  ],
+  "icon": "438 - Drifblim - Rarity_EX.png",
+  "model": "res://assets/figures/models/drifblim/drifblim_ex/438 - Drifblim - Rarity_EX.fbx",
+  "ability": {
+    "name": "Aftermath Soul",
+    "note": "This Pokémon can MP move through other Pokémon on the field. When this Pokémon is knocked out, you may knock out one of your [CTRL FID 484][Drifloon] on the field and all Pokémon adjacent to it.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shadow Beam",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*In the battle opponent's next battle, that Pokémon's Purple Attacks become Misses."
+    },
+    {
+      "name": "Hex",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "If the battle opponent has a status condition, damage is ×2."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Take Away",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "If the battle opponent's MP is the same or higher than this Pokémon's MP, the battle opponent moves to your P.C. If it does, this Pokémon moves to the bench."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 438,
+    "pokemon_id_raw": "426",
+    "national_dex": 426,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.2.5",
+    "last_update": "6.2.5",
+    "evolves_from": [],
+    "evolves_to": [
+      185
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Never-Ending Nightmare"
+    ]
+  }
+}

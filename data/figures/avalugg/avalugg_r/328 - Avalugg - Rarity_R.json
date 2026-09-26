@@ -1,0 +1,88 @@
+{
+  "figure_id": "avalugg_328",
+  "display_name": "Avalugg R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ICE"
+  ],
+  "icon": "328 - Avalugg - Rarity_R.png",
+  "model": "res://assets/figures/models/avalugg/avalugg_r/328 - Avalugg - Rarity_R.fbx",
+  "ability": {
+    "name": "Ice Breaker",
+    "note": "Before using this Pokémon, you can switch its position with an adjacent Ice-type Pokémon or frozen Pokémon. Your Ice-type Pokémon can move over this Pokémon when using an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Hyper Beam",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    },
+    {
+      "name": "Ice Fang",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 40
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 328,
+    "pokemon_id_raw": "713",
+    "national_dex": 713,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 1,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      329
+    ],
+    "z_move_keys": [
+      "Subzero Slammer"
+    ]
+  }
+}

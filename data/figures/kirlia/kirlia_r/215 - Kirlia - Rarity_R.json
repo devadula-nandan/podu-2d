@@ -1,0 +1,87 @@
+{
+  "figure_id": "kirlia_215",
+  "display_name": "Kirlia R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FAIRY"
+  ],
+  "icon": "215 - Kirlia - Rarity_R.png",
+  "model": "res://assets/figures/models/kirlia/kirlia_r/215 - Kirlia - Rarity_R.fbx",
+  "ability": {
+    "name": "Ghost Sensor",
+    "note": "Opposing Pokémon cannot MP move through this Pokémon using the effect of an Ability.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Super Psy",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes confused.",
+      "source_effect_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Psycho Switch",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Benches the battle opponent. This Pokémon will then switch with another of your Pokémon from the field, bench or P.C."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 215,
+    "pokemon_id_raw": "281",
+    "national_dex": 281,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "6.2.5",
+    "evolves_from": [],
+    "evolves_to": [
+      461
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Shattered Psyche"
+    ]
+  }
+}

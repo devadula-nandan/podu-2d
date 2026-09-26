@@ -1,0 +1,87 @@
+{
+  "figure_id": "chesnaught_142",
+  "display_name": "Chesnaught EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "FIGHTING"
+  ],
+  "icon": "142 - Chesnaught - Rarity_EX.png",
+  "model": "res://assets/figures/models/chesnaught/chesnaught_ex/142 - Chesnaught - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Spiky Shield",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked 2 steps back and gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Hammer Arm",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*This Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 142,
+    "pokemon_id_raw": "652",
+    "national_dex": 652,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "4.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      "142 mega"
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Bloom Doom"
+    ]
+  }
+}

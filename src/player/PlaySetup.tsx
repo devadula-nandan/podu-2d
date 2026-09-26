@@ -5,32 +5,57 @@ import { isFormOnlyFigure } from '../engine/index.js';
 import { roomShareUrl } from '../net/sync-url.js';
 import { warmAiWorker } from '../ui/ai-client.js';
 import { figureOfContent, plateOfContent } from '../ui/boot.js';
+import {
+  asStoredDeck,
+  slotIsEmpty,
+  writeDeckSlots,
+  type DeckSlot,
+} from '../ui/deck-slots.js';
 import { FigureSprite } from '../ui/FigureSprite.js';
 import {
   FIGURES_PER_DECK,
   PLATE_COST_CAP,
   deckHasErrors,
   figureSpriteUrl,
+  isCompleteDeck,
   plateCost,
   randomSeed,
   validateDeck,
   type DeckDraft,
 } from '../ui/model.js';
-import { SpriteAttribution } from '../ui/SpriteAttribution.js';
+import { Listbox } from '../ui/Listbox.js';
+import { loadInitialSlots, slotLabel } from '../ui/preset-slots.js';
 import { useDuelSession } from '../ui/DuelSession.js';
+import { readModeFromSearch, writeModeToUrl } from '../ui/seed-url.js';
 import type { DuelConfig, PlayMode } from '../ui/use-duel.js';
 import {
-  leagueSix,
   plateCaption,
-  presetCaption,
-  resolvedPresets,
-  rivalLeagueSix,
+  rivalStrategyDraft,
   type PresetId,
 } from './presets.js';
 
 interface Props {
   readonly engine: Engine;
   readonly onStart: (config: DuelConfig) => void;
+}
+
+function draftFromSlot(slot: DeckSlot): DeckDraft {
+  if (slot === null) return { figures: [], plates: [] };
+  return { figures: [...slot.figures], plates: [...slot.plates] };
+}
+
+function presetIdForSlot(slot: DeckSlot, index: number): PresetId | undefined {
+  const names: PresetId[] = [
+    'starter-squad',
+    'stone-guard',
+    'swift-pack',
+    'poison-fang',
+    'dragon-rise',
+    'arena-rush',
+  ];
+  if (slot?.name === undefined) return names[index];
+  const match = names.find((id) => id.replace(/-/g, ' ') === slot.name.toLowerCase());
+  return match ?? names[index];
 }
 
 export function PlaySetup({ engine, onStart }: Props) {
@@ -45,10 +70,10 @@ export function PlaySetup({ engine, onStart }: Props) {
     tableLink,
     configureSeat,
   } = useDuelSession();
-  const packs = useMemo(() => resolvedPresets(engine), [engine]);
-  const [draft, setDraft] = useState<DeckDraft>(() => leagueSix(engine));
-  const [picked, setPicked] = useState<PresetId | 'custom' | 'league' | null>('league');
-  const [mode, setMode] = useState<PlayMode>('hotseat');
+  const [slots, setSlots] = useState<DeckSlot[]>(() => loadInitialSlots(engine));
+  const [pickedSlot, setPickedSlot] = useState(0);
+  const [draft, setDraft] = useState<DeckDraft>(() => draftFromSlot(loadInitialSlots(engine)[0] ?? null));
+  const [mode, setMode] = useState<PlayMode>(() => readModeFromSearch() ?? 'hotseat');
   const [difficulty, setDifficulty] = useState<Difficulty>('easy');
   const [seed, setSeed] = useState(() => urlSeed ?? randomSeed());
   const [building, setBuilding] = useState(false);
@@ -60,11 +85,16 @@ export function PlaySetup({ engine, onStart }: Props) {
   }, [seed, writeSeed]);
 
   useEffect(() => {
+    writeDeckSlots(slots);
+  }, [slots]);
+
+  useEffect(() => {
     if (tableSeat === null || seated.current) return;
     seated.current = true;
-    setDraft(tableSeat === 1 ? rivalLeagueSix(engine) : leagueSix(engine));
-    setPicked('league');
-  }, [engine, tableSeat]);
+    const next = draftFromSlot(slots[tableSeat === 1 ? Math.min(1, slots.length - 1) : 0] ?? null);
+    setDraft(next);
+    setPickedSlot(tableSeat === 1 ? 1 : 0);
+  }, [slots, tableSeat]);
 
   useEffect(() => {
     if (!copied) return;
@@ -77,8 +107,44 @@ export function PlaySetup({ engine, onStart }: Props) {
   }, [copied]);
 
   const issues = validateDeck(engine, draft, true);
-  const blocked = deckHasErrors(issues);
+  const blocked = deckHasErrors(issues) || !isCompleteDeck(engine, draft);
   const share = roomShareUrl(seed, window.location.href);
+  const avoid = presetIdForSlot(slots[pickedSlot] ?? null, pickedSlot);
+
+  const selectSlot = (index: number): void => {
+    const slot = slots[index] ?? null;
+    setPickedSlot(index);
+    if (!slotIsEmpty(slot)) setDraft(draftFromSlot(slot));
+  };
+
+  const renameSlot = (index: number, name: string): void => {
+    setSlots((prev) => {
+      const next = [...prev];
+      const slot = next[index];
+      if (slot === null || slot === undefined) return prev;
+      next[index] = { ...slot, name: name.trim() || undefined };
+      return next;
+    });
+  };
+
+  const clearSlot = (index: number): void => {
+    setSlots((prev) => {
+      const next = [...prev];
+      next[index] = null;
+      return next;
+    });
+    if (pickedSlot === index) setDraft({ figures: [], plates: [] });
+  };
+
+  const persistDraftToSlot = (nextDraft: DeckDraft): void => {
+    setDraft(nextDraft);
+    setSlots((prev) => {
+      const next = [...prev];
+      const prevSlot = next[pickedSlot];
+      next[pickedSlot] = asStoredDeck(nextDraft, prevSlot?.name ?? slotLabel(prevSlot ?? null, pickedSlot));
+      return next;
+    });
+  };
 
   const readyUp = (): void => {
     if (blocked || tableSeat === null) return;
@@ -87,11 +153,12 @@ export function PlaySetup({ engine, onStart }: Props) {
 
   const startVsAi = (): void => {
     if (blocked) return;
+    writeModeToUrl('vsAi');
     warmAiWorker();
     onStart({
       seed: seed >>> 0,
       startingPlayer: (seed >>> 0) % 2 === 0 ? 0 : 1,
-      decks: { 0: draft, 1: rivalLeagueSix(engine) },
+      decks: { 0: draft, 1: rivalStrategyDraft(engine, seed, avoid) },
       allowUnimplemented: true,
       mode: 'vsAi',
       humanSeat: 0,
@@ -116,207 +183,253 @@ export function PlaySetup({ engine, onStart }: Props) {
   return (
     <div className="play-setup" data-testid="play-setup">
       <div className="play-setup-card">
-      {!tableLink ? (
-        <p className="play-note" data-testid="room-offline">
-          Can&apos;t reach room server
-        </p>
-      ) : null}
-
-      <header className="play-setup-head">
-        <p className="play-kicker">Ver. 7.0.14</p>
-        <h1>Pick a team</h1>
-        <p className="play-lede">Six figures. Plates optional. You sit at the bottom.</p>
-      </header>
-
-      {building ? (
-        <BuildModal
-          engine={engine}
-          draft={draft}
-          onChange={(next) => {
-            setDraft(next);
-            setPicked('custom');
-          }}
-          onClose={() => {
-            setBuilding(false);
-          }}
-        />
-      ) : (
-        <>
-      <fieldset className="play-modes">
-        <legend>How to play</legend>
-        <label>
-          <input
-            type="radio"
-            name="play-mode"
-            data-testid="mode-hotseat"
-            checked={mode === 'hotseat'}
-            onChange={() => {
-              setMode('hotseat');
-            }}
-          />
-          Two players
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="play-mode"
-            data-testid="mode-vs-ai"
-            checked={mode === 'vsAi'}
-            onChange={() => {
-              setMode('vsAi');
-              warmAiWorker();
-            }}
-          />
-          vs AI
-        </label>
-        {mode === 'vsAi' ? (
-          <label className="play-ai-row">
-            Difficulty{' '}
-            <select
-              data-testid="difficulty"
-              value={difficulty}
-              onChange={(event) => {
-                const value = event.target.value;
-                if (value === 'easy' || value === 'normal' || value === 'hard') setDifficulty(value);
-              }}
-            >
-              <option value="easy">Easy</option>
-              <option value="normal">Normal</option>
-              <option value="hard">Hard</option>
-            </select>
-          </label>
+        {!tableLink && mode === 'hotseat' ? (
+          <p className="play-note" data-testid="room-offline">
+            Can&apos;t reach room server
+          </p>
         ) : null}
-      </fieldset>
 
-      <div className="play-presets" data-testid="preset-chooser">
-        {packs.map(({ preset, draft: next }) => (
-          <button
-            key={preset.id}
-            type="button"
-            className="play-preset"
-            data-testid={`preset-${preset.id}`}
-            data-on={picked === preset.id ? '1' : '0'}
-            onClick={() => {
-              setDraft(next);
-              setPicked(preset.id);
-            }}
-          >
-            <strong>{preset.name}</strong>
-            <span>{preset.blurb}</span>
-            <span className="play-preset-line">{presetCaption(engine, next)}</span>
-          </button>
-        ))}
-      </div>
+        <header className="play-setup-head">
+          <p className="play-kicker">Pokémon Duel · WebGL</p>
+          <h1>Duel Field</h1>
+          <p className="play-lede">Pick a team slot — edit, rename, or clear any of the six.</p>
+        </header>
 
-      {mode === 'hotseat' ? (
-        <RoomLink
-          url={share}
-          copied={copied}
-          rivalConnected={rivalConnected}
-          rivalReady={rivalReady}
-          youReady={youReady}
-          tableLink={tableLink}
-          onCopy={() => {
-            void navigator.clipboard.writeText(share).catch(() => {
-              /* URL is on screen */
-            });
-            setCopied(true);
-          }}
-        />
-      ) : null}
-
-      <div className="play-setup-actions">
-        <button
-          type="button"
-          className="play-ghost"
-          data-testid="use-starters"
-          onClick={() => {
-            setDraft(tableSeat === 1 ? rivalLeagueSix(engine) : leagueSix(engine));
-            setPicked('league');
-          }}
-        >
-          Starter deck
-        </button>
-        <button
-          type="button"
-          className="play-ghost"
-          data-testid="open-builder"
-          onClick={() => {
-            setBuilding(true);
-          }}
-        >
-          Build
-        </button>
-        {mode === 'vsAi' ? (
-          <button
-            type="button"
-            className="play-primary"
-            data-testid="start-vs-ai"
-            disabled={blocked || tableSeat !== 0}
-            onClick={startVsAi}
-          >
-            Start vs AI
-          </button>
-        ) : (
-          <button
-            type="button"
-            className="play-primary"
-            data-testid="start-duel"
-            disabled={blocked || tableSeat === null || youReady}
-            onClick={readyUp}
-          >
-            Ready
-          </button>
-        )}
-      </div>
-
-      <p className="play-note" data-testid="ready-status">
-        {!tableLink
-          ? "Can't reach room server"
-          : tableSeat === null
-            ? 'Connecting to the room…'
-            : mode === 'vsAi'
-              ? 'You at the bottom. The AI fills the other seat.'
-              : youReady && rivalReady
-                ? 'Both ready — starting.'
-                : youReady
-                  ? rivalConnected
-                    ? 'You are ready. Waiting for Rival.'
-                    : 'You are ready. Waiting for Rival to open this same URL.'
-                  : rivalReady
-                    ? 'Rival is ready. Ready up when you are.'
-                    : rivalConnected
-                      ? 'Rival is picking a team.'
-                      : 'Share the URL. First join is You on that device.'}
-      </p>
-
-      <details className="play-advanced">
-        <summary>Seed</summary>
-        <label>
-          Seed{' '}
-          <input
-            data-testid="seed-input"
-            value={String(seed >>> 0)}
-            onChange={(event) => {
-              const n = Number(event.target.value);
-              if (Number.isFinite(n)) setSeed(n >>> 0);
+        {building ? (
+          <BuildModal
+            engine={engine}
+            draft={draft}
+            onChange={persistDraftToSlot}
+            onClose={() => {
+              setBuilding(false);
             }}
           />
-        </label>
-      </details>
+        ) : (
+          <>
+            <fieldset className="play-modes">
+              <legend>How to play</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="play-mode"
+                  data-testid="mode-hotseat"
+                  checked={mode === 'hotseat'}
+                  onChange={() => {
+                    setMode('hotseat');
+                    writeModeToUrl('hotseat');
+                  }}
+                />
+                Two players
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="play-mode"
+                  data-testid="mode-vs-ai"
+                  checked={mode === 'vsAi'}
+                  onChange={() => {
+                    setMode('vsAi');
+                    writeModeToUrl('vsAi');
+                    warmAiWorker();
+                  }}
+                />
+                vs AI
+              </label>
+              {mode === 'vsAi' ? (
+                <label className="play-ai-row">
+                  Difficulty{' '}
+                  <Listbox
+                    testId="difficulty"
+                    value={difficulty}
+                    onChange={setDifficulty}
+                    options={[
+                      { value: 'easy', label: 'Easy' },
+                      { value: 'normal', label: 'Normal' },
+                      { value: 'hard', label: 'Hard' },
+                    ]}
+                  />
+                </label>
+              ) : null}
+            </fieldset>
 
-      {blocked ? (
-        <ul className="play-issues">
-          {issues
-            .filter((issue) => issue.level === 'error')
-            .map((issue) => (
-              <li key={issue.message}>{issue.message}</li>
-            ))}
-        </ul>
-      ) : null}
-        </>
-      )}
-      <SpriteAttribution className="sprite-attrib" />
+            <div className="play-deck-slots" data-testid="preset-chooser">
+              {slots.map((slot, index) => {
+                const empty = slotIsEmpty(slot);
+                const label = slotLabel(slot, index);
+                return (
+                  <article
+                    key={index}
+                    className="play-deck-slot"
+                    data-testid={`deck-slot-${index}`}
+                    data-empty={empty ? '1' : '0'}
+                    data-on={pickedSlot === index ? '1' : '0'}
+                  >
+                    <div className="play-deck-slot-head">
+                      <label className="play-deck-slot-title">
+                        <span className="visually-hidden">Preset name</span>
+                        <span className="play-deck-slot-index">Slot {index + 1}</span>
+                        <input
+                          type="text"
+                          maxLength={28}
+                          value={slot?.name ?? (empty ? '' : label)}
+                          placeholder={`Slot ${index + 1}`}
+                          aria-label="Preset name"
+                          disabled={empty}
+                          onChange={(event) => {
+                            renameSlot(index, event.target.value);
+                          }}
+                          onFocus={() => {
+                            selectSlot(index);
+                          }}
+                        />
+                      </label>
+                      <button
+                        type="button"
+                        className="play-deck-slot-clear"
+                        data-testid={`deck-slot-clear-${index}`}
+                        aria-label={`Clear ${label}`}
+                        title="Clear slot"
+                        disabled={empty}
+                        onClick={() => {
+                          clearSlot(index);
+                        }}
+                      >
+                        Clear
+                      </button>
+                    </div>
+
+                    {empty ? (
+                      <p className="play-deck-slot-empty">Empty — edit to build a team</p>
+                    ) : (
+                      <div className="play-deck-slot-minis" aria-hidden="true">
+                        {(slot?.figures ?? []).slice(0, FIGURES_PER_DECK).map((id) => {
+                          const name = figureOfContent(engine, id)?.name ?? `#${id}`;
+                          return (
+                            <span key={id} className="play-deck-mini">
+                              <FigureSprite url={figureSpriteUrl(engine, id)} name={name} />
+                            </span>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    <div className="play-deck-slot-actions">
+                      <button
+                        type="button"
+                        className="play-ghost"
+                        data-testid={`deck-slot-load-${index}`}
+                        disabled={empty}
+                        onClick={() => {
+                          selectSlot(index);
+                        }}
+                      >
+                        {pickedSlot === index ? 'Selected' : 'Load'}
+                      </button>
+                      <button
+                        type="button"
+                        className="play-ghost"
+                        data-testid={`deck-slot-edit-${index}`}
+                        onClick={() => {
+                          selectSlot(index);
+                          if (empty) setDraft({ figures: [], plates: [] });
+                          setBuilding(true);
+                        }}
+                      >
+                        Edit
+                      </button>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+
+            {mode === 'hotseat' ? (
+              <RoomLink
+                url={share}
+                copied={copied}
+                rivalConnected={rivalConnected}
+                rivalReady={rivalReady}
+                youReady={youReady}
+                tableLink={tableLink}
+                onCopy={() => {
+                  void navigator.clipboard.writeText(share).catch(() => {
+                    /* URL is on screen */
+                  });
+                  setCopied(true);
+                }}
+              />
+            ) : null}
+
+            <div className="play-setup-actions">
+              {mode === 'vsAi' ? (
+                <button
+                  type="button"
+                  className="play-primary"
+                  data-testid="start-vs-ai"
+                  disabled={blocked}
+                  onClick={startVsAi}
+                >
+                  Start vs AI
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  className="play-primary"
+                  data-testid="start-duel"
+                  disabled={blocked || tableSeat === null || youReady}
+                  onClick={readyUp}
+                >
+                  Ready
+                </button>
+              )}
+            </div>
+
+            <p className="play-note" data-testid="ready-status">
+              {mode === 'vsAi'
+                ? 'You at the bottom. The AI brings a different strategy deck.'
+                : !tableLink
+                  ? "Can't reach room server"
+                  : tableSeat === null
+                    ? 'Connecting to the room…'
+                    : youReady && rivalReady
+                      ? 'Both ready — starting.'
+                      : youReady
+                        ? rivalConnected
+                          ? 'You are ready. Waiting for Rival.'
+                          : 'You are ready. Waiting for Rival to open this same URL.'
+                        : rivalReady
+                          ? 'Rival is ready. Ready up when you are.'
+                          : rivalConnected
+                            ? 'Rival is picking a team.'
+                            : 'Share the URL. First join is You on that device.'}
+            </p>
+
+            <details className="play-advanced">
+              <summary>Seed</summary>
+              <label>
+                Seed{' '}
+                <input
+                  data-testid="seed-input"
+                  value={String(seed >>> 0)}
+                  onChange={(event) => {
+                    const n = Number(event.target.value);
+                    if (Number.isFinite(n)) setSeed(n >>> 0);
+                  }}
+                />
+              </label>
+            </details>
+
+            {blocked ? (
+              <ul className="play-issues">
+                {issues
+                  .filter((issue) => issue.level === 'error')
+                  .map((issue) => (
+                    <li key={issue.message}>{issue.message}</li>
+                  ))}
+              </ul>
+            ) : null}
+          </>
+        )}
       </div>
     </div>
   );
@@ -413,7 +526,7 @@ function BuildModal({
           <p>
             Build · {draft.figures.length}/{FIGURES_PER_DECK} · plates {cost}/{PLATE_COST_CAP}
           </p>
-          <button type="button" className="play-ghost" onClick={onClose}>
+          <button type="button" className="play-ghost" data-testid="builder-done" onClick={onClose}>
             Done
           </button>
         </div>

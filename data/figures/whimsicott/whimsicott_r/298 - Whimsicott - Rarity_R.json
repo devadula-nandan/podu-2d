@@ -1,0 +1,86 @@
+{
+  "figure_id": "whimsicott_298",
+  "display_name": "Whimsicott R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GRASS",
+    "FAIRY"
+  ],
+  "icon": "298 - Whimsicott - Rarity_R.png",
+  "model": "res://assets/figures/models/whimsicott/whimsicott_r/298 - Whimsicott - Rarity_R.fbx",
+  "ability": {
+    "name": "Strong Breeze",
+    "note": "Before using this Pokémon, you can switch its position with another one of your own Pokémon in an adjacent space.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Cotton Guard",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "In this Pokémon's next battle, it cannot be knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 298,
+    "pokemon_id_raw": "547",
+    "national_dex": 547,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.3",
+    "last_update": "3.0.3",
+    "evolves_from": [],
+    "evolves_to": [
+      183
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Bloom Doom"
+    ]
+  }
+}

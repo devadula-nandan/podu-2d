@@ -1,0 +1,103 @@
+{
+  "figure_id": "vikavolt_339",
+  "display_name": "Vikavolt EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "ELECTRIC"
+  ],
+  "icon": "339 - Vikavolt - Rarity_EX.png",
+  "model": "res://assets/figures/models/vikavolt/vikavolt_ex/339 - Vikavolt - Rarity_EX.fbx",
+  "ability": {
+    "name": "Spark Noise",
+    "note": "When this Pokémon moves from the bench to the field, the Pokémon on the opponent's bench spin. Pokémon that spin a Purple Attack gain Wait.",
+    "effect_ids": [
+      7
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Air Slash",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Zap Cannon",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*The battle opponent, and the Pokémon in a straight line directly behind it, become paralyzed. Those Pokémon gain Wait.",
+      "source_effect_ids": [
+        2,
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Volt Switch",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 339,
+    "pokemon_id_raw": "738",
+    "national_dex": 738,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "5.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      340
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Gigavolt Havoc"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "figure_id": "glaceon_533",
+  "display_name": "Glaceon UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ICE"
+  ],
+  "icon": "res://data/figures/glaceon/glaceon_ux/533 - Glaceon - Rarity_UX.png",
+  "model": "res://assets/figures/models/glaceon/glaceon_ux/533 - Glaceon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Frost Arrow",
+    "note": "This Pokémon can MP move through your Pokémon and opposing Ground-type and Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Diamond Dust",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ice Shard",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Opposing Pokémon within 2 steps of this Pokémon spin. If the result is anything other than a Blue Attack, the effects of Sphere plates used on those Pokémon are nullified."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 533,
+    "pokemon_id_raw": "471 ux",
+    "national_dex": 471,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [
+      532
+    ],
+    "evolves_to": [
+      534
+    ],
+    "z_move_keys": [
+      "Subzero Slammer"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10"
+  }
+}

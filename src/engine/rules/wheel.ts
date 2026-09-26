@@ -28,6 +28,10 @@ import type { RngState } from '../rng.js';
 import type { GameState, ResolvedSegment } from '../state.js';
 import { figureOf } from '../state.js';
 
+export function resolvePrintedWheel(wheel: readonly WheelSegment[]): ResolvedSegment[] {
+  return wheel.map(resolveSegment);
+}
+
 function resolveSegment(segment: WheelSegment, index: number): ResolvedSegment {
   const damage = segment.damage;
   let value: number | null = null;

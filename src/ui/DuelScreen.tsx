@@ -1,13 +1,13 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import type { Command, Engine, FigureState, FigureUid, NodeId, PlayerId } from '../engine/index.js';
+import { Component, useCallback, useEffect, useMemo, useState, type ErrorInfo, type ReactNode } from 'react';
+import type { Command, Engine, FigureState, FigureUid, GameEvent, GameState, NodeId, PlayerId } from '../engine/index.js';
 import { BOARD, view } from '../engine/index.js';
 import { BattleOverlay } from './BattleOverlay.js';
 import { BoardCanvas } from './BoardCanvas.js';
 import { Hud } from './Hud.js';
 import { Inspector } from './Inspector.js';
-import { PhaseMachine } from './PhaseMachine.js';
 import { ReplayScrubber } from './ReplayScrubber.js';
 import { Trays } from './Trays.js';
+import { useDevRightRail } from './use-dev-right-rail.js';
 import { resolveBoardClick, resolveFigureClick } from './board-click.js';
 import {
   actorOf,
@@ -21,10 +21,42 @@ import {
   movableUids,
   phaseLabel,
   reachableNodes,
-  seatLabel,
+  viewSeatName,
 } from './model.js';
 import { FieldOccupancy } from './FieldOccupancy.js';
 import { useLiveDuel } from './DuelSession.js';
+import { PhaseMachine } from './PhaseMachine.js';
+
+class PhaseMachineBoundary extends Component<{ children: ReactNode }, { error: string | null }> {
+  override state: { error: string | null } = { error: null };
+
+  static getDerivedStateFromError(error: unknown): { error: string } {
+    return { error: error instanceof Error ? error.message : String(error) };
+  }
+
+  override componentDidCatch(error: Error, info: ErrorInfo): void {
+    console.error('Phase machine failed', error, info.componentStack);
+  }
+
+  override render(): ReactNode {
+    if (this.state.error !== null) {
+      return (
+        <div className="phase-machine" data-testid="phase-machine" data-error="1">
+          <p className="note">Phase machine failed to render. {this.state.error}</p>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+function PhaseMachinePane(props: { host: GameState; you: 0 | 1; events: readonly GameEvent[] }) {
+  return (
+    <PhaseMachineBoundary>
+      <PhaseMachine host={props.host} you={props.you} events={props.events} />
+    </PhaseMachineBoundary>
+  );
+}
 
 interface Props {
   readonly onRematch: () => void;
@@ -32,16 +64,19 @@ interface Props {
   readonly onLeave: () => void;
 }
 
-type WorkspacePane = 'inspector' | 'commands' | 'scrub' | 'machine';
+type WorkspacePane = 'inspector' | 'commands' | 'scrub' | 'machine' | 'stage';
 
 export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
   const { engine, duel } = useLiveDuel();
   const [picked, setSelected] = useState<FigureUid | null>(null);
-  const [help, setHelp] = useState(false);
-  const [debugOpen, setDebugOpen] = useState(false);
   const [pane, setPane] = useState<WorkspacePane>('commands');
   const [focus, setFocus] = useState<{ uid: FigureUid | null; index: number }>({ uid: null, index: 0 });
+  const rightRail = useDevRightRail();
   const host = duel.displayHost;
+  const machineEvents = useMemo(
+    () => duel.events.slice(0, duel.eventCursor),
+    [duel.eventCursor, duel.events],
+  );
   const playerView = host === null ? null : view(host, duel.viewing);
   const nameOf = useCallback((figure: FigureState) => figureName(engine, figure), [engine]);
   const spriteUrlOf = useCallback((figure: FigureState) => figureSpriteUrlOf(engine, figure), [engine]);
@@ -124,7 +159,7 @@ export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
     (kind: 'declinePlate' | 'declineBattle' | 'spin' | 'useRespin' | 'declineRespin'): void => {
       const command = findKind(duel.legal, kind, duel.viewing);
       if (command === null) {
-        duel.explain(`No ${kind} command is legal for ${seatLabel(duel.viewing)}.`);
+        duel.explain(`No ${kind} command is legal for ${viewSeatName(duel.viewing, duel.viewing)}.`);
         return;
       }
       duel.issue(command);
@@ -182,10 +217,6 @@ export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
       if (target instanceof HTMLElement) {
         const tag = target.tagName;
         if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || target.isContentEditable) return;
-      }
-      if (event.key === '?' || (event.key === '/' && event.shiftKey)) {
-        setHelp((prev) => !prev);
-        return;
       }
       if (event.key === 'Escape') {
         setSelected(null);
@@ -273,20 +304,26 @@ export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
   const nextSeat = actorOf(host, duel.legal);
   const actionsLocked = duel.thinking || duel.handover || duel.scrubbing;
 
+  const focusDock = (next: WorkspacePane): void => {
+    setPane(next);
+  };
+
   return (
     <div
       className="stack duel"
       data-testid="duel"
       data-mode={duel.config.mode}
-      data-debug={debugOpen ? '1' : '0'}
+      data-debug="1"
       data-pane={pane}
+      data-right-dragging={rightRail.dragging ? '1' : '0'}
+      style={rightRail.railStyle}
     >
       <FieldOccupancy host={host} />
       {duel.handover ? (
         <div className="handover-overlay" data-testid="handover">
           <div className="handover-card">
             <p className="eyebrow">Hotseat hand-off</p>
-            <h2>Pass the device to {seatLabel(nextSeat)}</h2>
+            <h2>Pass the device to {viewSeatName(nextSeat, duel.viewing)}</h2>
             <p className="note">
               Hidden information is plate identities. The next view is built with{' '}
               <code>view(state, {nextSeat})</code> and will not show the other seat&apos;s unused plates.
@@ -302,121 +339,128 @@ export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
               </p>
             ) : null}
             <button type="button" className="primary" data-testid="handover-confirm" onClick={duel.confirmHandover}>
-              I am {seatLabel(nextSeat)}
+              I am {viewSeatName(nextSeat, duel.viewing)}
             </button>
           </div>
         </div>
       ) : null}
-      <Hud
+      <div className="duel-chrome">
+        <Hud
+          engine={engine}
+          host={host}
+          view={playerView}
+          legal={duel.legal}
+          seedLabel={duel.seedLabel}
+          mode={duel.config.mode}
+          difficulty={duel.config.difficulty}
+          thinking={duel.thinking}
+          locked={actionsLocked}
+          lastSurround={duel.lastSurround}
+          onDeclinePlate={() => {
+            issueForViewer('declinePlate');
+          }}
+          onDeclineBattle={() => {
+            issueForViewer('declineBattle');
+          }}
+          onSpin={() => {
+            issueForViewer('spin');
+          }}
+          onRespin={(use) => {
+            issueForViewer(use ? 'useRespin' : 'declineRespin');
+          }}
+          onConcede={() => {
+            if (window.confirm(`Concede as ${viewSeatName(duel.viewing, duel.viewing)}?`)) duel.concede(duel.viewing);
+          }}
+          onRematch={onRematch}
+          onNewSeed={onNewSeed}
+          onLeave={onLeave}
+          canUndo={duel.canUndo}
+          scrubbing={duel.scrubbing}
+          onUndo={() => {
+            duel.undo();
+          }}
+          onCopySeed={() => {
+            void duel.copySeed().then((url) => {
+              duel.explain(`Copied ${url}`);
+            });
+          }}
+          dense
+        />
+        <div className="dev-tabs" role="tablist" aria-label="Developer workspace" data-testid="dev-workspace-tabs">
+          <button
+            type="button"
+            role="tab"
+            className="dev-tab"
+            aria-selected={pane === 'inspector'}
+            data-testid="dev-tab-inspector"
+            onClick={() => {
+              focusDock('inspector');
+            }}
+          >
+            Inspector
+          </button>
+          <button
+            type="button"
+            role="tab"
+            className="dev-tab"
+            aria-selected={pane === 'commands'}
+            data-testid="dev-tab-commands"
+            onClick={() => {
+              focusDock('commands');
+            }}
+          >
+            Commands
+          </button>
+          <button
+            type="button"
+            role="tab"
+            className="dev-tab"
+            aria-selected={pane === 'scrub'}
+            data-testid="dev-tab-scrub"
+            onClick={() => {
+              focusDock('scrub');
+            }}
+          >
+            Scrubber
+          </button>
+          <button
+            type="button"
+            role="tab"
+            className="dev-tab"
+            aria-selected={pane === 'machine'}
+            data-testid="dev-tab-machine"
+            onClick={() => {
+              focusDock('machine');
+            }}
+          >
+            Machine
+          </button>
+          <button
+            type="button"
+            className="ghost"
+            data-testid="dev-tab-board"
+            data-on={pane === 'stage' ? '1' : '0'}
+            onClick={() => {
+              setPane('stage');
+            }}
+          >
+            Debugger
+          </button>
+        </div>
+      </div>
+      <aside className="dev-dock" data-dock="inspector" data-focus={pane === 'inspector' ? '1' : '0'} data-testid="debug-drawer">
+        <p className="dev-dock-title">Inspector</p>
+        <div className="dev-dock-body">
+          <Inspector engine={engine} host={host} selected={selectedFigure} you={duel.viewing} />
+        </div>
+      </aside>
+      <div className="duel-mid">
+      <Trays
+        side="rival"
         engine={engine}
         host={host}
         view={playerView}
         legal={duel.legal}
-        seedLabel={duel.seedLabel}
-        mode={duel.config.mode}
-        difficulty={duel.config.difficulty}
-        thinking={duel.thinking}
-        locked={actionsLocked}
-        lastSurround={duel.lastSurround}
-        onDeclinePlate={() => {
-          issueForViewer('declinePlate');
-        }}
-        onDeclineBattle={() => {
-          issueForViewer('declineBattle');
-        }}
-        onSpin={() => {
-          issueForViewer('spin');
-        }}
-        onRespin={(use) => {
-          issueForViewer(use ? 'useRespin' : 'declineRespin');
-        }}
-        onConcede={() => {
-          if (window.confirm(`Concede as ${seatLabel(duel.viewing)}?`)) duel.concede(duel.viewing);
-        }}
-        onRematch={onRematch}
-        onNewSeed={onNewSeed}
-        onLeave={onLeave}
-        canUndo={duel.canUndo}
-        scrubbing={duel.scrubbing}
-        onUndo={() => {
-          duel.undo();
-        }}
-        onCopySeed={() => {
-          void duel.copySeed().then((url) => {
-            duel.explain(`Copied ${url}`);
-          });
-        }}
-        dense
-      />
-      <div className="dev-tabs" role="tablist" aria-label="Developer workspace" data-testid="dev-workspace-tabs">
-        <button
-          type="button"
-          role="tab"
-          className="dev-tab"
-          aria-selected={debugOpen && pane === 'inspector'}
-          data-testid="dev-tab-inspector"
-          onClick={() => {
-            setPane('inspector');
-            setDebugOpen(true);
-          }}
-        >
-          Inspector
-        </button>
-        <button
-          type="button"
-          role="tab"
-          className="dev-tab"
-          aria-selected={debugOpen && pane === 'commands'}
-          data-testid="dev-tab-commands"
-          onClick={() => {
-            setPane('commands');
-            setDebugOpen(true);
-          }}
-        >
-          Commands
-        </button>
-        <button
-          type="button"
-          role="tab"
-          className="dev-tab"
-          aria-selected={debugOpen && pane === 'scrub'}
-          data-testid="dev-tab-scrub"
-          onClick={() => {
-            setPane('scrub');
-            setDebugOpen(true);
-          }}
-        >
-          Scrub
-        </button>
-        <button
-          type="button"
-          role="tab"
-          className="dev-tab"
-          aria-selected={debugOpen && pane === 'machine'}
-          data-testid="dev-tab-machine"
-          onClick={() => {
-            setPane('machine');
-            setDebugOpen(true);
-          }}
-        >
-          Machine
-        </button>
-        <button
-          type="button"
-          className="ghost"
-          data-testid="dev-tab-board"
-          onClick={() => {
-            setDebugOpen((prev) => !prev);
-          }}
-        >
-          {debugOpen ? 'Board' : 'Debug'}
-        </button>
-      </div>
-      <Trays
-        side="rival"
-        engine={engine}
-        view={playerView}
-        legal={duel.legal}
         selected={selected}
         onSelect={(uid) => {
           if (actionsLocked) return;
@@ -430,145 +474,45 @@ export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
         onPlayPlate={onPlayPlate}
         onAbility={onAbility}
       />
-      <div className="stack-board board-wrap">
-        <BoardCanvas
-          board={BOARD}
-          view={playerView}
-          nameOf={nameOf}
-          spriteUrlOf={spriteUrlOf}
-          highlights={highlights}
-          onNode={onNode}
-          onEmpty={() => {
-            duel.explain('That click missed the graph. Nodes are the discs; dashed GO rings are legal destinations.');
-          }}
-        />
-        {duel.battleSnap !== null && host.result === null ? (
-          <BattleOverlay
-            snap={duel.battleSnap}
-            attackerName={attackerName}
-            defenderName={defenderName}
-            attackerSprite={attackerSprite}
-            defenderSprite={defenderSprite}
-            canSpin={!actionsLocked && findKind(duel.legal, 'spin', duel.viewing) !== null}
-            awaitingRespin={
-              findKind(duel.legal, 'useRespin', duel.viewing) !== null ||
-              findKind(duel.legal, 'declineRespin', duel.viewing) !== null
-            }
-            onSpin={() => {
-              issueForViewer('spin');
+      <div className="duel-field" data-dock="stage" data-focus={pane === 'stage' ? '1' : '0'}>
+        <div className="board-wrap">
+          <BoardCanvas
+            board={BOARD}
+            view={playerView}
+            nameOf={nameOf}
+            spriteUrlOf={spriteUrlOf}
+            highlights={highlights}
+            onNode={onNode}
+            onEmpty={() => {
+              duel.explain('That click missed the graph. Nodes are the discs; dashed GO rings are legal destinations.');
             }}
-            onClose={duel.dismissBattle}
           />
-        ) : null}
-        <aside className="debug-drawer" hidden={!debugOpen} data-testid="debug-drawer">
-          <div className="debug-body">
-            {pane === 'inspector' ? <Inspector engine={engine} host={host} selected={selectedFigure} /> : null}
-            {pane === 'machine' ? <PhaseMachine host={host} /> : null}
-            {pane === 'scrub' ? (
-              <ReplayScrubber
-                events={duel.events}
-                cursor={duel.eventCursor}
-                onScrub={duel.scrubTo}
-                onLive={duel.jumpToLive}
-              />
-            ) : null}
-            {pane === 'commands' ? (
-              <div className="panel">
-                <div className="actions hud-actions">
-                  <button type="button" className="ghost" data-testid="undo" disabled={duel.thinking || !duel.canUndo} onClick={duel.undo}>
-                    Undo
-                  </button>
-                  <button type="button" className="primary" data-testid="spin" disabled={actionsLocked} onClick={() => { issueForViewer('spin'); }}>
-                    Spin
-                  </button>
-                  <button type="button" className="ghost" onClick={() => { if (window.confirm(`Concede as ${seatLabel(duel.viewing)}?`)) duel.concede(duel.viewing); }}>
-                    Concede
-                  </button>
-                  <button type="button" className="ghost" onClick={onRematch} data-testid="rematch">
-                    Rematch same seed
-                  </button>
-                  <button type="button" className="ghost" onClick={onNewSeed} data-testid="new-seed">
-                    New seed
-                  </button>
-                  <button type="button" className="ghost" onClick={onLeave}>
-                    Decks
-                  </button>
-                  <button
-                    type="button"
-                    className="ghost seed-copy"
-                    data-testid="copy-seed"
-                    onClick={() => {
-                      void duel.copySeed().then((url) => {
-                        duel.explain(`Copied ${url}`);
-                      });
-                    }}
-                  >
-                    Copy seed URL
-                  </button>
-                </div>
-                {help ? (
-                  <p className="help">
-                    1–6 bench · Esc cancel · D skip/decline · S spin · U/Ctrl+Z undo · [ ] scrub · arrows
-                    cycle GO · Enter confirm · End live
-                  </p>
-                ) : null}
-                {playerView.pending !== null ? (
-                  <div className="pending" data-testid="pending">
-                    <p className="kicker">Pending decision · {seatLabel(playerView.pending.chooser)}</p>
-                    <p>{playerView.pending.prompt}</p>
-                  </div>
-                ) : null}
-                {duel.thinking ? (
-                  <p className="note thinking" data-testid="thinking">
-                    {seatLabel(actorOf(host, duel.legal))} is thinking…
-                  </p>
-                ) : null}
-                {duel.lastAiLabel !== null ? (
-                  <p className="note" data-testid="ai-last-command">
-                    AI: {duel.lastAiLabel}
-                  </p>
-                ) : null}
-                <p className="kicker">Legal commands</p>
-                <div className="actions" data-testid="legal-moves">
-                  {decisionCommands(duel.legal)
-                    .filter((command) => command.player === duel.viewing)
-                    .map((command, index) => (
-                      <button
-                        key={`${command.kind}-${index}`}
-                        type="button"
-                        className="action"
-                        data-testid={`legal-${command.kind}-${index}`}
-                        disabled={actionsLocked}
-                        onClick={() => {
-                          duel.issue(command);
-                          if (command.kind === 'mpMove' || command.kind === 'deploy') setSelected(command.uid);
-                          else setSelected(null);
-                        }}
-                      >
-                        {commandLabel(engine, host.figures, command, playerView.pending)}
-                      </button>
-                    ))}
-                </div>
-                {duel.config.mode === 'vsAi' || duel.log.length > 0 ? (
-                  <div className="command-log" data-testid="command-log">
-                    <p className="kicker">Command log</p>
-                    <ol>
-                      {duel.log.slice(-16).map((row) => (
-                        <li key={row.id} data-who={row.who}>
-                          <span className="muted">T{row.turn}</span> {row.who === 'ai' ? 'AI' : 'You'}: {row.label}
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
-                ) : null}
-              </div>
-            ) : null}
-          </div>
-        </aside>
+          {duel.battleSnap !== null && host.result === null ? (
+            <BattleOverlay
+              snap={duel.battleSnap}
+              attackerName={attackerName}
+              defenderName={defenderName}
+              attackerSprite={attackerSprite}
+              defenderSprite={defenderSprite}
+              youAreAttacker={(host.figures[duel.battleSnap.attacker]?.owner ?? 0) === duel.viewing}
+              canSpin={!actionsLocked && findKind(duel.legal, 'spin', duel.viewing) !== null}
+              awaitingRespin={
+                findKind(duel.legal, 'useRespin', duel.viewing) !== null ||
+                findKind(duel.legal, 'declineRespin', duel.viewing) !== null
+              }
+              onSpin={() => {
+                issueForViewer('spin');
+              }}
+              onClose={duel.dismissBattle}
+              you={duel.viewing}
+            />
+          ) : null}
+        </div>
       </div>
       <Trays
         side="you"
         engine={engine}
+        host={host}
         view={playerView}
         legal={duel.legal}
         selected={selected}
@@ -584,6 +528,163 @@ export function DuelScreen({ onRematch, onNewSeed, onLeave }: Props) {
         onPlayPlate={onPlayPlate}
         onAbility={onAbility}
       />
+      </div>
+      <div className="dev-right-rail" data-testid="dev-right-rail">
+        <div
+          className="dev-right-splitter"
+          role="separator"
+          aria-orientation="vertical"
+          aria-label="Resize machine and commands"
+          tabIndex={0}
+          data-testid="dev-right-splitter"
+          onPointerDown={rightRail.onSplitterPointerDown}
+          onPointerMove={rightRail.onSplitterPointerMove}
+          onPointerUp={rightRail.onSplitterPointerUp}
+          onPointerCancel={rightRail.onSplitterPointerUp}
+          onKeyDown={rightRail.onSplitterKeyDown}
+        />
+      <div className="dev-right-stack">
+      <aside className="dev-dock" data-dock="machine" data-focus={pane === 'machine' ? '1' : '0'}>
+        <p className="dev-dock-title">Machine</p>
+        <div className="dev-dock-body">
+          <PhaseMachinePane host={host} you={duel.viewing} events={machineEvents} />
+        </div>
+      </aside>
+      <aside className="dev-dock" data-dock="commands" data-focus={pane === 'commands' ? '1' : '0'}>
+        <p className="dev-dock-title">Commands</p>
+        <div className="dev-dock-body">
+          <div className="panel">
+            <div className="actions hud-actions">
+              <button
+                type="button"
+                className="ghost"
+                disabled={actionsLocked || findKind(duel.legal, 'declinePlate', duel.viewing) === null}
+                data-testid="skip-plate"
+                onClick={() => {
+                  issueForViewer('declinePlate');
+                }}
+              >
+                Skip plate
+              </button>
+              <button
+                type="button"
+                className="ghost"
+                disabled={actionsLocked || findKind(duel.legal, 'declineBattle', duel.viewing) === null}
+                data-testid="decline-battle"
+                onClick={() => {
+                  issueForViewer('declineBattle');
+                }}
+              >
+                Decline battle
+              </button>
+              <button type="button" className="ghost" data-testid="undo" disabled={duel.thinking || !duel.canUndo} onClick={duel.undo}>
+                Undo
+              </button>
+              <button type="button" className="primary" data-testid="spin" disabled={actionsLocked} onClick={() => { issueForViewer('spin'); }}>
+                Spin
+              </button>
+              <button type="button" className="ghost" onClick={() => { if (window.confirm(`Concede as ${viewSeatName(duel.viewing, duel.viewing)}?`)) duel.concede(duel.viewing); }}>
+                Concede
+              </button>
+              <button type="button" className="ghost" onClick={onRematch} data-testid="rematch">
+                Rematch same seed
+              </button>
+              <button type="button" className="ghost" onClick={onNewSeed} data-testid="new-seed">
+                New seed
+              </button>
+              <button type="button" className="ghost" onClick={onLeave}>
+                Decks
+              </button>
+              <button
+                type="button"
+                className="ghost seed-copy"
+                data-testid="copy-seed"
+                onClick={() => {
+                  void duel.copySeed().then((url) => {
+                    duel.explain(`Copied ${url}`);
+                  });
+                }}
+              >
+                Copy seed URL
+              </button>
+            </div>
+            <p className="help">
+              1–6 bench · Esc cancel · D skip/decline · S spin · U/Ctrl+Z undo · [ ] scrub · arrows
+              cycle GO · Enter confirm · End live
+            </p>
+            {playerView.pending !== null ? (
+              <div className="pending" data-testid="pending">
+                <p className="kicker">Pending decision · {viewSeatName(playerView.pending.chooser, duel.viewing)}</p>
+                <p>{playerView.pending.prompt}</p>
+              </div>
+            ) : null}
+            {duel.thinking ? (
+              <p className="note thinking" data-testid="thinking">
+                {viewSeatName(actorOf(host, duel.legal), duel.viewing)} is thinking…
+              </p>
+            ) : null}
+            {duel.lastAiLabel !== null ? (
+              <p className="note" data-testid="ai-last-command">
+                AI: {duel.lastAiLabel}
+              </p>
+            ) : null}
+            <p className="kicker">Legal commands</p>
+            <div className="actions" data-testid="legal-moves">
+              {decisionCommands(duel.legal).filter((command) => command.player === duel.viewing).length === 0 ? (
+                <p className="note">None.</p>
+              ) : (
+                decisionCommands(duel.legal)
+                  .filter((command) => command.player === duel.viewing)
+                  .map((command, index) => (
+                    <button
+                      key={`${command.kind}-${index}`}
+                      type="button"
+                      className="action"
+                      data-testid={`legal-${command.kind}-${index}`}
+                      disabled={actionsLocked}
+                      onClick={() => {
+                        duel.issue(command);
+                        if (command.kind === 'mpMove' || command.kind === 'deploy') setSelected(command.uid);
+                        else setSelected(null);
+                      }}
+                    >
+                      {commandLabel(engine, host.figures, command, playerView.pending)}
+                    </button>
+                  ))
+              )}
+            </div>
+            {duel.config.mode === 'vsAi' || duel.log.length > 0 ? (
+              <div className="command-log" data-testid="command-log">
+                <p className="kicker">Command log</p>
+                <ol>
+                  {duel.log.slice(-16).map((row) => (
+                    <li key={row.id} data-who={row.who} data-side={row.player === duel.viewing ? 'you' : 'rival'}>
+                      <span className="muted">T{row.turn}</span>{' '}
+                      <span className="log-who">
+                        {row.who === 'ai' ? 'AI' : viewSeatName(row.player, duel.viewing)}
+                      </span>
+                      : {row.label}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </aside>
+      </div>
+      </div>
+      <aside className="dev-dock" data-dock="scrub" data-focus={pane === 'scrub' ? '1' : '0'}>
+        <p className="dev-dock-title">Scrubber</p>
+        <div className="dev-dock-body">
+          <ReplayScrubber
+            events={duel.events}
+            cursor={duel.eventCursor}
+            onScrub={duel.scrubTo}
+            onLive={duel.jumpToLive}
+          />
+        </div>
+      </aside>
       {duel.notice !== null ? (
         <div className="toast" role="status" data-testid="notice">
           {duel.notice}{' '}

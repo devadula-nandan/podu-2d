@@ -1,0 +1,88 @@
+{
+  "figure_id": "silvally_588",
+  "display_name": "Silvally EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "588 - Silvally - Rarity_EX.png",
+  "model": "res://assets/figures/models/silvally/silvally_ex/588 - Silvally - Rarity_EX.fbx",
+  "ability": {
+    "name": "RKS System",
+    "note": "This Pokémon may MP move over non-Flying-type Pokémon on the field. When this Pokémon moves to the field or appears as an Evolution, choose one Pokémon on the field. While this Pokémon is on the field, its type becomes the type of the chosen Pokémon. This Pokémon cannot be surrounded by [CTRL QL Ultra Beasts][Ultra Beasts]. This Pokémon is not moved to the Ultra Space by the Attack effects of opposing Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Explosion",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and all neighbor Pokémon faint."
+    },
+    {
+      "name": "Return",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*Increases your Z-Move gauge by half its max value."
+    },
+    {
+      "name": "Multi-Attack",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Swords Dance",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 0,
+      "note": "Spin again until an attack other than Swords Dance is spun. Damage Attacks deal ×2 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 588,
+    "pokemon_id_raw": "773",
+    "national_dex": 773,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      589
+    ],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ]
+  }
+}

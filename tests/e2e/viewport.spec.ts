@@ -19,25 +19,25 @@ async function onScreen(page: Page, testId: string): Promise<void> {
 }
 
 async function startPlayDuel(page: Page, seed: string): Promise<void> {
-  await page.goto(`/2d?seed=${seed}`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`/3d?seed=${seed}`, { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await page.getByTestId('mode-vs-ai').check();
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
 }
 
-test('/2d portrait and landscape lock the viewport', async ({ page }) => {
+test('/3d portrait and landscape lock the viewport', async ({ page }) => {
   test.setTimeout(90_000);
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/2d?seed=2301', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2301', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await expect(page.getByTestId('preset-chooser')).toBeVisible();
-  await expect(page.getByTestId('preset-night-league')).toBeVisible();
+  await expect(page.getByTestId('deck-slot-0')).toBeVisible();
   expect(await documentScrolls(page)).toBe(false);
 
   await page.getByTestId('mode-vs-ai').check();
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   expect(await documentScrolls(page)).toBe(false);
@@ -89,7 +89,7 @@ test('/2d portrait and landscape lock the viewport', async ({ page }) => {
   ) {
     await expect(page.getByTestId('overlay-spin')).toHaveCount(0);
     await expect(page.getByTestId('play-landed').or(page.getByTestId('battle-outcome'))).toBeVisible({
-      timeout: 8_000,
+      timeout: 12_000,
     });
   }
 
@@ -100,7 +100,7 @@ test('/2d portrait and landscape lock the viewport', async ({ page }) => {
   await onScreen(page, 'play-seat-rival');
 });
 
-test('/2d at 1280x800 does not scroll the document', async ({ page }) => {
+test('/3d at 1280x800 does not scroll the document', async ({ page }) => {
   test.setTimeout(90_000);
   await page.setViewportSize({ width: 1280, height: 800 });
   await startPlayDuel(page, '2304');

@@ -1,0 +1,85 @@
+{
+  "figure_id": "combusken_285",
+  "display_name": "Combusken R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "FIGHTING"
+  ],
+  "icon": "285 - Combusken - Rarity_R.png",
+  "model": "res://assets/figures/models/combusken/combusken_r/285 - Combusken - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Cyclone Kick",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Moves the battle opponent to the P.C."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Weak Spot Kick",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*The battle opponent gains Wait 4.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 285,
+    "pokemon_id_raw": "256",
+    "national_dex": 256,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.12",
+    "last_update": "3.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      286
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Inferno Overdrive"
+    ]
+  }
+}

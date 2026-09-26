@@ -1,0 +1,77 @@
+{
+  "figure_id": "magmortar_262",
+  "display_name": "Magmortar EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "262 - Magmortar - Rarity_EX.png",
+  "model": "res://assets/figures/models/magmortar/magmortar_ex/262 - Magmortar - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    },
+    {
+      "name": "Flame Gun",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent and one Pokémon directly behind it are knocked out."
+    },
+    {
+      "name": "Fire Punch",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 262,
+    "pokemon_id_raw": "467",
+    "national_dex": 467,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.7",
+    "evolves_from": [
+      261
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "figure_id": "shaymin_land_forme_442",
+  "display_name": "Shaymin Land Forme EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "442 - Shaymin Land Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/shaymin_land_forme/shaymin_land_forme_ex/442 - Shaymin Land Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Flower Carpet",
+    "note": "While this Pokémon is not affected by a special condition and is on an entry point, Mega Evolution does not end via passage of turns for the Pokémon of the player whose entry point it is.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Synthesis",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While they are on the field, your Grass-type Pokémon deal +20 damage to the battle opponent."
+    },
+    {
+      "name": "Seed Flare",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "If there are any poisoned and/or noxious Pokémon, this damage is multiplied by the number of those Pokémon. *Removes all poisoned and noxious conditions from all Pokémon."
+    },
+    {
+      "name": "Healing Flowers",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Choose one Pokémon in your P.C. and move it to the bench."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 442,
+    "pokemon_id_raw": "492",
+    "national_dex": 492,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.4",
+    "last_update": "6.0.4",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

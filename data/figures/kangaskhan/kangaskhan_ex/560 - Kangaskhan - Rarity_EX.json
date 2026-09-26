@@ -1,0 +1,81 @@
+{
+  "figure_id": "kangaskhan_560",
+  "display_name": "Kangaskhan EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "560 - Kangaskhan - Rarity_EX.png",
+  "model": "res://assets/figures/models/kangaskhan/kangaskhan_ex/560 - Kangaskhan - Rarity_EX.fbx",
+  "ability": {
+    "name": "Scrappy",
+    "note": "This Pokémon cannot be knocked out if it's not affected by a special condition and its battle opponent is a Ghost-type Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Facade",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "If this Pokémon is affected by a special condition, it deals ×2 damage."
+    },
+    {
+      "name": "Double-Edge",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and the battle opponent are knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 560,
+    "pokemon_id_raw": "115",
+    "national_dex": 115,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.2.9",
+    "last_update": "6.2.9",
+    "evolves_from": [
+      559
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "figure_id": "mankey_088",
+  "display_name": "Mankey C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FIGHTING"
+  ],
+  "icon": "088 - Mankey - Rarity_C.png",
+  "model": "res://assets/figures/models/mankey/mankey_c/088 - Mankey - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Thrash",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*This Pokémon becomes confused."
+    },
+    {
+      "name": "Tease",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Switch this Pokémon with the adjacent opponent Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 88,
+    "pokemon_id_raw": "056",
+    "national_dex": 56,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      89
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling"
+    ]
+  }
+}

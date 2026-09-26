@@ -1,0 +1,93 @@
+{
+  "figure_id": "noivern_330",
+  "display_name": "Noivern EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FLYING",
+    "DRAGON"
+  ],
+  "icon": "330 - Noivern - Rarity_EX.png",
+  "model": "res://assets/figures/models/noivern/noivern_ex/330 - Noivern - Rarity_EX.fbx",
+  "ability": {
+    "name": "Supersonic Speed",
+    "note": "If this Pokémon has evolved, all the Gold Attacks of battle opponents of this Pokémon become White Attacks.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Boomburst",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*An opposing Pokémon adjacent to the battle opponent spins, and if it spins a Gold Attack then it is knocked out."
+    },
+    {
+      "name": "Dragon Pulse",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "Deals +50 damage if the battle opponent is a Dragon-type Pokémon."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Hurricane",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Moves the battle opponent to the bench. The battle opponent and all opposing Flying-type Pokémon on the field gain Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 330,
+    "pokemon_id_raw": "715",
+    "national_dex": 715,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.8",
+    "last_update": "7.0.11",
+    "evolves_from": [
+      329
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Supersonic Skystrike",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

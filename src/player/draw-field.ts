@@ -1,8 +1,10 @@
 import { containedDrawRect, figureInitials, TOKEN_ART_INSET } from '../content/sprites.js';
 import type { BoardGraph, BoardNode, FigureState, FigureUid, NodeId, PlayerView } from '../engine/index.js';
 import { projectNode, type BoardLayout } from '../render/draw-board.js';
-import { BATTLE_STROKE, IVORY, REACH_STROKE, SELECT_STROKE, SURROUND_STROKE, seatOf } from '../render/palette.js';
+import { BATTLE_STROKE, IVORY, REACH_STROKE, SELECT_STROKE, SURROUND_STROKE, sideOf } from '../render/palette.js';
 import { getSpriteImage } from '../render/sprite-images.js';
+import { easeInOutCubic, walkSample } from './motion.js';
+import { drawFigureStatus } from './status-fx.js';
 
 export interface FieldHighlights {
   readonly reachable: ReadonlySet<string>;
@@ -12,7 +14,7 @@ export interface FieldHighlights {
   readonly selectedNode: NodeId | null;
   readonly movableUids: ReadonlySet<number>;
   readonly focusNode: NodeId | null;
-  readonly animByUid: ReadonlyMap<number, { from: NodeId; to: NodeId; t: number }>;
+  readonly animByUid: ReadonlyMap<number, { readonly nodes: readonly NodeId[]; readonly t: number }>;
   readonly surroundPulse: number;
 }
 
@@ -23,26 +25,11 @@ export interface FieldScene {
   readonly spriteUrlOf: (figure: FigureState) => string | null;
   readonly highlights: FieldHighlights;
   readonly flip?: boolean;
+  readonly now?: number;
 }
 
-const NODE_R = 16;
-
-function roundedRect(
-  ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  w: number,
-  h: number,
-  r: number,
-): void {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.arcTo(x + w, y, x + w, y + h, r);
-  ctx.arcTo(x + w, y + h, x, y + h, r);
-  ctx.arcTo(x, y + h, x, y, r);
-  ctx.arcTo(x, y, x + w, y, r);
-  ctx.closePath();
-}
+const NODE_R = 15;
+const TOKEN_R = 20;
 
 function drawTokenArt(
   ctx: CanvasRenderingContext2D,
@@ -52,7 +39,6 @@ function drawTokenArt(
   name: string,
   spriteUrl: string | null,
   ink: string,
-  _shape: 'circle' | 'square',
 ): void {
   const sprite = spriteUrl === null ? null : getSpriteImage(spriteUrl);
   if (sprite !== null) {
@@ -66,26 +52,6 @@ function drawTokenArt(
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillText(figureInitials(name), x, y - 2);
-}
-
-function conditionMark(condition: FigureState['condition']): string {
-  if (condition === null) return '';
-  switch (condition) {
-    case 'poisoned':
-      return '◆';
-    case 'noxious':
-      return '⬡';
-    case 'burned':
-      return '▲';
-    case 'paralyzed':
-      return '~';
-    case 'asleep':
-      return 'Z';
-    case 'frozen':
-      return '*';
-    case 'confused':
-      return '?';
-  }
 }
 
 function drawHatch(ctx: CanvasRenderingContext2D, x: number, y: number, r: number, color: string): void {
@@ -112,31 +78,36 @@ function drawToken(
   name: string,
   spriteUrl: string | null,
   highlights: FieldHighlights,
+  you: 0 | 1,
+  now: number,
 ): void {
-  const seat = seatOf(occupant.owner);
-  const r = NODE_R - 1;
+  const seat = sideOf(occupant.owner, you);
+  const r = TOKEN_R;
   const pulse = highlights.surroundUids.has(occupant.uid) ? highlights.surroundPulse : 0;
+  const asleep = occupant.condition === 'asleep';
+  const frozen = occupant.condition === 'frozen';
+  const waiting = occupant.wait > 0;
 
   ctx.save();
-  ctx.shadowColor = seat.fill;
-  ctx.shadowBlur = 10 + pulse * 12;
+  ctx.beginPath();
+  ctx.ellipse(x, y + 6, r + 1, r * 0.38, 0, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.35)';
+  ctx.fill();
+  ctx.shadowColor = seat.rim;
+  ctx.shadowBlur = 12 + pulse * 12;
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI * 2);
   ctx.fillStyle = seat.fill;
-  if (seat.shape === 'circle') {
-    ctx.beginPath();
-    ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.shadowBlur = 0;
-    ctx.strokeStyle = seat.ink;
-    ctx.lineWidth = 1.6;
-    ctx.stroke();
-  } else {
-    roundedRect(ctx, x - r, y - r, r * 2, r * 2, 4);
-    ctx.fill();
-    ctx.shadowBlur = 0;
-    ctx.strokeStyle = seat.ink;
-    ctx.lineWidth = 1.6;
-    ctx.stroke();
-  }
+  ctx.fill();
+  ctx.shadowBlur = 0;
+  ctx.strokeStyle = seat.rim;
+  ctx.lineWidth = 3;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(x, y, r - 3.5, 0, Math.PI * 2);
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.22)';
+  ctx.lineWidth = 1.2;
+  ctx.stroke();
   ctx.restore();
 
   if (highlights.surroundUids.has(occupant.uid)) {
@@ -144,10 +115,10 @@ function drawToken(
     ctx.strokeStyle = SURROUND_STROKE;
     ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.moveTo(x - 7, y - 7);
-    ctx.lineTo(x + 7, y + 7);
-    ctx.moveTo(x + 7, y - 7);
-    ctx.lineTo(x - 7, y + 7);
+    ctx.moveTo(x - 8, y - 8);
+    ctx.lineTo(x + 8, y + 8);
+    ctx.moveTo(x + 8, y - 8);
+    ctx.lineTo(x - 8, y + 8);
     ctx.stroke();
   }
 
@@ -156,29 +127,18 @@ function drawToken(
     ctx.strokeStyle = highlights.selectedUid === occupant.uid ? SELECT_STROKE : REACH_STROKE;
     ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.arc(x, y, r + 5 + pulse * 2, 0, Math.PI * 2);
+    ctx.arc(x, y, r + 6 + pulse * 2, 0, Math.PI * 2);
     ctx.stroke();
     ctx.setLineDash([]);
   }
 
-  drawTokenArt(ctx, x, y, r, name, spriteUrl, seat.ink, seat.shape);
-  ctx.fillStyle = seat.ink;
-  ctx.font = '700 7px "IBM Plex Mono", monospace';
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  ctx.fillText(seat.mark, x, y + 9);
+  ctx.save();
+  if (asleep || waiting) ctx.globalAlpha = 0.72;
+  if (frozen) ctx.filter = 'saturate(0.4) brightness(1.25)';
+  drawTokenArt(ctx, x, y - 3, r + 1, name, spriteUrl, seat.ink);
+  ctx.restore();
 
-  const mark = conditionMark(occupant.condition);
-  const extra: string[] = [];
-  if (mark !== '') extra.push(mark);
-  if (occupant.wait > 0) extra.push(`W${occupant.wait}`);
-  if (occupant.marker !== null) extra.push(occupant.marker.id.slice(0, 3).toUpperCase());
-  if (occupant.megaTurnsLeft !== null) extra.push(`M${occupant.megaTurnsLeft}`);
-  if (extra.length > 0) {
-    ctx.fillStyle = IVORY;
-    ctx.font = '700 8px "IBM Plex Mono", monospace';
-    ctx.fillText(extra.join(' '), x, y + r + 11);
-  }
+  drawFigureStatus(ctx, x, y, r, occupant, now);
 }
 
 function drawEmptyNode(ctx: CanvasRenderingContext2D, node: BoardNode, x: number, y: number): void {
@@ -208,6 +168,7 @@ function drawEmptyNode(ctx: CanvasRenderingContext2D, node: BoardNode, x: number
 export function drawField(ctx: CanvasRenderingContext2D, scene: FieldScene, layout: BoardLayout): void {
   const { board, view, nameOf, spriteUrlOf, highlights } = scene;
   const flip = scene.flip === true;
+  const now = scene.now ?? 0;
   ctx.save();
   ctx.fillStyle = '#070b12';
   ctx.fillRect(0, 0, layout.width, layout.height);
@@ -306,27 +267,63 @@ export function drawField(ctx: CanvasRenderingContext2D, scene: FieldScene, layo
 
     if (occupant !== null) {
       if (anim !== undefined) flying.push(occupant);
-      else drawToken(ctx, x, y, occupant, nameOf(occupant), spriteUrlOf(occupant), highlights);
+      else drawToken(ctx, x, y, occupant, nameOf(occupant), spriteUrlOf(occupant), highlights, view.you, now);
     }
   }
 
   for (const occupant of flying) {
     const anim = highlights.animByUid.get(occupant.uid);
-    if (anim === undefined) continue;
-    const a = board.byId.get(anim.from);
-    const b = board.byId.get(anim.to);
-    if (a === undefined || b === undefined) continue;
-    const pa = projectNode(a, layout, flip);
-    const pb = projectNode(b, layout, flip);
-    drawToken(
-      ctx,
-      pa.x + (pb.x - pa.x) * anim.t,
-      pa.y + (pb.y - pa.y) * anim.t,
-      occupant,
-      nameOf(occupant),
-      spriteUrlOf(occupant),
-      highlights,
-    );
+    if (anim === undefined || anim.nodes.length === 0) continue;
+    const pts = anim.nodes.flatMap((id) => {
+      const node = board.byId.get(id);
+      return node === undefined ? [] : [projectNode(node, layout, flip)];
+    });
+    if (pts.length === 0) continue;
+    const hops = Math.max(1, pts.length - 1);
+    const { index, local } = walkSample(anim.t, hops);
+    const a = pts[index] ?? pts[0];
+    const b = pts[index + 1] ?? a;
+    if (a === undefined) continue;
+    const u = easeInOutCubic(local);
+    const lift = Math.sin(u * Math.PI) * 12;
+    const x = a.x + ((b?.x ?? a.x) - a.x) * u;
+    const y = a.y + ((b?.y ?? a.y) - a.y) * u - lift;
+
+    ctx.save();
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.strokeStyle = 'rgba(79, 208, 224, 0.55)';
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    for (let i = 0; i < pts.length; i++) {
+      const p = pts[i];
+      if (p === undefined) continue;
+      if (i === 0) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
+    }
+    ctx.stroke();
+    ctx.strokeStyle = 'rgba(243, 234, 216, 0.85)';
+    ctx.lineWidth = 2.4;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b?.x ?? a.x, b?.y ?? a.y);
+    ctx.stroke();
+    const landing = b ?? a;
+    const pulse = 0.35 + 0.65 * Math.sin(u * Math.PI);
+    ctx.strokeStyle = `rgba(79, 208, 224, ${0.35 + pulse * 0.45})`;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(landing.x, landing.y, NODE_R + 4 + pulse * 5, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.restore();
+
+    ctx.save();
+    const pop = 1 + 0.08 * Math.sin(u * Math.PI);
+    ctx.translate(x, y);
+    ctx.scale(pop, pop);
+    ctx.translate(-x, -y);
+    drawToken(ctx, x, y, occupant, nameOf(occupant), spriteUrlOf(occupant), highlights, view.you, now);
+    ctx.restore();
   }
 
   ctx.restore();

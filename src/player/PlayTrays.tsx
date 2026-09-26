@@ -11,6 +11,7 @@ import {
   plateCost,
   zoneFigures,
 } from '../ui/model.js';
+import { CONDITION_FX, markerShort } from './status-fx.js';
 
 interface Props {
   readonly side: 'you' | 'rival';
@@ -43,11 +44,7 @@ export function PlaySeat({
   return (
     <section className="play-seat" data-side={side} data-testid={`play-seat-${side}`}>
       <div className="play-bench" aria-label={side === 'you' ? 'Your bench' : 'Rival bench'}>
-        {Array.from({ length: 6 }, (_, index) => {
-          const figure = bench[index];
-          if (figure === undefined) {
-            return <div key={`empty-${index}`} className="play-disc is-empty" data-testid={`bench-empty-${side}-${index}`} />;
-          }
+        {bench.map((figure) => {
           const can = commandsForUid(legal, figure.uid).length > 0;
           const kind = can
             ? legal.some((command) => command.kind === 'deploy' && command.uid === figure.uid)
@@ -60,6 +57,7 @@ export function PlaySeat({
               key={figure.uid}
               engine={engine}
               figure={figure}
+              side={side}
               selected={selected === figure.uid}
               can={kind}
               disabled={locked || otherBlocked || (side === 'rival' && !can)}
@@ -82,6 +80,7 @@ export function PlaySeat({
               key={figure.uid}
               engine={engine}
               figure={figure}
+              side={side}
               selected={false}
               can="none"
               disabled
@@ -90,13 +89,9 @@ export function PlaySeat({
           );
         })}
       </div>
-      {side === 'you' ? (
+      {side === 'you' && view.yourPlates.length > 0 ? (
         <div className="play-plates" data-testid="play-plates">
-          {Array.from({ length: 6 }, (_, slot) => {
-            const plate = view.yourPlates[slot];
-            if (plate === undefined) {
-              return <div key={`plate-empty-${slot}`} className="play-plate is-empty" />;
-            }
+          {view.yourPlates.map((plate, slot) => {
             const content = plateOfContent(engine, plate.plateId);
             const playable = legal.some(
               (command) => command.kind === 'playPlate' && command.player === view.you && command.slot === slot,
@@ -119,11 +114,13 @@ export function PlaySeat({
             );
           })}
         </div>
-      ) : (
+      ) : side === 'you' ? (
+        <div className="play-plates" data-testid="play-plates" hidden />
+      ) : view.opponentPlates.unused > 0 || view.opponentPlates.used.length > 0 ? (
         <p className="play-hidden-plates" data-testid="opponent-plates">
           Rival plates · {view.opponentPlates.unused} facedown
         </p>
-      )}
+      ) : null}
       {side === 'you' && abilityActions.length > 0 ? (
         <div className="play-abilities">
           {abilityActions.map((command, index) => (
@@ -148,6 +145,7 @@ export function PlaySeat({
 function FigureDisc({
   engine,
   figure,
+  side,
   selected,
   can,
   disabled,
@@ -155,6 +153,7 @@ function FigureDisc({
 }: {
   readonly engine: Engine;
   readonly figure: FigureState;
+  readonly side: 'you' | 'rival';
   readonly selected: boolean;
   readonly can: 'deploy' | 'act' | 'none';
   readonly disabled: boolean;
@@ -163,7 +162,10 @@ function FigureDisc({
   const name = figureName(engine, figure);
   const mp = figureMp(engine, figure);
   const printed = figureOfContent(engine, figure.figureId);
+  const printedMp = printed?.mp ?? mp;
+  const mpLabel = mp === printedMp ? `MP ${mp}` : `MP ${mp} of ${printedMp}`;
   const badges = conditionLabel(figure);
+  const fx = figure.condition === null ? null : CONDITION_FX[figure.condition];
   return (
     <button
       type="button"
@@ -172,17 +174,30 @@ function FigureDisc({
       data-can={can}
       data-owner={figure.owner}
       data-selected={selected ? '1' : '0'}
+      data-wait={figure.wait > 0 ? String(figure.wait) : undefined}
+      data-condition={figure.condition ?? undefined}
       disabled={disabled}
+      title={mp === printedMp ? undefined : `Printed MP ${printedMp}`}
+      aria-label={`${name}, ${mpLabel}${printed === null ? '' : `, ${printed.types.join('/')}`}`}
       onClick={onSelect}
     >
-      <span className={`play-seat-mark play-seat-${figure.owner === 0 ? 'circle' : 'square'}`} aria-hidden="true">
-        {figure.owner === 0 ? 'A' : 'B'}
-      </span>
+      <span className="play-disc-base" data-who={side} aria-hidden="true" />
       <FigureSprite url={figureSpriteUrl(engine, figure.figureId)} name={name} />
       <strong>{name}</strong>
-      <span className="play-mp">MP {mp}</span>
-      {printed !== null ? <span className="play-type">{printed.types.join('/')}</span> : null}
-      {badges.length > 0 ? <span className="play-badges">{badges.join(' · ')}</span> : null}
+      <span className="play-mp">{mp === printedMp ? mp : `${mp}/${printedMp}`}</span>
+      {fx !== null ? (
+        <span className="play-fx" data-fx={figure.condition} title={badges.join(' · ')}>
+          {fx.glyph}
+        </span>
+      ) : null}
+      {figure.wait > 0 ? (
+        <span className="play-wait" data-testid={`wait-${figure.uid}`}>
+          {figure.wait}
+        </span>
+      ) : null}
+      {figure.marker !== null ? (
+        <span className="play-marker">{markerShort(figure.marker.id, figure.marker.value)}</span>
+      ) : null}
     </button>
   );
 }

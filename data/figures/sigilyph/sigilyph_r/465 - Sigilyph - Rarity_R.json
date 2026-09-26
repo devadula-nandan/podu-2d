@@ -1,0 +1,93 @@
+{
+  "figure_id": "sigilyph_465",
+  "display_name": "Sigilyph R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FLYING"
+  ],
+  "icon": "465 - Sigilyph - Rarity_R.png",
+  "model": "res://assets/figures/models/sigilyph/sigilyph_r/465 - Sigilyph - Rarity_R.fbx",
+  "ability": {
+    "name": "Sentry",
+    "note": "This Pokémon can MP move over opposing non-Flying-type Pokémon on the field. When this Pokémon surrounds an opposing Pokémon, if there are three or more opposing Pokémon on the field with the same name as the surrounded Pokémon, the surrounded Pokémon is excluded from the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Whirlwind",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is moved to the bench and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Tailwind",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Your Flying-type Pokémon gain +1 MP until the end of your next turn (to a maximum of MP 4)."
+    },
+    {
+      "name": "Roost",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon recovers from all status effects. In exchange, it must then Wait 3."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 465,
+    "pokemon_id_raw": "561",
+    "national_dex": 561,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.2.5",
+    "last_update": "6.2.5",
+    "evolves_from": [
+      114
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Shattered Psyche"
+    ]
+  }
+}

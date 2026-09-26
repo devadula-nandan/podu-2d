@@ -1,0 +1,102 @@
+{
+  "figure_id": "xerneas_138",
+  "display_name": "Xerneas EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FAIRY"
+  ],
+  "icon": "138 - Xerneas - Rarity_EX.png",
+  "model": "res://assets/figures/models/xerneas/xerneas_ex/138 - Xerneas - Rarity_EX.fbx",
+  "ability": {
+    "name": "Force Balance",
+    "note": "When placed adjacent to this Pokémon, your Pokémon will be boosted from 0-1 MP to 2 MP, and your opponent's Pokémon will be reduced from 3+ MP to 2MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 99,
+      "source_damage_or_stars": "99"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Geomancy",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 0,
+      "note": "Spin again until an Attack other than Geomancy is spun. Damage Attacks do +50 damage."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 99,
+      "source_damage_or_stars": "99"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fairy Mist",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "When this Pokémon is on the field, your Fairy-type Pokémon receive a +10 boost to attack damage."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 138,
+    "pokemon_id_raw": "716",
+    "national_dex": 716,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "5.0",
+    "evolves_from": [],
+    "evolves_to": [
+      139
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle"
+    ]
+  }
+}

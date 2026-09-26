@@ -35,6 +35,13 @@ export function seedShareUrl(seed: number, href: string = window.location.href):
   return url.toString();
 }
 
+export function writeModeToUrl(mode: UrlPlayMode): void {
+  const next = new URL(window.location.href);
+  next.searchParams.set('mode', mode);
+  const path = `${next.pathname}${next.search}${next.hash}`;
+  window.history.replaceState(null, '', path);
+}
+
 export function writeSeedToUrl(seed: number): void {
   const next = new URL(window.location.href);
   next.searchParams.set('seed', String(seed >>> 0));
@@ -42,7 +49,7 @@ export function writeSeedToUrl(seed: number): void {
   window.history.replaceState(null, '', path);
 }
 
-/** Keep `?seed=` (and any other query) when hopping `/2d` ↔ `/dev` ↔ `/3d`. */
+/** Keep `?seed=` (and any other query) when hopping `/3d` ↔ `/dev`. */
 export function pathWithSearch(pathname: string, search: string): string {
   return `${pathname}${search}`;
 }

@@ -1,0 +1,95 @@
+{
+  "figure_id": "buzzwole_406",
+  "display_name": "Buzzwole UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FIGHTING"
+  ],
+  "icon": "res://data/figures/buzzwole/buzzwole_ux/406 - Buzzwole - Rarity_UX.png",
+  "model": "res://assets/figures/models/buzzwole/buzzwole_ux/406 - Buzzwole - Rarity_UX.fbx",
+  "ability": {
+    "name": "Ultra Pump Up",
+    "note": "Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point by moving over an adjacent Pokémon instead of using an MP move. Your turn ends. This Pokémon deals +29 Attack damage for each Pokémon in the Ultra Space.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ice Punch",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 113,
+      "source_damage_or_stars": "113",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Superpower",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 163,
+      "source_damage_or_stars": "163"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Chest Repulse",
+      "type": "BLUE",
+      "size": 24,
+      "note": "Attaches a Cracked marker to the battle opponent if the battle opponent spins an Attack of 130 or more damage."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 406,
+    "pokemon_id_raw": "794",
+    "national_dex": 794,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      315
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "All-Out Pummeling"
+    ],
+    "material": 5000,
+    "first_appear": "5.0.8",
+    "last_update": "7.0.11"
+  }
+}

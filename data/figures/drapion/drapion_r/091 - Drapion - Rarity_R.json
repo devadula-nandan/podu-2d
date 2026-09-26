@@ -1,0 +1,95 @@
+{
+  "figure_id": "drapion_091",
+  "display_name": "Drapion R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "POISON",
+    "DARK"
+  ],
+  "icon": "091 - Drapion - Rarity_R.png",
+  "model": "res://assets/figures/models/drapion/drapion_r/091 - Drapion - Rarity_R.fbx",
+  "ability": {
+    "name": "Diffuse Poison",
+    "note": "When this Pokémon is on the field, all poisoned Pokémon will do a further -20 damage. This effect does not stack.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Cross Poison",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Venom Whip",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "One Pokémon within 2 steps becomes noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Noxious Fang",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes noxious.",
+      "source_effect_ids": [
+        9
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 91,
+    "pokemon_id_raw": "452",
+    "national_dex": 452,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      90
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Acid Downpour"
+    ]
+  }
+}

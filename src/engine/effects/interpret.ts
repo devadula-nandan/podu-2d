@@ -618,6 +618,9 @@ export function applyAction(
       return result(ctx, extend(batch, [{ kind: 'zGaugeChanged', player, from: current, to }]));
     }
 
+    case 'boostZTurnGain':
+      return result(ctx, batch);
+
     case 'spinCheck': {
       // Pass 1: everyone spins, against one state snapshot, so nobody's spin can be
       // changed by an earlier spinner's result. Pass 2: the follow-up clauses run once,
@@ -950,6 +953,7 @@ export function applyAction(
         const figure = figureOf(ctx.state, ctx.source);
         if (figure.forcedRespinOnTurn === ctx.state.turn.number) return result(ctx, batch);
       }
+      if (!optionalThenPossible(ctx, action.then)) return result(ctx, batch);
       const decision = pendingDecision(ctx, 'optionalAction', action.then[0]?.do ?? 'optional action', {
         chooser: chooserPlayer(ctx, action.chooser),
         min: 0,
@@ -1495,6 +1499,18 @@ function applySelect(
   }
   const picked = evaluateSelector(ctx, action.target);
   return { batch, ctx: withAntecedent(withState(ctx, batch.state), picked), pending: null };
+}
+
+function optionalThenPossible(ctx: EffectContext, then: readonly Action[]): boolean {
+  for (const action of then) {
+    if (action.do !== 'move') continue;
+    if (action.target.kind === 'choose' && chooseCandidates(ctx, action.target).length === 0) return false;
+    if (action.to.kind === 'swapWith' && action.to.with.kind === 'choose') {
+      if (figureOf(ctx.state, ctx.source).zone !== 'field') return false;
+      if (chooseCandidates(ctx, action.to.with).length === 0) return false;
+    }
+  }
+  return true;
 }
 
 function occupiedSet(state: GameState): Set<NodeId> {

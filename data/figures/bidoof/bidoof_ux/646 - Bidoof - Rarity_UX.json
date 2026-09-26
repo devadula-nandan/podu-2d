@@ -1,0 +1,87 @@
+{
+  "figure_id": "bidoof_646",
+  "display_name": "Bidoof UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "res://data/figures/bidoof/bidoof_ux/646 - Bidoof - Rarity_UX.png",
+  "model": "res://assets/figures/models/bidoof/bidoof_ux/646 - Bidoof - Rarity_UX.fbx",
+  "ability": {
+    "name": "Form Herd",
+    "note": "The 3-Pokémon limit does not apply to this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dig",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "You can move this Pokémon to an open spot next to an adjacent figure (or adjacent figures in succession to the first)."
+    },
+    {
+      "name": "Hyper Fang",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 170,
+      "source_damage_or_stars": "170"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 646,
+    "pokemon_id_raw": "399 ux",
+    "national_dex": 399,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      "646 black",
+      "646 white"
+    ],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.6",
+    "last_update": "7.0.6"
+  }
+}

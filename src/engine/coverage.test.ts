@@ -17,7 +17,7 @@ describe('coverage registry', () => {
     const engine = createEngine({ figures, plates, abilities });
     const { totals, rankedGaps } = engine.registry;
 
-    expect(totals.figures).toBe(596);
+    expect(totals.figures).toBe(605);
     expect(totals.plates).toBe(152);
     expect(totals.clauses).toBeGreaterThan(0);
     expect(totals.clausesSupported).toBeGreaterThan(0);

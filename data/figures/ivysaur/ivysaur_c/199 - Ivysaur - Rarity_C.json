@@ -1,0 +1,86 @@
+{
+  "figure_id": "ivysaur_199",
+  "display_name": "Ivysaur C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "icon": "199 - Ivysaur - Rarity_C.png",
+  "model": "res://assets/figures/models/ivysaur/ivysaur_c/199 - Ivysaur - Rarity_C.fbx",
+  "ability": {
+    "name": "Healing Seed",
+    "note": "While this Pokémon is on the field, your Grass-type [CTRL NOTE][Pokémon] and Poison-type Pokémon cannot become poisoned or noxious.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Vine Whip",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Razor Leaf",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Sleep Powder",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 199,
+    "pokemon_id_raw": "002",
+    "national_dex": 2,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "6.2.3",
+    "evolves_from": [
+      79
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Acid Downpour"
+    ]
+  }
+}

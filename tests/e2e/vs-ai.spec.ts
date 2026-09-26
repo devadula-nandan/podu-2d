@@ -32,7 +32,7 @@ async function playOneHumanAction(page: Page): Promise<string | null> {
       .getByTestId('battle-outcome')
       .or(page.getByTestId('thinking'))
       .or(page.getByTestId('result'))
-      .waitFor({ state: 'visible', timeout: 8_000 })
+      .waitFor({ state: 'visible', timeout: 12_000 })
       .catch(() => undefined);
     return 'Spin both wheels';
   }

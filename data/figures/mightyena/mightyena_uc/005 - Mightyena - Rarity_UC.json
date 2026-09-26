@@ -1,0 +1,87 @@
+{
+  "figure_id": "mightyena_005",
+  "display_name": "Mightyena UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK"
+  ],
+  "icon": "005 - Mightyena - Rarity_UC.png",
+  "model": "res://assets/figures/models/mightyena/mightyena_uc/005 - Mightyena - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Taunt",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Until the end of your next turn, if the Pokémon hit by this Attack spins a Purple Attack or Blue Attack, shift the result clockwise until a non-Purple, non-Blue attack comes up."
+    },
+    {
+      "name": "Crunch",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Ice Fang",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 5,
+    "pokemon_id_raw": "262",
+    "national_dex": 262,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      4
+    ],
+    "evolves_to": [
+      6
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

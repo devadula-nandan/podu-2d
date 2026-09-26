@@ -1,0 +1,93 @@
+{
+  "figure_id": "tympole_294",
+  "display_name": "Tympole UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER"
+  ],
+  "icon": "294 - Tympole - Rarity_UC.png",
+  "model": "res://assets/figures/models/tympole/tympole_uc/294 - Tympole - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bubble",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Danger Signal",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "One of your [CTRL FID 296][Seismitoad], [CTRL FID 295][Palpitoad], or [CTRL FID 294][Tympole] (that is not asleep or frozen) may be moved within their MP range. That Pokémon gains wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Bubble",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 294,
+    "pokemon_id_raw": "535",
+    "national_dex": 535,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "3.0.10",
+    "evolves_from": [
+      293
+    ],
+    "evolves_to": [
+      295
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

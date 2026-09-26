@@ -1,0 +1,79 @@
+{
+  "figure_id": "aegislash_blade_forme_331",
+  "display_name": "Aegislash Blade Forme EX",
+  "available_in_roster": false,
+  "movement_points": 0,
+  "types": [
+    "STEEL",
+    "GHOST"
+  ],
+  "icon": "331 - Aegislash Blade Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/aegislash_blade_forme/aegislash_blade_forme_ex/331 - Aegislash Blade Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Stance Change: B",
+    "note": "This Pokémon can only be set as a form in a deck. At the start of your turn, this Pokémon may change its form to [CTURL FID 332][Shield Forme]. On the turn this Pokémon appears with its form changed, this Pokémon's MP is 2, and it can attack Pokémon that are 2 steps away (when it does, this Pokémon's Attacks have Range 2). Your Pokémon on the field may MP move through this Pokémon. When this Pokémon leaves the field, its form changes to [CTURL FID 332][Shield Forme].",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "King's Shield",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon may change its form to [CTRL FID 332][Shield Forme]. The battle opponent gains Wait."
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 60,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "King's Shield",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon may change its form to [CTRL FID 332][Shield Forme]. The battle opponent gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 331,
+    "pokemon_id_raw": "681 blade",
+    "national_dex": 681,
+    "variant": "blade",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.9",
+    "last_update": "7.0.9",
+    "evolves_from": [],
+    "evolves_to": [
+      332
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Corkscrew Crash"
+    ]
+  }
+}

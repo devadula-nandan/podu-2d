@@ -1,0 +1,83 @@
+{
+  "figure_id": "palkia_053",
+  "display_name": "Palkia EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "DRAGON"
+  ],
+  "icon": "053 - Palkia - Rarity_EX.png",
+  "model": "res://assets/figures/models/palkia/palkia_ex/053 - Palkia - Rarity_EX.fbx",
+  "ability": {
+    "name": "Space Distortion",
+    "note": "If there are other Pokémon on your bench, this Pokémon cannot enter the field using an MP move. The Pokémon is not knocked out in battle - if it would be, it moves to the bench instead.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dragon Claw",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Spacial Rend",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*If the battle is a tie, the battle opponent is excluded from the duel."
+    },
+    {
+      "name": "Dragon Claw",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 53,
+    "pokemon_id_raw": "484",
+    "national_dex": 484,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.0.11",
+    "evolves_from": [
+      52
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Hydro Vortex",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

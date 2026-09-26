@@ -1,0 +1,85 @@
+{
+  "figure_id": "espeon_259",
+  "display_name": "Espeon R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "259 - Espeon - Rarity_R.png",
+  "model": "res://assets/figures/models/espeon/espeon_r/259 - Espeon - Rarity_R.fbx",
+  "ability": {
+    "name": "Behavioral Prediction",
+    "note": "This Pokémon gains +1 ☆.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Magic Coat",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "If a battle opponent uses an Attack that attaches a marker or causes a special condition, that effect will be caused on the battle opponent instead."
+    },
+    {
+      "name": "Psybeam",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes confused.",
+      "source_effect_ids": [
+        14
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 259,
+    "pokemon_id_raw": "196",
+    "national_dex": 196,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "4.0.4",
+    "evolves_from": [
+      258
+    ],
+    "evolves_to": [
+      260
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

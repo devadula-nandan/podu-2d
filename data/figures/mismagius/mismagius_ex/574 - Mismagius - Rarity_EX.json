@@ -1,0 +1,98 @@
+{
+  "figure_id": "mismagius_574",
+  "display_name": "Mismagius EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST"
+  ],
+  "icon": "574 - Mismagius - Rarity_EX.png",
+  "model": "res://assets/figures/models/mismagius/mismagius_ex/574 - Mismagius - Rarity_EX.fbx",
+  "ability": {
+    "name": "Infiltrator",
+    "note": "On the field, this Pokémon can pass through other Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dazzling Gleam",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Opposing Pokémon adjacent to this Pokémon spin, and if they spin a Gold Attack then they are knocked out."
+    },
+    {
+      "name": "Final Chant",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Attaches a Final Song marker to a Pokémon within 2 steps. The Pokémon with that marker are knocked out 5 turns later."
+    },
+    {
+      "name": "Hex",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "If the battle opponent has a status condition, damage is ×2."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Confuse Ray",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 574,
+    "pokemon_id_raw": "429",
+    "national_dex": 429,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.2.6",
+    "last_update": "6.2.6",
+    "evolves_from": [],
+    "evolves_to": [
+      575
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare"
+    ]
+  }
+}

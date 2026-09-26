@@ -1,0 +1,81 @@
+{
+  "figure_id": "manaphy_226",
+  "display_name": "Manaphy EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER"
+  ],
+  "icon": "226 - Manaphy - Rarity_EX.png",
+  "model": "res://assets/figures/models/manaphy/manaphy_ex/226 - Manaphy - Rarity_EX.fbx",
+  "ability": {
+    "name": "Ocean's Gift",
+    "note": "If this Pokémon is on the field, your Water-type Pokémon's attacks do +30 damage. While this Pokémon is on the field, your Water-type Pokémon cannot become burned.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Manaphy's Song",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "One other Water-type Pokémon on the field (that is not asleep or frozen) may be moved within their MP range. That Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Bubble",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 226,
+    "pokemon_id_raw": "490",
+    "national_dex": 490,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "6.1.1",
+    "evolves_from": [
+      458
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "figure_id": "zubat_041",
+  "display_name": "Zubat C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "POISON",
+    "FLYING"
+  ],
+  "icon": "041 - Zubat - Rarity_C.png",
+  "model": "res://assets/figures/models/zubat/zubat_c/041 - Zubat - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Leech Life",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Air Cutter",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Supersonic",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 41,
+    "pokemon_id_raw": "041",
+    "national_dex": 41,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      42
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Acid Downpour"
+    ]
+  }
+}

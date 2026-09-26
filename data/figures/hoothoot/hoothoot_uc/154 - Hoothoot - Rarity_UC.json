@@ -1,0 +1,86 @@
+{
+  "figure_id": "hoothoot_154",
+  "display_name": "Hoothoot UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "icon": "154 - Hoothoot - Rarity_UC.png",
+  "model": "res://assets/figures/models/hoothoot/hoothoot_uc/154 - Hoothoot - Rarity_UC.fbx",
+  "ability": {
+    "name": "Insomnia",
+    "note": "This Pokémon cannot be affected by sleep.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Hypnosis",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 154,
+    "pokemon_id_raw": "163",
+    "national_dex": 163,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.2",
+    "evolves_from": [
+      153
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Breakneck Blitz"
+    ]
+  }
+}

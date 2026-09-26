@@ -1,0 +1,90 @@
+{
+  "figure_id": "dragonite_281",
+  "display_name": "Dragonite EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "DRAGON",
+    "FLYING"
+  ],
+  "icon": "281 - Dragonite - Rarity_EX.png",
+  "model": "res://assets/figures/models/dragonite/dragonite_ex/281 - Dragonite - Rarity_EX.fbx",
+  "ability": {
+    "name": "Speed Booster",
+    "note": "When this Pokémon evolves, it will gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Sightseeing",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away, then gains Wait."
+    },
+    {
+      "name": "Dragon Tail",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*Benches your battle opponent (except when opponent has Fainted). Your battle opponent must then Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 281,
+    "pokemon_id_raw": "149",
+    "national_dex": 149,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.3",
+    "last_update": "7.0.4",
+    "evolves_from": [
+      280
+    ],
+    "evolves_to": [
+      282,
+      475
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Supersonic Skystrike",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

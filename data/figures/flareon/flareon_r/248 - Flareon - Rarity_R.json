@@ -1,0 +1,84 @@
+{
+  "figure_id": "flareon_248",
+  "display_name": "Flareon R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "248 - Flareon - Rarity_R.png",
+  "model": "res://assets/figures/models/flareon/flareon_r/248 - Flareon - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Flamethrower",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Focus Energy",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 0,
+      "note": "Spin again until an Attack other than Focus Energy is spun. Damage attacks deal ×2 damage."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 248,
+    "pokemon_id_raw": "136",
+    "national_dex": 136,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "1.4",
+    "evolves_from": [
+      247
+    ],
+    "evolves_to": [
+      "248 mega"
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

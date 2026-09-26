@@ -1,0 +1,88 @@
+{
+  "figure_id": "tyrantrum_582",
+  "display_name": "Tyrantrum EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "DRAGON"
+  ],
+  "icon": "582 - Tyrantrum - Rarity_EX.png",
+  "model": "res://assets/figures/models/tyrantrum/tyrantrum_ex/582 - Tyrantrum - Rarity_EX.fbx",
+  "ability": {
+    "name": "Apex Predator",
+    "note": "[CTRL QL Restored Pokémon][Restored Pokémon] (If evolved). If its battle opponent is not evolved, and this Pokémon is not affected by a special condition, this Pokémon cannot be knocked out in battle. If this Pokémon is knocked out, it is excluded from the duel. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Roar",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Head Smash",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 170,
+      "source_damage_or_stars": "170",
+      "note": "*This Pokémon spins. If it spins a Miss (including a Miss due to being paralyzed or burned), it is knocked out."
+    },
+    {
+      "name": "Thrash",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*This Pokémon becomes confused."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 582,
+    "pokemon_id_raw": "697",
+    "national_dex": 697,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      583
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Continental Crush",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

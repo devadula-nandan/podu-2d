@@ -1,0 +1,96 @@
+{
+  "figure_id": "rapidash_593",
+  "display_name": "Rapidash R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "593 - Rapidash - Rarity_R.png",
+  "model": "res://assets/figures/models/rapidash/rapidash_r/593 - Rapidash - Rarity_R.fbx",
+  "ability": {
+    "name": "Rush In",
+    "note": "At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Overheat",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*This attack becomes a Miss for the next turn."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Horn Drill",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 593,
+    "pokemon_id_raw": "078",
+    "national_dex": 78,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 4,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7",
+    "evolves_from": [
+      592
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

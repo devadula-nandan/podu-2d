@@ -1,0 +1,84 @@
+{
+  "figure_id": "gallade_434",
+  "display_name": "Gallade EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FIGHTING"
+  ],
+  "icon": "434 - Gallade - Rarity_EX.png",
+  "model": "res://assets/figures/models/gallade/gallade_ex/434 - Gallade - Rarity_EX.fbx",
+  "ability": {
+    "name": "Psychic Sensor",
+    "note": "Battle opponents have the in-battle effects of their Abilities nullified.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Psychic Blade",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "Deals ×2 damage if the battle opponent is a Fighting-type Pokémon."
+    },
+    {
+      "name": "Night Slash",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*If this Pokémon is on the field, it may switch a Pokémon on your bench or in your P.C. after battle."
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 434,
+    "pokemon_id_raw": "475",
+    "national_dex": 475,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.8",
+    "last_update": "6.2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      435
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Shattered Psyche"
+    ]
+  }
+}

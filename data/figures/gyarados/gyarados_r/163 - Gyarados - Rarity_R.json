@@ -1,0 +1,85 @@
+{
+  "figure_id": "gyarados_163",
+  "display_name": "Gyarados R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER",
+    "FLYING"
+  ],
+  "icon": "163 - Gyarados - Rarity_R.png",
+  "model": "res://assets/figures/models/gyarados/gyarados_r/163 - Gyarados - Rarity_R.fbx",
+  "ability": {
+    "name": "Speed Booster",
+    "note": "When this Pokémon evolves, it will gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Hyper Beam",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Storm",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All neighbor Pokémon are moved to the bench and gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 163,
+    "pokemon_id_raw": "130",
+    "national_dex": 130,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0",
+    "last_update": "6.1.1",
+    "evolves_from": [],
+    "evolves_to": [
+      164
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Hydro Vortex"
+    ]
+  }
+}

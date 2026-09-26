@@ -1,0 +1,81 @@
+{
+  "figure_id": "marshadow_436",
+  "display_name": "Marshadow EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FIGHTING",
+    "GHOST"
+  ],
+  "icon": "436 - Marshadow - Rarity_EX.png",
+  "model": "res://assets/figures/models/marshadow/marshadow_ex/436 - Marshadow - Rarity_EX.fbx",
+  "ability": {
+    "name": "Gloomdweller",
+    "note": "This Pokémon can MP move through other Pokémon on the field. While this Pokémon is on the field, opposing Pokémon deal -20 damage for each Ghost-type Pokémon adjacent to them. This effect does not stack.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Spectral Thief",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*This Attack's damage is boosted by the amount of any Attack damage increases from the battle opponent's Ability."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 24
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 436,
+    "pokemon_id_raw": "802",
+    "national_dex": 802,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "6.2.5",
+    "last_update": "6.2.5",
+    "evolves_from": [],
+    "evolves_to": [
+      437
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Never-Ending Nightmare",
+      "Soul-Stealing 7-Star Strike"
+    ]
+  }
+}

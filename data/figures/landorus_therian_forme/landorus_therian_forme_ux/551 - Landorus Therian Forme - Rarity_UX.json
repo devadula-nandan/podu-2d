@@ -1,0 +1,85 @@
+{
+  "figure_id": "landorus_therian_forme_551",
+  "display_name": "Landorus Therian Forme UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GROUND",
+    "FLYING"
+  ],
+  "icon": "res://data/figures/landorus_therian_forme/landorus_therian_forme_ux/551 - Landorus Therian Forme - Rarity_UX.png",
+  "model": "res://assets/figures/models/landorus_therian_forme/landorus_therian_forme_ux/551 - Landorus Therian Forme - Rarity_UX.fbx",
+  "ability": {
+    "name": "Earthen Rage",
+    "note": "Opposing Pokémon cannot MP move through a point next to this Pokémon to pass it. If this Pokémon is on the field, all the Blue Attacks of opposing Pokémon that are affected by a special condition becomes Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Earth Power",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 160,
+      "source_damage_or_stars": "160"
+    },
+    {
+      "name": "Elusive Master",
+      "type": "BLUE",
+      "size": 24,
+      "note": "You may move this Pokémon to the bench. When you do, change this Pokémon's form, if possible."
+    },
+    {
+      "name": "Soil to Soil",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "If the battle opponent's MP is 0 or less, exclude that Pokémon from the duel. The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 551,
+    "pokemon_id_raw": "645 therian",
+    "national_dex": 645,
+    "variant": "therian",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      552
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Tectonic Rage"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14"
+  }
+}

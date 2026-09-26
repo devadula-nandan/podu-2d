@@ -11,11 +11,12 @@ import {
 
 /**
  * Pinned after the first green run of this command list on this engine.
- * Bumped from `1e0743b4` when `GameState.version` became 2 (origin/form/mega
- * overlays on every figure). If this fails again, the engine's observable state
- * changed: do not "fix" the hash unless the rules change was deliberate.
+ * Bumped from `0fb23a26` when "Before using this Pokémon" moved off the global
+ * preSelect scan onto per-figure abilityAction (always latches preSelectClosed).
+ * If this fails again, the engine's observable state changed: do not
+ * "fix" the hash unless the rules change was deliberate.
  */
-export const GOLDEN_HASH = 'ea6a37de';
+export const GOLDEN_HASH = 'cce0ee57';
 
 describe('golden replay', () => {
   it('reaches a pinned hashState from a fixed seed and command list', () => {

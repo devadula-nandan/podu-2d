@@ -1,0 +1,86 @@
+{
+  "figure_id": "chespin_029",
+  "display_name": "Chespin UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "029 - Chespin - Rarity_UC.png",
+  "model": "res://assets/figures/models/chespin/chespin_uc/029 - Chespin - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Vine Whip",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Vine Whip",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 29,
+    "pokemon_id_raw": "650",
+    "national_dex": 650,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      30
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

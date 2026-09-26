@@ -1,0 +1,95 @@
+{
+  "figure_id": "raikou_233",
+  "display_name": "Raikou EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "233 - Raikou - Rarity_EX.png",
+  "model": "res://assets/figures/models/raikou/raikou_ex/233 - Raikou - Rarity_EX.fbx",
+  "ability": {
+    "name": "Nonstop",
+    "note": "This Pokémon cannot have Wait. Can MP move through Pokémon on the field that are paralyzed or have Wait.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Thunder",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    },
+    {
+      "name": "Thunderous Blow",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*The battle opponent and a succession of Pokémon adjacent to it (excluding this one), become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 233,
+    "pokemon_id_raw": "243",
+    "national_dex": 243,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "3.0.11",
+    "evolves_from": [
+      137
+    ],
+    "evolves_to": [
+      474
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

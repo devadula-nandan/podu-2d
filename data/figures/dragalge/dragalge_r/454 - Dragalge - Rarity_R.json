@@ -1,0 +1,85 @@
+{
+  "figure_id": "dragalge_454",
+  "display_name": "Dragalge R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "POISON",
+    "DRAGON"
+  ],
+  "icon": "454 - Dragalge - Rarity_R.png",
+  "model": "res://assets/figures/models/dragalge/dragalge_r/454 - Dragalge - Rarity_R.fbx",
+  "ability": {
+    "name": "Poison Touch",
+    "note": "Any Pokémon that battles this Pokémon will become poisoned.",
+    "effect_ids": [
+      0
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Acid",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*On the next turn, any Blue Attacks of opposing Pokémon that are not Dodge become Misses."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Draco Meteor",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "One other Pokémon on the field spins - if they spin a miss or a white attack of 70 damage or more, they are knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 454,
+    "pokemon_id_raw": "691",
+    "national_dex": 691,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.2.3",
+    "last_update": "6.2.3",
+    "evolves_from": [
+      453
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Acid Downpour",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

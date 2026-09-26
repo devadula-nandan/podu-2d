@@ -1,0 +1,98 @@
+{
+  "figure_id": "guzzlord_497",
+  "display_name": "Guzzlord UX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "DARK",
+    "DRAGON"
+  ],
+  "icon": "res://data/figures/guzzlord/guzzlord_ux/497 - Guzzlord - Rarity_UX.png",
+  "model": "res://assets/figures/models/guzzlord/guzzlord_ux/497 - Guzzlord - Rarity_UX.fbx",
+  "ability": {
+    "name": "Gulp",
+    "note": "This Pokémon gains +1 MP after moving to the bench or field until its first battle. At the start of your turn, instead of using an MP move, this Pokémon may move to a point by passing through adjacent Pokémon that have Wait. If it does, those adjacent Pokémon move to the Ultra Space outside of the field. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ultra Belch",
+      "type": "BLUE",
+      "size": 28,
+      "note": "Moves one opposing Pokémon in the Ultra Space to a point of your choosing on the field. That Pokémon gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Brutal Swing",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Adjacent opposing Pokémon are knocked 1 step back. Those Pokémon gain wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dragon Tail",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 157,
+      "source_damage_or_stars": "157",
+      "note": "*Benches your battle opponent (except when opponent has Fainted). Your battle opponent must then Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 497,
+    "pokemon_id_raw": "799",
+    "national_dex": 799,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      496
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ],
+    "material": 5000,
+    "first_appear": "5.0.9",
+    "last_update": "6.2.3"
+  }
+}

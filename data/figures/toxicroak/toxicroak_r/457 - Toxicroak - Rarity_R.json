@@ -1,0 +1,91 @@
+{
+  "figure_id": "toxicroak_457",
+  "display_name": "Toxicroak R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "POISON",
+    "FIGHTING"
+  ],
+  "icon": "457 - Toxicroak - Rarity_R.png",
+  "model": "res://assets/figures/models/toxicroak/toxicroak_r/457 - Toxicroak - Rarity_R.fbx",
+  "ability": {
+    "name": "Dry Skin",
+    "note": "If the battle opponent is a Water-type Pokémon that does not have any other types, this Pokémon is not knocked out in battle.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Poison Jab",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*The battle opponent becomes poisoned. If the battle opponent is a Fairy-type Pokémon that is not a Steel-type Pokémon, it is knocked out.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Cross Chop",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90+",
+      "note": "Spin again - if Cross Chop is spun, it deals +50 damage."
+    },
+    {
+      "name": "Acid Breath",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent becomes poisoned. The battle opponent's [CTRL PID 371][Metal Coat] effects are lost and [CTRL PID 371][Metal Coat] counts as having been used. This does not cause it to return to its previous Evolution.",
+      "source_effect_ids": [
+        0
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 457,
+    "pokemon_id_raw": "454",
+    "national_dex": 454,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.6",
+    "last_update": "5.0.6",
+    "evolves_from": [
+      456
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Acid Downpour"
+    ]
+  }
+}

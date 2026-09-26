@@ -1,0 +1,85 @@
+{
+  "figure_id": "oricorio_sensu_style_383",
+  "display_name": "Oricorio Sensu Style UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "FLYING"
+  ],
+  "icon": "383 - Oricorio Sensu Style - Rarity_UC.png",
+  "model": "res://assets/figures/models/oricorio_sensu_style/oricorio_sensu_style_uc/383 - Oricorio Sensu Style - Rarity_UC.fbx",
+  "ability": {
+    "name": "Sensu",
+    "note": "This Pokémon can MP move through other Pokémon on the field. When this Pokémon is on the field, your Ghost-type Pokémon deal +1 damage for each Ghost-type Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Refined Dance",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*The battle opponent gains Wait 3. If this Pokémon is knocked out, the battle opponent gains a Curse marker.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Roost",
+      "type": "BLUE",
+      "size": 24,
+      "note": "This Pokémon recovers from all status effects. In exchange, it must then Wait 3."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 383,
+    "pokemon_id_raw": "741 sensu",
+    "national_dex": 741,
+    "variant": "sensu",
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "4.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      "383 primal"
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Never-Ending Nightmare"
+    ]
+  }
+}

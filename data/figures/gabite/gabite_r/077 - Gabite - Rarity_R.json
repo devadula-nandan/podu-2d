@@ -1,0 +1,87 @@
+{
+  "figure_id": "gabite_077",
+  "display_name": "Gabite R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON",
+    "GROUND"
+  ],
+  "icon": "077 - Gabite - Rarity_R.png",
+  "model": "res://assets/figures/models/gabite/gabite_r/077 - Gabite - Rarity_R.fbx",
+  "ability": {
+    "name": "Sand Veil",
+    "note": "If this Pokémon is attacked, it can move under the opponent's Pokémon to another space next to it. (A battle does not occur.)",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Slash",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Dragon Claw",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    },
+    {
+      "name": "Sand Attack",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent now has Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 77,
+    "pokemon_id_raw": "444",
+    "national_dex": 444,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      78
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Tectonic Rage",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

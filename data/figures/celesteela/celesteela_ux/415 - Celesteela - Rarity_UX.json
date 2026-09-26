@@ -1,0 +1,102 @@
+{
+  "figure_id": "celesteela_415",
+  "display_name": "Celesteela UX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "STEEL",
+    "FLYING"
+  ],
+  "icon": "res://data/figures/celesteela/celesteela_ux/415 - Celesteela - Rarity_UX.png",
+  "model": "res://assets/figures/models/celesteela/celesteela_ux/415 - Celesteela - Rarity_UX.fbx",
+  "ability": {
+    "name": "Rocket Ride",
+    "note": "In its first battle after moving to the field, this Pokémon's Flamethrower becomes Flame Gun (the battle opponent and one Pokémon directly behind it are knocked out). At the start of your turn, instead of an MP move, you may move an adjacent Pokémon to a point 3 steps away from this Pokémon. If you do, this Pokémon moves to the Ultra Space. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 8,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Flamethrower",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 137,
+      "source_damage_or_stars": "137",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Gyro Ball",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 107,
+      "source_damage_or_stars": "107",
+      "note": "Deals + 30 damage if the battle opponent's MP is higher than this Pokémon's MP."
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 8,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Rendezvous",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon and its battle opponent move to the Ultra Space outside of the field."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 415,
+    "pokemon_id_raw": "797",
+    "national_dex": 797,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      416
+    ],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Corkscrew Crash"
+    ],
+    "material": 5000,
+    "first_appear": "5.0.10",
+    "last_update": "5.0.10"
+  }
+}

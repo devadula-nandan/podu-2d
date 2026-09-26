@@ -24,6 +24,7 @@ export function getSpriteImage(url: string): HTMLImageElement | null {
   if (hit !== undefined) return null;
 
   const img = new Image();
+  img.crossOrigin = 'anonymous';
   cache.set(url, { status: 'loading' });
   img.onload = () => {
     cache.set(url, { img });

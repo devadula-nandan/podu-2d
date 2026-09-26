@@ -1,0 +1,90 @@
+{
+  "figure_id": "jolteon_528",
+  "display_name": "Jolteon UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "res://data/figures/jolteon/jolteon_ux/528 - Jolteon - Rarity_UX.png",
+  "model": "res://assets/figures/models/jolteon/jolteon_ux/528 - Jolteon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Thunder Spear",
+    "note": "It can MP move through your Pokémon and through opposing Water-type Pokémon and opposing Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Volt Switch",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 80,
+      "source_damage_or_stars": "80"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Thunder Jolt",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 528,
+    "pokemon_id_raw": "135 ux",
+    "national_dex": 135,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [
+      527
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ],
+    "material": 5000,
+    "first_appear": "6.2.1",
+    "last_update": "6.2.1"
+  }
+}

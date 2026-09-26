@@ -1,0 +1,88 @@
+{
+  "figure_id": "fraxure_602",
+  "display_name": "Fraxure R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "602 - Fraxure - Rarity_R.png",
+  "model": "res://assets/figures/models/fraxure/fraxure_r/602 - Fraxure - Rarity_R.fbx",
+  "ability": {
+    "name": "Territoriality",
+    "note": "While this Pokémon is on the bench, it gains +1 MP. Your opponent's Pokémon cannot pass by this Pokémon with an MP move. Any opposing Pokémon that has used an MP move to move next to this Pokémon must attack it on that turn, if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dragon Claw",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Dual Chop",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 80,
+      "source_damage_or_stars": "80x",
+      "note": "Spin again - if Dual Chop is spun, it deals x2 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Guillotine",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 602,
+    "pokemon_id_raw": "611",
+    "national_dex": 611,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.2.3",
+    "last_update": "6.2.3",
+    "evolves_from": [],
+    "evolves_to": [
+      603
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

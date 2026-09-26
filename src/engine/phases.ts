@@ -18,7 +18,7 @@
 import { platesAllowedAfterMoving, taggingEndsTurn } from './rulings.js';
 import type { Command } from './commands.js';
 import { IllegalCommandError, sameCommand } from './commands.js';
-import { Z_GAUGE_MAX } from './constants.js';
+import { Z_GAUGE_MAX, Z_GAUGE_TURN_GAIN } from './constants.js';
 import { figureContent, plateContent } from './content.js';
 import {
   battleRangeFor,
@@ -31,9 +31,9 @@ import {
   platesAllowed,
   preventionsFor,
   runLiveActions,
-  runMatching,
   runNested,
   runTrigger,
+  zTurnGainBoosts,
 } from './effects/bus.js';
 import { baseContext, withLastPlayedPlate, withPlateHint, withPlateId } from './effects/context.js';
 import type { EngineDeps } from './effects/context.js';
@@ -52,6 +52,7 @@ import {
   isPreSelectClause,
   isTimeTravelClause,
   plateStandIn,
+  preSelectZoneOk,
 } from './plates.js';
 import { timeTravelAvailable } from './rewind.js';
 import { battleTargets } from './rules/battle.js';
@@ -119,11 +120,15 @@ function plateHolders(state: GameState, deps: EngineDeps, player: PlayerId, slot
   const owned = state.figures.filter((figure) => figure.owner === player);
   const megaFits = (figureId: (typeof owned)[number]['figureId']): boolean =>
     resolveMegaTargets(deps.content, figureId, content.plate.name).length > 0;
+  const megaPlate = content.clauses.some((clause) =>
+    clause.actions.some((action) => action.do === 'megaEvolve'),
+  );
   const ok = owned.filter((figure) => {
     const ctx = withPlateHint(baseContext(state, deps, figure.uid, player), content.plate.name);
     return restrictions.every((clause) => guardsPass(ctx, clause.when));
   });
-  return [...ok]
+  const holders = megaPlate ? ok.filter((figure) => megaFits(figure.figureId)) : ok;
+  return [...holders]
     .sort((a, b) => {
       const mega = Number(megaFits(b.figureId)) - Number(megaFits(a.figureId));
       if (mega !== 0) return mega;
@@ -151,12 +156,22 @@ function playablePlates(state: GameState, deps: EngineDeps, player: PlayerId): n
 
 function abilityCommands(state: GameState, deps: EngineDeps, player: PlayerId): Command[] {
   const commands: Command[] = [];
+  const offered = state.turn.preSelectOffered ?? [];
   for (const figure of state.figures) {
-    if (figure.owner !== player || figure.zone !== 'field') continue;
+    if (figure.owner !== player) continue;
     const content = figureContent(deps.content, figure.figureId);
     for (const clause of content.abilityClauses) {
+      const preSelect = isPreSelectClause(clause);
+      if (preSelect) {
+        if (state.turn.moved) continue;
+        if (state.phase !== 'action' && state.phase !== 'plateWindow') continue;
+        if (offered.includes(figure.uid)) continue;
+        if (!preSelectZoneOk(clause, figure.zone)) continue;
+      } else if (figure.zone !== 'field') {
+        continue;
+      }
       const timeTravel = isTimeTravelClause(clause);
-      if (!isActivableAbilityClause(clause) && !timeTravel) continue;
+      if (!isActivableAbilityClause(clause) && !timeTravel && !preSelect) continue;
       if (timeTravel && !timeTravelAvailable(state)) continue;
       if (isInsteadOfMoveClause(clause) && state.phase !== 'action' && state.phase !== 'plateWindow') continue;
       if (
@@ -202,8 +217,8 @@ export function movementCommands(state: GameState, deps: EngineDeps, player: Pla
 function battleCommands(state: GameState, deps: EngineDeps, player: PlayerId): Command[] {
   const commands: Command[] = [];
   const zReady = state.players[player].zGauge >= Z_GAUGE_MAX;
-  // An MP-walk locks initiation to that figure. No walk yet (or deploy-only)
-  // means any of your field figures may stand and fight.
+  // After a walk or deploy, only that figure may fight. Before anyone moves,
+  // any adjacent field figure may stand and fight instead of moving.
   const lockUid = state.turn.movedUid;
   for (const figure of state.figures) {
     if (figure.owner !== player || figure.zone !== 'field') continue;
@@ -604,6 +619,12 @@ function applyAbilityAction(
     ]);
   }
 
+  // "Before using this Pokémon" is part of using the figure, not the figure action.
+  if (isPreSelectClause(live.clause)) {
+    const marked = extend(emptyBatch(state), [{ kind: 'preSelectOffered', uid }]);
+    return concatBatches(marked, runLiveActions(marked.state, deps, live));
+  }
+
   let batch = runLiveActions(state, deps, live);
   batch = extend(batch, [{ kind: 'actionTaken', player, uid }]);
   return batch;
@@ -670,6 +691,14 @@ function beginTurn(state: GameState, deps: EngineDeps, player: PlayerId, number:
   batch = concatBatches(batch, tickTimers(batch.state, skipMega));
   batch = concatBatches(batch, expireMegas(batch.state, deps));
   batch = concatBatches(batch, returnExpiredExclusions(batch.state));
+  {
+    const from = batch.state.players[player].zGauge;
+    const extra = zTurnGainBoosts(batch.state, deps, player) * Z_GAUGE_TURN_GAIN;
+    const to = Math.min(Z_GAUGE_MAX, from + Z_GAUGE_TURN_GAIN + extra);
+    if (to !== from) {
+      batch = extend(batch, [{ kind: 'zGaugeChanged', player, from, to }]);
+    }
+  }
   batch = concatBatches(
     batch,
     runTrigger(
@@ -743,18 +772,19 @@ function step(state: GameState, deps: EngineDeps): EventBatch | null {
 
     case 'plateWindow':
       if (state.turn.forcedEnd) return extend(emptyBatch(state), goTo(state, 'turnEnd'));
+      if (state.turn.moved) {
+        return extend(emptyBatch(state), [{ kind: 'plateWindowClosed' }, ...goTo(state, 'surroundCheck')]);
+      }
       if (playablePlates(state, deps, state.turn.player).length > 0) return null;
       return extend(emptyBatch(state), [{ kind: 'plateWindowClosed' }, ...goTo(state, 'preSelect')]);
 
     case 'preSelect': {
-      if (state.turn.preSelectClosed === true) {
-        return extend(emptyBatch(state), goTo(state, 'action'));
+      if (state.turn.moved) {
+        return extend(emptyBatch(state), [{ kind: 'preSelectClosed' }, ...goTo(state, 'surroundCheck')]);
       }
-      const batch = runMatching(state, deps, isPreSelectClause);
-      const offered = batch.state.pending !== null || batch.events.length > 0;
-      const closed = offered ? extend(batch, [{ kind: 'preSelectClosed' }]) : batch;
-      if (closed.state.pending !== null) return closed;
-      return extend(closed, goTo(closed.state, 'action'));
+      // Original Duel fires "Before using this Pokémon" when that figure is used, not
+      // as a global start-of-turn scan. The per-figure offer lives on abilityAction.
+      return extend(emptyBatch(state), [{ kind: 'preSelectClosed' }, ...goTo(state, 'action')]);
     }
 
     case 'action': {

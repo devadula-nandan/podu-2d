@@ -33,7 +33,7 @@ export function syncUrlCandidates(
 /** Both players open this. Seed is the room id. */
 export function roomShareUrl(seed: number, href: string): string {
   const page = new URL(href);
-  page.pathname = '/2d';
+  page.pathname = '/3d';
   page.search = '';
   page.hash = '';
   page.searchParams.set('seed', String(seed >>> 0));

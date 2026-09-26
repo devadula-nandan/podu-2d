@@ -1,0 +1,93 @@
+{
+  "figure_id": "fomantis_487",
+  "display_name": "Fomantis UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "487 - Fomantis - Rarity_UC.png",
+  "model": "res://assets/figures/models/fomantis/fomantis_uc/487 - Fomantis - Rarity_UC.fbx",
+  "ability": {
+    "name": "Greenhouse",
+    "note": "This Pokémon cannot be paralyzed. If this Pokémon is on the field and is not affected by a special condition, your MP1 Grass-type Pokémon on the field gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 20,
+      "source_damage_or_stars": "20",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Synthesis",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While they are on the field, your Grass-type Pokémon deal +20 damage to the battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 20,
+      "source_damage_or_stars": "20",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 487,
+    "pokemon_id_raw": "753",
+    "national_dex": 753,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "6.0.0",
+    "last_update": "6.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      "487 origin"
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

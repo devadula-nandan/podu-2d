@@ -23,7 +23,7 @@ async function playOneAction(page: Page): Promise<string | null> {
       .getByTestId('battle-outcome')
       .or(page.getByTestId('play-landed'))
       .or(page.getByTestId('handover'))
-      .waitFor({ state: 'visible', timeout: 6_000 })
+      .waitFor({ state: 'visible', timeout: 12_000 })
       .catch(() => undefined);
     return 'spin';
   }
@@ -61,26 +61,26 @@ async function playOneAction(page: Page): Promise<string | null> {
   return null;
 }
 
-test('/3d is a coming-soon page', async ({ page }) => {
+test('/3d is the player table', async ({ page }) => {
   await page.goto('/3d');
-  await expect(page.getByTestId('soon-3d')).toBeVisible();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Coming soon');
-  await expect(page.getByRole('link', { name: /2D table/i })).toBeVisible();
+  await expect(page.getByTestId('play-ready')).toBeVisible();
+  await expect(page.getByTestId('play-setup').or(page.getByTestId('play-duel'))).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Dev' })).toBeVisible();
 });
 
-test('/2d?seed=2 starts without a seat picker and deploys near the bottom', async ({ page }) => {
+test('/3d?seed=2 starts without a seat picker and deploys near the bottom', async ({ page }) => {
   test.setTimeout(90_000);
-  await page.goto('/2d?seed=2111', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2111', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-ready')).toBeVisible({ timeout: 60_000 });
   await expect(page.getByTestId('play-setup')).toBeVisible();
   await expect(page.getByTestId('seed-input')).toHaveValue('2111');
   await expect(page.getByTestId('human-seat')).toHaveCount(0);
   await page.getByTestId('mode-vs-ai').check();
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(page.getByTestId('handover')).toHaveCount(0);
-  await expect(page.getByTestId('play-prompt')).toBeVisible();
+  await expect(page.getByTestId('play-strip')).toBeVisible();
   await expect(page.getByTestId('board-canvas')).toBeVisible();
 
   const action = await playOneAction(page);
@@ -107,14 +107,14 @@ test('/2d?seed=2 starts without a seat picker and deploys near the bottom', asyn
   await page.screenshot({ path: 'test-results/player-2d-390.png', fullPage: true });
 });
 
-test('/2d vs AI Easy starts without debug chrome', async ({ page }) => {
+test('/3d vs AI Easy starts without debug chrome', async ({ page }) => {
   test.setTimeout(60_000);
-  await page.goto('/2d?seed=2112', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2112', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await page.getByTestId('mode-vs-ai').check();
   await expect(page.getByTestId('human-seat')).toHaveCount(0);
   await page.getByTestId('difficulty').selectOption('easy');
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(page.getByTestId('play-duel')).toHaveAttribute('data-mode', 'vsAi');
@@ -123,12 +123,12 @@ test('/2d vs AI Easy starts without debug chrome', async ({ page }) => {
   await expect(page.getByTestId('replay-scrubber')).toHaveCount(0);
 });
 
-test('/2d plates and figures are both live; End turn is hidden until an optional battle', async ({ page }) => {
+test('/3d plates and figures are both live; End turn is hidden until an optional battle', async ({ page }) => {
   test.setTimeout(90_000);
-  await page.goto('/2d?seed=2110', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2110', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await page.getByTestId('mode-vs-ai').check();
-  await page.getByTestId('preset-gym-circuit').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });
   await expect(page.getByTestId('skip-plate')).toHaveCount(0);

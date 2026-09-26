@@ -1,0 +1,94 @@
+{
+  "figure_id": "nihilego_404",
+  "display_name": "Nihilego UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "POISON"
+  ],
+  "icon": "res://data/figures/nihilego/nihilego_ux/404 - Nihilego - Rarity_UX.png",
+  "model": "res://assets/figures/models/nihilego/nihilego_ux/404 - Nihilego - Rarity_UX.fbx",
+  "ability": {
+    "name": "White Noise",
+    "note": "When this Pokémon moves to the field, the effects of Energy plates are lost and they count as having been used. In its first battle after moving to the field, all of this Pokémon's White Attacks become Gold. If this Pokémon is knocked out, it moves to the Ultra Space outside of the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Stun Poison",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes poisoned. The battle opponent gains Wait 7.",
+      "source_effect_ids": [
+        0,
+        7
+      ]
+    },
+    {
+      "name": "White Tentacles",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 83,
+      "source_damage_or_stars": "83",
+      "note": "*Attach a Symbiont marker to the battle opponent. A Pokémon with this marker attached can only be used by its opposing player (MP Moves only). This marker can be removed by tagging."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Call Signal",
+      "type": "BLUE",
+      "size": 32,
+      "note": "Move one of your Pokémon that is in the Ultra Space to a point 2 steps away from this Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 404,
+    "pokemon_id_raw": "793",
+    "national_dex": 793,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      403
+    ],
+    "evolves_to": [
+      405
+    ],
+    "z_move_keys": [
+      "Acid Downpour",
+      "Continental Crush"
+    ],
+    "material": 5000,
+    "first_appear": "5.0.6",
+    "last_update": "5.0.6"
+  }
+}

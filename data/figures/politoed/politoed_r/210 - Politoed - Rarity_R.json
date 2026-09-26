@@ -1,0 +1,85 @@
+{
+  "figure_id": "politoed_210",
+  "display_name": "Politoed R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "210 - Politoed - Rarity_R.png",
+  "model": "res://assets/figures/models/politoed/politoed_r/210 - Politoed - Rarity_R.fbx",
+  "ability": {
+    "name": "Big Chorus",
+    "note": "If there are 3 or more [CTRL FID 210][Politoed] on the field (including this Pokémon), the opposing player cannot use plates.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Round",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40x",
+      "note": "Damage is multiplied by the number of your own [CTRL QL Round][Pokémon] on the field that also have Round."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 210,
+    "pokemon_id_raw": "186",
+    "national_dex": 186,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.1.1",
+    "last_update": "6.1.1",
+    "evolves_from": [
+      209
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

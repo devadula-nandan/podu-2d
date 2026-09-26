@@ -1,0 +1,96 @@
+{
+  "figure_id": "salazzle_387",
+  "display_name": "Salazzle R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "POISON",
+    "FIRE"
+  ],
+  "icon": "387 - Salazzle - Rarity_R.png",
+  "model": "res://assets/figures/models/salazzle/salazzle_r/387 - Salazzle - Rarity_R.fbx",
+  "ability": {
+    "name": "Speed Booster",
+    "note": "When this Pokémon evolves, it will gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Toxic",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Clinging Gas",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Poisons and attaches a Clinging Gas marker to an opposing Pokémon within 2 steps. The effects of Abilities of Pokémon with that marker that decrease Attack damage are nullified.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Venoshock",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "Deals ×2 damage if the battle opponent is poisoned or noxious."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 387,
+    "pokemon_id_raw": "758",
+    "national_dex": 758,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.1.1",
+    "last_update": "6.1.1",
+    "evolves_from": [],
+    "evolves_to": [
+      388
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Acid Downpour"
+    ]
+  }
+}

@@ -23,6 +23,7 @@ export default tseslint.config(
       'tools/cache-bulba',
       'playwright-report',
       'test-results',
+      'storybook-static',
     ],
   },
 
@@ -69,7 +70,14 @@ export default tseslint.config(
 
   // The React entry point and (later) the UI layer.
   {
-    files: ['src/main.tsx', 'src/ui/**/*.tsx', 'src/ui/use-table.ts', 'src/player/**/*.tsx', 'src/pages/**/*.tsx'],
+    files: [
+      'src/main.tsx',
+      'src/ui/**/*.tsx',
+      'src/ui/use-table.ts',
+      'src/player/**/*.tsx',
+      'src/pages/**/*.tsx',
+      'src/stage3d/**/*.tsx',
+    ],
     extends: [reactHooks.configs.flat['recommended-latest']],
   },
 

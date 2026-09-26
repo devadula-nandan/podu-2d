@@ -1,0 +1,83 @@
+{
+  "figure_id": "regigigas_426",
+  "display_name": "Regigigas UX",
+  "available_in_roster": true,
+  "movement_points": 0,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "res://data/figures/regigigas/regigigas_ux/426 - Regigigas - Rarity_UX.png",
+  "model": "res://assets/figures/models/regigigas/regigigas_ux/426 - Regigigas - Rarity_UX.fbx",
+  "ability": {
+    "name": "Slow Start",
+    "note": "This Pokémon gets +1 MP for each species of [CTRL FID 444][Regirock], [CTRL FID 446][Regice] and [CTRL FID 448][Registeel] on the field. This Pokémon cannot be moved by plates, Abilities or other Pokémon's Attacks.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Hammer",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 300,
+      "source_damage_or_stars": "300",
+      "note": "*If the battle opponent is knocked out, this Pokémon claims its previous spot and gains Wait."
+    },
+    {
+      "name": "Multiblast",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*Knocks out all Pokémon that have Lock-On markers attached to them."
+    },
+    {
+      "name": "Revenge",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "This attack's damage is boosted by the number of Pokémon in your P.C. +20."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 426,
+    "pokemon_id_raw": "486",
+    "national_dex": 486,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [
+      425
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ],
+    "material": 5000,
+    "first_appear": "6.0.11",
+    "last_update": "7.0.10"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "figure_id": "wigglytuff_206",
+  "display_name": "Wigglytuff R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FAIRY"
+  ],
+  "icon": "206 - Wigglytuff - Rarity_R.png",
+  "model": "res://assets/figures/models/wigglytuff/wigglytuff_r/206 - Wigglytuff - Rarity_R.fbx",
+  "ability": {
+    "name": "Hypnotic Voice",
+    "note": "The next turn after using this Pokémon, your opponent will be unable to use Plates.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Round",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20x",
+      "note": "Damage is multiplied by the number of your own [CTRL QL Round][Pokémon] on the field that also have Round."
+    },
+    {
+      "name": "Sing",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Pound",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 206,
+    "pokemon_id_raw": "040",
+    "national_dex": 40,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0",
+    "last_update": "7.0.4",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Breakneck Blitz"
+    ]
+  }
+}

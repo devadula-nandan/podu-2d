@@ -2,10 +2,20 @@ import { DeckBuilder } from './DeckBuilder.js';
 import { DuelScreen } from './DuelScreen.js';
 import { useDuelSession } from './DuelSession.js';
 import { formatSeed } from './model.js';
-import { SpriteAttribution } from './SpriteAttribution.js';
 
 export function App() {
   const session = useDuelSession();
+
+  if (session.booting) {
+    return (
+      <div className="app">
+        <div className="boot" data-testid="boot-loading">
+          <h2>Loading…</h2>
+          <p className="note">Preparing figures, plates, and abilities.</p>
+        </div>
+      </div>
+    );
+  }
 
   if (session.bootError !== null || session.engine === null) {
     return (
@@ -34,7 +44,6 @@ export function App() {
           .
         </p>
       ) : null}
-      {session.duel === null ? <SpriteAttribution className="sprite-attrib" /> : null}
     </div>
   );
 }

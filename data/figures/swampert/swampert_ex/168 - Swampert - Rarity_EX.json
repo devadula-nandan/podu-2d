@@ -1,0 +1,91 @@
+{
+  "figure_id": "swampert_168",
+  "display_name": "Swampert EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER",
+    "GROUND"
+  ],
+  "icon": "168 - Swampert - Rarity_EX.png",
+  "model": "res://assets/figures/models/swampert/swampert_ex/168 - Swampert - Rarity_EX.fbx",
+  "ability": {
+    "name": "Mud Coating",
+    "note": "When this Pokémon is on the field, if there are 3 or more Water-type Pokémon on the field, your Ground-type Pokémon with MP 1 or lower get +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Hammer Arm",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*This Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Tractor",
+      "type": "BLUE",
+      "size": 28,
+      "note": "You may knock this Pokémon 1 step back and move the battle opponent to this Pokémon's previous location. If you do, the battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Ice Punch",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 168,
+    "pokemon_id_raw": "260",
+    "national_dex": 260,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      167
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Hydro Vortex"
+    ]
+  }
+}

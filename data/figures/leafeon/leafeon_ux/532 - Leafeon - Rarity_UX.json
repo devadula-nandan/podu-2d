@@ -1,0 +1,87 @@
+{
+  "figure_id": "leafeon_532",
+  "display_name": "Leafeon UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "res://data/figures/leafeon/leafeon_ux/532 - Leafeon - Rarity_UX.png",
+  "model": "res://assets/figures/models/leafeon/leafeon_ux/532 - Leafeon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Leaf Arrow",
+    "note": "This Pokémon can MP move through your own Pokémon, and opposing Water-type Pokémon and Rock-type Pokémon. If there are opposing Pokémon on all your entry points , this Pokémon gets MP+1.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Synthesis",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While they are on the field, your Grass-type Pokémon deal +20 damage to the battle opponent."
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Blade Tail",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Moves the battle opponent to its P.C. The battle opponent is not knocked out."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 532,
+    "pokemon_id_raw": "470 ux",
+    "national_dex": 470,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      533
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14"
+  }
+}

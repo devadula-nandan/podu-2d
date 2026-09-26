@@ -1,0 +1,84 @@
+{
+  "figure_id": "cobalion_316",
+  "display_name": "Cobalion EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "FIGHTING"
+  ],
+  "icon": "316 - Cobalion - Rarity_EX.png",
+  "model": "res://assets/figures/models/cobalion/cobalion_ex/316 - Cobalion - Rarity_EX.fbx",
+  "ability": {
+    "name": "Iron Heart",
+    "note": "This Pokémon and your Pokémon adjacent to this Pokémon are not knocked out by Gold Attacks from their battle opponents.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Sword of Justice",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 101,
+      "source_damage_or_stars": "101"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 316,
+    "pokemon_id_raw": "638",
+    "national_dex": 638,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.6",
+    "last_update": "6.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      317
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Corkscrew Crash"
+    ]
+  }
+}

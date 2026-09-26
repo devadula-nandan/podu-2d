@@ -1,6 +1,13 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { PHASE_MACHINE_MERMAID, PHASES, type PhaseGraphCoversAll } from './phase-machine.js';
+import {
+  PHASE_END_REASONS,
+  PHASE_MACHINE_EDGES,
+  PHASE_MACHINE_MERMAID,
+  PHASE_MACHINE_NODES,
+  PHASES,
+  type PhaseGraphCoversAll,
+} from './phase-machine.js';
 import type { Phase } from './state.js';
 
 function normalize(text: string): string {
@@ -42,5 +49,36 @@ describe('PHASE_MACHINE_MERMAID', () => {
     for (const phase of PHASES) {
       expect(PHASE_MACHINE_MERMAID).toContain(phase);
     }
+  });
+});
+
+describe('PHASE_MACHINE_NODES', () => {
+  it('shows every Phase, bookend, and ending reason', () => {
+    const ids = new Set(PHASE_MACHINE_NODES.map((node) => node.id));
+    for (const phase of PHASES) {
+      expect(ids.has(phase)).toBe(true);
+    }
+    for (const reason of PHASE_END_REASONS) {
+      expect(ids.has(reason)).toBe(true);
+    }
+    expect(ids.has('start')).toBe(true);
+    expect(ids.has('end')).toBe(true);
+    expect(PHASE_MACHINE_NODES).toHaveLength(19);
+  });
+
+  it('wires every settle hop and does not drop a node', () => {
+    const ids = new Set(PHASE_MACHINE_NODES.map((node) => node.id));
+    const mentioned = new Set<string>();
+    for (const hop of PHASE_MACHINE_EDGES) {
+      expect(ids.has(hop.from)).toBe(true);
+      expect(ids.has(hop.to)).toBe(true);
+      mentioned.add(hop.from);
+      mentioned.add(hop.to);
+    }
+    expect([...ids].filter((id) => !mentioned.has(id))).toEqual([]);
+    expect(PHASE_MACHINE_EDGES.some((hop) => hop.from === 'spin' && hop.to === 'turnEnd')).toBe(true);
+    expect(PHASE_MACHINE_EDGES.some((hop) => hop.from === 'respin' && hop.to === 'turnEnd')).toBe(true);
+    expect(PHASE_MACHINE_EDGES.some((hop) => hop.from === 'action' && hop.to === 'goal')).toBe(true);
+    expect(PHASE_MACHINE_EDGES.some((hop) => hop.from === 'concede' && hop.to === 'gameOver')).toBe(true);
   });
 });

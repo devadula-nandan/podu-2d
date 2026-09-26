@@ -1,0 +1,89 @@
+{
+  "figure_id": "cresselia_432",
+  "display_name": "Cresselia EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "432 - Cresselia - Rarity_EX.png",
+  "model": "res://assets/figures/models/cresselia/cresselia_ex/432 - Cresselia - Rarity_EX.fbx",
+  "ability": {
+    "name": "Crescent Veil",
+    "note": "If this Pokémon is on the field and not affected by a special condition, Moonblast from any of your [CTRL QL Moonblast][Pokémon] deals +50 damage. [CTRL NOTE][This effect does not stack.]",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Lunar Dance",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Removes the asleep condition from your Pokémon and moves all your Pokémon that are in a P.C. to the bench. Then, this Pokémon moves to your P.C."
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 432,
+    "pokemon_id_raw": "488",
+    "national_dex": 488,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [
+      431
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

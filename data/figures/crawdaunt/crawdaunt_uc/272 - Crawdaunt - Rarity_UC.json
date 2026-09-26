@@ -1,0 +1,84 @@
+{
+  "figure_id": "crawdaunt_272",
+  "display_name": "Crawdaunt UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "DARK"
+  ],
+  "icon": "272 - Crawdaunt - Rarity_UC.png",
+  "model": "res://assets/figures/models/crawdaunt/crawdaunt_uc/272 - Crawdaunt - Rarity_UC.fbx",
+  "ability": {
+    "name": "Surprise Back",
+    "note": "When attacked, you can move this Pokémon back two steps without battling. It gains Wait.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Guillotine",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked out."
+    },
+    {
+      "name": "Aqua Jet",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Crabhammer",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 50,
+      "source_damage_or_stars": "50+",
+      "note": "Spin again - If Crabhammer is spun, it deals 50+ damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 272,
+    "pokemon_id_raw": "342",
+    "national_dex": 342,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "3.0.10",
+    "evolves_from": [
+      271
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Hydro Vortex"
+    ]
+  }
+}

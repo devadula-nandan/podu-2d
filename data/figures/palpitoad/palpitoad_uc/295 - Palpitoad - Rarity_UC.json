@@ -1,0 +1,83 @@
+{
+  "figure_id": "palpitoad_295",
+  "display_name": "Palpitoad UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "GROUND"
+  ],
+  "icon": "295 - Palpitoad - Rarity_UC.png",
+  "model": "res://assets/figures/models/palpitoad/palpitoad_uc/295 - Palpitoad - Rarity_UC.fbx",
+  "ability": {
+    "name": "Long Lick",
+    "note": "Instead of an MP move, you can force an opponent's Pokémon that is 2 steps away from this Pokémon to spin. If you do, this Pokémon gains Wait 3. If the result of that spin is a White Attack, that Pokémon gains Wait 3.",
+    "effect_ids": [
+      7
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Mud Shot",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Attach MP -1 marker to the battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 32
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 295,
+    "pokemon_id_raw": "536",
+    "national_dex": 536,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "3.0.10",
+    "evolves_from": [
+      294
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "figure_id": "dusk_mane_necrozma_503",
+  "display_name": "Dusk Mane Necrozma UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "STEEL"
+  ],
+  "icon": "res://data/figures/dusk_mane_necrozma/dusk_mane_necrozma_ux/503 - Dusk Mane Necrozma - Rarity_UX.png",
+  "model": "res://assets/figures/models/dusk_mane_necrozma/dusk_mane_necrozma_ux/503 - Dusk Mane Necrozma - Rarity_UX.fbx",
+  "ability": {
+    "name": "Prism Armor: Dusk",
+    "note": "Ultra Beast. When this Pokémon appears with its form changed, it may attach a Photon marker to an opposing Pokémon within X+1 steps, where X is the number of Pokémon in the Ultra Space. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. The battle opponent's Attacks cannot attach markers to this Pokémon. When this Pokémon is knocked out in battle, it may change its form to Necrozma without moving to the P.C. If it does and any of your Solgaleo are in the Ultra Space, move on of them to the bench.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Photon Geyser",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon may attach a Photon marker to the battle opponent. If this Pokémon has changed its form from [CTRL FID 498][Necrozma], it may attach the marker to a Pokémon within X+1 steps, where X is the number of Pokémon in the Ultra Space, instead of the battle opponent. The Ability of a Pokémon with a Photo marker is nullified."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Sunsteel Strike",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*Moves the battle opponent to its P.C. The battle opponent is not knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Prismatic Laser",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 167,
+      "source_damage_or_stars": "167",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 503,
+    "pokemon_id_raw": "800 dusk-mane",
+    "national_dex": 800,
+    "variant": "dusk-mane",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      502
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Shattered Psyche",
+      "Corkscrew Crash",
+      "Searing Sunraze Smash"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "figure_id": "frost_rotom_473",
+  "display_name": "Frost Rotom R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "ICE"
+  ],
+  "icon": "473 - Frost Rotom - Rarity_R.png",
+  "model": "res://assets/figures/models/frost_rotom/frost_rotom_r/473 - Frost Rotom - Rarity_R.fbx",
+  "ability": {
+    "name": "Frost Tag",
+    "note": "If this Pokémon is on the field and not affected by a special condition, opposing Ice-type Pokémon next to your Ice-type Pokémon get MP-1. This effect does not stack.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Discharge",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Blizzard",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If this Pokémon is knocked out, all adjacent Pokémon become frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 473,
+    "pokemon_id_raw": "479 frost",
+    "national_dex": 479,
+    "variant": "frost",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.1",
+    "last_update": "6.0.1",
+    "evolves_from": [
+      221
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Subzero Slammer"
+    ]
+  }
+}

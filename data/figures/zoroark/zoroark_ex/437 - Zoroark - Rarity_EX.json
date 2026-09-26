@@ -1,0 +1,91 @@
+{
+  "figure_id": "zoroark_437",
+  "display_name": "Zoroark EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK"
+  ],
+  "icon": "437 - Zoroark - Rarity_EX.png",
+  "model": "res://assets/figures/models/zoroark/zoroark_ex/437 - Zoroark - Rarity_EX.fbx",
+  "ability": {
+    "name": "Illusion",
+    "note": "When this Pokémon is on the bench or has not yet engaged in its first battle after moving to the field, and another of your Pokémon - that has the same MP or less than this Pokémon and has not yet engaged in its first battle after moving to the field - is attacked, before the battle, that Pokémon may switch places with this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Crosscounter",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If the battle opponent spins an Attack of 110 damage or higher, the battle opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Night Daze",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*In the battle opponent's next battle, that Pokémon's White Attacks become Misses."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 437,
+    "pokemon_id_raw": "571",
+    "national_dex": 571,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.9",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      436
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ]
+  }
+}

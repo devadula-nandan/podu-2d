@@ -1,0 +1,73 @@
+{
+  "figure_id": "shiny_magikarp_401",
+  "display_name": "Shiny Magikarp C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "401 - Shiny Magikarp - Rarity_C.png",
+  "model": "res://assets/figures/models/shiny_magikarp/shiny_magikarp_c/401 - Shiny Magikarp - Rarity_C.fbx",
+  "ability": {
+    "name": "Rapid Evolution",
+    "note": "When this Pokémon is knocked out in battle, it may evolve without moving to the P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Splash",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 0,
+      "source_damage_or_stars": "0"
+    },
+    {
+      "name": "Flail",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 401,
+    "pokemon_id_raw": "129 shiny",
+    "national_dex": 129,
+    "variant": "shiny",
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "4.0.8",
+    "last_update": "4.0.8",
+    "evolves_from": [],
+    "evolves_to": [
+      402
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

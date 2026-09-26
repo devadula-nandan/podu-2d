@@ -1,0 +1,79 @@
+{
+  "figure_id": "turtwig_109",
+  "display_name": "Turtwig UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "109 - Turtwig - Rarity_UC.png",
+  "model": "res://assets/figures/models/turtwig/turtwig_uc/109 - Turtwig - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Withdraw",
+      "type": "BLUE",
+      "size": 32,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 109,
+    "pokemon_id_raw": "387",
+    "national_dex": 387,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 May",
+    "last_update": "1.0 May",
+    "evolves_from": [],
+    "evolves_to": [
+      110
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

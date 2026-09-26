@@ -1,0 +1,90 @@
+{
+  "figure_id": "empoleon_191",
+  "display_name": "Empoleon EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "STEEL"
+  ],
+  "icon": "191 - Empoleon - Rarity_EX.png",
+  "model": "res://assets/figures/models/empoleon/empoleon_ex/191 - Empoleon - Rarity_EX.fbx",
+  "ability": {
+    "name": "Diving Entry",
+    "note": "When moving this Pokémon from the bench, it can only move to one space away from the entry point. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Aqua Jet",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 191,
+    "pokemon_id_raw": "395",
+    "national_dex": 395,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      192
+    ],
+    "z_move_keys": [
+      "Corkscrew Crash",
+      "Hydro Vortex"
+    ]
+  }
+}

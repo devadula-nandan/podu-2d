@@ -9,9 +9,8 @@ import {
   IVORY,
   REACH_STROKE,
   SELECT_STROKE,
-  STEEL,
   SURROUND_STROKE,
-  seatOf,
+  sideOf,
 } from './palette.js';
 
 export interface BoardLayout {
@@ -39,7 +38,17 @@ export interface BoardScene {
   readonly flip?: boolean;
 }
 
-const NODE_R = 18;
+/** 7×5 lattice projects into whatever canvas width × height the field gives. */
+
+const MIN_NODE_R = 16;
+const MAX_NODE_R = 40;
+
+export function nodeRadius(layout: BoardLayout): number {
+  const innerW = Math.max(1, layout.width - layout.pad * 2);
+  const innerH = Math.max(1, layout.height - layout.pad * 2);
+  const cell = Math.min(innerW / 6, innerH / 4);
+  return Math.max(MIN_NODE_R, Math.min(MAX_NODE_R, cell * 0.42));
+}
 
 /** 180° partner in unit space. Clicks use the same map so the logical node is unchanged. */
 export function visualUnit(node: Pick<BoardNode, 'x' | 'y'>, flip: boolean): { x: number; y: number } {
@@ -62,7 +71,7 @@ export function hitNode(
   flip = false,
 ): NodeId | null {
   let best: NodeId | null = null;
-  let bestD = NODE_R + 10;
+  let bestD = nodeRadius(layout) + 12;
   for (const node of board.nodes) {
     const { x, y } = projectNode(node, layout, flip);
     const d = Math.hypot(sx - x, sy - y);
@@ -72,23 +81,6 @@ export function hitNode(
     }
   }
   return best;
-}
-
-function roundedRect(
-  ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  w: number,
-  h: number,
-  r: number,
-): void {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.arcTo(x + w, y, x + w, y + h, r);
-  ctx.arcTo(x + w, y + h, x, y + h, r);
-  ctx.arcTo(x, y + h, x, y, r);
-  ctx.arcTo(x, y, x + w, y, r);
-  ctx.closePath();
 }
 
 function drawHatch(ctx: CanvasRenderingContext2D, x: number, y: number, r: number, color: string): void {
@@ -115,7 +107,6 @@ function drawTokenArt(
   name: string,
   spriteUrl: string | null,
   ink: string,
-  _shape: 'circle' | 'square',
 ): void {
   const sprite = spriteUrl === null ? null : getSpriteImage(spriteUrl);
   if (sprite !== null) {
@@ -125,27 +116,39 @@ function drawTokenArt(
     return;
   }
   ctx.fillStyle = ink;
-  ctx.font = '700 10px "Sora", sans-serif';
+  ctx.font = '600 11px "Source Sans 3", sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(figureInitials(name), x, y - 2);
+  ctx.fillText(figureInitials(name), x, y);
 }
 
 export function drawBoard(ctx: CanvasRenderingContext2D, scene: BoardScene, layout: BoardLayout): void {
   const { board, view, nameOf, spriteUrlOf, highlights } = scene;
   const flip = scene.flip === true;
+  const NODE_R = nodeRadius(layout);
   ctx.save();
   ctx.fillStyle = FELT;
   ctx.fillRect(0, 0, layout.width, layout.height);
 
-  ctx.fillStyle = FELT_INK;
+  const table = ctx.createRadialGradient(
+    layout.width / 2,
+    layout.height / 2,
+    24,
+    layout.width / 2,
+    layout.height / 2,
+    Math.max(layout.width, layout.height) * 0.52,
+  );
+  table.addColorStop(0, '#243044');
+  table.addColorStop(0.62, FELT);
+  table.addColorStop(1, FELT_INK);
+  ctx.fillStyle = table;
   ctx.beginPath();
-  ctx.ellipse(layout.width / 2, layout.height / 2, layout.width * 0.42, layout.height * 0.44, 0, 0, Math.PI * 2);
+  ctx.ellipse(layout.width / 2, layout.height / 2, layout.width * 0.46, layout.height * 0.46, 0, 0, Math.PI * 2);
   ctx.fill();
 
   ctx.lineCap = 'round';
   ctx.strokeStyle = CORRIDOR;
-  ctx.lineWidth = 10;
+  ctx.lineWidth = Math.max(8, NODE_R * 0.55);
   for (const [a, b] of board.edges) {
     const na = board.byId.get(a);
     const nb = board.byId.get(b);
@@ -173,10 +176,10 @@ export function drawBoard(ctx: CanvasRenderingContext2D, scene: BoardScene, layo
 
     ctx.beginPath();
     ctx.arc(x, y, NODE_R + 1, 0, Math.PI * 2);
-    ctx.fillStyle = node.kind === 'goal' ? '#1b2430' : '#243044';
+    ctx.fillStyle = node.kind === 'goal' ? '#1a1408' : node.kind === 'entry' ? '#14202c' : '#1c2836';
     ctx.fill();
-    ctx.lineWidth = node.kind === 'entry' ? 3 : 1.5;
-    ctx.strokeStyle = node.kind === 'goal' ? IVORY : node.kind === 'entry' ? STEEL : '#3a4658';
+    ctx.lineWidth = node.kind === 'entry' ? 2.6 : node.kind === 'goal' ? 2.2 : 1.6;
+    ctx.strokeStyle = node.kind === 'goal' ? '#e0b84a' : node.kind === 'entry' ? '#4fd0e0' : '#5a6e82';
     ctx.stroke();
 
     if (reachable) {
@@ -223,39 +226,28 @@ export function drawBoard(ctx: CanvasRenderingContext2D, scene: BoardScene, layo
     }
 
     if (occupant === null) {
-      ctx.fillStyle = STEEL;
-      ctx.font = '600 8px "IBM Plex Mono", monospace';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      const tag =
-        node.kind === 'goal'
-          ? `G${node.owner === 0 ? 'A' : 'B'}`
-          : node.kind === 'entry'
-            ? `E${node.owner === 0 ? 'A' : 'B'}`
-            : '·';
-      ctx.fillText(tag, x, y);
+      if (node.kind !== 'point') {
+        ctx.fillStyle = IVORY;
+        ctx.font = `600 ${Math.max(8, Math.round(NODE_R * 0.42))}px "IBM Plex Mono", monospace`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(node.kind === 'goal' ? `G${node.owner === 0 ? 'A' : 'B'}` : `E${node.owner === 0 ? 'A' : 'B'}`, x, y);
+      }
     } else {
-      const seat = seatOf(occupant.owner);
+      const seat = sideOf(occupant.owner, view.you);
       const r = NODE_R - 2;
+      ctx.save();
+      ctx.shadowColor = seat.rim;
+      ctx.shadowBlur = 10;
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
       ctx.fillStyle = seat.fill;
-      if (seat.shape === 'circle') {
-        ctx.beginPath();
-        ctx.arc(x, y, r, 0, Math.PI * 2);
-        ctx.fill();
-      } else {
-        roundedRect(ctx, x - r, y - r, r * 2, r * 2, 4);
-        ctx.fill();
-      }
-      ctx.strokeStyle = seat.ink;
-      ctx.lineWidth = 1.5;
-      if (seat.shape === 'circle') {
-        ctx.beginPath();
-        ctx.arc(x, y, r, 0, Math.PI * 2);
-        ctx.stroke();
-      } else {
-        roundedRect(ctx, x - r, y - r, r * 2, r * 2, 4);
-        ctx.stroke();
-      }
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.strokeStyle = seat.rim;
+      ctx.lineWidth = Math.max(3, r * 0.16);
+      ctx.stroke();
+      ctx.restore();
 
       if (highlights.surroundUids.has(occupant.uid)) {
         drawHatch(ctx, x, y, r, SURROUND_STROKE);
@@ -279,12 +271,7 @@ export function drawBoard(ctx: CanvasRenderingContext2D, scene: BoardScene, layo
         ctx.setLineDash([]);
       }
 
-      drawTokenArt(ctx, x, y, r, nameOf(occupant), spriteUrlOf(occupant), seat.ink, seat.shape);
-      ctx.fillStyle = seat.ink;
-      ctx.font = '600 7px "IBM Plex Mono", monospace';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(seat.mark, x, y + 9);
+      drawTokenArt(ctx, x, y, r, nameOf(occupant), spriteUrlOf(occupant), seat.ink);
 
       const badges: string[] = [];
       if (occupant.condition !== null) badges.push(occupant.condition.slice(0, 3).toUpperCase());

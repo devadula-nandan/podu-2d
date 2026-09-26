@@ -1,0 +1,94 @@
+{
+  "figure_id": "swablu_478",
+  "display_name": "Swablu UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "icon": "478 - Swablu - Rarity_UC.png",
+  "model": "res://assets/figures/models/swablu/swablu_uc/478 - Swablu - Rarity_UC.fbx",
+  "ability": {
+    "name": "Cotton Bird Song",
+    "note": "When this Pokémon is on the field, your Normal-type Pokémon and your Flying-type Pokémon take -10 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Cotton Guard",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "In this Pokémon's next battle, it cannot be knocked out."
+    },
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Round",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 20,
+      "source_damage_or_stars": "20x",
+      "note": "Damage is multiplied by the number of your own [CTRL QL Round][Pokémon] on the field that also have Round."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 478,
+    "pokemon_id_raw": "333",
+    "national_dex": 333,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "5.0.9",
+    "last_update": "5.0.9",
+    "evolves_from": [
+      361
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Breakneck Blitz"
+    ]
+  }
+}

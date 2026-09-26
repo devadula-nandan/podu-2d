@@ -1,0 +1,94 @@
+{
+  "figure_id": "regice_446",
+  "display_name": "Regice EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ICE"
+  ],
+  "icon": "446 - Regice - Rarity_EX.png",
+  "model": "res://assets/figures/models/regice/regice_ex/446 - Regice - Rarity_EX.fbx",
+  "ability": {
+    "name": "Lock On: Purple",
+    "note": "At the start of your turn, instead of an MP move, this Pokémon can force opposing Pokémon within 2 steps of it to spin. If the spin results in a Purple Attack, attach a Lock-on marker to that Pokémon. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Hammer Arm",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*This Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Multiblast",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Knocks out all Pokémon that have Lock-On markers attached to them."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 446,
+    "pokemon_id_raw": "378",
+    "national_dex": 378,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.11",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      143
+    ],
+    "z_move_keys": [
+      "Subzero Slammer"
+    ]
+  }
+}

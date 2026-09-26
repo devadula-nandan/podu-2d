@@ -234,7 +234,19 @@ describe('parity expansions', () => {
   it('compiles Goal Block as a choose-and-move onto your goal when open', () => {
     const c = compileClause('Choose one of your Pokémon on the field and move it to your goal point if it is open.');
     expect(c.when[0]).toEqual({ kind: 'goalOpen', whose: 'controller' });
-    expect(c.actions[0]).toMatchObject({ do: 'move', to: { kind: 'goal' } });
+    expect(c.actions[0]).toMatchObject({
+      do: 'move',
+      target: {
+        kind: 'choose',
+        count: 1,
+        where: [{ kind: 'allegiance', of: 'ally' }, { kind: 'inZone', zones: ['field'] }],
+      },
+      to: { kind: 'goal' },
+    });
+    const effect = compileEffect(
+      'Choose one of your Pokémon on the field and move it to your goal point if it is open. Your turn ends.',
+    );
+    expect(effect.some((clause) => clause.trigger === 'usageRestriction')).toBe(true);
   });
 
   it('compiles Quick Care\'s P.C. move with a capacity guard', () => {
@@ -311,6 +323,36 @@ describe('plate choose-then-it', () => {
     expect(live[0]?.actions[0]?.do).toBe('select');
     expect(live[0]?.actions.some((action) => action.do === 'respin')).toBe(true);
     expect(live[0]?.actions.some((action) => action.do === 'optional')).toBe(false);
+  });
+
+  it('binds Bright Powder\'s opponent respin to the chosen figure, not an optional prompt', () => {
+    const clauses = compileEffect(
+      'Choose one of your Pokémon on the field. For this turn, you can make any battle opponent of this Pokémon spin again once.',
+    );
+    const live = clauses.filter((clause) => clause.trigger !== 'usageRestriction');
+    expect(live.some((clause) => clause.actions.some((action) => action.do === 'respin'))).toBe(true);
+    expect(live.some((clause) => clause.actions.some((action) => action.do === 'optional'))).toBe(false);
+  });
+
+  it('does not wrap No Guard\'s blue-attack respin in a plate-time optional', () => {
+    const clauses = compileEffect(
+      'Choose one of your Pokémon on the field or bench. For this turn, it can spin again once if it spins a Blue Attack.',
+    );
+    const live = clauses.filter((clause) => clause.trigger !== 'usageRestriction');
+    expect(live.some((clause) => clause.actions.some((action) => action.do === 'respin'))).toBe(true);
+    expect(live.every((clause) => clause.when.every((condition) => condition.kind !== 'spun'))).toBe(true);
+  });
+
+  it('compiles Full Heal as a cure of every special condition on the chosen figure', () => {
+    const clauses = compileEffect(
+      'Choose one of your Pokémon on the field. Remove all special conditions from that Pokémon. (This excludes Wait.)',
+    );
+    expect(clauses.some((clause) => clause.trigger === 'usageRestriction')).toBe(true);
+    expect(
+      clauses.some((clause) =>
+        clause.actions.some((action) => action.do === 'cureConditions' && action.conditions.length === 0),
+      ),
+    ).toBe(true);
   });
 
   it('binds X Attack\'s +30 to the chosen figure, not self', () => {
@@ -712,6 +754,30 @@ describe('refused-plate leftovers', () => {
       trigger: 'passive',
       actions: [{ do: 'grantMovement', grant: 'throughOthers' }],
     });
+    const waterArrow = compileEffect(
+      'It can MP move through your Pokémon, and through opposing Fire Pokémon and opposing Ground Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.',
+    );
+    expect(waterArrow).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        trigger: 'passive',
+        actions: [expect.objectContaining({
+          do: 'grantMovement',
+          grant: 'throughOthers',
+          over: expect.objectContaining({ kind: 'union' }),
+        })],
+      }),
+      expect.objectContaining({
+        trigger: 'passive',
+        when: [expect.objectContaining({ kind: 'entryPointsFilled' })],
+        actions: [expect.objectContaining({ do: 'modifyMp', delta: 1 })],
+      }),
+    ]));
+    expect(compileClause(
+      'This Pokémon can MP move through your Pokémon and opposing Psychic and Ghost Pokémon.',
+    )).toMatchObject({
+      trigger: 'passive',
+      actions: [{ do: 'grantMovement', grant: 'throughOthers', over: { kind: 'union' } }],
+    });
   });
 
   it('compiles the frequency-1 leftovers as real verbs', () => {
@@ -908,7 +974,7 @@ describe('refused-plate leftovers', () => {
       'This Pokémon\'s MP cannot be 2 or lower (except through the effects of markers).',
     ).actions[0]).toMatchObject({ do: 'floorMp', min: 3 });
     expect(compileClause('Undergoes branching Evolution.').actions[0]).toMatchObject({
-      do: 'unimplemented',
+      do: 'evolve',
     });
     expect(compileClause(
       'Before battle, allows one friendly Exeggcute to be chosen.',
@@ -1020,7 +1086,7 @@ describe('refused-plate leftovers', () => {
     ).actions[0]).toMatchObject({ do: 'prevent', what: 'namedEffect', named: 'Taunt' });
     expect(compileClause(
       'While this Pokémon is on the field, the start-of-turn Z-Move gauge increase of each player is boosted for each of that player\'s Pokémon that is affected by a special condition.',
-    ).actions[0]).toMatchObject({ do: 'unimplemented' });
+    ).actions[0]).toMatchObject({ do: 'boostZTurnGain', per: 'specialCondition' });
     expect(compileClause('The Dodges of opposing Pokémon adjacent to this Pokémon becomes Misses.').actions[0])
       .toMatchObject({ do: 'replaceSegment', replaces: 'Dodge' });
     expect(compileClause(
@@ -1037,7 +1103,7 @@ describe('refused-plate leftovers', () => {
     });
     expect(compileClause(
       'If this Pokémon cannot evolve, it is knocked out.',
-    ).when[0]).toMatchObject({ kind: 'unimplemented' });
+    ).when[0]).toMatchObject({ kind: 'canEvolve', value: false });
     expect(compileClause('If it does, the Exeggcute is knocked out.')).toMatchObject({
       when: [{ kind: 'precedingActionTaken' }],
       actions: [{ do: 'knockOut', target: { kind: 'all', where: [{ kind: 'named', names: ['Exeggcute'] }] } }],
@@ -1059,6 +1125,16 @@ describe('refused-plate leftovers', () => {
       && JSON.stringify(clause).includes('noBattle'),
     )).toBe(true);
     expect(snow.some((clause) => clause.actions.some((action) => action.do === 'grantMovement'))).toBe(true);
+    const iceBreaker = compileEffect(
+      'Before using this Pokémon, you can switch its position with an adjacent Ice Pokémon or frozen Pokémon. Your Ice-type Pokémon can move over this Pokémon when using an MP move.',
+    );
+    expect(iceBreaker.some((clause) =>
+      clause.actions.some((action) =>
+        action.do === 'grantMovement'
+        && action.grant === 'overOthers'
+        && action.over?.kind === 'self',
+      ),
+    )).toBe(true);
     expect(compileClause(
       'Pokémon that have battled this Pokémon become Grass type while they are on the field (but they stop being Grass type if they leave the field).',
     ).when.every((cond) => cond.kind !== 'unimplemented')).toBe(true);
@@ -1079,6 +1155,18 @@ describe('refused-plate leftovers', () => {
     expect(loyalty.some((clause) => clause.actions.some((action) =>
       action.do === 'optional' && action.then.some((inner) => inner.do === 'readyImmediately'),
     ))).toBe(true);
+    const distort = compileEffect(
+      'At the start of your turn, instead of an MP move, this Pokémon may move through an adjacent Pokémon to a point 1–2 steps away from that Pokémon. When it does, this Pokémon may change its form. If it changes its form, until the end of your next turn, any effects of its battle opponent\'s Ability that would increase damage decrease that damage instead. Your turn ends.',
+    );
+    expect(distort).toHaveLength(1);
+    expect(distort[0]?.trigger).toBe('startOfTurn');
+    expect(distort[0]?.source).toMatch(/instead of an MP move/i);
+    const distortThen = distort[0]?.actions[0];
+    expect(distortThen?.do).toBe('optional');
+    expect(
+      distortThen?.do === 'optional'
+      && distortThen.then.some((action) => action.do === 'endTurn'),
+    ).toBe(true);
   });
 
   it('does not leave the leftover Energy / Sphere / appliance plates as unimplemented', () => {

@@ -2,12 +2,19 @@ import type { PlayerId } from '../engine/index.js';
 import type { DeckDraft } from './model.js';
 
 export const DECK_SLOT_COUNT = 6;
-export const DECK_SLOTS_KEY = 'podu:deck-slots:v1';
-export const DEV_DRAFTS_KEY = 'podu:dev-drafts:v1';
+export const DECK_SLOTS_KEY = 'podu:deck-slots:v4';
+export const DECK_SLOTS_KEY_V3 = 'podu:deck-slots:v3';
+export const DECK_SLOTS_KEY_V2 = 'podu:deck-slots:v2';
+export const DECK_SLOTS_KEY_V1 = 'podu:deck-slots:v1';
+export const DEV_DRAFTS_KEY = 'podu:dev-drafts:v3';
+export const DEV_DRAFTS_KEY_V2 = 'podu:dev-drafts:v2';
+export const DEV_DRAFTS_KEY_V1 = 'podu:dev-drafts:v1';
+export const PRESETS_REV = 4;
 
 export interface StoredDeck {
   readonly figures: readonly number[];
   readonly plates: readonly number[];
+  readonly name?: string;
 }
 
 export type DeckSlot = StoredDeck | null;
@@ -21,8 +28,10 @@ export function emptyDeckSlots(): DeckSlot[] {
   return Array.from({ length: DECK_SLOT_COUNT }, () => null);
 }
 
-export function asStoredDeck(draft: DeckDraft): StoredDeck {
-  return { figures: [...draft.figures], plates: [...draft.plates] };
+export function asStoredDeck(draft: DeckDraft, name?: string): StoredDeck {
+  return name === undefined
+    ? { figures: [...draft.figures], plates: [...draft.plates] }
+    : { figures: [...draft.figures], plates: [...draft.plates], name };
 }
 
 function isIdList(value: unknown): value is number[] {
@@ -33,7 +42,12 @@ function parseStoredDeck(value: unknown): StoredDeck | null {
   if (value === null || typeof value !== 'object') return null;
   const row = value as { figures?: unknown; plates?: unknown };
   if (!isIdList(row.figures) || !isIdList(row.plates)) return null;
-  return { figures: row.figures, plates: row.plates };
+  const name = 'name' in row && typeof (row as { name?: unknown }).name === 'string'
+    ? (row as { name: string }).name
+    : undefined;
+  return name === undefined
+    ? { figures: row.figures, plates: row.plates }
+    : { figures: row.figures, plates: row.plates, name };
 }
 
 export function parseDeckSlots(raw: unknown): DeckSlot[] {

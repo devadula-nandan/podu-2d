@@ -23,13 +23,13 @@ async function occupancy(page: Page): Promise<string> {
   return parts.sort().join('|');
 }
 
-test('one live duel is shared across /2d, /dev, and /3d', async ({ page }) => {
+test('one live duel is shared across /3d and /dev', async ({ page }) => {
   test.setTimeout(90_000);
-  await page.goto('/2d?seed=2113', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2113', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
   await expect(page.getByTestId('seed-input')).toHaveValue('2113');
   await page.getByTestId('mode-vs-ai').check();
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel').or(page.getByTestId('handover'))).toBeVisible({
     timeout: 30_000,
@@ -47,7 +47,7 @@ test('one live duel is shared across /2d, /dev, and /3d', async ({ page }) => {
 
   const afterDeploy = await occupancy(page);
   expect(afterDeploy.length).toBeGreaterThan(0);
-  await expect(page).toHaveURL(/\/2d\?seed=2113/);
+  await expect(page).toHaveURL(/\/3d\?seed=2113/);
   await expect(page.getByTestId('play-seed')).toContainText('0x00000841');
 
   await page.getByRole('link', { name: 'Dev' }).click();
@@ -87,22 +87,15 @@ test('one live duel is shared across /2d, /dev, and /3d', async ({ page }) => {
   const afterMove = await occupancy(page);
   expect(afterMove).not.toBe(afterDeploy);
 
-  await page.getByTestId('dev-to-2d').click();
-  await expect(page).toHaveURL(/\/2d\?seed=2113/);
+  await page.getByTestId('dev-to-3d').click();
+  await expect(page).toHaveURL(/\/3d\?seed=2113/);
   await expect(page.getByTestId('play-duel').or(page.getByTestId('handover'))).toBeVisible({
     timeout: 15_000,
   });
   await confirmHandover(page);
   expect(await occupancy(page)).toBe(afterMove);
 
-  await page.getByRole('link', { name: /3D soon/i }).click();
-  await expect(page).toHaveURL(/\/3d\?seed=2113/);
-  await expect(page.getByTestId('soon-3d')).toBeVisible();
-  await expect(page.getByTestId('soon-seed')).toContainText('0x00000841');
-  await expect(page.getByTestId('soon-live')).toBeVisible();
-  await expect(page.getByRole('link', { name: /live 2D table/i })).toBeVisible();
-
-  await page.getByRole('link', { name: /Developer client/i }).click();
+  await page.getByRole('link', { name: 'Dev' }).click();
   await expect(page).toHaveURL(/\/dev\?seed=2113/);
   await expect(page.getByTestId('duel').or(page.getByTestId('handover'))).toBeVisible();
   expect(await occupancy(page)).toBe(afterMove);

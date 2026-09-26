@@ -1,0 +1,89 @@
+{
+  "figure_id": "slaking_127",
+  "display_name": "Slaking R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL"
+  ],
+  "icon": "127 - Slaking - Rarity_R.png",
+  "model": "res://assets/figures/models/slaking/slaking_r/127 - Slaking - Rarity_R.fbx",
+  "ability": {
+    "name": "Truant",
+    "note": "This Pokémon cannot attack in the same turn as it made an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Hammer Arm",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*This Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Rest",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Fake Sleep",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Allows this Pokémon to respin once."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 127,
+    "pokemon_id_raw": "289",
+    "national_dex": 289,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "1.2",
+    "evolves_from": [],
+    "evolves_to": [
+      "127 mega"
+    ],
+    "z_move_keys": [
+      "Breakneck Blitz"
+    ]
+  }
+}

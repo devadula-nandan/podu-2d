@@ -1,0 +1,86 @@
+{
+  "figure_id": "marshtomp_189",
+  "display_name": "Marshtomp R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER",
+    "GROUND"
+  ],
+  "icon": "189 - Marshtomp - Rarity_R.png",
+  "model": "res://assets/figures/models/marshtomp/marshtomp_r/189 - Marshtomp - Rarity_R.fbx",
+  "ability": {
+    "name": "Mud Coating",
+    "note": "When this Pokémon is on the field, if there are 3 or more Water-type Pokémon on the field, your Ground-type Pokémon with MP1 or lower get +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Mud Shot",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*Attach MP -1 marker to the battle opponent."
+    },
+    {
+      "name": "Muddy Water",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent and one neighbor Pokémon directly behind it are knocked 1 step back [CTRL NOTE][in a straight line] and gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 189,
+    "pokemon_id_raw": "259",
+    "national_dex": 259,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "3.0.10",
+    "evolves_from": [
+      188
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Hydro Vortex"
+    ]
+  }
+}

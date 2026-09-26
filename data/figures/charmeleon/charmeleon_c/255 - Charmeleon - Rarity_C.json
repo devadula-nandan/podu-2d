@@ -1,0 +1,82 @@
+{
+  "figure_id": "charmeleon_255",
+  "display_name": "Charmeleon C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "255 - Charmeleon - Rarity_C.png",
+  "model": "res://assets/figures/models/charmeleon/charmeleon_c/255 - Charmeleon - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Combustion",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Iron Tail",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 255,
+    "pokemon_id_raw": "005",
+    "national_dex": 5,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      256
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

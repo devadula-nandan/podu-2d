@@ -126,10 +126,13 @@ export function warmAiWorker(): void {
 }
 
 export function delayAfterAiCommand(kind: Command['kind']): number {
-  if (kind === 'initiateBattle') return 280;
-  if (kind === 'spin') return 850;
-  if (kind === 'useRespin' || kind === 'declineRespin') return 400;
-  return 0;
+  if (kind === 'mpMove' || kind === 'deploy') return 320;
+  if (kind === 'playPlate' || kind === 'abilityAction') return 220;
+  if (kind === 'initiateBattle') return 720;
+  if (kind === 'spin') return 2800;
+  if (kind === 'useRespin' || kind === 'declineRespin') return 280;
+  if (kind === 'declineBattle' || kind === 'declinePlate') return 160;
+  return 80;
 }
 
 export function sleep(ms: number): Promise<void> {

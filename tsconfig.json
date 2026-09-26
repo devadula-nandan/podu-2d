@@ -37,6 +37,7 @@
     "vitest.config.ts",
     "vite.config.ts",
     "playwright.config.ts",
-    "playwright.vite.config.ts"
+    "playwright.vite.config.ts",
+    ".storybook/**/*.ts"
   ]
 }

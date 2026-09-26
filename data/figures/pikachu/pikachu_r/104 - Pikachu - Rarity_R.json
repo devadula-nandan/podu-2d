@@ -1,0 +1,92 @@
+{
+  "figure_id": "pikachu_104",
+  "display_name": "Pikachu R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "104 - Pikachu - Rarity_R.png",
+  "model": "res://assets/figures/models/pikachu/pikachu_r/104 - Pikachu - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Thunder",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Thunder Wave",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Thunder Shock",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 104,
+    "pokemon_id_raw": "025 r",
+    "national_dex": 25,
+    "variant": "r",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "1.2",
+    "evolves_from": [],
+    "evolves_to": [
+      105
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "10,000,000 Volt Thunderbolt"
+    ]
+  }
+}

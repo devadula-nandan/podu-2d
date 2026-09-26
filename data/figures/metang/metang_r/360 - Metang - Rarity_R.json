@@ -1,0 +1,87 @@
+{
+  "figure_id": "metang_360",
+  "display_name": "Metang R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "PSYCHIC"
+  ],
+  "icon": "360 - Metang - Rarity_R.png",
+  "model": "res://assets/figures/models/metang/metang_r/360 - Metang - Rarity_R.fbx",
+  "ability": {
+    "name": "Magnetic Body",
+    "note": "At the start of your turn, if any of your other [CTRL FID 360][Metang] or [CTRL FID 11][Metagross] are within 2 steps, you may move this Pokémon to a point 2 steps away instead of an MP move. If you do, your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Bullet Punch",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Tractor Beam",
+      "type": "BLUE",
+      "size": 16,
+      "note": "Move one other Steel-type Pokémon within 2 steps of this Pokémon to a point not more than 1 or 2 steps away from this Pokémon."
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Tractor Beam",
+      "type": "BLUE",
+      "size": 16,
+      "note": "Move one other Steel-type Pokémon within 2 steps of this Pokémon to a point not more than 1 or 2 steps away from this Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 360,
+    "pokemon_id_raw": "375",
+    "national_dex": 375,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.3",
+    "last_update": "5.0.3",
+    "evolves_from": [],
+    "evolves_to": [
+      202
+    ],
+    "z_move_keys": [
+      "Shattered Psyche",
+      "Corkscrew Crash"
+    ]
+  }
+}

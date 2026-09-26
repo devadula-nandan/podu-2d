@@ -1,0 +1,84 @@
+{
+  "figure_id": "tyrunt_618",
+  "display_name": "Tyrunt UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "DRAGON"
+  ],
+  "icon": "618 - Tyrunt - Rarity_UC.png",
+  "model": "res://assets/figures/models/tyrunt/tyrunt_uc/618 - Tyrunt - Rarity_UC.fbx",
+  "ability": {
+    "name": "Emergent Evolution",
+    "note": "[CTRL QL Restored Pokémon][Restored Pokémon]. After this Pokémon battles, it may evolve if it's on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Big Bite",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If the battle opponent's type is Steel, this Pokémon takes no damage and the opponent is knocked out."
+    },
+    {
+      "name": "Roar",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 618,
+    "pokemon_id_raw": "696",
+    "national_dex": 696,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Continental Crush",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

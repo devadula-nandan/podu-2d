@@ -1,0 +1,75 @@
+{
+  "figure_id": "pichu_159",
+  "display_name": "Pichu UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "159 - Pichu - Rarity_UC.png",
+  "model": "res://assets/figures/models/pichu/pichu_uc/159 - Pichu - Rarity_UC.fbx",
+  "ability": {
+    "name": "Open Circuit",
+    "note": "Any Water-type Pokémon that battles this Pokémon will become Paralyzed.",
+    "effect_ids": [
+      2
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Thunder Shock",
+      "type": "WHITE",
+      "size": 60,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 32
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 159,
+    "pokemon_id_raw": "172",
+    "national_dex": 172,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "2.0",
+    "evolves_from": [
+      158
+    ],
+    "evolves_to": [
+      160
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

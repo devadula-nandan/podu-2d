@@ -1,0 +1,100 @@
+{
+  "ability": {
+    "effect_ids": [],
+    "name": "Tectonic Tunnel",
+    "note": "Your Steel-type and Ground-type Pokémon each deal +10 damage. This Pokémon cannot be surrounded by your opponent's Pokémon. At the start of your turn, instead of an MP move, this Pokémon may move through an adjacent Pokémon to a point 1-2 steps away from that Pokémon. Your turn ends."
+  },
+  "auto_fit_model": true,
+  "available_in_roster": false,
+  "display_name": "Mega Steelix UX",
+  "evolution_stage": 0,
+  "evolves_from_figure_ids": [],
+  "evolves_to_figure_ids": [],
+  "figure_id": "mega_steelix_539",
+  "icon": "res://data/figures/steelix/mega_steelix_ux/539 - Mega Steelix - Rarity_UX.png",
+  "is_mega_evolution": true,
+  "model": "res://assets/figures/models/steelix/mega_steelix_ux/539 - Mega Steelix - Rarity_UX.fbx",
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "movement_points": 2,
+  "rarity": "UX",
+  "source_data": {
+    "app_figure_id": 539,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7",
+    "max_movement": 2,
+    "national_dex": 208,
+    "pokemon_id_raw": "208 mega",
+    "rarity": "UX",
+    "source_evolves_from": [],
+    "source_evolves_to": [],
+    "variant": "mega",
+    "wheel_total": 96,
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Corkscrew Crash"
+    ]
+  },
+  "target_model_height": 0.9,
+  "types": [
+    "STEEL",
+    "GROUND"
+  ],
+  "wheel": [
+    {
+      "damage": 180,
+      "name": "Heavy Slam",
+      "note": "*If the battle opponent has MP3 or higher, this Pokémon takes no damage and the battle opponent is knocked out.",
+      "size": 40,
+      "source_damage_or_stars": "180",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "WHITE"
+    },
+    {
+      "damage": 0,
+      "name": "Miss",
+      "note": "",
+      "size": 4,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "RED"
+    },
+    {
+      "damage": 0,
+      "name": "Rock Polish",
+      "note": "Until the end of your next turn, the White Attacks of this Pokémon become Gold Attacks.",
+      "size": 24,
+      "source_damage_or_stars": "",
+      "source_effect_ids": [],
+      "stars": 0,
+      "type": "BLUE"
+    },
+    {
+      "damage": 0,
+      "name": "Land Burst",
+      "note": "The battle opponent and one neighbor Pokémon directly behind it are knocked 1 step back [CTRL NOTE][in a straight line] and gain Wait.",
+      "size": 28,
+      "source_damage_or_stars": "☆☆",
+      "source_effect_ids": [
+        7.0
+      ],
+      "stars": 2,
+      "type": "PURPLE"
+    }
+  ]
+}

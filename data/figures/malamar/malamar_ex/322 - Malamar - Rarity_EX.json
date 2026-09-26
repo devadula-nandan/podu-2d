@@ -1,0 +1,84 @@
+{
+  "figure_id": "malamar_322",
+  "display_name": "Malamar EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "PSYCHIC"
+  ],
+  "icon": "322 - Malamar - Rarity_EX.png",
+  "model": "res://assets/figures/models/malamar/malamar_ex/322 - Malamar - Rarity_EX.fbx",
+  "ability": {
+    "name": "Enigmatic Signal",
+    "note": "For effects that move this Pokémon's battle opponent, you decide whether it is used, which Pokémon is targeted, and where the targeted Pokémon will be moved to.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Psycho Cut",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 100,
+      "source_damage_or_stars": "100+",
+      "note": "Spin again - if Psycho Cut is spun, it deals +50 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Mass Hypnosis",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent and all Pokémon of the same species as the battle opponent fall asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 322,
+    "pokemon_id_raw": "687",
+    "national_dex": 687,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      323
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Shattered Psyche"
+    ]
+  }
+}

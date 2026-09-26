@@ -1,0 +1,83 @@
+{
+  "figure_id": "tornadus_incarnate_forme_579",
+  "display_name": "Tornadus Incarnate Forme EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FLYING"
+  ],
+  "icon": "579 - Tornadus Incarnate Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/tornadus_incarnate_forme/tornadus_incarnate_forme_ex/579 - Tornadus Incarnate Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Whims of the Wind",
+    "note": "This Pokémon cannot win you the duel by moving to the goal point but can MP move through other Pokémon on the field. While this Pokémon is on the field, burned Pokémon have MP +1 to a maximum MP of 4.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Heat Wave",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*All opposing Pokémon and your Flying Pokémon on the field spin. Those that spin Gold Attacks become burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Elusive Master",
+      "type": "BLUE",
+      "size": 24,
+      "note": "You may move this Pokémon to the bench. When you do, change this Pokémon's form, if possible."
+    },
+    {
+      "name": "Taunt",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Until the end of your next turn, if the Pokémon hit by this Attack spins a Purple Attack or Blue Attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 579,
+    "pokemon_id_raw": "641",
+    "national_dex": 641,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.11",
+    "last_update": "7.0.11",
+    "evolves_from": [
+      578
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike"
+    ]
+  }
+}

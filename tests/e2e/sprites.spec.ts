@@ -11,13 +11,15 @@ async function confirmHandover(page: Page): Promise<void> {
   }
 }
 
-test('/2d?seed=2 starter decks show species sprites after deploy', async ({ page }) => {
+test('/3d?seed=2 starter decks show species sprites after deploy', async ({ page }) => {
   test.setTimeout(90_000);
-  await page.goto('/2d?seed=2114', { waitUntil: 'domcontentloaded' });
+  await page.goto('/3d?seed=2114', { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
+  await page.getByTestId('more-menu').click();
   await expect(page.getByTestId('sprite-attribution')).toContainText('not open-source');
+  await page.getByTestId('more-menu').click();
   await page.getByTestId('mode-vs-ai').check();
-  await page.getByTestId('use-starters').click();
+  await page.getByTestId('deck-slot-load-0').click();
   await page.getByTestId('start-vs-ai').click();
   await expect(page.getByTestId('play-duel').or(page.getByTestId('handover'))).toBeVisible({
     timeout: 30_000,

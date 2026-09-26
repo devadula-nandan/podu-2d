@@ -1,0 +1,1208 @@
+/* /dev workstation. Scoped to .dev-shell so /3d stays a player table. */
+
+.dev-shell {
+  --void: #0b0907;
+  --panel: #14110e;
+  --rail: #1a1612;
+  --well: #0e0c0a;
+  --paper: #efe6d8;
+  --brass: #e8a860;
+  --ember: #c4783a;
+  --dim: #8f8272;
+  --line: #e8a8602e;
+  --ink: #0b0907;
+  --felt: #14110e;
+  --flood: #1a1612;
+  --ivory: #efe6d8;
+  --steel: #8f8272;
+  --amber: #e8a860;
+  --accent-hot: #c4783a;
+  --you: #2f6bff;
+  --rival: #e23b3b;
+  --seat-a: var(--you);
+  --seat-b: var(--rival);
+  --felt-ink: #0b0907;
+  --felt-mid: #1a1612;
+  --radius: 4px;
+  --ctrl-h: 2rem;
+  --t-1: 0.625rem;
+  --t-2: 0.6875rem;
+  --t-3: 0.75rem;
+  --t-4: 0.8125rem;
+  --t-5: 0.9375rem;
+  --display: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, monospace;
+  --body: 'Source Sans 3', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+  --score: 'IBM Plex Mono', ui-monospace, monospace;
+  --shell-bg: #0b0907;
+  display: grid;
+  place-items: stretch;
+  width: 100dvw;
+  height: 100dvh;
+  max-width: 100dvw;
+  max-height: 100dvh;
+  overflow: hidden;
+  background: var(--void);
+  color: var(--paper);
+  font-family: var(--body);
+  font-size: var(--t-4);
+  line-height: 1.35;
+  font-synthesis: none;
+  font-kerning: normal;
+  font-variant-ligatures: none;
+  font-feature-settings: 'liga' 0, 'clig' 0, 'calt' 0, 'dlig' 0, 'kern' 1;
+  scrollbar-width: thin;
+  scrollbar-color: #c4783a #0b0907;
+}
+
+[data-theme='light'] .dev-shell {
+  --void: #f4eee4;
+  --panel: #fffaf2;
+  --rail: #efe6d8;
+  --well: #e7ddd0;
+  --paper: #1a1410;
+  --brass: #c4783a;
+  --ember: #a35e28;
+  --dim: #5c4a3a;
+  --line: #8c582833;
+  --ink: #fffaf2;
+  --felt: #fffaf2;
+  --flood: #efe6d8;
+  --ivory: #1a1410;
+  --steel: #5c4a3a;
+  --amber: #c4783a;
+  --accent-hot: #c4783a;
+  --you: #2f6bff;
+  --rival: #c62828;
+  --seat-a: var(--you);
+  --seat-b: var(--rival);
+  --felt-ink: #fffaf2;
+  --felt-mid: #efe6d8;
+  --shell-bg: #f4eee4;
+  scrollbar-color: #c4783a #efe6d8;
+}
+
+.dev-shell .dev-column {
+  display: grid;
+  grid-template-areas: 'chrome' 'workspace';
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+  width: 100dvw;
+  height: 100dvh;
+  max-width: 100dvw;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.dev-shell .dev-banner {
+  grid-area: chrome;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  height: var(--ctrl-h);
+  min-height: var(--ctrl-h);
+  max-height: var(--ctrl-h);
+  padding: 0 0.7rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--rail);
+  z-index: 20;
+}
+
+.dev-shell .dev-banner-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.dev-shell .dev-banner-mark {
+  display: grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 1.35rem;
+  border: 1px solid var(--brass);
+  color: var(--brass);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.dev-shell .dev-banner-titles {
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+
+.dev-shell .dev-banner-kicker {
+  margin: 0;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dev-shell .dev-title {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--t-3);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-synthesis: none;
+}
+
+.dev-shell .coverage {
+  min-width: 0;
+}
+
+.dev-shell .dev-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dev-shell .dev-banner-actions a,
+.dev-shell .dev-banner-actions .more > summary,
+.dev-shell .dev-theme-toggle {
+  height: calc(var(--ctrl-h) - 0.4rem);
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dev-shell .app {
+  grid-area: workspace;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.dev-shell .session-seed,
+.dev-shell .deck-atmosphere {
+  display: none;
+}
+
+.dev-shell .boot {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+/* ---- Idle: deck / launch --------------------------------------------- */
+
+.dev-shell .deck-builder {
+  display: grid;
+  grid-template-areas:
+    'rail catalog'
+    'launch launch';
+  grid-template-columns: 22rem minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--void);
+}
+
+.dev-shell .deck-rail,
+.dev-shell .deck-bench {
+  grid-area: rail;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0.55rem 0.6rem 0.45rem 0.7rem;
+  background: var(--rail);
+  border-right: 1px solid var(--line);
+}
+
+.dev-shell .deck-bench-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.35rem;
+  height: var(--ctrl-h);
+  margin-bottom: 0.45rem;
+}
+
+.dev-shell .deck-seat-tabs,
+.dev-shell .deck-kind-tabs,
+.dev-shell .deck-decks-open {
+  height: var(--ctrl-h);
+  min-height: var(--ctrl-h);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--void);
+}
+
+.dev-shell .deck-seat-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / 3;
+}
+
+.dev-shell .deck-decks-open {
+  grid-column: 3;
+  width: auto;
+  min-width: 4.5rem;
+  padding: 0 0.7rem;
+  color: var(--brass);
+  font-family: var(--mono);
+  font-size: var(--t-2);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dev-shell .deck-seat-tab,
+.dev-shell .deck-kind-tab {
+  height: 100%;
+  padding: 0 0.55rem;
+  font-family: var(--mono);
+  font-size: var(--t-2);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-synthesis: none;
+}
+
+.dev-shell .deck-benches {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.45rem;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dev-shell .deck-bench-inner {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  gap: 0.35rem;
+  min-height: 0;
+  padding: 0.4rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.dev-shell .deck-bench-inner[data-active='1'] {
+  border-color: var(--brass);
+}
+
+.dev-shell .deck-bench-inner[data-seat='0'][data-active='1'] {
+  box-shadow: inset 2px 0 0 var(--you);
+}
+
+.dev-shell .deck-bench-inner[data-seat='1'][data-active='1'] {
+  box-shadow: inset 2px 0 0 var(--rival);
+}
+
+.dev-shell .deck-bench-head {
+  appearance: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: var(--ctrl-h);
+  margin: 0;
+  padding: 0 0.15rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dev-shell .deck-bench-label,
+.dev-shell .deck-bench-meta {
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.dev-shell .deck-bench-label span {
+  color: var(--brass);
+}
+
+.dev-shell .bench-pads {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.3rem;
+  min-height: 0;
+  overflow: auto;
+}
+
+.dev-shell .bench-slot,
+.dev-shell .deck-builder .fig-card.bench-slot {
+  min-height: 0;
+  padding: 0.28rem;
+  border-radius: var(--radius);
+  background: var(--void);
+}
+
+.dev-shell .bench-slot .fig-card-art {
+  aspect-ratio: 1;
+  padding: 0.15rem;
+}
+
+.dev-shell .bench-slot .fig-card-top {
+  gap: 0.15rem;
+}
+
+.dev-shell .bench-slot .name-marquee-text {
+  font-size: var(--t-2);
+}
+
+.dev-shell .deck-plate-meter {
+  border-top: 1px solid var(--line);
+  padding-top: 0.3rem;
+}
+
+.dev-shell .plate-chip-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dev-shell .deck-builder .plate-chip {
+  height: calc(var(--ctrl-h) - 0.45rem);
+  border-radius: var(--radius);
+}
+
+.dev-shell .deck-main,
+.dev-shell .deck-catalog,
+.dev-shell .deck-catalog-desktop {
+  grid-area: catalog;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0.55rem 0.75rem 0.35rem;
+  background: var(--void);
+}
+
+.dev-shell .deck-catalog-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0 0 0.45rem;
+}
+
+.dev-shell .deck-catalog-toolbar-row,
+.dev-shell .deck-catalog-shared,
+.dev-shell .deck-catalog-extra {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.dev-shell .deck-catalog-toolbar-row label,
+.dev-shell .deck-catalog-shared label,
+.dev-shell .deck-catalog-extra label,
+.dev-shell .filters label {
+  height: var(--ctrl-h);
+  font-family: var(--mono);
+  font-size: var(--t-2);
+}
+
+.dev-shell .deck-catalog-shared input:not([type='checkbox']),
+.dev-shell .listbox-btn,
+.dev-shell input:not([type='checkbox']):not([type='radio']):not([type='range']),
+.dev-shell select {
+  height: var(--ctrl-h);
+  border-radius: var(--radius);
+}
+
+.dev-shell .catalog {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  align-items: start;
+  align-content: start;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 0;
+  padding: 0.1rem 0.15rem 0.75rem;
+}
+
+.dev-shell .catalog > .card,
+.dev-shell .catalog > .fig-card,
+.dev-shell .catalog > .plate-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  padding: 0.45rem;
+  border-radius: var(--radius);
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.dev-shell .catalog .fig-card-art {
+  aspect-ratio: 1;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.4rem;
+  border-radius: var(--radius);
+}
+
+.dev-shell .catalog .fig-wheel-open {
+  position: relative;
+  z-index: 2;
+  height: 1.25rem;
+  padding: 0 0.4rem;
+  overflow: visible;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--void);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dev-shell .catalog .card-ability-clip {
+  pointer-events: none;
+}
+
+.dev-shell .catalog .card-ability-block:hover .card-ability-clip,
+.dev-shell .catalog .card-ability-block:focus-within .card-ability-clip,
+.dev-shell .catalog .card-ability-block[data-engaged='1'] .card-ability-clip {
+  pointer-events: auto;
+}
+
+.dev-shell .deck-foot {
+  --deck-ctrl-h: var(--ctrl-h);
+  grid-area: launch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(var(--ctrl-h) + 0.7rem);
+  padding: 0.35rem 0.75rem;
+  background: var(--rail);
+  border-top: 1px solid var(--line);
+}
+
+.dev-shell .deck-foot-row,
+.dev-shell .deck-launch,
+.dev-shell .deck-seed-field,
+.dev-shell .deck-foot .mode-set,
+.dev-shell .deck-diff {
+  height: var(--ctrl-h);
+  min-height: var(--ctrl-h);
+}
+
+.dev-shell .deck-start {
+  height: var(--ctrl-h);
+  min-height: var(--ctrl-h);
+  min-width: 9.5rem;
+  margin-left: auto;
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: var(--t-3);
+  letter-spacing: 0.04em;
+}
+
+.dev-shell .deck-catalog-open {
+  display: none;
+}
+
+.dev-shell .deck-modal {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--void) 62%, transparent);
+}
+
+.dev-shell .deck-modal-panel,
+.dev-shell .deck-slots-panel,
+.dev-shell .fig-wheel-panel,
+.dev-shell .bench-detail-panel {
+  border-radius: var(--radius);
+  background: var(--panel);
+  border: 1px solid var(--brass);
+}
+
+.dev-shell .deck-slots-panel {
+  width: min(36rem, calc(100% - 2rem));
+  height: auto;
+  max-height: min(78dvh, 36rem);
+}
+
+.dev-shell .primary {
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ---- In match: debugger docks ---------------------------------------- */
+
+.dev-shell .duel {
+  display: grid;
+  grid-template-areas:
+    'chrome chrome chrome'
+    'inspect mid right'
+    'scrub mid right';
+  grid-template-columns: minmax(16.5rem, 19rem) minmax(12rem, 1fr) var(--dev-right-rail, 27rem);
+  grid-template-rows: auto minmax(0, 1fr) minmax(9rem, 13rem);
+  gap: 0;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--void);
+}
+
+.dev-shell .duel[data-right-dragging='1'] {
+  user-select: none;
+  cursor: col-resize;
+}
+
+.dev-shell .duel-chrome {
+  grid-area: chrome;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: var(--ctrl-h);
+  padding: 0 0.45rem;
+  background: var(--rail);
+  border-bottom: 1px solid var(--line);
+}
+
+.dev-shell .duel .hud {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.dev-shell .status-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.55rem 0.75rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.dev-shell .timer {
+  font-family: var(--mono);
+  font-size: var(--t-5);
+}
+
+.dev-shell .dev-tabs {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0;
+  padding: 0;
+  height: var(--ctrl-h);
+}
+
+.dev-shell .dev-tab,
+.dev-shell .dev-tabs .ghost {
+  flex: 0 0 auto;
+  height: var(--ctrl-h);
+  padding: 0 0.55rem;
+  border: 1px solid var(--line);
+  border-left-width: 0;
+  border-radius: 0;
+  background: var(--void);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-synthesis: none;
+}
+
+.dev-shell .dev-tab:first-child {
+  border-left-width: 1px;
+}
+
+.dev-shell .dev-tab[aria-selected='true'],
+.dev-shell .dev-tabs .ghost[data-on='1'] {
+  color: var(--void);
+  background: var(--brass);
+  border-color: var(--brass);
+}
+
+.dev-shell .dev-dock {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.dev-shell .dev-dock[data-dock='inspector'] {
+  grid-area: inspect;
+}
+
+.dev-shell .dev-dock[data-dock='inspector']:has([data-side='you']) {
+  box-shadow: inset 3px 0 0 var(--you);
+}
+
+.dev-shell .dev-dock[data-dock='inspector']:has([data-side='rival']) {
+  box-shadow: inset 3px 0 0 var(--rival);
+}
+
+.dev-shell .dev-dock[data-dock='scrub'] {
+  grid-area: scrub;
+}
+
+.dev-shell .dev-right-rail {
+  grid-area: right;
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dev-shell .dev-right-stack {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(9rem, 13rem);
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dev-shell .dev-right-splitter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  width: 0.55rem;
+  margin-left: -0.2rem;
+  cursor: col-resize;
+  touch-action: none;
+  background: transparent;
+}
+
+.dev-shell .dev-right-splitter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.2rem;
+  width: 1px;
+  background: var(--line);
+}
+
+.dev-shell .dev-right-splitter:hover::after,
+.dev-shell .dev-right-splitter:focus-visible::after,
+.dev-shell .duel[data-right-dragging='1'] .dev-right-splitter::after {
+  width: 2px;
+  background: var(--brass);
+}
+
+.dev-shell .dev-dock[data-dock='machine'] .dev-dock-body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-shell .dev-dock[data-dock='machine'] .phase-machine-viewport {
+  min-height: 12rem;
+  height: 100%;
+}
+
+.dev-shell .dev-dock-title {
+  display: flex;
+  align-items: center;
+  height: calc(var(--ctrl-h) - 0.15rem);
+  padding: 0 0.55rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--brass);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dev-shell .dev-dock-title::before {
+  content: '';
+  width: 0.38rem;
+  height: 0.38rem;
+  margin-right: 0.4rem;
+  background: var(--dim);
+  box-shadow: none;
+}
+
+.dev-shell .dev-dock[data-focus='1'] .dev-dock-title::before {
+  background: var(--brass);
+  box-shadow: 0 0 0.45rem var(--brass);
+}
+
+.dev-shell .dev-dock-body {
+  min-height: 0;
+  overflow: auto;
+  padding: 0.4rem 0.5rem 0.55rem;
+}
+
+.dev-shell .dev-dock .hud-actions {
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.dev-shell .dev-dock[data-dock='inspector'] .kicker:first-child,
+.dev-shell .dev-dock[data-dock='scrub'] .kicker:first-child,
+.dev-shell .dev-dock[data-dock='machine'] .kicker:first-child {
+  display: none;
+}
+
+.dev-shell .dev-dock-body .panel,
+.dev-shell .dev-dock-body .scrubber,
+.dev-shell .dev-dock-body .phase-machine {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.dev-shell .dev-dock-body .phase-machine {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.dev-shell .debug-drawer {
+  display: contents;
+}
+
+.dev-shell .duel .trays[data-side='rival'] {
+  grid-area: rival;
+  max-height: 8.25rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--rail);
+}
+
+.dev-shell .duel .trays[data-side='you'] {
+  grid-area: you;
+  max-height: 8.25rem;
+  border-top: 1px solid var(--line);
+  background: var(--rail);
+}
+
+.dev-shell .duel .trays {
+  flex: 0 0 auto;
+  max-height: 8.25rem;
+  overflow: auto;
+}
+
+.dev-shell .tray-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+  padding: 0.12rem 0.4rem 0.16rem;
+}
+
+.dev-shell .tray-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-synthesis: none;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+  color: var(--dim);
+}
+
+.dev-shell .trays[data-side='rival'] .tray-head {
+  justify-content: flex-end;
+}
+
+.dev-shell .tray-seat {
+  font-weight: 600;
+  color: var(--paper);
+}
+
+.dev-shell .trays[data-side='you'] .tray-seat {
+  color: var(--you);
+}
+
+.dev-shell .trays[data-side='rival'] .tray-seat {
+  color: var(--rival);
+}
+
+.dev-shell .trays[data-side='you'] .tray-strip {
+  box-shadow: inset 3px 0 0 var(--you);
+}
+
+.dev-shell .trays[data-side='rival'] .tray-strip {
+  box-shadow: inset 3px 0 0 var(--rival);
+}
+
+.dev-shell .tray-label {
+  margin: 0 0 0.08rem;
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-synthesis: none;
+  color: var(--dim);
+}
+
+.dev-shell .tray-rail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.35rem 0.5rem;
+  min-width: 0;
+  overflow: visible;
+}
+
+.dev-shell .trays[data-side='rival'] .tray-rail {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.dev-shell .tray-figures,
+.dev-shell .tray-pc,
+.dev-shell .tray-excluded,
+.dev-shell .tray-ultra {
+  flex: 0 0 auto;
+}
+
+.dev-shell .tray-end,
+.dev-shell .tray-hidden,
+.dev-shell .tray-abilities,
+.dev-shell .tray-plates {
+  max-width: none;
+}
+
+.dev-shell .tray-end {
+  flex: 1 1 8rem;
+  min-width: min(100%, 7.5rem);
+  align-self: stretch;
+}
+
+.dev-shell .trays[data-side='rival'] .tray-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dev-shell .tray-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.22rem;
+}
+
+.dev-shell .tray-slot,
+.dev-shell .dome {
+  appearance: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.08rem;
+  flex: 0 0 auto;
+  width: 2.85rem;
+  min-height: 4.05rem;
+  padding: 0.12rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--void);
+  color: var(--paper);
+  text-align: left;
+  font-synthesis: none;
+}
+
+.dev-shell .tray-slot.is-empty,
+.dev-shell .dome.is-empty {
+  opacity: 0.38;
+  min-height: 4.05rem;
+}
+
+.dev-shell .tray-slot[data-on='true'],
+.dev-shell .dome[data-on='true'] {
+  border-color: var(--brass);
+  box-shadow: inset 0 0 0 1px var(--brass);
+}
+
+.dev-shell .tray-slot-art {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 1.95rem;
+  overflow: hidden;
+  border-radius: 0.28rem;
+  background: #00000059;
+}
+
+.dev-shell .tray-slot-art .figure-sprite,
+.dev-shell .tray-slot .figure-sprite,
+.dev-shell .dome .figure-sprite {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 1.95rem;
+  object-fit: contain;
+}
+
+.dev-shell .tray-slot-name,
+.dev-shell .tray-slot strong,
+.dev-shell .dome strong {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--body);
+  font-size: var(--t-1);
+  font-weight: 600;
+  font-synthesis: none;
+  line-height: 1.1;
+}
+
+.dev-shell .tray-slot-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.dev-shell .tray-slot .chip-mp,
+.dev-shell .dome-mp {
+  border-radius: 0.2rem;
+  border: 1px solid #d7e6f0;
+  background: #2f6fbf;
+  color: #f4f7fb;
+  font-size: 0.48rem;
+  font-weight: 700;
+  padding: 0.02rem 0.16rem;
+}
+
+.dev-shell .tray-slot .chip-rarity {
+  position: static;
+  padding: 0.02rem 0.14rem;
+  font-size: 0.48rem;
+}
+
+.dev-shell .duel .plate-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.18rem;
+  max-width: none;
+}
+
+.dev-shell .duel .plate-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  height: 1.35rem;
+  min-width: 4.4rem;
+  max-width: 7.5rem;
+  padding: 0 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--void);
+  font-synthesis: none;
+}
+
+.dev-shell .trays[data-side='you'] .plate-chip {
+  border-color: color-mix(in srgb, var(--you) 45%, var(--line));
+  background: color-mix(in srgb, var(--you) 12%, var(--void));
+}
+
+.dev-shell .trays[data-side='rival'] .plate-chip {
+  border-color: color-mix(in srgb, var(--rival) 45%, var(--line));
+  background: color-mix(in srgb, var(--rival) 12%, var(--void));
+}
+
+.dev-shell .duel .plate-chip[data-used='1'] {
+  opacity: 0.45;
+}
+
+.dev-shell .duel .plate-chip strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--t-1);
+  font-weight: 600;
+}
+
+.dev-shell .catalog > .card {
+  appearance: none;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dev-shell .duel-field {
+  grid-area: stage;
+  flex: 1 1 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  container-type: normal;
+  background:
+    linear-gradient(180deg, transparent 0, #e8a8600d 0, transparent 2px),
+    radial-gradient(circle at 50% 46%, #1a160f, var(--well));
+  box-shadow: inset 0 0 0 1px #e8a8601a;
+}
+
+.dev-shell .duel-field[data-focus='1'] {
+  box-shadow: inset 0 0 0 1px var(--brass);
+}
+
+.dev-shell .board-wrap,
+.dev-shell .duel .board-wrap {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border: 1px solid var(--brass);
+  border-radius: var(--radius);
+  background: radial-gradient(circle at 50% 46%, #243044, #141c28);
+}
+
+.dev-shell .phase-machine-zoom {
+  display: flex;
+  align-items: center;
+  gap: 0.28rem;
+  flex: 0 0 auto;
+  margin: 0.05rem 0 0.28rem;
+}
+
+.dev-shell .phase-machine-zoom .ghost {
+  height: 1.35rem;
+  min-width: 1.35rem;
+  padding: 0 0.35rem;
+  font-family: var(--mono);
+  font-size: var(--t-1);
+}
+
+.dev-shell .phase-machine-zoom input[type='range'] {
+  width: 5.5rem;
+  accent-color: var(--brass);
+}
+
+.dev-shell .phase-machine-zoom-value {
+  min-width: 2.4rem;
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  color: var(--dim);
+}
+
+.dev-shell .phase-machine-viewport {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--felt-ink);
+}
+
+.dev-shell .duel-mid {
+  grid-area: mid;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dev-shell .command-log {
+  max-height: none;
+}
+
+.dev-shell .toast {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  border-radius: var(--radius);
+}
+
+.dev-shell .handover-overlay {
+  z-index: 40;
+}
+
+.dev-shell .action {
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: var(--t-2);
+  font-weight: 600;
+  backdrop-filter: none;
+}
+
+.dev-shell .panel,
+.dev-shell .scrubber {
+  border-radius: var(--radius);
+  backdrop-filter: none;
+}
+
+@media (max-width: 820px) {
+  .dev-shell .deck-builder {
+    grid-template-areas:
+      'rail catalog'
+      'launch launch';
+    grid-template-columns: 18rem minmax(0, 1fr);
+  }
+
+  .dev-shell .deck-catalog-desktop,
+  .dev-shell .deck-main {
+    display: grid;
+  }
+
+  .dev-shell .catalog {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dev-shell .duel {
+    grid-template-areas:
+      'chrome chrome chrome'
+      'inspect mid right'
+      'scrub mid right';
+    grid-template-columns: minmax(12rem, 16rem) minmax(12rem, 1fr) var(--dev-right-rail, 24rem);
+  }
+
+  .dev-shell .duel-mid {
+    display: grid;
+  }
+
+  .dev-shell .debug-drawer {
+    display: contents;
+  }
+}

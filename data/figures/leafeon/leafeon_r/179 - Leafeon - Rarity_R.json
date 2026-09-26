@@ -1,0 +1,82 @@
+{
+  "figure_id": "leafeon_179",
+  "display_name": "Leafeon R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "179 - Leafeon - Rarity_R.png",
+  "model": "res://assets/figures/models/leafeon/leafeon_r/179 - Leafeon - Rarity_R.fbx",
+  "ability": {
+    "name": "Thicket Slip",
+    "note": "This Pokémon can MP Move past Grass-type Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Razor Leaf",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Grass Whistle",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 179,
+    "pokemon_id_raw": "470",
+    "national_dex": 470,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      180
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

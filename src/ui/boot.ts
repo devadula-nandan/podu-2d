@@ -1,15 +1,52 @@
-import abilitiesJson from '../../data/content/abilities.json';
-import figuresJson from '../../data/content/figures.json';
-import platesJson from '../../data/content/plates.json';
-import { abilitiesSchema, figuresSchema, parseOrThrow, platesSchema } from '../content/schema.js';
-import type { Figure, Plate } from '../content/schema.js';
+import type { Ability, Figure, Plate } from '../content/schema.js';
 import { contentFigureId, contentPlateId, createEngine, isFormOnlyFigure } from '../engine/index.js';
 import type { Engine } from '../engine/index.js';
 
-export function bootEngine(): Engine {
-  const figures = parseOrThrow('figure', figuresSchema, figuresJson);
-  const plates = parseOrThrow('plate', platesSchema, platesJson);
-  const abilities = parseOrThrow('ability', abilitiesSchema, abilitiesJson);
+function yieldToMain(): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof requestAnimationFrame === 'function') {
+      requestAnimationFrame(() => {
+        setTimeout(resolve, 0);
+      });
+      return;
+    }
+    setTimeout(resolve, 0);
+  });
+}
+
+async function bootEngineOnce(): Promise<Engine> {
+  await yieldToMain();
+  const [figuresMod, platesMod, abilitiesMod] = await Promise.all([
+    import('../../data/content/figures.json'),
+    import('../../data/content/plates.json'),
+    import('../../data/content/abilities.json'),
+  ]);
+  await yieldToMain();
+  const figures = figuresMod.default as Figure[];
+  const plates = platesMod.default as Plate[];
+  const abilities = abilitiesMod.default as Ability[];
+  await yieldToMain();
+  return createEngine({ figures, plates, abilities });
+}
+
+let bootPromise: Promise<Engine> | null = null;
+
+/**
+ * Load content and build the engine without blocking first paint.
+ * Shipped JSON is already validated by the content pipeline / tests — skip Zod
+ * here so refresh isn't stuck on a 1.3MB schema walk.
+ */
+export function bootEngine(): Promise<Engine> {
+  if (bootPromise === null) bootPromise = bootEngineOnce();
+  return bootPromise;
+}
+
+/** Sync boot for tests that already have content in memory. */
+export function bootEngineSync(
+  figures: readonly Figure[],
+  plates: readonly Plate[],
+  abilities: readonly Ability[],
+): Engine {
   return createEngine({ figures, plates, abilities });
 }
 

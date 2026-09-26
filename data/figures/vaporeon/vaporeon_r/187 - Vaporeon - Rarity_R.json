@@ -1,0 +1,82 @@
+{
+  "figure_id": "vaporeon_187",
+  "display_name": "Vaporeon R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER"
+  ],
+  "icon": "187 - Vaporeon - Rarity_R.png",
+  "model": "res://assets/figures/models/vaporeon/vaporeon_r/187 - Vaporeon - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Water Slide",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Surf",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 187,
+    "pokemon_id_raw": "134",
+    "national_dex": 134,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "1.4",
+    "evolves_from": [],
+    "evolves_to": [
+      188
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

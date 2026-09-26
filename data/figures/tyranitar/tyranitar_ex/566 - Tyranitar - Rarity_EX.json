@@ -1,0 +1,84 @@
+{
+  "figure_id": "tyranitar_566",
+  "display_name": "Tyranitar EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "DARK"
+  ],
+  "icon": "566 - Tyranitar - Rarity_EX.png",
+  "model": "res://assets/figures/models/tyranitar/tyranitar_ex/566 - Tyranitar - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Taunt",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Until the end of your next turn, if the Pokémon hit by this Attack spins a Purple Attack or Blue Attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Rock Slide",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*All neighbor Pokémon spin - those that miss are knocked out."
+    },
+    {
+      "name": "Mountain Topple",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 170,
+      "source_damage_or_stars": "170",
+      "note": "*All other Pokémon on the field spin. Those that spin a Blue Attack are knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 566,
+    "pokemon_id_raw": "248 ex",
+    "national_dex": 248,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      567
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Continental Crush"
+    ]
+  }
+}

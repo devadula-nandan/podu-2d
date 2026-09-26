@@ -1,0 +1,101 @@
+{
+  "figure_id": "reshiram_261",
+  "display_name": "Reshiram EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON",
+    "FIRE"
+  ],
+  "icon": "261 - Reshiram - Rarity_EX.png",
+  "model": "res://assets/figures/models/reshiram/reshiram_ex/261 - Reshiram - Rarity_EX.fbx",
+  "ability": {
+    "name": "Light Stone",
+    "note": "This Pokémon gains Wait 9 at the start of the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Blue Flare",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Fly",
+      "type": "PURPLE",
+      "size": 12,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands 1-2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fusion Flare",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If this Pokémon is not affected by a special condition, and if any of your other [CTRL QL Fusion Bolt][Pokémon] on the field has the Fusion Bolt Attack, exclude Pokémon knocked out by this Attack from the duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 261,
+    "pokemon_id_raw": "643",
+    "national_dex": 643,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.3",
+    "last_update": "6.2.3",
+    "evolves_from": [],
+    "evolves_to": [
+      262
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Inferno Overdrive",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "figure_id": "shiinotic_453",
+  "display_name": "Shiinotic R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "GRASS",
+    "FAIRY"
+  ],
+  "icon": "453 - Shiinotic - Rarity_R.png",
+  "model": "res://assets/figures/models/shiinotic/shiinotic_r/453 - Shiinotic - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dazzling Gleam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*Opposing Pokémon adjacent to this Pokémon spin, and if they spin a Gold Attack then they are knocked out."
+    },
+    {
+      "name": "Spore",
+      "type": "BLUE",
+      "size": 40,
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Strength Sap",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Attaches a Full marker to this Pokémon. While that marker is attached to it, this Pokémon is not knocked out by damage from White Attacks. The marker and any special conditions affecting this Pokémon are removed instead of it being knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 453,
+    "pokemon_id_raw": "756",
+    "national_dex": 756,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 1,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.9",
+    "last_update": "5.0.9",
+    "evolves_from": [],
+    "evolves_to": [
+      454
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Bloom Doom"
+    ]
+  }
+}

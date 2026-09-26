@@ -1,0 +1,84 @@
+{
+  "figure_id": "trevenant_324",
+  "display_name": "Trevenant EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "GHOST",
+    "GRASS"
+  ],
+  "icon": "324 - Trevenant - Rarity_EX.png",
+  "model": "res://assets/figures/models/trevenant/trevenant_ex/324 - Trevenant - Rarity_EX.fbx",
+  "ability": {
+    "name": "Forest Mystery",
+    "note": "Pokémon that have battled this Pokémon becomes Grass-type while they are on the field (but they stop being Grass-type if they leave the field). Your Pokémon on the field can move over this Pokémon when using an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Manipulative",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "One other Grass-type Pokémon on the field (that is not frozen) may be moved within its MP range. [CTRL HIDE][The moved Pokémon gains Wait.] If the moved Pokémon is one of the opponent's Pokémon, that Pokémon falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Destiny Bond",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If this Pokémon is knocked out, so is the battle opponent."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Smash",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 324,
+    "pokemon_id_raw": "709",
+    "national_dex": 709,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "3.0.6",
+    "last_update": "3.0.6",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Bloom Doom"
+    ]
+  }
+}

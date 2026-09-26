@@ -1,0 +1,89 @@
+{
+  "figure_id": "vaporeon_527",
+  "display_name": "Vaporeon UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER"
+  ],
+  "icon": "res://data/figures/vaporeon/vaporeon_ux/527 - Vaporeon - Rarity_UX.png",
+  "model": "res://assets/figures/models/vaporeon/vaporeon_ux/527 - Vaporeon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Water Arrow",
+    "note": "It can MP move through your Pokémon and through opposing Fire-type Pokémon and opposing Ground-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Water Slide",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 527,
+    "pokemon_id_raw": "134 ux",
+    "national_dex": 134,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      528
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ],
+    "material": 5000,
+    "first_appear": "6.2.1",
+    "last_update": "6.2.1"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "figure_id": "ninjask_290",
+  "display_name": "Ninjask R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "BUG",
+    "FLYING"
+  ],
+  "icon": "290 - Ninjask - Rarity_R.png",
+  "model": "res://assets/figures/models/ninjask/ninjask_r/290 - Ninjask - Rarity_R.fbx",
+  "ability": {
+    "name": "Bullet Speed",
+    "note": "This Pokémon can MP move through Pokémon that have Wait. If this Pokémon has evolved, this Pokémon on your bench gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Double-Edge",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and the battle opponent are knocked out."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Night Slash",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is on the field, it may switch a Pokémon on your bench or in your P.C. after battle."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 290,
+    "pokemon_id_raw": "291",
+    "national_dex": 291,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 4,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.8",
+    "last_update": "7.0.11",
+    "evolves_from": [],
+    "evolves_to": [
+      291,
+      292
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Supersonic Skystrike"
+    ]
+  }
+}

@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import type { FigureState, GameState } from '../engine/index.js';
+import { contentFigureId, contentPlateId } from '../engine/index.js';
+import { bootEngine } from './boot.js';
 import { resolveBoardClick, resolveFigureClick } from './board-click.js';
+import { resolvedPresets, rivalStrategyDraft } from '../player/presets.js';
 import { harness, makeFigure, makePlate, nid, onField, uid } from '../engine/test/helpers.js';
 
 function occupantAt(state: GameState, node: string): FigureState | null {
@@ -8,7 +11,7 @@ function occupantAt(state: GameState, node: string): FigureState | null {
 }
 
 describe('board click → initiateBattle', () => {
-  it('maps select-your-figure then click-adjacent-rival to a no-move initiateBattle', () => {
+  it('maps select-your-figure then click-adjacent-rival to a no-move initiateBattle', async () => {
     const { engine, state } = harness({
       p0: [makeFigure(1, { name: 'A' }), makeFigure(2, { name: 'B' })],
       p1: [makeFigure(3, { name: 'X' }), makeFigure(4, { name: 'Y' })],
@@ -44,7 +47,7 @@ describe('board click → initiateBattle', () => {
     });
   });
 
-  it('after A MP-moves, only A’s adjacent rival click initiates; B’s does not', () => {
+  it('after A MP-moves, only A’s adjacent rival click initiates; B’s does not', async () => {
     const { engine, state } = harness({
       p0: [makeFigure(1, { name: 'A' }), makeFigure(2, { name: 'B' })],
       p1: [makeFigure(3, { name: 'X' }), makeFigure(4, { name: 'Y' })],
@@ -74,7 +77,102 @@ describe('board click → initiateBattle', () => {
     expect(fromB).toEqual({ kind: 'none' });
   });
 
-  it('does not implicit-declinePlate when a figure is clicked in the plate window', () => {
+  it('after A deploys, B cannot be selected to initiate', async () => {
+    const { engine, state } = harness({
+      p0: [makeFigure(1, { name: 'A' }), makeFigure(2, { name: 'B' })],
+      p1: [makeFigure(3, { name: 'X' }), makeFigure(4, { name: 'Y' })],
+    });
+    const placed = onField(state, [
+      [1, 'r3c6'],
+      [2, 'r3c0'],
+      [3, 'r2c6'],
+    ]);
+    const deployed = engine.dispatch(placed, {
+      kind: 'deploy',
+      player: 0,
+      uid: uid(0),
+      entry: nid('r4c0'),
+      to: nid('r4c0'),
+    }).nextState;
+    const legal = engine.legalCommands(deployed);
+    const lock = deployed.turn.movedUid;
+    expect(lock).toBe(uid(0));
+    expect(resolveBoardClick(legal, 0, null, occupantAt(deployed, 'r3c6'), nid('r3c6'), undefined, lock)).toEqual({
+      kind: 'none',
+    });
+    expect(resolveBoardClick(legal, 0, uid(1), occupantAt(deployed, 'r2c6'), nid('r2c6'), undefined, lock)).toEqual({
+      kind: 'none',
+    });
+  });
+
+  it('picks a field figure for Double Chance from a real Stone Guard table', async () => {
+    const engine = await bootEngine();
+    const rows = resolvedPresets(engine);
+    const frost = rows.find((row) => row.preset.id === 'stone-guard')?.draft;
+    const rival = rivalStrategyDraft(engine, 5001, 'stone-guard');
+    expect(frost).toBeDefined();
+    if (frost === undefined) return;
+    let state = engine.createGame({
+      seed: 5001,
+      startingPlayer: 1,
+      decks: {
+        0: {
+          figures: frost.figures.map(contentFigureId),
+          plates: frost.plates.map(contentPlateId),
+        },
+        1: {
+          figures: rival.figures.map(contentFigureId),
+          plates: rival.plates.map(contentPlateId),
+        },
+      },
+      allowUnimplemented: true,
+    }).nextState;
+    const aiDeploy = engine
+      .legalCommands(state)
+      .find((command) => command.kind === 'deploy' && command.player === 1);
+    expect(aiDeploy).toBeDefined();
+    if (aiDeploy === undefined) return;
+    state = engine.dispatch(state, aiDeploy).nextState;
+    const deploy = engine
+      .legalCommands(state)
+      .find((command) => command.kind === 'deploy' && command.player === 0 && command.uid === 0);
+    expect(deploy).toBeDefined();
+    if (deploy === undefined || deploy.kind !== 'deploy') return;
+    state = engine.dispatch(state, deploy).nextState;
+    const decline = engine
+      .legalCommands(state)
+      .find((command) => command.kind === 'declineBattle' && command.player === 0);
+    if (decline !== undefined) state = engine.dispatch(state, decline).nextState;
+    for (let steps = 0; state.turn.player !== 0 && state.result === null && steps < 40; steps++) {
+      const next = engine.legalCommands(state).find((command) => command.player === 1 && command.kind !== 'concede');
+      if (next === undefined) break;
+      state = engine.dispatch(state, next).nextState;
+    }
+    expect(state.turn.player).toBe(0);
+    expect(state.figures[0]?.zone).toBe('field');
+    const doubleChance = engine
+      .legalCommands(state)
+      .find((command) => command.kind === 'playPlate' && command.player === 0 && command.slot === 1);
+    expect(doubleChance).toBeDefined();
+    if (doubleChance === undefined) return;
+    state = engine.dispatch(state, doubleChance).nextState;
+    expect(state.pending?.kind).toBe('chooseFigures');
+    expect(state.pending?.figureOptions).toContain(uid(0));
+    const legal = engine.legalCommands(state);
+    const occupant = occupantAt(state, deploy.to);
+    expect(occupant?.uid).toBe(uid(0));
+    const fromNode = resolveBoardClick(legal, 0, null, occupant, deploy.to, undefined);
+    expect(fromNode.kind).toBe('command');
+    if (fromNode.kind !== 'command') throw new Error('expected a field pick');
+    expect(fromNode.command).toMatchObject({
+      kind: 'resolveDecision',
+      accept: true,
+      figures: [uid(0)],
+    });
+    expect(resolveFigureClick(legal, 0, uid(0)).kind).toBe('command');
+  });
+
+  it('does not implicit-declinePlate when a figure is clicked in the plate window', async () => {
     const { engine, state } = harness({
       p0: [makeFigure(1)],
       p1: [makeFigure(2)],

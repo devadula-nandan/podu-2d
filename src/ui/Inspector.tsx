@@ -1,5 +1,5 @@
 import type { Clause, Trigger } from '../content/dsl/effects.js';
-import type { Engine, FigureState, FigureSupport, GameState } from '../engine/index.js';
+import type { Engine, FigureState, FigureSupport, GameState, PlayerId } from '../engine/index.js';
 import { buildWheel, liveClauses, nullifiedFigures } from '../engine/index.js';
 import { CoverageBadge } from './CoverageBadge.js';
 import { WheelOdds } from './WheelOdds.js';
@@ -28,9 +28,10 @@ interface Props {
   readonly engine: Engine;
   readonly host: GameState;
   readonly selected: FigureState | null;
+  readonly you: PlayerId;
 }
 
-export function Inspector({ engine, host, selected }: Props) {
+export function Inspector({ engine, host, selected, you }: Props) {
   const figure = selected ?? host.figures.find((row) => row.zone === 'field') ?? host.figures[0] ?? null;
   if (figure === null) {
     return (
@@ -52,14 +53,14 @@ export function Inspector({ engine, host, selected }: Props) {
   );
 
   return (
-    <aside className="panel" data-testid="inspector">
+    <aside className="panel" data-testid="inspector" data-side={figure.owner === you ? 'you' : 'rival'}>
       <p className="kicker">Rules inspector</p>
       <h2 className="inspector-name">
         <FigureSprite url={figureSpriteUrl(engine, figure.figureId)} name={figureName(engine, figure)} />
         {figureName(engine, figure)}
       </h2>
       <p className="inspector-ids">
-        uid {figure.uid} · id {figure.figureId} · node {figure.node ?? '—'}
+        {figure.owner === you ? 'You' : 'Rival'} · uid {figure.uid} · id {figure.figureId} · node {figure.node ?? '—'}
       </p>
       <p className="note">
         {content !== null ? (

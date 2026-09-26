@@ -1,0 +1,79 @@
+{
+  "figure_id": "heracross_565",
+  "display_name": "Heracross EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FIGHTING"
+  ],
+  "icon": "565 - Heracross - Rarity_EX.png",
+  "model": "res://assets/figures/models/heracross/heracross_ex/565 - Heracross - Rarity_EX.fbx",
+  "ability": {
+    "name": "King Horn",
+    "note": "If this Pokémon is on the field, add +1 spin to the spin-again Attacks of your Pokémon. While a Cracked marker is attached, the battle opponent's Blue Attacks become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Pin Missile",
+      "type": "WHITE",
+      "size": 60,
+      "damage": 40,
+      "source_damage_or_stars": "40x",
+      "note": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Heavy Hurl",
+      "type": "BLUE",
+      "size": 24,
+      "note": "The battle opponent is moved to a point 2 steps away and has an MP -3 marker attached."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 565,
+    "pokemon_id_raw": "214 ex",
+    "national_dex": 214,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.11",
+    "last_update": "7.0.11",
+    "evolves_from": [
+      564
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "All-Out Pummeling"
+    ]
+  }
+}

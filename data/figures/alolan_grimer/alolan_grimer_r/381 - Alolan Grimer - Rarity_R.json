@@ -1,0 +1,97 @@
+{
+  "figure_id": "alolan_grimer_381",
+  "display_name": "Alolan Grimer R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "POISON",
+    "DARK"
+  ],
+  "icon": "381 - Alolan Grimer - Rarity_R.png",
+  "model": "res://assets/figures/models/alolan_grimer/alolan_grimer_r/381 - Alolan Grimer - Rarity_R.fbx",
+  "ability": {
+    "name": "Poison Touch",
+    "note": "Any Pokémon that battles this Pokémon will become poisoned.",
+    "effect_ids": [
+      0
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 12,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Belch",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back. If the battle opponent is a Fairy-type Pokémon, it is moved to the bench."
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 12,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Crunch",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 381,
+    "pokemon_id_raw": "088 alola",
+    "national_dex": 88,
+    "variant": "alola",
+    "rarity": "R",
+    "max_movement": 1,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.6",
+    "last_update": "5.0.6",
+    "evolves_from": [],
+    "evolves_to": [
+      "381 mega"
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Acid Downpour"
+    ]
+  }
+}

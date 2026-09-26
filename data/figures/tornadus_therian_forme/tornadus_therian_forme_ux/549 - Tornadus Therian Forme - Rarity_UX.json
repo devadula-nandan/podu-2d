@@ -1,0 +1,87 @@
+{
+  "figure_id": "tornadus_therian_forme_549",
+  "display_name": "Tornadus Therian Forme UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FLYING"
+  ],
+  "icon": "res://data/figures/tornadus_therian_forme/tornadus_therian_forme_ux/549 - Tornadus Therian Forme - Rarity_UX.png",
+  "model": "res://assets/figures/models/tornadus_therian_forme/tornadus_therian_forme_ux/549 - Tornadus Therian Forme - Rarity_UX.fbx",
+  "ability": {
+    "name": "Raging Wind",
+    "note": "This Pokémon may MP move past other Pokmon on the field. While this Pokémon is on the field, the Gold Attacks of burned opposing Pokémon become Misses. Opposing Pokémon adjacent to this Pokémon cannot change forms with an Ability.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Air Slash",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Elusive Master",
+      "type": "BLUE",
+      "size": 24,
+      "note": "You may move this Pokémon to the bench. When you do, change this Pokémon's form, if possible."
+    },
+    {
+      "name": "Hurricane",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Moves the battle opponent to the bench. The battle opponent and all oppposing Flying-type Pokémon on the field gain Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 549,
+    "pokemon_id_raw": "641 therian",
+    "national_dex": 641,
+    "variant": "therian",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      548
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.11",
+    "last_update": "7.0.11"
+  }
+}

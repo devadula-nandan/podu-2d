@@ -1,0 +1,92 @@
+{
+  "figure_id": "vespiquen_270",
+  "display_name": "Vespiquen R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FLYING"
+  ],
+  "icon": "270 - Vespiquen - Rarity_R.png",
+  "model": "res://assets/figures/models/vespiquen/vespiquen_r/270 - Vespiquen - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Defend Order",
+      "type": "BLUE",
+      "size": 28,
+      "note": "One of your own [CTRL FID 38][Combee] on the field moves next to this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Power Gem",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Attack Order",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 80,
+      "source_damage_or_stars": "80+",
+      "note": "Damage +30 for each of your own neighboring [CTRL FID 38][Combee]."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 270,
+    "pokemon_id_raw": "416",
+    "national_dex": 416,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.12",
+    "last_update": "3.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      271
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Supersonic Skystrike"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "figure_id": "terrakion_317",
+  "display_name": "Terrakion EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "FIGHTING"
+  ],
+  "icon": "317 - Terrakion - Rarity_EX.png",
+  "model": "res://assets/figures/models/terrakion/terrakion_ex/317 - Terrakion - Rarity_EX.fbx",
+  "ability": {
+    "name": "Beat Down",
+    "note": "All the Blue Attacks of the battle opponents of this Pokémon become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Sword of Justice",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 101,
+      "source_damage_or_stars": "101"
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Stone Edge",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 317,
+    "pokemon_id_raw": "639",
+    "national_dex": 639,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.6",
+    "last_update": "6.0.4",
+    "evolves_from": [
+      316
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Continental Crush"
+    ]
+  }
+}

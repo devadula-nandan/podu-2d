@@ -1,0 +1,88 @@
+{
+  "figure_id": "ho_oh_042",
+  "display_name": "Ho-Oh EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "FLYING"
+  ],
+  "icon": "042 - Ho-Oh - Rarity_EX.png",
+  "model": "res://assets/figures/models/ho_oh/ho_oh_ex/042 - Ho-Oh - Rarity_EX.fbx",
+  "ability": {
+    "name": "Serene Light",
+    "note": "If this Pokémon is knocked out, move the following Pokémon to the bench (not including Pokémon with this Ability): Pokémon in your P.C., your Fire-type Pokémon in the Ultra Space, and your Fire-type Pokémon that have been excluded from the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Sacred Fire",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Fire Blast",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Rainbow Wing",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 42,
+    "pokemon_id_raw": "250",
+    "national_dex": 250,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "6.0.7",
+    "evolves_from": [
+      41
+    ],
+    "evolves_to": [
+      169
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Supersonic Skystrike"
+    ]
+  }
+}

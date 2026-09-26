@@ -1,0 +1,111 @@
+{
+  "figure_id": "shiny_metagross_397",
+  "display_name": "Shiny Metagross EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "STEEL",
+    "PSYCHIC"
+  ],
+  "icon": "397 - Shiny Metagross - Rarity_EX.png",
+  "model": "res://assets/figures/models/shiny_metagross/shiny_metagross_ex/397 - Shiny Metagross - Rarity_EX.fbx",
+  "ability": {
+    "name": "Parallel Arithmetic",
+    "note": "When this Pokémon is on the field, your Pokémon deal +1 damage for each Pokémon on the field. While this Pokémon is on the bench, it gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Hyper Beam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Metal Claw",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Bullet Punch",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 397,
+    "pokemon_id_raw": "376 shiny",
+    "national_dex": 376,
+    "variant": "shiny",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7",
+    "evolves_from": [
+      396
+    ],
+    "evolves_to": [
+      398
+    ],
+    "z_move_keys": [
+      "Shattered Psyche",
+      "Corkscrew Crash"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "figure_id": "wartortle_162",
+  "display_name": "Wartortle C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "162 - Wartortle - Rarity_C.png",
+  "model": "res://assets/figures/models/wartortle/wartortle_c/162 - Wartortle - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Water Gun",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Rapid Spin",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 20,
+      "source_damage_or_stars": "20x",
+      "note": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 162,
+    "pokemon_id_raw": "008",
+    "national_dex": 8,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "1.4",
+    "evolves_from": [
+      161
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

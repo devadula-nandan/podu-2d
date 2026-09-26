@@ -1,0 +1,90 @@
+{
+  "figure_id": "pinsir_059",
+  "display_name": "Pinsir R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG"
+  ],
+  "icon": "059 - Pinsir - Rarity_R.png",
+  "model": "res://assets/figures/models/pinsir/pinsir_r/059 - Pinsir - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Guillotine",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Scissor Toss",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Vice Grip",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 59,
+    "pokemon_id_raw": "127",
+    "national_dex": 127,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.11",
+    "evolves_from": [
+      58
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out"
+    ]
+  }
+}

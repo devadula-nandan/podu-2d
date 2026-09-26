@@ -1,0 +1,94 @@
+{
+  "figure_id": "natu_201",
+  "display_name": "Natu UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FLYING"
+  ],
+  "icon": "201 - Natu - Rarity_UC.png",
+  "model": "res://assets/figures/models/natu/natu_uc/201 - Natu - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 16,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 16,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Future Sight",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and optionally the opponent Pokémon may respin one time."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 201,
+    "pokemon_id_raw": "177",
+    "national_dex": 177,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "2.0",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Shattered Psyche"
+    ]
+  }
+}

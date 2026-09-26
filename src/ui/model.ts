@@ -1,5 +1,6 @@
 import { spriteUrlForFigure } from '../content/sprites.js';
 import type { Plate } from '../content/schema.js';
+import { segmentCallout } from '../render/draw-wheel.js';
 import type {
   BattleOutcome,
   Command,
@@ -41,6 +42,21 @@ export interface DeckIssue {
 
 export function plateCost(plate: Plate): number {
   return plateCostTowardBudget(plate);
+}
+
+export function draftPlateSpend(engine: Engine, draft: DeckDraft): number {
+  return draft.plates.reduce((sum, id) => {
+    const plate = plateOfContent(engine, id);
+    return sum + (plate === null ? Number.POSITIVE_INFINITY : plateCost(plate));
+  }, 0);
+}
+
+export function isCompleteDeck(engine: Engine, draft: DeckDraft): boolean {
+  return (
+    draft.figures.length === FIGURES_PER_DECK &&
+    draft.plates.length === PLATES_PER_DECK &&
+    draftPlateSpend(engine, draft) <= PLATE_COST_CAP
+  );
 }
 
 export function validateDeck(engine: Engine, draft: DeckDraft, allowUnimplemented: boolean): DeckIssue[] {
@@ -119,6 +135,11 @@ export function deckHasErrors(issues: readonly DeckIssue[]): boolean {
 
 export function seatLabel(player: PlayerId): string {
   return player === 0 ? 'Seat A' : 'Seat B';
+}
+
+/** Viewer-relative names. You is always the near-edge seat (`data-flip` follows `view.you`). */
+export function viewSeatName(player: PlayerId, you: PlayerId): string {
+  return player === you ? 'You' : 'Rival';
 }
 
 /** Deck-builder plaques. Player 0 is always You on the near edge. */
@@ -220,7 +241,10 @@ export function commandsForUid(legal: readonly Command[], uid: FigureUid): Comma
       return command.uid === uid;
     }
     if (command.kind === 'tag') return command.uid === uid || command.target === uid;
-    if (command.kind === 'initiateBattle') return command.attacker === uid || command.defender === uid;
+    if (command.kind === 'initiateBattle') return command.attacker === uid;
+    if (command.kind === 'resolveDecision' && command.accept && command.figures.length === 1) {
+      return command.figures[0] === uid;
+    }
     return false;
   });
 }
@@ -284,13 +308,18 @@ export function findBattle(
   legal: readonly Command[],
   attacker: FigureUid,
   defender: FigureUid,
+  preferZ = false,
 ): Command | null {
-  return (
-    legal.find(
-      (command): command is Extract<Command, { kind: 'initiateBattle' }> =>
-        command.kind === 'initiateBattle' && command.attacker === attacker && command.defender === defender,
-    ) ?? null
+  const matches = legal.filter(
+    (command): command is Extract<Command, { kind: 'initiateBattle' }> =>
+      command.kind === 'initiateBattle' && command.attacker === attacker && command.defender === defender,
   );
+  if (matches.length === 0) return null;
+  if (preferZ) {
+    const z = matches.find((command) => command.zMoveIndex !== undefined);
+    if (z !== undefined) return z;
+  }
+  return matches.find((command) => command.zMoveIndex === undefined) ?? matches[0] ?? null;
 }
 
 export function findTag(legal: readonly Command[], uid: FigureUid, target: FigureUid): Command | null {
@@ -324,7 +353,7 @@ export function findFigureDecision(
 }
 
 /**
- * /2d End turn is only "skip this optional battle" (`declineBattle`).
+ * Don't battle is only "skip this optional battle" (`declineBattle`).
  * Not a pass — Wait Victory forbids an always-legal skip. Not skip-plate.
  */
 export function endTurnCommand(legal: readonly Command[], player: PlayerId): Command | null {
@@ -451,7 +480,7 @@ export function describeSurroundEvents(
     .join(' ');
 }
 
-export function recentPlayLines(
+export function playLogLines(
   engine: Engine,
   figures: readonly FigureState[],
   events: readonly GameEvent[],
@@ -462,11 +491,20 @@ export function recentPlayLines(
     return figure === undefined ? `#${uid}` : figureName(engine, figure);
   };
   const lines: string[] = [];
-  for (let index = events.length - 1; index >= 0 && lines.length < 2; index--) {
+  for (let index = 0; index < events.length; index++) {
     const line = playUpdateLine(engine, events, index, nameOf, you);
-    if (line !== null && line !== lines[0]) lines.push(line);
+    if (line !== null && line !== lines[lines.length - 1]) lines.push(line);
   }
-  return lines.reverse();
+  return lines;
+}
+
+export function recentPlayLines(
+  engine: Engine,
+  figures: readonly FigureState[],
+  events: readonly GameEvent[],
+  you: PlayerId,
+): string[] {
+  return playLogLines(engine, figures, events, you).slice(-2);
 }
 
 function playUpdateLine(
@@ -561,6 +599,25 @@ export function describeSegment(segment: ResolvedSegment | null): string {
         ? `${segment.damage}${segment.isMultiplier ? '×' : ''}`
         : '—';
   return `${segment.color.toUpperCase()} ${segment.moveName} (${dmg}, ${segment.size}/96)`;
+}
+
+export type ViewingWin = 'you' | 'rival' | 'draw';
+
+export function viewingWin(outcome: BattleOutcome | null, youAreAttacker: boolean): ViewingWin | null {
+  if (outcome === null) return null;
+  if (outcome.winner === null) return 'draw';
+  return (outcome.winner === 'attacker') === youAreAttacker ? 'you' : 'rival';
+}
+
+export function winBanner(win: ViewingWin): string {
+  if (win === 'draw') return 'DRAW';
+  return win === 'you' ? 'YOU WIN' : 'RIVAL WINS';
+}
+
+export function landedPower(segment: ResolvedSegment | null, final: number | null): string {
+  if (segment === null) return '—';
+  if (final !== null) return String(final);
+  return segmentCallout(segment);
 }
 
 export function zoneFigures(view: PlayerView, player: PlayerId, zone: FigureState['zone']): FigureState[] {

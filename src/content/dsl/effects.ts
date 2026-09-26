@@ -434,6 +434,11 @@ export type Action =
       readonly flat: number | null;
     }
   /**
+   * Nihilego: while on the field, each player's start-of-turn Z fill is boosted once
+   * per that player's special-conditioned Pokémon.
+   */
+  | { readonly do: 'boostZTurnGain'; readonly per: 'specialCondition' }
+  /**
    * "Shifts this Pokemon's Attacks two segments clockwise" (wheel rotation) and "shift
    * the result clockwise until a non-Purple, non-Blue Attack comes up" (result shift).
    * Two distinct mechanics that read almost identically in prose.

@@ -1,0 +1,85 @@
+{
+  "figure_id": "mandibuzz_463",
+  "display_name": "Mandibuzz R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "FLYING"
+  ],
+  "icon": "463 - Mandibuzz - Rarity_R.png",
+  "model": "res://assets/figures/models/mandibuzz/mandibuzz_r/463 - Mandibuzz - Rarity_R.fbx",
+  "ability": {
+    "name": "Bone Bearer",
+    "note": "This Pokémon can MP move over opposing non-Flying-type Pokémon on the field. If this Pokémon moves its battle opponent by the effect of an Attack, you may attach a Weak Armor marker to this Pokémon. The Pokémon with that marker has MP-1 and is not knocked out in battle. The marker and any special conditions on the Pokémon are removed instead of it being knocked out.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Feint Attack",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Whirlwind",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is moved to the bench and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Roost",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon recovers from all status effects. In exchange, it must then Wait 3."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 463,
+    "pokemon_id_raw": "630",
+    "national_dex": 630,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [
+      108
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Supersonic Skystrike"
+    ]
+  }
+}

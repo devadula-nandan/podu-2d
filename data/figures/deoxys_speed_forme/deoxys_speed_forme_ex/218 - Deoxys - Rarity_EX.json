@@ -1,0 +1,77 @@
+{
+  "figure_id": "deoxys_speed_forme_218",
+  "display_name": "Deoxys Speed Forme EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "218 - Deoxys - Rarity_EX.png",
+  "model": "res://assets/figures/models/deoxys_speed_forme/deoxys_speed_forme_ex/218 - Deoxys - Rarity_EX.fbx",
+  "ability": {
+    "name": "Cross Wind",
+    "note": "This Pokémon does not spend MP when moving from the bench to an Entry point. The 3-Pokémon limit does not apply to this Pokémon in your deck.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 218,
+    "pokemon_id_raw": "386 speed",
+    "national_dex": 386,
+    "variant": "speed",
+    "rarity": "EX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.2",
+    "evolves_from": [],
+    "evolves_to": [
+      219
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

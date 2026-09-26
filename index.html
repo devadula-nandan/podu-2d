@@ -9,10 +9,52 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;600;700&family=JetBrains+Mono:wght@500;700&family=Source+Sans+3:wght@400;600;700&family=Syne:wght@600;700;800&family=Tektur:wght@500;700;800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;600;700&family=JetBrains+Mono:wght@500;700&family=Source+Sans+3:wght@400;600;700&family=Syne:wght@600;700;800&family=Tektur:wght@500;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #140e0a;
+        color: #f4ece3;
+        font-family: Figtree, 'Segoe UI', sans-serif;
+      }
+      #root:empty,
+      #boot-splash {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        gap: 0.6rem;
+        text-align: center;
+        padding: 2rem;
+      }
+      #boot-splash h1 {
+        margin: 0;
+        font: 800 1.6rem/1.2 Tektur, Figtree, sans-serif;
+        letter-spacing: 0.04em;
+      }
+      #boot-splash p {
+        margin: 0;
+        opacity: 0.72;
+        font-size: 0.95rem;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="boot-splash" aria-live="polite">
+        <h1>Pokémon Duel</h1>
+        <p>Loading duel field…</p>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

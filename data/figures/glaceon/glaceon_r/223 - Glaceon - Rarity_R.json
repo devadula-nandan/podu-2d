@@ -1,0 +1,82 @@
+{
+  "figure_id": "glaceon_223",
+  "display_name": "Glaceon R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ICE"
+  ],
+  "icon": "223 - Glaceon - Rarity_R.png",
+  "model": "res://assets/figures/models/glaceon/glaceon_r/223 - Glaceon - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Diamond Dust",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 223,
+    "pokemon_id_raw": "471",
+    "national_dex": 471,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.3",
+    "last_update": "1.3",
+    "evolves_from": [],
+    "evolves_to": [
+      224
+    ],
+    "z_move_keys": [
+      "Subzero Slammer"
+    ]
+  }
+}

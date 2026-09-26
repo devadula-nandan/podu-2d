@@ -455,11 +455,18 @@ export function reduce(state: GameState, event: GameEvent): GameState {
     case 'preSelectClosed':
       return updateTurn(state, { preSelectClosed: true });
 
-    case 'actionTaken':
-      // Consumes the one movement action. `movedUid` is only the figure that
-      // actually MP-walked (`figureMoved`); deploy / tag / ability must not lock
-      // battle initiation to that figure.
-      return updateTurn(state, { moved: true, plateWindowClosed: true });
+    case 'preSelectOffered': {
+      const have = state.turn.preSelectOffered ?? [];
+      if (have.includes(event.uid)) return state;
+      return updateTurn(state, { preSelectOffered: [...have, event.uid] });
+    }
+
+    case 'actionTaken': {
+      // Consumes the one figure action. Lock optional-battle to that figure unless
+      // an MP-walk already named the mover.
+      const movedUid = state.turn.movedUid ?? event.uid;
+      return updateTurn(state, { moved: true, plateWindowClosed: true, movedUid });
+    }
 
     case 'battleDeclined':
       return updateTurn(state, { battled: true });

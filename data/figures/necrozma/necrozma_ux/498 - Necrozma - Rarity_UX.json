@@ -1,0 +1,91 @@
+{
+  "figure_id": "necrozma_498",
+  "display_name": "Necrozma UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "res://data/figures/necrozma/necrozma_ux/498 - Necrozma - Rarity_UX.png",
+  "model": "res://assets/figures/models/necrozma/necrozma_ux/498 - Necrozma - Rarity_UX.fbx",
+  "ability": {
+    "name": "Prism Armor",
+    "note": "Ultra Beast. In this Pokémon's first battle after moving to the field, its battle opponent's Gold Attacks become White Attacks. If this Pokémon is not affected by a special condition, any effects of the battle opponent's Ability that increase or decrease Attack damage are nullified.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Photon Geyser",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon may attach a Photon marker to the battle opponent. If this Pokémon has changed its form from [CTRL FID 498][Necrozma], it may attach the marker to a Pokémon within X+1 steps, where X is the number of Pokémon in the Ultra Space, instead of the battle opponent. The Ability of a Pokémon with a Photo marker is nullified."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Reflect Move",
+      "type": "BLUE",
+      "size": 24,
+      "note": "If there are any other [CTRL QL Ultra Beasts][Ultra Beasts] on the field, this Pokémon may move over its battle opponent and land 1 step away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Prismatic Laser",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 151,
+      "source_damage_or_stars": "151",
+      "note": "*If the battle opponent is knocked out, the next turn will always be the other player's."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 498,
+    "pokemon_id_raw": "800",
+    "national_dex": 800,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      499
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0"
+  }
+}

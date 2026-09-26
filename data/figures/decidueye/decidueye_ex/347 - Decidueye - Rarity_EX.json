@@ -1,0 +1,93 @@
+{
+  "figure_id": "decidueye_347",
+  "display_name": "Decidueye EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "GHOST"
+  ],
+  "icon": "347 - Decidueye - Rarity_EX.png",
+  "model": "res://assets/figures/models/decidueye/decidueye_ex/347 - Decidueye - Rarity_EX.fbx",
+  "ability": {
+    "name": "Entry Shot",
+    "note": "When this Pokémon moves from the bench to the field, or appears as an evolution, spin for each opposing Pokémon on an entry point. If a Purple Attack is spun, knock that opposing Pokémon out. This Pokémon can MP move through other Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Phantom Arrow",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*An opposing Pokémon adjacent to the battle opponent spins, and if it spins a Purple Attack then it is knocked out."
+    },
+    {
+      "name": "Spirit Shackle",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*The battle opponent gains Wait 5.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 347,
+    "pokemon_id_raw": "724",
+    "national_dex": 724,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "6.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      348
+    ],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Bloom Doom",
+      "Sinister Arrow Raid"
+    ]
+  }
+}

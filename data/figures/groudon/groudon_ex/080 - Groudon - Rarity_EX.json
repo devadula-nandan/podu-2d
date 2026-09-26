@@ -1,0 +1,85 @@
+{
+  "figure_id": "groudon_080",
+  "display_name": "Groudon EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GROUND"
+  ],
+  "icon": "080 - Groudon - Rarity_EX.png",
+  "model": "res://assets/figures/models/groudon/groudon_ex/080 - Groudon - Rarity_EX.fbx",
+  "ability": {
+    "name": "Primal Rage",
+    "note": "When there are opposing [CTRL FID 80,425][Groudon], [CTRL FID 46,427][Kyogre] or [CTRL FID 112,395,499][Rayquaza] on the field, this Pokémon deals +20 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Smash",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Break Energy",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*Your opponent's Energy Plate-based effects are lost."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 80,
+    "pokemon_id_raw": "383",
+    "national_dex": 383,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.1",
+    "last_update": "6.1.1",
+    "evolves_from": [
+      79
+    ],
+    "evolves_to": [
+      "080 mega"
+    ],
+    "z_move_keys": [
+      "Tectonic Rage"
+    ]
+  }
+}

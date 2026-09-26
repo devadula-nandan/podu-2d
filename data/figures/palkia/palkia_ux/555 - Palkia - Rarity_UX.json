@@ -1,0 +1,86 @@
+{
+  "figure_id": "palkia_555",
+  "display_name": "Palkia UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "DRAGON"
+  ],
+  "icon": "res://data/figures/palkia/palkia_ux/555 - Palkia - Rarity_UX.png",
+  "model": "res://assets/figures/models/palkia/palkia_ux/555 - Palkia - Rarity_UX.fbx",
+  "ability": {
+    "name": "Space Slide",
+    "note": "When this Pokémon is knocked out by damage in battle, it recovers from any special conditions, and it moves to one of your entrypoints if possible. If it does, this Pokémon gains Wait.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "4-D Drive",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*Moves the battle opponent to its P.C. The battle opponent is not knocked out."
+    },
+    {
+      "name": "Spacial Rend",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 170,
+      "source_damage_or_stars": "170",
+      "note": "*If the battle is a tie, the battle opponent is excluded from the duel."
+    },
+    {
+      "name": "Aura Sphere",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Either the battle opponent or a Pokémon behind it in a straight line from this Pokémon is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 555,
+    "pokemon_id_raw": "484 ux",
+    "national_dex": 484,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      554
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Hydro Vortex",
+      "Clangorous Soulblaze"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.15",
+    "last_update": "7.0.15"
+  }
+}

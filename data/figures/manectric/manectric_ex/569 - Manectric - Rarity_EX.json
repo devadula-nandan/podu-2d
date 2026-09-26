@@ -1,0 +1,95 @@
+{
+  "figure_id": "manectric_569",
+  "display_name": "Manectric EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "569 - Manectric - Rarity_EX.png",
+  "model": "res://assets/figures/models/manectric/manectric_ex/569 - Manectric - Rarity_EX.fbx",
+  "ability": {
+    "name": "Volt Swap",
+    "note": "Before using this Pokémon from the bench, you may have it switch places with one of your paralyzed or Electric-type Pokémon on the field. When it does, any opposing Pokémon on your entry points become paralyzed.",
+    "effect_ids": [
+      2
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Overheat",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*This attack becomes a Miss for the next turn."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Volt Switch",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Blue Lightning Storm",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon may cause one Pokémon within 2 steps to become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 569,
+    "pokemon_id_raw": "310",
+    "national_dex": 310,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.12",
+    "last_update": "7.0.12",
+    "evolves_from": [
+      568
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

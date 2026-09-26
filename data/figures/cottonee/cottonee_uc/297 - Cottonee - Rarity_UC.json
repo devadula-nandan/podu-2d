@@ -1,0 +1,83 @@
+{
+  "figure_id": "cottonee_297",
+  "display_name": "Cottonee UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "FAIRY"
+  ],
+  "icon": "297 - Cottonee - Rarity_UC.png",
+  "model": "res://assets/figures/models/cottonee/cottonee_uc/297 - Cottonee - Rarity_UC.fbx",
+  "ability": {
+    "name": "Fairy Powder",
+    "note": "Any Dragon-type Pokémon that battles this Pokémon will become paralyzed.",
+    "effect_ids": [
+      2
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Cotton Guard",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "In this Pokémon's next battle, it cannot be knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 297,
+    "pokemon_id_raw": "546",
+    "national_dex": 546,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.5",
+    "last_update": "3.0.5",
+    "evolves_from": [
+      296
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Bloom Doom"
+    ]
+  }
+}

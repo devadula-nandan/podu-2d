@@ -1,0 +1,101 @@
+{
+  "figure_id": "vibrava_212",
+  "display_name": "Vibrava UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GROUND",
+    "DRAGON"
+  ],
+  "icon": "212 - Vibrava - Rarity_UC.png",
+  "model": "res://assets/figures/models/vibrava/vibrava_uc/212 - Vibrava - Rarity_UC.fbx",
+  "ability": {
+    "name": "Vibrating Sound",
+    "note": "Your opponent's Pokémon cannot pass by this Pokémon with an MP move. If the opponent's Pokémon used an MP move this turn and is next to this Pokémon, it cannot attack.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Supersonic",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Screech",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All neighbor Pokémon now have Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Mud Shot",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Attach MP -1 marker to the battle opponent."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 212,
+    "pokemon_id_raw": "329",
+    "national_dex": 329,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0.2",
+    "last_update": "3.0.2",
+    "evolves_from": [
+      123
+    ],
+    "evolves_to": [
+      "212 mega"
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Tectonic Rage",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

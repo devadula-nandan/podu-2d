@@ -1,0 +1,84 @@
+{
+  "figure_id": "grubbin_372",
+  "display_name": "Grubbin UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG"
+  ],
+  "icon": "372 - Grubbin - Rarity_UC.png",
+  "model": "res://assets/figures/models/grubbin/grubbin_uc/372 - Grubbin - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dig",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "You can move this Pokémon to an open spot next to an adjacent figure (or adjacent figures in succession to the first)."
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 24,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Bug Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 30,
+      "source_damage_or_stars": "30",
+      "note": "*Return the battle opponent to its start-of-the-duel state excluding evolution and any special conditions."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 372,
+    "pokemon_id_raw": "736",
+    "national_dex": 736,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "4.0.2",
+    "evolves_from": [
+      371
+    ],
+    "evolves_to": [
+      373,
+      "373 ex"
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "figure_id": "kadabra_592",
+  "display_name": "Kadabra R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "592 - Kadabra - Rarity_R.png",
+  "model": "res://assets/figures/models/kadabra/kadabra_r/592 - Kadabra - Rarity_R.fbx",
+  "ability": {
+    "name": "Psychic Amplifier",
+    "note": "If this Pokémon is using the [CTRL PID 433][Twisted Spoon] plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's Attacks have Range 2.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Teleport Beam",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Super Psy",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes confused.",
+      "source_effect_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Teleport Beam",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Annihilate",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon moves 2 steps away."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 592,
+    "pokemon_id_raw": "064",
+    "national_dex": 64,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      593
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

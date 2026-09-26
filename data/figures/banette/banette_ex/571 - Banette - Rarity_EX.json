@@ -1,0 +1,82 @@
+{
+  "figure_id": "banette_571",
+  "display_name": "Banette EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST"
+  ],
+  "icon": "571 - Banette - Rarity_EX.png",
+  "model": "res://assets/figures/models/banette/banette_ex/571 - Banette - Rarity_EX.fbx",
+  "ability": {
+    "name": "Building Spite",
+    "note": "This Pokémon can MP move through other Pokémon on the field. This Pokémon deals +10 damage for each of your [CTRL FID 126,571][Banette] and [CTRL FID 251][Shuppet] that have been knocked out during the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Destiny Bond",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If this Pokémon is knocked out, so is the battle opponent."
+    },
+    {
+      "name": "Imprison",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Attaches an Imprisoned marker to the battle opponent. While that marker is attached, the Attack the battle opponent spun this turn becomes a Miss."
+    },
+    {
+      "name": "Knock Off",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*Nullifies the effects of one of this Pokémon's battle opponent's in-use plates, and that plate counts as having been used."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 571,
+    "pokemon_id_raw": "354 ex",
+    "national_dex": 354,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.2.5",
+    "last_update": "6.2.5",
+    "evolves_from": [
+      570
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Never-Ending Nightmare"
+    ]
+  }
+}

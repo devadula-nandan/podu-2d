@@ -1,0 +1,77 @@
+{
+  "figure_id": "drowzee_069",
+  "display_name": "Drowzee C",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "069 - Drowzee - Rarity_C.png",
+  "model": "res://assets/figures/models/drowzee/drowzee_c/069 - Drowzee - Rarity_C.fbx",
+  "ability": {
+    "name": "Insomnia",
+    "note": "This Pokémon cannot be affected by sleep.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Hypnosis",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Confusion",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 69,
+    "pokemon_id_raw": "096",
+    "national_dex": 96,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 1,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "5.0.8",
+    "evolves_from": [],
+    "evolves_to": [
+      70
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

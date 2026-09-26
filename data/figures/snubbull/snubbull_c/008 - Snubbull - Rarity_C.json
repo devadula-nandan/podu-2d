@@ -1,0 +1,86 @@
+{
+  "figure_id": "snubbull_008",
+  "display_name": "Snubbull C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FAIRY"
+  ],
+  "icon": "008 - Snubbull - Rarity_C.png",
+  "model": "res://assets/figures/models/snubbull/snubbull_c/008 - Snubbull - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Roar",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked 1 step back (the opponent chooses the point) and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Paw",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 8,
+    "pokemon_id_raw": "209",
+    "national_dex": 209,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      7
+    ],
+    "evolves_to": [
+      9
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle"
+    ]
+  }
+}

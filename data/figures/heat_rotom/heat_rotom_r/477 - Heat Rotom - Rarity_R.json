@@ -1,0 +1,93 @@
+{
+  "figure_id": "heat_rotom_477",
+  "display_name": "Heat Rotom R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "FIRE"
+  ],
+  "icon": "477 - Heat Rotom - Rarity_R.png",
+  "model": "res://assets/figures/models/heat_rotom/heat_rotom_r/477 - Heat Rotom - Rarity_R.fbx",
+  "ability": {
+    "name": "Thermostat",
+    "note": "If this Pokémon is on the field and is not affected by a special condition, your Fire-type Pokémon take 30 less damage from the Attacks of Fire-type battle opponents. This effect does not stack.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Discharge",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Overheat",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*This attack becomes a Miss for the next turn."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 477,
+    "pokemon_id_raw": "479 heat",
+    "national_dex": 479,
+    "variant": "heat",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.6",
+    "last_update": "6.0.6",
+    "evolves_from": [
+      356
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Inferno Overdrive"
+    ]
+  }
+}

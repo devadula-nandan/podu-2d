@@ -1,0 +1,82 @@
+{
+  "figure_id": "haunter_128",
+  "display_name": "Haunter UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "POISON"
+  ],
+  "icon": "128 - Haunter - Rarity_UC.png",
+  "model": "res://assets/figures/models/haunter/haunter_uc/128 - Haunter - Rarity_UC.fbx",
+  "ability": {
+    "name": "Infiltrator",
+    "note": "On the field, this Pokémon can pass through other Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Toxic",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    },
+    {
+      "name": "Night Shade",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 128,
+    "pokemon_id_raw": "093",
+    "national_dex": 93,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "4.0.2",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Acid Downpour"
+    ]
+  }
+}

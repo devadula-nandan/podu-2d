@@ -28,7 +28,7 @@ async function playOneAction(page: Page): Promise<string | null> {
       .or(page.getByTestId('handover'))
       .or(page.getByTestId('notice'))
       .or(page.getByTestId('handover-battle'))
-      .waitFor({ state: 'visible', timeout: 4_000 })
+      .waitFor({ state: 'visible', timeout: 12_000 })
       .catch(() => undefined);
     return 'Spin both wheels';
   }

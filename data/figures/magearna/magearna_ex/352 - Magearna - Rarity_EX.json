@@ -1,0 +1,85 @@
+{
+  "figure_id": "magearna_352",
+  "display_name": "Magearna EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "FAIRY"
+  ],
+  "icon": "352 - Magearna - Rarity_EX.png",
+  "model": "res://assets/figures/models/magearna/magearna_ex/352 - Magearna - Rarity_EX.fbx",
+  "ability": {
+    "name": "Soul-Heart",
+    "note": "This Pokémon deals +10 damage for each time one of your Pokémon has been knocked out. This Pokémon can remove Curse markers, Cracked markers, and special conditions by tagging.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dazzling Gleam",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 99,
+      "source_damage_or_stars": "99",
+      "note": "*Opposing Pokémon adjacent to this Pokémon spin, and if they spin a Gold Attack then they are knocked out."
+    },
+    {
+      "name": "Fleur Cannon",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*If the battle opponent is knocked out, this Pokémon returns to its start-of-the-duel state (excluding evolution and special conditions)."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shift Gear",
+      "type": "BLUE",
+      "size": 20,
+      "note": "Until the end of the duel, this Pokémon's MP becomes 3 and its Blue Attacks become Misses."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 352,
+    "pokemon_id_raw": "801",
+    "national_dex": 801,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.3",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Corkscrew Crash"
+    ]
+  }
+}

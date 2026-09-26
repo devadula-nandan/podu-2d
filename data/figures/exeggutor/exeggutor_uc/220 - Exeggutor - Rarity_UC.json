@@ -1,0 +1,86 @@
+{
+  "figure_id": "exeggutor_220",
+  "display_name": "Exeggutor UC",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "GRASS",
+    "PSYCHIC"
+  ],
+  "icon": "220 - Exeggutor - Rarity_UC.png",
+  "model": "res://assets/figures/models/exeggutor/exeggutor_uc/220 - Exeggutor - Rarity_UC.fbx",
+  "ability": {
+    "name": "Bigg Eggsplosion",
+    "note": "Before battle, allows one of friendly [CTRL FID 72][Exeggcute] to be chosen. If Barrage is spun, it deals +60 damage. If it does, the [CTRL FID 72][Exeggcute] is knocked out.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Barrage",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    },
+    {
+      "name": "Stun Spore",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 220,
+    "pokemon_id_raw": "103",
+    "national_dex": 103,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 1,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "3.0",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      221
+    ],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Shattered Psyche"
+    ]
+  }
+}

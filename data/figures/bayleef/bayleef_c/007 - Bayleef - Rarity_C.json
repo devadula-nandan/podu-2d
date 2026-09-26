@@ -1,0 +1,81 @@
+{
+  "figure_id": "bayleef_007",
+  "display_name": "Bayleef C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "007 - Bayleef - Rarity_C.png",
+  "model": "res://assets/figures/models/bayleef/bayleef_c/007 - Bayleef - Rarity_C.fbx",
+  "ability": {
+    "name": "Spicy Scent",
+    "note": "This Pokémon gains +20 damage in battles in your turn.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Poison Powder",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Body Slam",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 7,
+    "pokemon_id_raw": "153",
+    "national_dex": 153,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [
+      8
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

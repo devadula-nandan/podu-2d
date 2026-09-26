@@ -1,0 +1,92 @@
+{
+  "figure_id": "goodra_584",
+  "display_name": "Goodra EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DRAGON"
+  ],
+  "icon": "584 - Goodra - Rarity_EX.png",
+  "model": "res://assets/figures/models/goodra/goodra_ex/584 - Goodra - Rarity_EX.fbx",
+  "ability": {
+    "name": "Slime Touch",
+    "note": "At the start of your turn, instead of an MP move, this Pokémon may attach a Slime marker to one of your adjacent Pokémon. If it does, your turn ends. The Ability of a Pokémon that has that marker becomes Slime Barrier (any effects of its battle opponent's White Attacks that would give this Pokémon a special condition are nullified), and the effects of its original Ability are nullified.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Counter",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If the battle opponent's Attack is 20 or more, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Slippery Swap",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon switches places with its battle opponent."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 584,
+    "pokemon_id_raw": "706 ex",
+    "national_dex": 706,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.2.3",
+    "last_update": "6.2.3",
+    "evolves_from": [
+      583
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

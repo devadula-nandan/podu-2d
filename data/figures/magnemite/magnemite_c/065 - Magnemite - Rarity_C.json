@@ -1,0 +1,86 @@
+{
+  "figure_id": "magnemite_065",
+  "display_name": "Magnemite C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC",
+    "STEEL"
+  ],
+  "icon": "065 - Magnemite - Rarity_C.png",
+  "model": "res://assets/figures/models/magnemite/magnemite_c/065 - Magnemite - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Thunder Wave",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Spark",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 65,
+    "pokemon_id_raw": "081",
+    "national_dex": 81,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0.8",
+    "evolves_from": [
+      64
+    ],
+    "evolves_to": [
+      "065 mega"
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Corkscrew Crash"
+    ]
+  }
+}

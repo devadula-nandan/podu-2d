@@ -1,0 +1,82 @@
+{
+  "figure_id": "pupitar_177",
+  "display_name": "Pupitar UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "icon": "177 - Pupitar - Rarity_UC.png",
+  "model": "res://assets/figures/models/pupitar/pupitar_uc/177 - Pupitar - Rarity_UC.fbx",
+  "ability": {
+    "name": "Beat Down",
+    "note": "All the Blue Attacks of the battle opponents of this Pokémon become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Thrash",
+      "type": "WHITE",
+      "size": 64,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*This Pokémon becomes confused."
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 177,
+    "pokemon_id_raw": "247",
+    "national_dex": 247,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "6.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      178
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Continental Crush"
+    ]
+  }
+}

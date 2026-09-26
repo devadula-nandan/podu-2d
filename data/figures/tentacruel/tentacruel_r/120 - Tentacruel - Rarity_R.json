@@ -1,0 +1,86 @@
+{
+  "figure_id": "tentacruel_120",
+  "display_name": "Tentacruel R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER",
+    "POISON"
+  ],
+  "icon": "120 - Tentacruel - Rarity_R.png",
+  "model": "res://assets/figures/models/tentacruel/tentacruel_r/120 - Tentacruel - Rarity_R.fbx",
+  "ability": {
+    "name": "Speed Booster",
+    "note": "When this Pokémon evolves, it will gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Tentacle Sting",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes poisoned or paralyzed.",
+      "source_effect_ids": [
+        8,
+        10
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Mirror Coat",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked out if they spin purple."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 120,
+    "pokemon_id_raw": "073",
+    "national_dex": 73,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      121
+    ],
+    "z_move_keys": [
+      "Acid Downpour",
+      "Hydro Vortex"
+    ]
+  }
+}

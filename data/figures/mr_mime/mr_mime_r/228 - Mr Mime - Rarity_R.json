@@ -1,0 +1,94 @@
+{
+  "figure_id": "mr_mime_228",
+  "display_name": "Mr. Mime R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FAIRY"
+  ],
+  "icon": "228 - Mr Mime - Rarity_R.png",
+  "model": "res://assets/figures/models/mr_mime/mr_mime_r/228 - Mr Mime - Rarity_R.fbx",
+  "ability": {
+    "name": "Invisible Wall",
+    "note": "Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Mysterious Wall",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent, or one opposing Pokémon adjacent to a succession of Pokémon adjacent to this Pokémon, become confused.",
+      "source_effect_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 28
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 228,
+    "pokemon_id_raw": "122",
+    "national_dex": 122,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0.3",
+    "last_update": "7.0.4",
+    "evolves_from": [],
+    "evolves_to": [
+      229
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Shattered Psyche"
+    ]
+  }
+}

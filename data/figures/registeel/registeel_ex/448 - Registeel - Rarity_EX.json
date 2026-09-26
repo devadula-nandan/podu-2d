@@ -1,0 +1,96 @@
+{
+  "figure_id": "registeel_448",
+  "display_name": "Registeel EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL"
+  ],
+  "icon": "448 - Registeel - Rarity_EX.png",
+  "model": "res://assets/figures/models/registeel/registeel_ex/448 - Registeel - Rarity_EX.fbx",
+  "ability": {
+    "name": "Lock On: Gold",
+    "note": "At the start of your turn, instead of an MP move, this Pokémon can force opposing Pokémon within 2 steps of it to spin. If the spin results in a Gold Attack, attach a Lock-on marker to that Pokémon. Your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon gains Wait."
+    },
+    {
+      "name": "Hammer Arm",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*This Pokémon gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Thunder Wave",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Multiblast",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Knocks out all Pokémon that have Lock-On markers attached to them."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 448,
+    "pokemon_id_raw": "379",
+    "national_dex": 379,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.7",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      447
+    ],
+    "evolves_to": [
+      "448 mega"
+    ],
+    "z_move_keys": [
+      "Corkscrew Crash"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "figure_id": "spinarak_014",
+  "display_name": "Spinarak UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "icon": "014 - Spinarak - Rarity_UC.png",
+  "model": "res://assets/figures/models/spinarak/spinarak_uc/014 - Spinarak - Rarity_UC.fbx",
+  "ability": {
+    "name": "Sticky Web",
+    "note": "Other Pokémon cannot use [CTRL QL Fly Away][Fly Away] to pass over this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Poison Sting",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Scratch",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Constrict",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent now has Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 14,
+    "pokemon_id_raw": "167",
+    "national_dex": 167,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      13
+    ],
+    "evolves_to": [
+      15
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Acid Downpour"
+    ]
+  }
+}

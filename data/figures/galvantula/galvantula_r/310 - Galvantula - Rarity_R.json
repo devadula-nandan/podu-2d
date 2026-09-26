@@ -1,0 +1,90 @@
+{
+  "figure_id": "galvantula_310",
+  "display_name": "Galvantula R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "ELECTRIC"
+  ],
+  "icon": "310 - Galvantula - Rarity_R.png",
+  "model": "res://assets/figures/models/galvantula/galvantula_r/310 - Galvantula - Rarity_R.fbx",
+  "ability": {
+    "name": "Electric Web",
+    "note": "The opponent's Pokémon that have passed over this Pokémon by using [CTRL QL Fly Away][Fly Away], [CTRL QL Fly][Fly] or [CTRL QL Soar][Soar] become paralyzed.",
+    "effect_ids": [
+      2
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Electro Ball",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "If the battle opponent is paralyzed, deal ×2 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Electric Thread",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed. The battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        2,
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 310,
+    "pokemon_id_raw": "596",
+    "national_dex": 596,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.8",
+    "last_update": "3.0.8",
+    "evolves_from": [
+      309
+    ],
+    "evolves_to": [
+      "310 mega"
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Gigavolt Havoc"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "figure_id": "geodude_063",
+  "display_name": "Geodude C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "icon": "063 - Geodude - Rarity_C.png",
+  "model": "res://assets/figures/models/geodude/geodude_c/063 - Geodude - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Self-Destruct",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon and the battle opponent are knocked out."
+    },
+    {
+      "name": "Rollout",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 30,
+      "source_damage_or_stars": "30x",
+      "note": "Spin again until Rollout does not land - damage is multiplied by the number of Rollout spins."
+    },
+    {
+      "name": "Rock Throw",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 63,
+    "pokemon_id_raw": "074",
+    "national_dex": 74,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0.8",
+    "evolves_from": [],
+    "evolves_to": [
+      64
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Continental Crush"
+    ]
+  }
+}

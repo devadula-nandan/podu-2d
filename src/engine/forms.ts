@@ -13,7 +13,7 @@
  * pick a Metapod-to-Butterfree successor out of thin air.
  */
 import { MEGA_DURATION_TURNS, MEGA_EVOLUTIONS_PER_DUEL } from '../rules/constants.js';
-import type { EngineContent } from './content.js';
+import type { EngineContent, Figure } from './content.js';
 import { figureContent } from './content.js';
 import type { GameEvent } from './events.js';
 import type { ContentFigureId, FigureUid, PlayerId } from './ids.js';
@@ -23,20 +23,32 @@ import { figureOf } from './state.js';
 
 const FORM_ONLY_RE = /can only be set as a form/i;
 
+const figuresListCache = new WeakMap<EngineContent, readonly Figure[]>();
+const megaTargetCache = new Map<string, ContentFigureId[]>();
+
 export function isFormOnlyText(text: string | null | undefined): boolean {
   return FORM_ONLY_RE.test(text ?? '');
 }
 
-function allFigures(content: EngineContent) {
-  return [...content.figures.values()].map((entry) => entry.figure);
+function allFigures(content: EngineContent): readonly Figure[] {
+  let list = figuresListCache.get(content);
+  if (list === undefined) {
+    list = [...content.figures.values()].map((entry) => entry.figure);
+    figuresListCache.set(content, list);
+  }
+  return list;
 }
 
 function byId(content: EngineContent, id: ContentFigureId) {
   return figureContent(content, id).figure;
 }
 
-const stripShiny = (name: string): string => name.replace(/^shiny\s+/i, '').trim();
-
+const stripShiny = (name: string): string => {
+  if (name.length < 6) return name.trim();
+  const c0 = name.charCodeAt(0);
+  if (c0 !== 83 && c0 !== 115) return name.trim(); // S/s
+  return name.replace(/^shiny\s+/i, '').trim();
+};
 /** Other figures that share this printed name and carry a different `form`. */
 export function formSiblings(content: EngineContent, figureId: ContentFigureId): ContentFigureId[] {
   const source = byId(content, figureId);
@@ -93,15 +105,23 @@ export function resolveMegaTargets(
   fromId: ContentFigureId,
   hint = '',
 ): ContentFigureId[] {
+  const cacheKey = `${fromId}|${hint}`;
+  const cached = megaTargetCache.get(cacheKey);
+  if (cached !== undefined) return cached;
+
   const source = byId(content, fromId);
   const shiny = /^shiny\s+/i.test(source.name);
   const base = stripShiny(source.name);
-  if (/^mega\s+/i.test(base)) return [];
+  if (/^mega\s+/i.test(base)) {
+    megaTargetCache.set(cacheKey, []);
+    return [];
+  }
 
   const candidates = allFigures(content).filter((figure) => {
     const name = figure.name;
-    const rest = stripShiny(name).replace(/^mega\s+/i, '');
-    if (!/^mega\s+/i.test(stripShiny(name))) return false;
+    const stripped = stripShiny(name);
+    if (!/^mega\s+/i.test(stripped)) return false;
+    const rest = stripped.replace(/^mega\s+/i, '');
     return rest === base || rest.startsWith(`${base} `);
   });
 
@@ -114,7 +134,9 @@ export function resolveMegaTargets(
 
   const preferred = pool.filter((figure) => /^shiny\s+/i.test(figure.name) === shiny);
   const chosen = preferred.length > 0 ? preferred : pool;
-  return chosen.map((figure) => contentFigureId(figure.id)).sort((a, b) => a - b);
+  const result = chosen.map((figure) => contentFigureId(figure.id)).sort((a, b) => a - b);
+  megaTargetCache.set(cacheKey, result);
+  return result;
 }
 
 /**

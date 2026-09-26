@@ -42,10 +42,10 @@
     "",
     "RULING 1 IS NOW CONFIRMED, NOT GUESSED. docs/RULES.md ruling 1 asks whether the two",
     "goal-side diagonals meet the ring node beside the goal or the next one out, and ships",
-    "'adjacentToGoal' at medium confidence. The extracted edges are r4c2--i2c1 and",
-    "r0c4--i0c1; r4c2 and r0c4 are each immediately adjacent to their goal. The shipped",
-    "default was right. The loader still honours GOAL_SIDE_DIAGONAL_ATTACHMENT so the",
-    "constant stays load-bearing and the alternative reading stays one token away.",
+    "'adjacentToGoal' at medium confidence. The edges are r4c4--i2c1 and r0c2--i0c1",
+    "(right of the player goal, left of the opponent goal — matching the official",
+    "board / WebGL chirality). The loader still honours GOAL_SIDE_DIAGONAL_ATTACHMENT",
+    "so the constant stays load-bearing and the alternative reading stays one token away.",
     "",
     "COORDINATES are normalised to the unit square for the renderer only. No rule reads",
     "them. They are snapped to exact lattice fractions so the data file is exactly",
@@ -80,14 +80,14 @@
     { "id": "r4c5", "x": 0.8333333333333334, "y": 1, "kind": "point", "owner": null },
     { "id": "r4c6", "x": 1, "y": 1, "kind": "entry", "owner": 0 },
 
-    { "id": "i0c0", "x": 0.1875, "y": 0.1875, "kind": "point", "owner": null },
-    { "id": "i0c1", "x": 0.5, "y": 0.1875, "kind": "point", "owner": null },
-    { "id": "i0c2", "x": 0.8125, "y": 0.1875, "kind": "point", "owner": null },
-    { "id": "i1c0", "x": 0.1875, "y": 0.5, "kind": "point", "owner": null },
-    { "id": "i1c2", "x": 0.8125, "y": 0.5, "kind": "point", "owner": null },
-    { "id": "i2c0", "x": 0.1875, "y": 0.8125, "kind": "point", "owner": null },
-    { "id": "i2c1", "x": 0.5, "y": 0.8125, "kind": "point", "owner": null },
-    { "id": "i2c2", "x": 0.8125, "y": 0.8125, "kind": "point", "owner": null }
+    { "id": "i0c0", "x": 0.25, "y": 0.25, "kind": "point", "owner": null },
+    { "id": "i0c1", "x": 0.5, "y": 0.25, "kind": "point", "owner": null },
+    { "id": "i0c2", "x": 0.75, "y": 0.25, "kind": "point", "owner": null },
+    { "id": "i1c0", "x": 0.25, "y": 0.5, "kind": "point", "owner": null },
+    { "id": "i1c2", "x": 0.75, "y": 0.5, "kind": "point", "owner": null },
+    { "id": "i2c0", "x": 0.25, "y": 0.75, "kind": "point", "owner": null },
+    { "id": "i2c1", "x": 0.5, "y": 0.75, "kind": "point", "owner": null },
+    { "id": "i2c2", "x": 0.75, "y": 0.75, "kind": "point", "owner": null }
   ],
   "outerRing": [
     ["r0c0", "r0c1"], ["r0c1", "r0c2"], ["r0c2", "r0c3"], ["r0c3", "r0c4"],
@@ -113,7 +113,7 @@
       "'oneNodeOut' it steps one further along the ring. Both readings preserve 28 nodes,",
       "34 edges and goal degree 2, which is exactly why prose could not settle it."
     ],
-    "adjacentToGoal": [["r4c2", "i2c1"], ["r0c4", "i0c1"]],
-    "oneNodeOut": [["r4c1", "i2c1"], ["r0c5", "i0c1"]]
+    "adjacentToGoal": [["r4c4", "i2c1"], ["r0c2", "i0c1"]],
+    "oneNodeOut": [["r4c5", "i2c1"], ["r0c1", "i0c1"]]
   }
 }

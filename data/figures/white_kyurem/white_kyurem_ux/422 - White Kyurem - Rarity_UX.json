@@ -1,0 +1,102 @@
+{
+  "figure_id": "white_kyurem_422",
+  "display_name": "White Kyurem UX",
+  "available_in_roster": false,
+  "movement_points": 3,
+  "types": [
+    "DRAGON",
+    "ICE"
+  ],
+  "icon": "res://data/figures/white_kyurem/white_kyurem_ux/422 - White Kyurem - Rarity_UX.png",
+  "model": "res://assets/figures/models/white_kyurem/white_kyurem_ux/422 - White Kyurem - Rarity_UX.fbx",
+  "ability": {
+    "name": "Turboblaze",
+    "note": "This Pokémon can only be set as a form in the deck. The effects of Abilities of the battle opponent that increase or decrease Attack damage are nullified. This Pokémon can MP move over other Pokémon. When this Pokémon is knocked out [CTRL NOTE][in battle], it can change form to [CTRL FID 447][Kyurem] without moving to the P.C. If it does, and there are any of your [CTRL FID 261][Reshiram] that have been excluded from the duel, move one of the [CTRL FID 261][Reshiram] to the bench.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Draco Meteor",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "One other Pokémon on the field spins - if they spin a miss or a white attack of 70 damage or more, they are knocked out."
+    },
+    {
+      "name": "Ice Burn",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*The battle opponent becomes burned. If the battle opponent has Wait, the battle opponent is knocked out instead of this Pokémon.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Draco Meteor",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "One other Pokémon on the field spins - if they spin a miss or a white attack of 70 damage or more, they are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fusion Flare",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*If this Pokémon is not affected by a special condition, and if any of your other [CTRL QL Fusion Bolt][Pokémon] on the field has the Fusion Bolt Attack, exclude Pokémon knocked out by this Attack from the Duel."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 422,
+    "pokemon_id_raw": "646 white",
+    "national_dex": 646,
+    "variant": "white",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      423
+    ],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Subzero Slammer",
+      "Clangorous Soulblaze"
+    ],
+    "material": 5000,
+    "first_appear": "6.0.0",
+    "last_update": "6.0.11"
+  }
+}

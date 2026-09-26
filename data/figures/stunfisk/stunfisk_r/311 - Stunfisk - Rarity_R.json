@@ -1,0 +1,85 @@
+{
+  "figure_id": "stunfisk_311",
+  "display_name": "Stunfisk R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ELECTRIC",
+    "GROUND"
+  ],
+  "icon": "311 - Stunfisk - Rarity_R.png",
+  "model": "res://assets/figures/models/stunfisk/stunfisk_r/311 - Stunfisk - Rarity_R.fbx",
+  "ability": {
+    "name": "Electric Mat",
+    "note": "Other Pokémon can move over this Pokémon when using an MP move. If those Pokémon are the opponent's Pokémon, those Pokémon become paralyzed.",
+    "effect_ids": [
+      2
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Electric Trap",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*The battle opponent and Flying-type Pokémon and Water-type Pokémon that are not Ground-type pokémon within 2 steps are paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Fissure",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Knock out the battle opponent if it is not a Flying-type Pokémon."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 311,
+    "pokemon_id_raw": "618",
+    "national_dex": 618,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 1,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "3.0.10",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Tectonic Rage"
+    ]
+  }
+}

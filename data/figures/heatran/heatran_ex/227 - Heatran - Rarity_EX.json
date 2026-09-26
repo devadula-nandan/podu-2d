@@ -1,0 +1,106 @@
+{
+  "figure_id": "heatran_227",
+  "display_name": "Heatran EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "STEEL"
+  ],
+  "icon": "227 - Heatran - Rarity_EX.png",
+  "model": "res://assets/figures/models/heatran/heatran_ex/227 - Heatran - Rarity_EX.fbx",
+  "ability": {
+    "name": "Surprise Strike",
+    "note": "If there is an opponent's Pokémon on your entry point, and this Pokémon is on the bench, at the beginning of your turn, this Pokémon can move next to that Pokémon and battle. After the battle, if this Pokémon is not knocked out, move it to your bench.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Crunch",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Iron Head",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Crunch",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Magma Slide",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked 2 steps back and becomes burned. The battle opponent now has Wait.",
+      "source_effect_ids": [
+        3,
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 227,
+    "pokemon_id_raw": "485",
+    "national_dex": 485,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.5",
+    "last_update": "7.0.7",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Corkscrew Crash"
+    ]
+  }
+}

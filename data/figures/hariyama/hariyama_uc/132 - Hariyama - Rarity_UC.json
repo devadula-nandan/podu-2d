@@ -1,0 +1,80 @@
+{
+  "figure_id": "hariyama_132",
+  "display_name": "Hariyama UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIGHTING"
+  ],
+  "icon": "132 - Hariyama - Rarity_UC.png",
+  "model": "res://assets/figures/models/hariyama/hariyama_uc/132 - Hariyama - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Heavy Slam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If the battle opponent has MP3 or higher, this Pokémon takes no damage and the battle opponent is knocked out."
+    },
+    {
+      "name": "Push Away",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon knocks the battle opponent one step back and claims its previous spot."
+    },
+    {
+      "name": "Slap Push",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 132,
+    "pokemon_id_raw": "297",
+    "national_dex": 297,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "5.0.8",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling"
+    ]
+  }
+}

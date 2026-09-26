@@ -1,0 +1,88 @@
+{
+  "figure_id": "doduo_034",
+  "display_name": "Doduo C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "icon": "034 - Doduo - Rarity_C.png",
+  "model": "res://assets/figures/models/doduo/doduo_c/034 - Doduo - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Fury Attack",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 20,
+      "source_damage_or_stars": "20x",
+      "note": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins."
+    },
+    {
+      "name": "Peck",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 34,
+    "pokemon_id_raw": "084",
+    "national_dex": 84,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [
+      33
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Breakneck Blitz"
+    ]
+  }
+}

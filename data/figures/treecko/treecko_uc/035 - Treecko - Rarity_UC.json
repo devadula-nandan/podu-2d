@@ -1,0 +1,80 @@
+{
+  "figure_id": "treecko_035",
+  "display_name": "Treecko UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "035 - Treecko - Rarity_UC.png",
+  "model": "res://assets/figures/models/treecko/treecko_uc/035 - Treecko - Rarity_UC.fbx",
+  "ability": {
+    "name": "Wall-Climb",
+    "note": "While on the bench, this Pokémon can MP move over non-Ghost-type Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 16,
+      "damage": 20,
+      "source_damage_or_stars": "20"
+    },
+    {
+      "name": "Slam",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 20
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 35,
+    "pokemon_id_raw": "252",
+    "national_dex": 252,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.0.0",
+    "evolves_from": [
+      173
+    ],
+    "evolves_to": [
+      36
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

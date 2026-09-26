@@ -1,0 +1,77 @@
+{
+  "figure_id": "elekid_200",
+  "display_name": "Elekid C",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "200 - Elekid - Rarity_C.png",
+  "model": "res://assets/figures/models/elekid/elekid_c/200 - Elekid - Rarity_C.fbx",
+  "ability": {
+    "name": "Connection",
+    "note": "This Pokémon's damage is increased by +10 for every Electric-type Pokémon it is connected to.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Power Zap",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 24
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 200,
+    "pokemon_id_raw": "239",
+    "national_dex": 239,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 3,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "3.0.11",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      429
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

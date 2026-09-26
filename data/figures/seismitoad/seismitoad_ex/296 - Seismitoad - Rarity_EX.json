@@ -1,0 +1,96 @@
+{
+  "figure_id": "seismitoad_296",
+  "display_name": "Seismitoad EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "GROUND"
+  ],
+  "icon": "296 - Seismitoad - Rarity_EX.png",
+  "model": "res://assets/figures/models/seismitoad/seismitoad_ex/296 - Seismitoad - Rarity_EX.fbx",
+  "ability": {
+    "name": "Poison Touch",
+    "note": "Any Pokémon that battles this Pokémon will become poisoned.",
+    "effect_ids": [
+      0
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Earthquake",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*All Pokémon on the field spin, except this one - if they spin a miss, they are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    },
+    {
+      "name": "Bumpy Vibration",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Opposing Pokémon adjacent to your [CTRL FID 296][Seismitoad], [CTRL FID 295][Palpitoad] and [CTRL FID 294][Tympole gain] Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 296,
+    "pokemon_id_raw": "537",
+    "national_dex": 537,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "3.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      297
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "figure_id": "pancham_148",
+  "display_name": "Pancham UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "FIGHTING"
+  ],
+  "icon": "148 - Pancham - Rarity_UC.png",
+  "model": "res://assets/figures/models/pancham/pancham_uc/148 - Pancham - Rarity_UC.fbx",
+  "ability": {
+    "name": "Arm Thrust Evolution",
+    "note": "If this Pokémon spins Arm Thrust three or more times in a battle, it may evolve after the battle.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Arm Thrust",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 30,
+      "source_damage_or_stars": "30x",
+      "note": "Spin again until Arm Thrust* does not land - damage is multiplied by the number of Arm Thrust* spins. *If the number of attacks spun was 2 or more, this Pokémon cannot be knocked out."
+    },
+    {
+      "name": "Karate Chop",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Parting Shot",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon may switch with a Pokémon on your bench. The battle opponent now has Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 148,
+    "pokemon_id_raw": "674",
+    "national_dex": 674,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "4.0",
+    "last_update": "4.0",
+    "evolves_from": [
+      147
+    ],
+    "evolves_to": [
+      149
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "figure_id": "victini_576",
+  "display_name": "Victini EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "PSYCHIC",
+    "FIRE"
+  ],
+  "icon": "576 - Victini - Rarity_EX.png",
+  "model": "res://assets/figures/models/victini/victini_ex/576 - Victini - Rarity_EX.fbx",
+  "ability": {
+    "name": "Victory Star",
+    "note": "If this Pokémon is not affected by a special condition, it may MP move over opposing non-Flying-type Pokémon on the field. This Pokémon may respin just once in battles on your turn.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Fusion Bolt",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is not affected by a special condition, and if any of your other [CTRL QL Fusion Flare][Pokémon] on the field has the Fusion Flare Attack, exclude Pokémon knocked out by this Attack from the duel."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "V-Create",
+      "type": "WHITE",
+      "size": 8,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*Attaches an MP -1 marker to this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fusion Flare",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If this Pokémon is not affected by a special condition, and if any of your other [CTRL QL Fusion Bolt][Pokémon] on the field has the Fusion Bolt Attack, exclude Pokémon knocked out by this Attack from the duel."
+    },
+    {
+      "name": "Searing Shot",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent and the Pokémon in a straight line directly behind it become burned.",
+      "source_effect_ids": [
+        3
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 576,
+    "pokemon_id_raw": "494",
+    "national_dex": 494,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      575
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Shattered Psyche"
+    ]
+  }
+}

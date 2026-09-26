@@ -1,0 +1,87 @@
+{
+  "figure_id": "pinsir_561",
+  "display_name": "Pinsir EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG"
+  ],
+  "icon": "561 - Pinsir - Rarity_EX.png",
+  "model": "res://assets/figures/models/pinsir/pinsir_ex/561 - Pinsir - Rarity_EX.fbx",
+  "ability": {
+    "name": "King Spike",
+    "note": "Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Guillotine",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Clamping Vice",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Attaches an MP -2 marker to the battle opponent. Battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 36,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 561,
+    "pokemon_id_raw": "127 ex",
+    "national_dex": 127,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.11",
+    "last_update": "7.0.11",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out"
+    ]
+  }
+}

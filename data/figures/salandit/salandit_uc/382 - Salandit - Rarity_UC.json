@@ -1,0 +1,88 @@
+{
+  "figure_id": "salandit_382",
+  "display_name": "Salandit UC",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "POISON",
+    "FIRE"
+  ],
+  "icon": "382 - Salandit - Rarity_UC.png",
+  "model": "res://assets/figures/models/salandit/salandit_uc/382 - Salandit - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Sludge Bomb",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If this Pokémon is knocked out, all Pokémon within 2 steps become poisoned.",
+      "source_effect_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Clinging Gas",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Poisons and attaches a Clinging Gas marker to an opposing Pokémon within 2 steps. The effects of Abilities of Pokémon with that marker that decrease Attack damage are nullified.",
+      "source_effect_ids": [
+        0
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 382,
+    "pokemon_id_raw": "757",
+    "national_dex": 757,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 3,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "6.1.1",
+    "last_update": "6.1.1",
+    "evolves_from": [],
+    "evolves_to": [
+      "382 primal"
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Acid Downpour"
+    ]
+  }
+}

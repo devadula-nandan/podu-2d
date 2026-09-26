@@ -1,0 +1,87 @@
+{
+  "figure_id": "lairon_144",
+  "display_name": "Lairon C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "STEEL",
+    "ROCK"
+  ],
+  "icon": "144 - Lairon - Rarity_C.png",
+  "model": "res://assets/figures/models/lairon/lairon_c/144 - Lairon - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Take Down",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    },
+    {
+      "name": "Harden",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If the battle opponent spins an Attack of 100 damage or less, this Pokémon is not knocked out. While this Pokémon is on the field, the Attacks of this Pokémon, other than Harden, deal +10 damage."
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 144,
+    "pokemon_id_raw": "305",
+    "national_dex": 305,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "3.0.12",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Continental Crush",
+      "Corkscrew Crash"
+    ]
+  }
+}

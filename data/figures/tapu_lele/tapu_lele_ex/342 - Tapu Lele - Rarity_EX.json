@@ -1,0 +1,95 @@
+{
+  "figure_id": "tapu_lele_342",
+  "display_name": "Tapu Lele EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "FAIRY"
+  ],
+  "icon": "342 - Tapu Lele - Rarity_EX.png",
+  "model": "res://assets/figures/models/tapu_lele/tapu_lele_ex/342 - Tapu Lele - Rarity_EX.fbx",
+  "ability": {
+    "name": "Psychic Surge",
+    "note": "This ability is only valid on your turn. This Pokémon can MP-Move past non-Fairy-type Pokémon on the field. When this Pokémon is on the field, your Psychic-type Pokémon gain +1 ☆. (This effect is not cumulative.) The Gold Attacks of Pokémon within 2 steps of this Pokémon become White Attacks.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Psyshock",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Moonblast",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 99,
+      "source_damage_or_stars": "99"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Akala Wish",
+      "type": "BLUE",
+      "size": 20,
+      "note": "You may exclude this Pokémon from the duel. If you do, your used plates all return to their unused state."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 342,
+    "pokemon_id_raw": "786",
+    "national_dex": 786,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "6.2.5",
+    "evolves_from": [
+      341
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Shattered Psyche",
+      "Guardian of Alola"
+    ]
+  }
+}

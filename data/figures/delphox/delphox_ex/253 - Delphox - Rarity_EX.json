@@ -1,0 +1,93 @@
+{
+  "figure_id": "delphox_253",
+  "display_name": "Delphox EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "PSYCHIC"
+  ],
+  "icon": "253 - Delphox - Rarity_EX.png",
+  "model": "res://assets/figures/models/delphox/delphox_ex/253 - Delphox - Rarity_EX.fbx",
+  "ability": {
+    "name": "Magic Trick",
+    "note": "If this Pokémon spins Miss in battle, one of your Plates will switch from used to unused.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Flamethrower",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Flame Kinesis",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is moved 3 steps away from this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Fire Blast",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 253,
+    "pokemon_id_raw": "655",
+    "national_dex": 655,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "6.2.5",
+    "evolves_from": [
+      252
+    ],
+    "evolves_to": [
+      254
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Shattered Psyche"
+    ]
+  }
+}

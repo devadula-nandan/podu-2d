@@ -1,0 +1,92 @@
+{
+  "figure_id": "blaziken_286",
+  "display_name": "Blaziken EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE",
+    "FIGHTING"
+  ],
+  "icon": "286 - Blaziken - Rarity_EX.png",
+  "model": "res://assets/figures/models/blaziken/blaziken_ex/286 - Blaziken - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Cyclone Kick",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Moves the battle opponent to the P.C."
+    },
+    {
+      "name": "Jet Kick",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 20,
+      "source_damage_or_stars": "20",
+      "note": "*If the battle opponent is knocked out, this Pokémon moves to a spot 2 steps away, after the battle. This Pokémon gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 286,
+    "pokemon_id_raw": "257",
+    "national_dex": 257,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.12",
+    "last_update": "3.0.12",
+    "evolves_from": [
+      285
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Inferno Overdrive"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "figure_id": "scizor_343",
+  "display_name": "Scizor EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "STEEL"
+  ],
+  "icon": "343 - Scizor - Rarity_EX.png",
+  "model": "res://assets/figures/models/scizor/scizor_ex/343 - Scizor - Rarity_EX.fbx",
+  "ability": {
+    "name": "Steel Breaker",
+    "note": "If a battle opponent of this Pokémon spins an Attack of 130 or more damage, attach a Cracked marker to the battle opponent.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Crushing Squeeze",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "*If the battle opponent has a Cracked marker on it, this Pokémon takes no damage and the battle opponent is knocked out unless it is a Fire-type Pokémon."
+    },
+    {
+      "name": "Bullet Punch",
+      "type": "GOLD",
+      "size": 32,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 24
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 343,
+    "pokemon_id_raw": "212",
+    "national_dex": 212,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.3",
+    "last_update": "7.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      344
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Corkscrew Crash"
+    ]
+  }
+}

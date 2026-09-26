@@ -1,0 +1,93 @@
+{
+  "figure_id": "alakazam_558",
+  "display_name": "Alakazam EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "558 - Alakazam - Rarity_EX.png",
+  "model": "res://assets/figures/models/alakazam/alakazam_ex/558 - Alakazam - Rarity_EX.fbx",
+  "ability": {
+    "name": "Psychic Amplifier",
+    "note": "If this Pokémon is using the [CTRL PID 433][Twisted Spoon] plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's Attacks have Range 2.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Stillbind",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Attaches an MP -2 marker to the battle opponent or one opposing Pokémon adjacent to the battle opponent. That Pokémon gains Wait 5.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    },
+    {
+      "name": "Psyshock",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Psycho Shift",
+      "type": "BLUE",
+      "size": 20,
+      "note": "If this Pokémon has a special condition, that condition is applied to its battle opponent and removed from this Pokémon instead."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 558,
+    "pokemon_id_raw": "065",
+    "national_dex": 65,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [
+      557
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

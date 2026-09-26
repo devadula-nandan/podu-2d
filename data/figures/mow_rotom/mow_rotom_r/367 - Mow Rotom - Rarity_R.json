@@ -1,0 +1,88 @@
+{
+  "figure_id": "mow_rotom_367",
+  "display_name": "Mow Rotom R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "GRASS"
+  ],
+  "icon": "367 - Mow Rotom - Rarity_R.png",
+  "model": "res://assets/figures/models/mow_rotom/mow_rotom_r/367 - Mow Rotom - Rarity_R.fbx",
+  "ability": {
+    "name": "Artificial Turf",
+    "note": "If this Pokémon is on the field and is not affected by a special condition, your MP1 Grass-type Pokémon gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Discharge",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Leaf Storm",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*This attack becomes a Miss for the next turn."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 367,
+    "pokemon_id_raw": "479 mow",
+    "national_dex": 479,
+    "variant": "mow",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.1",
+    "last_update": "6.0.1",
+    "evolves_from": [
+      366
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Bloom Doom"
+    ]
+  }
+}

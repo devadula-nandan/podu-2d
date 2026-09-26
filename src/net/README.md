@@ -1,6 +1,6 @@
 # Two-player room (`src/net`)
 
-Both people open the same URL: `/2d?seed=ROOM`. The seed is the room id. There is no `?relay=`, no Copy-invite with a different host, and no Seat A/B picker.
+Both people open the same URL: `/3d?seed=ROOM`. The seed is the room id. There is no `?relay=`, no Copy-invite with a different host, and no Seat A/B picker.
 
 ## Room
 
@@ -31,11 +31,11 @@ Commands are proposed by a seated client. The server appends them (seq) and broa
 The client always uses `ws(s)://<window.location.host>/sync`.
 
 - `https` page → `wss`. `http` → `ws`.
-- Dev: `vite --host` proxies `/sync` to `npm run sync` on `:8787`. A phone opens `http://192.168.x.x:5173/2d?seed=X`. It never types `:8787`.
+- Dev: `vite --host` proxies `/sync` to `npm run sync` on `:8787`. A phone opens `http://192.168.x.x:5173/3d?seed=X`. It never types `:8787`.
 - Production: `npm run start` serves `dist/` and `/sync` on one port.
 
 In-memory only: live sockets, heartbeat timers, the `Map` of rooms (mirrored to `.rooms/*.json`). Spectators are not persisted.
 
 ## `/dev`
 
-Does not yank the Deck Builder into a leftover server room when you type a seed. Same-tab `/2d` → `/dev` restores from sessionStorage. Deck Builder `start` overwrites that seed’s room (debug). Undo on `/dev` is local and does not rewrite the server log.
+Does not yank the Deck Builder into a leftover server room when you type a seed. Same-tab `/3d` → `/dev` restores from sessionStorage. Deck Builder `start` overwrites that seed’s room (debug). Undo on `/dev` is local and does not rewrite the server log.

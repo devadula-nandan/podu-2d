@@ -1,0 +1,90 @@
+{
+  "figure_id": "primal_groudon_425",
+  "display_name": "Primal Groudon UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GROUND",
+    "FIRE"
+  ],
+  "icon": "res://data/figures/primal_groudon/primal_groudon_ux/425 - Primal Groudon - Rarity_UX.png",
+  "model": "res://assets/figures/models/primal_groudon/primal_groudon_ux/425 - Primal Groudon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Desolate Land",
+    "note": "When this Pokémon is on the field, [CTRL QL Ultra Beasts][Ultra Beasts] knocked out by its Attack damage are excluded from the duel (without moving to Ultra Space), returning to the bench if this Pokémon leaves the field. When this Pokémon is knocked out in battle, it may go back to being [CTRL FID 80][Groudon] without moving to the P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Precipice Blades",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*Spin for all opposing Pokémon on the field. If they spin a Miss (including a Miss due to paralyzed or burned conditions), they are knocked out."
+    },
+    {
+      "name": "Flamethrower",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 425,
+    "pokemon_id_raw": "383 primal",
+    "national_dex": 383,
+    "variant": "primal",
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      426
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive",
+      "Tectonic Rage"
+    ],
+    "material": 5000,
+    "first_appear": "6.1.1",
+    "last_update": "6.1.1"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "figure_id": "tangela_488",
+  "display_name": "Tangela UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "488 - Tangela - Rarity_UC.png",
+  "model": "res://assets/figures/models/tangela/tangela_uc/488 - Tangela - Rarity_UC.fbx",
+  "ability": {
+    "name": "Regenerator",
+    "note": "If one of your other Pokémon is knocked out, and this Pokémon is in the P.C., this Pokémon moves to the bench.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Bind",
+      "type": "WHITE",
+      "size": 60,
+      "damage": 10,
+      "source_damage_or_stars": "10x",
+      "note": "Spin again until Bind* does not land - damage is multiplied by the number of Bind* spins. *The bttle opponent gains Wait X, where X is the number of Bind* spins.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Constrict",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent now has Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 488,
+    "pokemon_id_raw": "114",
+    "national_dex": 114,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "6.0.0",
+    "last_update": "6.0.0",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

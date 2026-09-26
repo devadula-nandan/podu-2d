@@ -1,0 +1,86 @@
+{
+  "figure_id": "graveler_150",
+  "display_name": "Graveler C",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "icon": "150 - Graveler - Rarity_C.png",
+  "model": "res://assets/figures/models/graveler/graveler_c/150 - Graveler - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Rollout",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 40,
+      "source_damage_or_stars": "40x",
+      "note": "Spin again until Rollout does not land - damage is multiplied by the number of Rollout spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Landslide",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent is knocked 1 step back and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 150,
+    "pokemon_id_raw": "075",
+    "national_dex": 75,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 1,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.4",
+    "last_update": "3.0.8",
+    "evolves_from": [],
+    "evolves_to": [
+      "150 mega-x",
+      "150 mega-y"
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Continental Crush"
+    ]
+  }
+}

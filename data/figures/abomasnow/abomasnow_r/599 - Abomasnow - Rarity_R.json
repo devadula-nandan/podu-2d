@@ -1,0 +1,99 @@
+{
+  "figure_id": "abomasnow_599",
+  "display_name": "Abomasnow R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "ICE"
+  ],
+  "icon": "599 - Abomasnow - Rarity_R.png",
+  "model": "res://assets/figures/models/abomasnow/abomasnow_r/599 - Abomasnow - Rarity_R.fbx",
+  "ability": {
+    "name": "Whiteout",
+    "note": "Opposing Flying-type Pokémon and Dragon-type Pokémon within 2 steps of this Pokémon have MP-1.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Sheer Cold",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked out. If the battle opponent is frozen, exclude it from the duel."
+    },
+    {
+      "name": "Blizzard",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If this Pokémon is knocked out, all adjacent Pokémon become frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Energy Ball",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While the battle opponent is on the field, all of that Pokémon's Blue Attacks that are not Dodge become Misses."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 599,
+    "pokemon_id_raw": "460",
+    "national_dex": 460,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      600
+    ],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Subzero Slammer"
+    ]
+  }
+}

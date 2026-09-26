@@ -33,9 +33,9 @@ async function deployOnce(page: Page): Promise<void> {
 }
 
 async function openLobby(page: Page): Promise<void> {
-  await page.goto(`/2d?seed=${String(SEED)}`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`/3d?seed=${String(SEED)}`, { waitUntil: 'domcontentloaded' });
   await expect(page.getByTestId('play-setup')).toBeVisible({ timeout: 60_000 });
-  expect(page.url()).toMatch(new RegExp(`/2d\\?seed=${String(SEED)}$`));
+  expect(page.url()).toMatch(new RegExp(`/3d\\?seed=${String(SEED)}$`));
   expect(page.url()).not.toContain('relay=');
   expect(page.url()).not.toContain(':8787');
   await expect(page.getByTestId('start-duel')).toBeEnabled({ timeout: 15_000 });
@@ -64,9 +64,9 @@ test('LAN Vite URL seats two contexts and broadcasts a deploy', async ({
   await expect(p1.getByTestId('room-offline')).toHaveCount(0);
   await expect(p2.getByTestId('room-offline')).toHaveCount(0);
 
-  await p1.getByTestId('use-starters').click();
+  await p1.getByTestId('deck-slot-load-0').click();
   await p1.getByTestId('start-duel').click();
-  await p2.getByTestId('use-starters').click();
+  await p2.getByTestId('deck-slot-load-0').click();
   await p2.getByTestId('start-duel').click();
 
   await expect(p1.getByTestId('play-duel')).toBeVisible({ timeout: 30_000 });

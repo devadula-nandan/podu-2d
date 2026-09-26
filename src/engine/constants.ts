@@ -53,6 +53,15 @@ export const RESPIN_CHAIN_CAP = 32;
 export const Z_GAUGE_MAX = 100;
 
 /**
+ * How much the turn player's Z-Move gauge fills at the start of their turn.
+ *
+ * The original table fills one pip per turn on an 8-pip meter. With `Z_GAUGE_MAX = 100`
+ * that is 13 per turn so a Z-Move is ready on turn 8. No source states the 100-scale
+ * number; the pip count is from the original HUD.
+ */
+export const Z_GAUGE_TURN_GAIN = 13;
+
+/**
  * The flat damage each special condition costs its bearer.
  *
  * Measured, not chosen: the table in `docs/RULES.md` section 5 states Poisoned -20,

@@ -1,0 +1,88 @@
+{
+  "figure_id": "ludicolo_366",
+  "display_name": "Ludicolo R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "GRASS"
+  ],
+  "icon": "366 - Ludicolo - Rarity_R.png",
+  "model": "res://assets/figures/models/ludicolo/ludicolo_r/366 - Ludicolo - Rarity_R.fbx",
+  "ability": {
+    "name": "Come Here",
+    "note": "When this Pokémon moves from the bench to the field, or appears as an Evolution, each player moves one Benched Pokémon to its respective entry point (your opponent goes first).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Grass Knot",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If the battle opponent's Attack is 120 damage or higher, the opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Lively Dance",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "All Pokémon on the field spin. Those that spin White Attacks gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 366,
+    "pokemon_id_raw": "272",
+    "national_dex": 272,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.7",
+    "last_update": "4.0.7",
+    "evolves_from": [],
+    "evolves_to": [
+      367,
+      368
+    ],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "figure_id": "honchkrow_439",
+  "display_name": "Honchkrow EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "FLYING"
+  ],
+  "icon": "439 - Honchkrow - Rarity_EX.png",
+  "model": "res://assets/figures/models/honchkrow/honchkrow_ex/439 - Honchkrow - Rarity_EX.fbx",
+  "ability": {
+    "name": "Insomnia",
+    "note": "This Pokémon cannot be affected by sleep.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Call",
+      "type": "BLUE",
+      "size": 24,
+      "note": "Moves your [CTRL FID 17][Murkrow] in the P.C. to the bench."
+    },
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 36,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Night Slash",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*If this Pokémon is on the field, it may switch a Pokémon on your bench or in your P.C. after battle."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 439,
+    "pokemon_id_raw": "430",
+    "national_dex": 430,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "5.0.9",
+    "last_update": "5.0.9",
+    "evolves_from": [],
+    "evolves_to": [
+      122
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Supersonic Skystrike"
+    ]
+  }
+}

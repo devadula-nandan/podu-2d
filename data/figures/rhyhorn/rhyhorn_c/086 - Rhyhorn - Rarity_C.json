@@ -1,0 +1,81 @@
+{
+  "figure_id": "rhyhorn_086",
+  "display_name": "Rhyhorn C",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "GROUND",
+    "ROCK"
+  ],
+  "icon": "086 - Rhyhorn - Rarity_C.png",
+  "model": "res://assets/figures/models/rhyhorn/rhyhorn_c/086 - Rhyhorn - Rarity_C.fbx",
+  "ability": {
+    "name": "Reckless Charge",
+    "note": "This Pokémon can move up to 2 steps in a straight line.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Hyper Take Down",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*If the battle opponent is knocked out, this Pokémon claims its previous spot and gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Stomp",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 86,
+    "pokemon_id_raw": "111",
+    "national_dex": 111,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      87
+    ],
+    "z_move_keys": [
+      "Tectonic Rage",
+      "Continental Crush"
+    ]
+  }
+}

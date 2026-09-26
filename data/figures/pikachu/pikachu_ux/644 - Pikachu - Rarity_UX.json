@@ -1,0 +1,89 @@
+{
+  "figure_id": "pikachu_644",
+  "display_name": "Pikachu UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "res://data/figures/pikachu/pikachu_ux/644 - Pikachu - Rarity_UX.png",
+  "model": "res://assets/figures/models/pikachu/pikachu_ux/644 - Pikachu - Rarity_UX.fbx",
+  "ability": {
+    "name": "Electrical Charge",
+    "note": "If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    },
+    {
+      "name": "Volt Switch",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Volt Tackle",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "This Pokémon and its battle opponent become parlyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 644,
+    "pokemon_id_raw": "025 ux",
+    "national_dex": 25,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Catastropika"
+    ],
+    "material": 5000,
+    "cloned_from_figure_id": 557,
+    "asset_only_variant_clone": true
+  }
+}

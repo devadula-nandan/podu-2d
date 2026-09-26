@@ -1,0 +1,108 @@
+{
+  "figure_id": "fan_rotom_468",
+  "display_name": "Fan Rotom R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ELECTRIC",
+    "FLYING"
+  ],
+  "icon": "468 - Fan Rotom - Rarity_R.png",
+  "model": "res://assets/figures/models/fan_rotom/fan_rotom_r/468 - Fan Rotom - Rarity_R.fbx",
+  "ability": {
+    "name": "Headwind",
+    "note": "If this Pokémon is on the field and is not affected by a special condition, Attack damage-increasing effects on Flying-type battle opponents of your Flying-type Pokémon are negated.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Air Slash",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Discharge",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    },
+    {
+      "name": "Air Slash",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*The battle opponent gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Revert",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon can change form to one of your [CTRL FID 462][Rotom]."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 468,
+    "pokemon_id_raw": "479 fan",
+    "national_dex": 479,
+    "variant": "fan",
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.1.0",
+    "last_update": "6.1.0",
+    "evolves_from": [
+      176
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Supersonic Skystrike"
+    ]
+  }
+}

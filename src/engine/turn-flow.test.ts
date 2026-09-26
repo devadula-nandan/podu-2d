@@ -48,6 +48,24 @@ describe('canonical turn flow', () => {
     expect(engine.legalCommands(moved).some((command) => command.kind === 'playPlate')).toBe(false);
   });
 
+  it('after deploy with no adjacent fight, the turn ends without declineBattle', () => {
+    const { engine, state } = harness({
+      p0: [makeFigure(1, { name: 'A' }), makeFigure(2, { name: 'B' })],
+      p1: [makeFigure(3, { name: 'X' })],
+    });
+    const placed = onField(state, [[1, 'r4c6'], [2, 'r0c6']]);
+    const deployed = engine.dispatch(placed, {
+      kind: 'deploy',
+      player: 0,
+      uid: uid(0),
+      entry: nid('r4c0'),
+      to: nid('r4c0'),
+    }).nextState;
+    expect(deployed.turn.player).toBe(1);
+    expect(deployed.turn.movedUid).toBeNull();
+    expect(engine.legalCommands(deployed).some((command) => command.kind === 'declineBattle')).toBe(false);
+  });
+
   it('after mpMove with no adjacent fight, the turn ends without declineBattle', () => {
     const { engine, state } = harness({
       p0: [makeFigure(1, { name: 'A' })],

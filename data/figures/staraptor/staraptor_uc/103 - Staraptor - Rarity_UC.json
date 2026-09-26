@@ -1,0 +1,84 @@
+{
+  "figure_id": "staraptor_103",
+  "display_name": "Staraptor UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "icon": "103 - Staraptor - Rarity_UC.png",
+  "model": "res://assets/figures/models/staraptor/staraptor_uc/103 - Staraptor - Rarity_UC.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    },
+    {
+      "name": "Fly Away",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon jumps over the battle opponent and lands on a surrounding point."
+    },
+    {
+      "name": "Brave Bird",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*This Pokémon is knocked out if the opponent's Attack deals more than half the damage that this Pokémon's Attack deals."
+    },
+    {
+      "name": "Wing Attack",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 103,
+    "pokemon_id_raw": "398",
+    "national_dex": 398,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0",
+    "evolves_from": [
+      102
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Breakneck Blitz"
+    ]
+  }
+}

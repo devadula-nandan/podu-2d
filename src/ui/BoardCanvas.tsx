@@ -21,17 +21,17 @@ export function BoardCanvas({ board, view, nameOf, spriteUrlOf, highlights, onNo
   useEffect(() => {
     const canvas = ref.current;
     if (canvas === null) return;
-    const parent = canvas.parentElement;
-    if (parent === null) return;
+    const field = canvas.closest('.duel-field');
+    if (!(field instanceof HTMLElement)) return;
 
     const paint = (): void => {
       const dpr = window.devicePixelRatio || 1;
-      const width = Math.max(120, parent.clientWidth);
-      const height = Math.max(120, parent.clientHeight);
+      const width = Math.max(120, Math.round(field.clientWidth));
+      const height = Math.max(120, Math.round(field.clientHeight));
       canvas.width = Math.floor(width * dpr);
       canvas.height = Math.floor(height * dpr);
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${height}px`;
+      canvas.style.width = `${String(width)}px`;
+      canvas.style.height = `${String(height)}px`;
       const ctx = canvas.getContext('2d');
       if (ctx === null) return;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -42,7 +42,7 @@ export function BoardCanvas({ board, view, nameOf, spriteUrlOf, highlights, onNo
     const observer = new ResizeObserver(() => {
       paint();
     });
-    observer.observe(parent);
+    observer.observe(field);
     return () => {
       observer.disconnect();
     };

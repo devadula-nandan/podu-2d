@@ -1,0 +1,87 @@
+{
+  "figure_id": "lunala_344",
+  "display_name": "Lunala EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "GHOST"
+  ],
+  "icon": "344 - Lunala - Rarity_EX.png",
+  "model": "res://assets/figures/models/lunala/lunala_ex/344 - Lunala - Rarity_EX.fbx",
+  "ability": {
+    "name": "Shadow Shield",
+    "note": "The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle. If this Pokémon is not affected by a special condition, halve the Attack damage dealt to this Pokémon by the battle opponent. This Pokémon can move through other Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Moongeist Beam",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Move the battle opponent or one opposing Pokémon that is adjacent to the battle opponent to its P.C."
+    },
+    {
+      "name": "Psychic",
+      "type": "WHITE",
+      "size": 48,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Will-O-Wisp",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 344,
+    "pokemon_id_raw": "792",
+    "national_dex": 792,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "4.0.4",
+    "evolves_from": [
+      343
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Shattered Psyche",
+      "Menacing Moonraze Maelstrom"
+    ]
+  }
+}

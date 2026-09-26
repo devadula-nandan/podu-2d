@@ -1,0 +1,93 @@
+{
+  "figure_id": "brionne_368",
+  "display_name": "Brionne R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "368 - Brionne - Rarity_R.png",
+  "model": "res://assets/figures/models/brionne/brionne_r/368 - Brionne - Rarity_R.fbx",
+  "ability": {
+    "name": "Proactive",
+    "note": "In battles on your turn, this Pokémon deals +20 damage. If this Pokémon has evolved, it gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Balloon Dance",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Opposing Pokémon on the field spin. Those that spin a Purple Attack gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Aqua Jet",
+      "type": "GOLD",
+      "size": 40,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Sing",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent falls asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 368,
+    "pokemon_id_raw": "729",
+    "national_dex": 729,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "5.0",
+    "last_update": "7.0.4",
+    "evolves_from": [
+      366
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

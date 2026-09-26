@@ -1,0 +1,92 @@
+{
+  "figure_id": "arcanine_449",
+  "display_name": "Arcanine EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "449 - Arcanine - Rarity_EX.png",
+  "model": "res://assets/figures/models/arcanine/arcanine_ex/449 - Arcanine - Rarity_EX.fbx",
+  "ability": {
+    "name": "Flame Turbine",
+    "note": "Can MP move past Fire-type Pokémon and burned Pokémon. If the battle opponent is affected by a special condition, the battle opponent's spins are shifted by one segment clockwise.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Combustion",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 80,
+      "source_damage_or_stars": "80",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 40,
+      "damage": 120,
+      "source_damage_or_stars": "120"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 449,
+    "pokemon_id_raw": "059",
+    "national_dex": 59,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.6",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      450
+    ],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

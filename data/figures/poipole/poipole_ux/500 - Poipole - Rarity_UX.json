@@ -1,0 +1,89 @@
+{
+  "figure_id": "poipole_500",
+  "display_name": "Poipole UX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "POISON"
+  ],
+  "icon": "res://data/figures/poipole/poipole_ux/500 - Poipole - Rarity_UX.png",
+  "model": "res://assets/figures/models/poipole/poipole_ux/500 - Poipole - Rarity_UX.fbx",
+  "ability": {
+    "name": "Spaceborne",
+    "note": "Ultra Beast. When this Pokémon is on the field, at the start of your turn, your Ultra Beasts on the field are treated as though they have newly moved to the field (any special conditions and markers remain). Until it engages in its first battle after moving to the field, at the start of your turn, this Pokémon may move to a point three steps away instead of using an MP move (this ends your turn).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Toxic",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Dragon Pulse",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 47,
+      "source_damage_or_stars": "47",
+      "note": "Deals +50 damage if the battle opponent is a Dragon-type Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ultraportation",
+      "type": "BLUE",
+      "size": 24,
+      "note": "This Pokémon moves to the Ultra Space outside of the field and one of your Pokémon that is in the Ultra Space moves to a point 2 or 3 steps away."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 500,
+    "pokemon_id_raw": "803",
+    "national_dex": 803,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "evolves_from": [
+      499
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Acid Downpour"
+    ],
+    "material": 5000,
+    "first_appear": "6.2.3",
+    "last_update": "6.2.3"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "figure_id": "gourgeist_326",
+  "display_name": "Gourgeist EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "GRASS"
+  ],
+  "icon": "326 - Gourgeist - Rarity_EX.png",
+  "model": "res://assets/figures/models/gourgeist/gourgeist_ex/326 - Gourgeist - Rarity_EX.fbx",
+  "ability": {
+    "name": "Harvest Festival",
+    "note": "If this Pokémon is knocked out, Pokémon that have Pumpkin markers are also knocked out. This Pokémon can MP move through other Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Trick-or-Treat",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Attach a Pumpkin marker to the battle opponent. Other Pokémon may MP move through Pokémon that have a Pumpkin marker attached."
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 16,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Explosion",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and all neighbor Pokémon faint."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Seed Bomb",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 326,
+    "pokemon_id_raw": "711",
+    "national_dex": 711,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "6.2.5",
+    "evolves_from": [
+      325
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Never-Ending Nightmare",
+      "Bloom Doom"
+    ]
+  }
+}

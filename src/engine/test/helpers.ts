@@ -21,6 +21,7 @@ export function makeFigure(
   opts: {
     mp?: number;
     name?: string;
+    types?: Figure['types'];
     ability?: Figure['ability'];
     form?: Figure['form'];
     evoStage?: Figure['evoStage'];
@@ -32,7 +33,7 @@ export function makeFigure(
     name: opts.name ?? `Figure ${id}`,
     form: opts.form ?? null,
     rarity: 'C',
-    types: ['Normal'],
+    types: opts.types ?? ['Normal'],
     mp: opts.mp ?? 3,
     evoStage: opts.evoStage ?? 1,
     materialCost: 250,

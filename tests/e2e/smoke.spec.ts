@@ -1,11 +1,11 @@
 import { expect, test } from '@playwright/test';
 
 /**
- * Boots the real shell. Players land on /2d. The debug client lives at /dev.
+ * Boots the real shell. Players land on /3d. The debug client lives at /dev.
  */
 test('the root redirects to the player table', async ({ page }) => {
   await page.goto('/');
-  await expect(page).toHaveURL(/\/2d/);
+  await expect(page).toHaveURL(/\/3d/);
   await expect(page.getByTestId('play-ready')).toBeVisible();
 });
 

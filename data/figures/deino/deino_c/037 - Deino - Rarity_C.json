@@ -1,0 +1,80 @@
+{
+  "figure_id": "deino_037",
+  "display_name": "Deino C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "DRAGON"
+  ],
+  "icon": "037 - Deino - Rarity_C.png",
+  "model": "res://assets/figures/models/deino/deino_c/037 - Deino - Rarity_C.fbx",
+  "ability": {
+    "name": "Band Attack",
+    "note": "This Pokémon deals +10 damage for each [CTRL FID 264][Hydreigon], [CTRL FID 266][Zweilous] or [CTRL FID 37][Deino] on the field. If this Pokémon has evolved, it gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 50,
+      "source_damage_or_stars": "50"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 37,
+    "pokemon_id_raw": "633",
+    "national_dex": 633,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.2.3",
+    "evolves_from": [],
+    "evolves_to": [
+      38
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Devastating Drake",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

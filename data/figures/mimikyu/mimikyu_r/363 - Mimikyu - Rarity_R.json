@@ -1,0 +1,90 @@
+{
+  "figure_id": "mimikyu_363",
+  "display_name": "Mimikyu R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GHOST",
+    "FAIRY"
+  ],
+  "icon": "363 - Mimikyu - Rarity_R.png",
+  "model": "res://assets/figures/models/mimikyu/mimikyu_r/363 - Mimikyu - Rarity_R.fbx",
+  "ability": {
+    "name": "Disguise",
+    "note": "When this Pokémon moves from the bench to the field, attach a Disguise marker to this Pokémon. While that marker is attached to it, this Pokémon is not knocked out in battle (instead of knocking it out, remove the marker and any special conditions affecting it). This Pokémon can MP move through other Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Curse",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Attach a Curse marker to the battle opponent. (A Pokémon that is knocked out in this condition is excluded from the duel.)"
+    },
+    {
+      "name": "Shadow Claw",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Play Rough",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*On your next turn, your opponent cannot use plates."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 363,
+    "pokemon_id_raw": "778",
+    "national_dex": 778,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "6.1.1",
+    "evolves_from": [],
+    "evolves_to": [
+      364
+    ],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Never-Ending Nightmare",
+      "Let's Snuggle Forever"
+    ]
+  }
+}

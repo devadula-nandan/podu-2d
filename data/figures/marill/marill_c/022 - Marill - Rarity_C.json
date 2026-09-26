@@ -1,0 +1,83 @@
+{
+  "figure_id": "marill_022",
+  "display_name": "Marill C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER",
+    "FAIRY"
+  ],
+  "icon": "022 - Marill - Rarity_C.png",
+  "model": "res://assets/figures/models/marill/marill_c/022 - Marill - Rarity_C.fbx",
+  "ability": {
+    "name": "Huge Power",
+    "note": "If this Pokémon is not affected by a special condition, it deals +50 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 20,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Water Gun",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Rollout",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 30,
+      "source_damage_or_stars": "30x",
+      "note": "Spin again until Rollout does not land - damage is multiplied by the number of Rollout spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 20
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 22,
+    "pokemon_id_raw": "183",
+    "national_dex": 183,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.4",
+    "evolves_from": [
+      21
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Hydro Vortex"
+    ]
+  }
+}

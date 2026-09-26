@@ -1,0 +1,93 @@
+{
+  "figure_id": "larvesta_617",
+  "display_name": "Larvesta UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FIRE"
+  ],
+  "icon": "617 - Larvesta - Rarity_UC.png",
+  "model": "res://assets/figures/models/larvesta/larvesta_uc/617 - Larvesta - Rarity_UC.fbx",
+  "ability": {
+    "name": "Flame Evolution",
+    "note": "When this Pokémon is knocked out in battle, it may evolve without moving to the P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "String Wrap",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Attaches an MP -1 marker to the battle opponent."
+    },
+    {
+      "name": "U-turn",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon switches with a Pokémon on your bench or in your P.C."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 617,
+    "pokemon_id_raw": "636",
+    "national_dex": 636,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.11",
+    "last_update": "7.0.11",
+    "evolves_from": [
+      616
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Inferno Overdrive"
+    ]
+  }
+}

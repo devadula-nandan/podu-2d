@@ -1,0 +1,90 @@
+{
+  "figure_id": "tsareena_587",
+  "display_name": "Tsareena EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "587 - Tsareena - Rarity_EX.png",
+  "model": "res://assets/figures/models/tsareena/tsareena_ex/587 - Tsareena - Rarity_EX.fbx",
+  "ability": {
+    "name": "Queenly Majesty",
+    "note": "All Gold Attacks of opposing Pokémon adjacent to this Pokémon become Misses.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Stomp",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Power Whip",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*The battle opponent gains Wait 3.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Knock Off",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*Nullifies the effects of one of this Pokémon's battle opponent's in-use plates, and that plate counts as having been used."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Mystery Scent",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "You may choose one of your Pokémon on the field and evolve it."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 587,
+    "pokemon_id_raw": "763",
+    "national_dex": 763,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.14",
+    "last_update": "7.0.14",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

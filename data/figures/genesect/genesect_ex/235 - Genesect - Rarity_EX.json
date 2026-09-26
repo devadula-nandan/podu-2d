@@ -1,0 +1,88 @@
+{
+  "figure_id": "genesect_235",
+  "display_name": "Genesect EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "BUG",
+    "STEEL"
+  ],
+  "icon": "235 - Genesect - Rarity_EX.png",
+  "model": "res://assets/figures/models/genesect/genesect_ex/235 - Genesect - Rarity_EX.fbx",
+  "ability": {
+    "name": "Hoverjet",
+    "note": "May MP move over your Pokémon on the field. If any of your Drive plates have been used, then, when this Pokémon is knocked out, one of them becomes usable (other than a plate still in use on that turn).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Techno Blast",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Techno Charge",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon must Wait. In exchange, it receives a damage boost of +50 until the next time it lands on Techno Blast."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 235,
+    "pokemon_id_raw": "649",
+    "national_dex": 649,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "6.0.7",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Corkscrew Crash"
+    ]
+  }
+}

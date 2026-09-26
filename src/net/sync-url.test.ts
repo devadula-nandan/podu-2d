@@ -9,8 +9,8 @@ describe('same-origin sync url', () => {
   });
 
   it('builds a share URL with only the seed', () => {
-    expect(roomShareUrl(4242, 'http://192.168.1.9:5173/')).toBe('http://192.168.1.9:5173/2d?seed=4242');
-    expect(roomShareUrl(2, 'https://duel.example/2d?relay=ws://nope')).toBe('https://duel.example/2d?seed=2');
+    expect(roomShareUrl(4242, 'http://192.168.1.9:5173/')).toBe('http://192.168.1.9:5173/3d?seed=4242');
+    expect(roomShareUrl(2, 'https://duel.example/2d?relay=ws://nope')).toBe('https://duel.example/3d?seed=2');
   });
 
   it('points the Vite sidecar at the page hostname, not a user-facing relay query', () => {

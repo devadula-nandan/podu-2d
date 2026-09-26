@@ -1,0 +1,92 @@
+{
+  "figure_id": "aurorus_583",
+  "display_name": "Aurorus EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "ICE"
+  ],
+  "icon": "583 - Aurorus - Rarity_EX.png",
+  "model": "res://assets/figures/models/aurorus/aurorus_ex/583 - Aurorus - Rarity_EX.fbx",
+  "ability": {
+    "name": "Ice Shield",
+    "note": "[CTRL QL Restored Pokémon][Restored Pokémon] (If evolved). At the start of your turn, instead of an MP move, you may freeze one of your [CTRL QL Restored Pokémon][Restored Pokémon] that has been excluded from the duel and move it to a point 1-2 steps away from this Pokémon. Your turn ends. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Freeze-Dry",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*Deals +50 damage if the battle opponent is a Water-type Pokémon. The battle opponent and all opposing Pokémon adjacent to it spin, and if they spin a Blue Attack, they become frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Aurora Beam",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "An opposing Pokémon within 2 steps becomes frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Ancient Power",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*While they are on the field, your [CTRL QL Restored Pokémon][Restored Pokémon] deal +10 damage to the battle opponent and gain +1 ☆."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 583,
+    "pokemon_id_raw": "699",
+    "national_dex": 699,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      582
+    ],
+    "evolves_to": [
+      584
+    ],
+    "z_move_keys": [
+      "Subzero Slammer",
+      "Continental Crush"
+    ]
+  }
+}

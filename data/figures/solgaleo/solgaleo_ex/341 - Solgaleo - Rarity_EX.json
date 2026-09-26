@@ -1,0 +1,85 @@
+{
+  "figure_id": "solgaleo_341",
+  "display_name": "Solgaleo EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC",
+    "STEEL"
+  ],
+  "icon": "341 - Solgaleo - Rarity_EX.png",
+  "model": "res://assets/figures/models/solgaleo/solgaleo_ex/341 - Solgaleo - Rarity_EX.fbx",
+  "ability": {
+    "name": "Full Metal Body",
+    "note": "The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle. If this Pokémon is not affected by a special condition, markers from the Attacks of the battle opponent cannot be attached to this Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Sunsteel Strike",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 100,
+      "source_damage_or_stars": "100",
+      "note": "*Moves the battle opponent to its P.C. The battle opponent is not knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Flare Blitz",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 341,
+    "pokemon_id_raw": "791",
+    "national_dex": 791,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [
+      342
+    ],
+    "z_move_keys": [
+      "Shattered Psyche",
+      "Corkscrew Crash",
+      "Searing Sunraze Smash"
+    ]
+  }
+}

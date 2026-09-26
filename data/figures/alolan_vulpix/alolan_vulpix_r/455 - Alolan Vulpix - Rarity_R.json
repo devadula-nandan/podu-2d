@@ -1,0 +1,86 @@
+{
+  "figure_id": "alolan_vulpix_455",
+  "display_name": "Alolan Vulpix R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ICE"
+  ],
+  "icon": "455 - Alolan Vulpix - Rarity_R.png",
+  "model": "res://assets/figures/models/alolan_vulpix/alolan_vulpix_r/455 - Alolan Vulpix - Rarity_R.fbx",
+  "ability": {
+    "name": "Snowy Transformation",
+    "note": "At the start of your turn, instead of an MP move, if this Pokémon is on the field, it may switch with a frozen Pokémon, or if this Pokémon is on the bench, it may switch with one of your frozen Pokémon. If it does, your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Baby-Doll Eyes",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The Blue Attacks of the Pokémon hit by this Attack will be Misses during the next turn."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 455,
+    "pokemon_id_raw": "037 alola",
+    "national_dex": 37,
+    "variant": "alola",
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.0.11",
+    "last_update": "7.0.10",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Subzero Slammer"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "figure_id": "mewtwo_096",
+  "display_name": "Mewtwo EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "096 - Mewtwo - Rarity_EX.png",
+  "model": "res://assets/figures/models/mewtwo/mewtwo_ex/096 - Mewtwo - Rarity_EX.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Psychic Shove",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked as far back as possible in a straight line. Any Pokémon it collides with are also knocked back. All affected Pokémon gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Annihilate",
+      "type": "BLUE",
+      "size": 16,
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Psycho Cut",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 100,
+      "source_damage_or_stars": "100+",
+      "note": "Spin again - if Psycho Cut is spun, it deals +50 damage."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 96,
+    "pokemon_id_raw": "150",
+    "national_dex": 150,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "6.2.0",
+    "evolves_from": [],
+    "evolves_to": [
+      97
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

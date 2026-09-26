@@ -1,0 +1,91 @@
+{
+  "figure_id": "mareanie_456",
+  "display_name": "Mareanie UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "POISON",
+    "WATER"
+  ],
+  "icon": "456 - Mareanie - Rarity_UC.png",
+  "model": "res://assets/figures/models/mareanie/mareanie_uc/456 - Mareanie - Rarity_UC.fbx",
+  "ability": {
+    "name": "Indiscriminate Poison",
+    "note": "When this Pokémon is on the field, Pokémon that are not Poison-type Pokémon or Steel-type Pokémon deal 10 less damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Sludge Bomb",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 20,
+      "source_damage_or_stars": "20",
+      "note": "*If this Pokémon is knocked out, all Pokémon within 2 steps become poisoned.",
+      "source_effect_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Poison Sting",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Spike Cannon",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 30,
+      "source_damage_or_stars": "30x",
+      "note": "Spin again until Spike Cannon does not land - damage is multiplied by the number of Spike Cannon spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 456,
+    "pokemon_id_raw": "747",
+    "national_dex": 747,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "5.0.6",
+    "last_update": "5.0.6",
+    "evolves_from": [],
+    "evolves_to": [
+      457
+    ],
+    "z_move_keys": [
+      "Acid Downpour",
+      "Hydro Vortex"
+    ]
+  }
+}

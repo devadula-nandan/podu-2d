@@ -1,0 +1,85 @@
+{
+  "figure_id": "entei_244",
+  "display_name": "Entei EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "FIRE"
+  ],
+  "icon": "244 - Entei - Rarity_EX.png",
+  "model": "res://assets/figures/models/entei/entei_ex/244 - Entei - Rarity_EX.fbx",
+  "ability": {
+    "name": "Fire Rush",
+    "note": "Can MP move past burned Pokémon. This Pokémon on the bench gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Stomp",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Sacred Fire",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 140,
+      "source_damage_or_stars": "140",
+      "note": "*The battle opponent becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Fierce Roar",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Switches the battle opponent with an opposing Pokémon adjacent to the battle opponent. Those Pokémon gain Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 244,
+    "pokemon_id_raw": "244",
+    "national_dex": 244,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "3.0.12",
+    "last_update": "6.1.1",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Inferno Overdrive"
+    ]
+  }
+}

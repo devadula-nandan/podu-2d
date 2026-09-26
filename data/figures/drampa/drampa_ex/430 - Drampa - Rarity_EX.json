@@ -1,0 +1,93 @@
+{
+  "figure_id": "drampa_430",
+  "display_name": "Drampa EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "NORMAL",
+    "DRAGON"
+  ],
+  "icon": "430 - Drampa - Rarity_EX.png",
+  "model": "res://assets/figures/models/drampa/drampa_ex/430 - Drampa - Rarity_EX.fbx",
+  "ability": {
+    "name": "Guardian",
+    "note": "This Pokémon has MP 3 if it is confused. When this Pokémon is knocked out in battle, you can move one of your Pokémon that is in the Ultra Space to the point where this Pokémon was.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Dragon Pulse",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "Deals +50 damage if the battle opponent is a Dragon-type Pokémon."
+    },
+    {
+      "name": "Outrage",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 160,
+      "source_damage_or_stars": "160",
+      "note": "*This Pokémon becomes confused."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Push Aside",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is moved to the bench and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 430,
+    "pokemon_id_raw": "780",
+    "national_dex": 780,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "6.0.11",
+    "last_update": "6.0.11",
+    "evolves_from": [
+      198
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Breakneck Blitz",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

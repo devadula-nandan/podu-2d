@@ -1,19 +1,21 @@
-import type { Engine } from '../engine/index.js';
-import { isFormOnlyFigure } from '../engine/index.js';
+import type { Engine, PlayerId } from '../engine/index.js';
+import { contentFigureId, isFormOnlyFigure } from '../engine/index.js';
 import { figureOfContent, plateOfContent, starterFigureIds } from '../ui/boot.js';
 import {
   deckHasErrors,
+  isCompleteDeck,
   validateDeck,
   type DeckDraft,
 } from '../ui/model.js';
 
+/** Six editable team slots — mirrors the WebGL reference deck wells. */
 export type PresetId =
-  | 'night-league'
-  | 'slipstream'
-  | 'violet-cage'
-  | 'goal-line'
-  | 'stone-circuit'
-  | 'gym-circuit';
+  | 'starter-squad'
+  | 'stone-guard'
+  | 'swift-pack'
+  | 'poison-fang'
+  | 'dragon-rise'
+  | 'arena-rush';
 
 export interface DeckPreset {
   readonly id: PresetId;
@@ -31,49 +33,49 @@ const RARITY_RANK: Readonly<Record<string, number>> = {
   C: 1,
 };
 
-/** Six original-feeling archetypes. Names resolve against printed content. */
+/** Six strategic decks used as the default filled slots. */
 export const DECK_PRESETS: readonly DeckPreset[] = [
   {
-    id: 'night-league',
-    name: 'Night League',
-    blurb: 'UX midrange — Eevee line plus dark control',
-    figures: ['Umbreon', 'Espeon', 'Sylveon', 'Darkrai', 'Cresselia', 'Absol'],
-    plates: ['Double Chance', 'Goal Block'],
+    id: 'starter-squad',
+    name: 'Starter Squad',
+    blurb: 'Balanced Kanto aces — learn the board',
+    figures: ['Pikachu', 'Charizard', 'Venusaur', 'Blastoise', 'Machamp', 'Gyarados'],
+    plates: ['Venusaurite', 'Charizardite X', 'Blastoisinite', 'Double Chance', 'X Attack', 'X Speed'],
   },
   {
-    id: 'slipstream',
-    name: 'Slipstream',
+    id: 'stone-guard',
+    name: 'Stone Guard',
+    blurb: 'Steel fortress — walls and a sweeper',
+    figures: ['Metagross', 'Magnezone', 'Empoleon', 'Aggron', 'Lucario', 'Skarmory'],
+    plates: ['Metal Coat', 'Double Chance', 'X Attack', 'X Defend', 'Full Heal', 'Scoop Up'],
+  },
+  {
+    id: 'swift-pack',
+    name: 'Swift Pack',
     blurb: 'Surround swarm — 3 MP flyers and cats',
     figures: ['Ninjask', 'Crobat', 'Talonflame', 'Swellow', 'Liepard', 'Emolga'],
-    plates: ['X Speed', 'Long Throw'],
+    plates: ['X Speed', 'Long Throw', 'Double Chance', 'X Attack', 'Full Heal', 'Scoop Up'],
   },
   {
-    id: 'violet-cage',
-    name: 'Violet Cage',
-    blurb: 'Purple control — status wheels and walls',
-    figures: ['Gengar', 'Sableye', 'Wobbuffet', 'Malamar', 'Banette', 'Mismagius'],
-    plates: ['Full Heal', 'Scoop Up'],
+    id: 'poison-fang',
+    name: 'Poison Fang',
+    blurb: 'Poison spread — noxious and surround',
+    figures: ['Weezing', 'Toxicroak', 'Arbok', 'Salazzle', 'Drapion', 'Naganadel'],
+    plates: ['Poison Barb', 'Double Chance', 'X Attack', 'Full Heal', 'Scoop Up', 'Pokémon Switch'],
   },
   {
-    id: 'goal-line',
-    name: 'Goal Line',
+    id: 'dragon-rise',
+    name: 'Dragon Rise',
+    blurb: 'Dragon corridor — smash the center file',
+    figures: ['Dragonite', 'Salamence', 'Garchomp', 'Haxorus', 'Noivern', 'Latios'],
+    plates: ['Dragon Fang', 'Double Chance', 'X Attack', 'X Speed', 'Full Heal', 'Scoop Up'],
+  },
+  {
+    id: 'arena-rush',
+    name: 'Arena Rush',
     blurb: 'Goal rush — 3 MP runners down the corridor',
     figures: ['Greninja', 'Weavile', 'Talonflame', 'Noivern', 'Jolteon', 'Crobat'],
-    plates: ['X Speed', 'Hurdle Jump'],
-  },
-  {
-    id: 'stone-circuit',
-    name: 'Stone Circuit',
-    blurb: 'Mega stones and a Z-leaning core',
-    figures: ['Charizard', 'Lucario', 'Blaziken', 'Gengar', 'Greninja', 'Solgaleo'],
-    plates: ['Charizardite X', 'Lucarionite', 'Gengarite'],
-  },
-  {
-    id: 'gym-circuit',
-    name: 'Gym Circuit',
-    blurb: 'Mixed gym — Kanto aces on one bench',
-    figures: ['Pikachu', 'Charizard', 'Venusaur', 'Blastoise', 'Machamp', 'Gyarados'],
-    plates: ['Double Chance', 'Max Revive', 'X Attack'],
+    plates: ['X Speed', 'Hurdle Jump', 'Double Chance', 'X Attack', 'Full Heal', 'Scoop Up'],
   },
 ];
 
@@ -85,6 +87,9 @@ export function pickFigureId(engine: Engine, name: string): number | null {
     rows.push(entry.figure);
   }
   rows.sort((a, b) => {
+    const implA = engine.registry.figures.get(contentFigureId(a.id))?.implemented === true ? 0 : 1;
+    const implB = engine.registry.figures.get(contentFigureId(b.id))?.implemented === true ? 0 : 1;
+    if (implA !== implB) return implA - implB;
     const formBias = Number(a.form !== null) - Number(b.form !== null);
     if (formBias !== 0) return formBias;
     const rarity = (RARITY_RANK[b.rarity] ?? 0) - (RARITY_RANK[a.rarity] ?? 0);
@@ -115,7 +120,7 @@ export function resolvePreset(engine: Engine, preset: DeckPreset): DeckDraft | n
     plates.push(id);
   }
   const draft = { figures, plates };
-  if (deckHasErrors(validateDeck(engine, draft, true))) return null;
+  if (!isCompleteDeck(engine, draft) || deckHasErrors(validateDeck(engine, draft, true))) return null;
   return draft;
 }
 
@@ -128,14 +133,51 @@ export function resolvedPresets(engine: Engine): readonly { preset: DeckPreset; 
   return rows;
 }
 
+export function defaultSeatDrafts(engine: Engine): Record<PlayerId, DeckDraft> {
+  const rows = resolvedPresets(engine);
+  const pack = starterFigureIds(engine);
+  const plates = leaguePlates(engine);
+  return {
+    0: rows[0]?.draft ?? { figures: [...pack[0]], plates },
+    1: rows[1]?.draft ?? { figures: [...pack[1]], plates },
+  };
+}
+
+const LEAGUE_PLATES = [
+  'Double Chance',
+  'X Attack',
+  'Goal Block',
+  'X Speed',
+  'Full Heal',
+  'Scoop Up',
+] as const;
+
+function leaguePlates(engine: Engine): number[] {
+  const plates: number[] = [];
+  for (const name of LEAGUE_PLATES) {
+    const id = pickPlateId(engine, name);
+    if (id !== null) plates.push(id);
+  }
+  return plates;
+}
+
 export function leagueSix(engine: Engine): DeckDraft {
   const pack = starterFigureIds(engine);
-  return { figures: [...pack[0]], plates: [] };
+  return { figures: [...pack[0]], plates: leaguePlates(engine) };
 }
 
 export function rivalLeagueSix(engine: Engine): DeckDraft {
   const pack = starterFigureIds(engine);
-  return { figures: [...pack[1]], plates: [] };
+  return { figures: [...pack[1]], plates: leaguePlates(engine) };
+}
+
+/** vs-AI opponent: a strategy deck, never the same preset the human just picked. */
+export function rivalStrategyDraft(engine: Engine, seed: number, avoid?: PresetId): DeckDraft {
+  const rows = resolvedPresets(engine);
+  const pool = avoid === undefined ? rows : rows.filter((row) => row.preset.id !== avoid);
+  const pick = pool.length > 0 ? pool : rows;
+  if (pick.length === 0) return rivalLeagueSix(engine);
+  return pick[(seed >>> 0) % pick.length]?.draft ?? rivalLeagueSix(engine);
 }
 
 export function presetCaption(engine: Engine, draft: DeckDraft): string {

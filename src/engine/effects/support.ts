@@ -140,6 +140,7 @@ export const SUPPORTED_ACTIONS: ReadonlySet<Action['do']> = new Set<Action['do']
   'forceNextTurn',
   'rotateWheel',
   'adjustZGauge',
+  'boostZTurnGain',
   'tag',
   'noStack',
   'usageGate',
@@ -448,6 +449,7 @@ function actionGaps(action: Action, out: string[]): void {
     case 'endTurn':
     case 'forceNextTurn':
     case 'adjustZGauge':
+    case 'boostZTurnGain':
     case 'rotateWheel':
     case 'shiftSpinResult':
     case 'refreshPlate':

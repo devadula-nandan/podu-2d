@@ -1,0 +1,94 @@
+{
+  "figure_id": "suicune_231",
+  "display_name": "Suicune EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "WATER"
+  ],
+  "icon": "231 - Suicune - Rarity_EX.png",
+  "model": "res://assets/figures/models/suicune/suicune_ex/231 - Suicune - Rarity_EX.fbx",
+  "ability": {
+    "name": "Purification",
+    "note": "When this Pokémon moves from the bench to the field, remove any special conditions and Curse markers from all the Pokémon you have in the duel.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Ice Beam",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 60,
+      "source_damage_or_stars": "60",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes frozen.",
+      "source_effect_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Sheer Cold",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked out. If the battle opponent is frozen, exclude it from the duel."
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 8
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 231,
+    "pokemon_id_raw": "245",
+    "national_dex": 245,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "3.0.10",
+    "last_update": "6.1.1",
+    "evolves_from": [],
+    "evolves_to": [
+      232
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

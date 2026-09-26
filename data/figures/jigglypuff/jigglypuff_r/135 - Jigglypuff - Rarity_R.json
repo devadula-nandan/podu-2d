@@ -1,0 +1,88 @@
+{
+  "figure_id": "jigglypuff_135",
+  "display_name": "Jigglypuff R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "NORMAL",
+    "FAIRY"
+  ],
+  "icon": "135 - Jigglypuff - Rarity_R.png",
+  "model": "res://assets/figures/models/jigglypuff/jigglypuff_r/135 - Jigglypuff - Rarity_R.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Lullaby",
+      "type": "PURPLE",
+      "size": 36,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All adjacent Pokémon are Asleep.",
+      "source_effect_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Hyper Voice",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 140,
+      "source_damage_or_stars": "140"
+    },
+    {
+      "name": "Double Slap",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 60,
+      "source_damage_or_stars": "60+",
+      "note": "Spin again - if Double Slap is spun, it deals 20+ damage."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 135,
+    "pokemon_id_raw": "039",
+    "national_dex": 39,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.2",
+    "last_update": "7.0.4",
+    "evolves_from": [
+      133,
+      "133 ux"
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Twinkle Tackle",
+      "Breakneck Blitz"
+    ]
+  }
+}

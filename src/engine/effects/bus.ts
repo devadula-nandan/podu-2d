@@ -280,6 +280,7 @@ export function runMatching(
   state: GameState,
   deps: EngineDeps,
   match: (clause: Clause) => boolean,
+  include: (live: LiveClause) => boolean = () => true,
 ): EventBatch {
   const candidates: LiveClause[] = [];
   let allowBench = false;
@@ -290,8 +291,10 @@ export function runMatching(
     for (const clause of content.abilityClauses) {
       if (!match(clause)) continue;
       if (fromBench && !isPreSelectClause(clause)) continue;
+      const live = { clause, source: figure.uid, controller: figure.owner };
+      if (!include(live)) continue;
       if (fromBench) allowBench = true;
-      candidates.push({ clause, source: figure.uid, controller: figure.owner });
+      candidates.push(live);
     }
   }
   const { clauses, events } = survivingClauses(state, deps, 'passive', candidates);
@@ -875,6 +878,21 @@ export function movementGrantsFor(state: GameState, deps: EngineDeps, uid: Figur
     }
   }
   return found;
+}
+
+/**
+ * Extra start-of-turn Z pips from Nihilego-style auras: one pip per special-conditioned
+ * Pokémon the turn player has on the field. Presence of the aura is enough; two copies
+ * do not double the boost.
+ */
+export function zTurnGainBoosts(state: GameState, deps: EngineDeps, player: PlayerId): number {
+  const aura = activeDeclarations(state, deps).some((live) =>
+    live.clause.actions.some((action) => action.do === 'boostZTurnGain'),
+  );
+  if (!aura) return 0;
+  return state.figures.filter(
+    (figure) => figure.owner === player && figure.zone === 'field' && figure.condition !== null,
+  ).length;
 }
 
 /** Occupied nodes this figure may cross, and whether every occupied node is legal. */

@@ -1,0 +1,96 @@
+{
+  "figure_id": "houndoom_450",
+  "display_name": "Houndoom EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "FIRE"
+  ],
+  "icon": "450 - Houndoom - Rarity_EX.png",
+  "model": "res://assets/figures/models/houndoom/houndoom_ex/450 - Houndoom - Rarity_EX.fbx",
+  "ability": {
+    "name": "Malevolent Fire",
+    "note": "While this Pokémon is on the field, your Fire-type Pokémon deal +10 damage for each burned Pokémon on the field. If this Pokémon is burned, Pokémon that battle it become burned.",
+    "effect_ids": [
+      3
+    ]
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Flamethrower",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 130,
+      "source_damage_or_stars": "130",
+      "note": "*If this Pokémon is knocked out, the battle opponent becomes burned.",
+      "source_effect_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 16,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Fiery Breath",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes burned. You may spin for a Pokémon within 2 steps. If it spins a White Attack, that Pokémon becomes burned.",
+      "source_effect_ids": [
+        3
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 450,
+    "pokemon_id_raw": "229",
+    "national_dex": 229,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.7",
+    "last_update": "6.0.7",
+    "evolves_from": [
+      449
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Inferno Overdrive"
+    ]
+  }
+}

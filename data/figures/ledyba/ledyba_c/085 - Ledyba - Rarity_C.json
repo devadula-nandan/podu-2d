@@ -1,0 +1,95 @@
+{
+  "figure_id": "ledyba_085",
+  "display_name": "Ledyba C",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "BUG",
+    "FLYING"
+  ],
+  "icon": "085 - Ledyba - Rarity_C.png",
+  "model": "res://assets/figures/models/ledyba/ledyba_c/085 - Ledyba - Rarity_C.fbx",
+  "ability": {
+    "name": "Swarm",
+    "note": "Instead of an MP move, this Pokémon may move one of your [CTRL FID 175][Ledian] or [CTRL FID 85][Ledyba] on the field next to itself. If there are no opposing Pokémon at any of your entry points, you may move one of your [CTRL FID 175][Ledian] or [CTRL FID 85][Ledyba] on the bench next to this Pokémon. In either case, your turn ends.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Double-Edge",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "This Pokémon and the battle opponent are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 30,
+      "source_damage_or_stars": "30"
+    },
+    {
+      "name": "Light Screen",
+      "type": "PURPLE",
+      "size": 20,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 85,
+    "pokemon_id_raw": "165",
+    "national_dex": 165,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 2,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "3.0.12",
+    "evolves_from": [
+      84
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Supersonic Skystrike"
+    ]
+  }
+}

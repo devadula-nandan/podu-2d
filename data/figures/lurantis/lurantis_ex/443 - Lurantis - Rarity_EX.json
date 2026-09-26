@@ -1,0 +1,79 @@
+{
+  "figure_id": "lurantis_443",
+  "display_name": "Lurantis EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS"
+  ],
+  "icon": "443 - Lurantis - Rarity_EX.png",
+  "model": "res://assets/figures/models/lurantis/lurantis_ex/443 - Lurantis - Rarity_EX.fbx",
+  "ability": {
+    "name": "Green Power",
+    "note": "This Pokémon cannot be paralyzed. If this Pokémon is on the field and is not affected by a special condition, your Grass-type Pokémon deal +5 damage for each Grass-type Pokémon on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Solar Blade",
+      "type": "WHITE",
+      "size": 52,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*If the battle opponent has Wait, the battle opponent is knocked out instead of this Pokémon."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Petal Blizzard",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*All opposing Pokémon on the field spin. Those that spin a Miss are knocked out."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 443,
+    "pokemon_id_raw": "754",
+    "national_dex": 754,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "6.0.0",
+    "last_update": "6.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      444
+    ],
+    "z_move_keys": [
+      "Bloom Doom"
+    ]
+  }
+}

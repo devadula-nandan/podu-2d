@@ -1,0 +1,88 @@
+{
+  "figure_id": "cosmog_361",
+  "display_name": "Cosmog R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "361 - Cosmog - Rarity_R.png",
+  "model": "res://assets/figures/models/cosmog/cosmog_r/361 - Cosmog - Rarity_R.fbx",
+  "ability": {
+    "name": "Gaseous Form",
+    "note": "This Pokémon cannot surround the opponent's Pokémon, and cannot be surrounded itself. It can also move through other Pokémon when making an MP move [CTRL NOTE][on the field].",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Nebby's Power",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "You may move one of your Pokémon in Ultra Space or one of your [CTRL FID 341][Solgaleo] or [CTRL FID 344][Lunala] next to this Pokémon. If you do, this Pokémon evolves. If this Pokémon cannot evolve, it is knocked out."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 16
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Splash",
+      "type": "WHITE",
+      "size": 16,
+      "damage": 1,
+      "source_damage_or_stars": "1"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 361,
+    "pokemon_id_raw": "789",
+    "national_dex": 789,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "5.0.10",
+    "evolves_from": [],
+    "evolves_to": [
+      362,
+      478
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

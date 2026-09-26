@@ -1,0 +1,87 @@
+{
+  "figure_id": "cosmoem_358",
+  "display_name": "Cosmoem R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "358 - Cosmoem - Rarity_R.png",
+  "model": "res://assets/figures/models/cosmoem/cosmoem_r/358 - Cosmoem - Rarity_R.fbx",
+  "ability": {
+    "name": "Black Core",
+    "note": "This Pokémon cannot be surrounded by your opponent's Pokémon. If this Pokémon surrounds an opponent's Pokémon, this Pokémon may evolve. While this Pokémon is on the field, effects of Energy plates are negated.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Splash",
+      "type": "WHITE",
+      "size": 8,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Cosmic Power",
+      "type": "BLUE",
+      "size": 32,
+      "note": "Wile this Pokémon is on the field, this Pokémon gains +1☆ and +1 MP. This effect is not cumulative."
+    },
+    {
+      "name": "Splash",
+      "type": "WHITE",
+      "size": 12,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 40,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 358,
+    "pokemon_id_raw": "790",
+    "national_dex": 790,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.4",
+    "last_update": "7.0.0",
+    "evolves_from": [
+      433
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

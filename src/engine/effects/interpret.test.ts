@@ -1199,4 +1199,49 @@ describe('leftover figure gaps', () => {
     expect(guardsPass(ctx, [{ kind: 'hasDamageIncrease', target: { kind: 'battleOpponent' } }])).toBe(true);
     expect(engine).toBeDefined();
   });
+
+  it('lets an Eevee Arrow figure MP-move through an ally and listed opposing types', () => {
+    const arrow = makeFigure(1, {
+      mp: 3,
+      ability: {
+        name: 'Water Arrow',
+        text: 'It can MP move through your Pokémon, and through opposing Fire Pokémon and opposing Ground Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.',
+      },
+    });
+    const { engine, state } = harness({
+      p0: [arrow, makeFigure(3, { mp: 2 })],
+      p1: [makeFigure(2, { types: ['Fire'] }), makeFigure(4, { types: ['Water'] })],
+    });
+    const throughAlly = onField(state, [[0, 'r4c0'], [1, 'r4c1']]);
+    expect(engine.legalCommands(throughAlly).some(
+      (command) => command.kind === 'mpMove' && command.uid === uid(0) && command.to === nid('r4c2'),
+    )).toBe(true);
+
+    const throughFire = onField(state, [[0, 'r4c0'], [2, 'r4c1']]);
+    expect(engine.legalCommands(throughFire).some(
+      (command) => command.kind === 'mpMove' && command.uid === uid(0) && command.to === nid('r4c2'),
+    )).toBe(true);
+
+    const blocked = onField(state, [[0, 'r4c0'], [3, 'r4c1']]);
+    expect(engine.legalCommands(blocked).some(
+      (command) => command.kind === 'mpMove' && command.uid === uid(0) && command.to === nid('r4c2'),
+    )).toBe(false);
+  });
+
+  it('gives Arrow +1 MP when opposing figures occupy both of its entry points', () => {
+    const { engine, state } = harness({
+      p0: [makeFigure(1, {
+        mp: 3,
+        ability: {
+          name: 'Water Arrow',
+          text: 'It can MP move through your Pokémon, and through opposing Fire Pokémon and opposing Ground Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.',
+        },
+      })],
+      p1: [makeFigure(2), makeFigure(3)],
+    });
+    const open = onField(state, [[0, 'r4c1']]);
+    expect(movementPoints(open, engine.deps, uid(0))).toBe(3);
+    const plugged = onField(state, [[0, 'r4c1'], [1, 'r4c0'], [2, 'r4c6']]);
+    expect(movementPoints(plugged, engine.deps, uid(0))).toBe(4);
+  });
 });

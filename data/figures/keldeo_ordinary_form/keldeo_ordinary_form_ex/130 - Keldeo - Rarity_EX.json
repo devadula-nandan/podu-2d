@@ -1,0 +1,92 @@
+{
+  "figure_id": "keldeo_ordinary_form_130",
+  "display_name": "Keldeo Ordinary Form EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER",
+    "FIGHTING"
+  ],
+  "icon": "130 - Keldeo - Rarity_EX.png",
+  "model": "res://assets/figures/models/keldeo_ordinary_form/keldeo_ordinary_form_ex/130 - Keldeo - Rarity_EX.fbx",
+  "ability": {
+    "name": "Justified",
+    "note": "This Pokémon deals +10 damage for each opposing Dark-type Pokémon on the field. When this Pokémon is knocked out in battle, it may change its form to [CTRL FID 428][Keldeo Resolute Form] without moving to the P.C.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Water Jump",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon can move to a point that is 2 steps away. In that case, it gains Wait."
+    },
+    {
+      "name": "Sacred Sword",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 71,
+      "source_damage_or_stars": "71"
+    },
+    {
+      "name": "Hydro Kick",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*Benches your battle opponent (except when opponent has Fainted). Your battle opponent must then Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Water Jump",
+      "type": "BLUE",
+      "size": 8,
+      "note": "This Pokémon can move to a point that is 2 steps away. In that case, it gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 130,
+    "pokemon_id_raw": "647",
+    "national_dex": 647,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "2.0",
+    "last_update": "6.1.1",
+    "evolves_from": [
+      129
+    ],
+    "evolves_to": [
+      "130 mega"
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Hydro Vortex"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "figure_id": "snover_612",
+  "display_name": "Snover UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "GRASS",
+    "ICE"
+  ],
+  "icon": "612 - Snover - Rarity_UC.png",
+  "model": "res://assets/figures/models/snover/snover_uc/612 - Snover - Rarity_UC.fbx",
+  "ability": {
+    "name": "Whiteout",
+    "note": "Opposing Flying-type Pokémon and Dragon-type Pokémon within 2 steps of this Pokémon have MP-1.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Icy Wind",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "All adjacent opposing Pokémon on the field that are not Fire-, Water-, Ice- or Steel-type spin. Attach MP - 1 markers to those that spin White Attacks."
+    },
+    {
+      "name": "Powder Snow",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*All opposing Pokémon on the field spin. Those that spin a Miss become frozen.",
+      "source_effect_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Energy Ball",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "While the battle opponent is on the field, all of that Pokémon's Blue Attacks that are not Dodge become Misses."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 612,
+    "pokemon_id_raw": "459",
+    "national_dex": 459,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      611
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Bloom Doom",
+      "Subzero Slammer"
+    ]
+  }
+}

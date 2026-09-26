@@ -1,0 +1,95 @@
+{
+  "figure_id": "keldeo_resolute_form_428",
+  "display_name": "Keldeo Resolute Form UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "WATER",
+    "FIGHTING"
+  ],
+  "icon": "res://data/figures/keldeo_resolute_form/keldeo_resolute_form_ux/428 - Keldeo Resolute Form - Rarity_UX.png",
+  "model": "res://assets/figures/models/keldeo_resolute_form/keldeo_resolute_form_ux/428 - Keldeo Resolute Form - Rarity_UX.fbx",
+  "ability": {
+    "name": "Sacred Fencer",
+    "note": "This Ability is only valid on your turn. When this Pokémon is on the field, Sword of Justice from your [CTRL QL Justice][Pokémon] deals +30 damage. The battle opponent of those Pokémon cannot move by effects other than the Attack effects of those Pokémon until the end of battle.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Water Jump",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can move to a point that is 2 steps away. In that case, it gains Wait."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Secret Sword",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Spin for an opposing Pokémon within 2 steps. If it spins a Miss or a White Attack of 100 damage or less, it is knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Water Jump",
+      "type": "BLUE",
+      "size": 12,
+      "note": "This Pokémon can move to a point that is 2 steps away. In that case, it gains Wait."
+    },
+    {
+      "name": "Aqua Jet",
+      "type": "GOLD",
+      "size": 36,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 428,
+    "pokemon_id_raw": "647 resolute",
+    "national_dex": 647,
+    "variant": "resolute",
+    "rarity": "UX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "evolves_from": [
+      427
+    ],
+    "evolves_to": [
+      "428 mega"
+    ],
+    "z_move_keys": [
+      "All-Out Pummeling",
+      "Hydro Vortex"
+    ],
+    "material": 5000,
+    "first_appear": "6.1.1",
+    "last_update": "6.1.1"
+  }
+}

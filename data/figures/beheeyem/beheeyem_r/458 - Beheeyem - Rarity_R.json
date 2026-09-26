@@ -1,0 +1,86 @@
+{
+  "figure_id": "beheeyem_458",
+  "display_name": "Beheeyem R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "PSYCHIC"
+  ],
+  "icon": "458 - Beheeyem - Rarity_R.png",
+  "model": "res://assets/figures/models/beheeyem/beheeyem_r/458 - Beheeyem - Rarity_R.fbx",
+  "ability": {
+    "name": "Special Delivery",
+    "note": "When this Pokémon is knocked out, you may move one of your [CTRL QL Special Delivery][Pokémon that has Special Delivery] and has been excluded from the duel to the bench. This Pokémon is excluded from the duel (without moving to the P.C.).",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Take Away",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "If the battle opponent's MP is the same or higher than this Pokémon's MP, the battle opponent moves to your P.C. If it does, this Pokémon moves to the bench."
+    },
+    {
+      "name": "Synchronoise",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 110,
+      "source_damage_or_stars": "110",
+      "note": "*Opposing Psychic-type Pokémon on the field spin. Those that spin White Attacks gain Wait 5.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Teleport",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon moves 2 steps away."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 458,
+    "pokemon_id_raw": "606",
+    "national_dex": 606,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "6.2.5",
+    "last_update": "7.0.1",
+    "evolves_from": [],
+    "evolves_to": [
+      226
+    ],
+    "z_move_keys": [
+      "Shattered Psyche"
+    ]
+  }
+}

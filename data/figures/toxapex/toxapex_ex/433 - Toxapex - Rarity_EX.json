@@ -1,0 +1,102 @@
+{
+  "figure_id": "toxapex_433",
+  "display_name": "Toxapex EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "POISON",
+    "WATER"
+  ],
+  "icon": "433 - Toxapex - Rarity_EX.png",
+  "model": "res://assets/figures/models/toxapex/toxapex_ex/433 - Toxapex - Rarity_EX.fbx",
+  "ability": {
+    "name": "Poisonous Bunker",
+    "note": "This Pokémon cannot be moved by the Attacks of other Pokémon. Grass-type [CTRL NOTE][Pokémon] as well as Fairy-type Pokémon cannot pass by this Pokémon by means of effects of their Abilities. When this Pokémon is on the field, the Abilities of poisoned and noxious Pokémon that allow passing by other Pokémon are nullified.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Venoshock",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 150,
+      "source_damage_or_stars": "150",
+      "note": "Deals ×2 damage if the battle opponent is poisoned or noxious."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Baneful Bunker",
+      "type": "BLUE",
+      "size": 16,
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Poison Shower",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "The battle opponent becomes noxious. All poisoned Pokémon become noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Baneful Bunker",
+      "type": "BLUE",
+      "size": 12,
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 433,
+    "pokemon_id_raw": "748",
+    "national_dex": 748,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "5.0.6",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      358
+    ],
+    "z_move_keys": [
+      "Acid Downpour",
+      "Hydro Vortex"
+    ]
+  }
+}

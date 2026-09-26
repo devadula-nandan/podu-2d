@@ -1,0 +1,79 @@
+{
+  "figure_id": "weedle_090",
+  "display_name": "Weedle C",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "icon": "090 - Weedle - Rarity_C.png",
+  "model": "res://assets/figures/models/weedle/weedle_c/090 - Weedle - Rarity_C.fbx",
+  "ability": {
+    "name": "None",
+    "note": "",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Poison Sting",
+      "type": "PURPLE",
+      "size": 60,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes poisoned.",
+      "source_effect_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Tackle",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 10,
+      "source_damage_or_stars": "10"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 90,
+    "pokemon_id_raw": "013",
+    "national_dex": 13,
+    "variant": null,
+    "rarity": "C",
+    "max_movement": 1,
+    "material": 250,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "1.0 April",
+    "evolves_from": [],
+    "evolves_to": [
+      91
+    ],
+    "z_move_keys": [
+      "Savage Spin-Out",
+      "Acid Downpour"
+    ]
+  }
+}

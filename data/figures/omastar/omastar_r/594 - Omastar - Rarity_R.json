@@ -1,0 +1,92 @@
+{
+  "figure_id": "omastar_594",
+  "display_name": "Omastar R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ROCK",
+    "WATER"
+  ],
+  "icon": "594 - Omastar - Rarity_R.png",
+  "model": "res://assets/figures/models/omastar/omastar_r/594 - Omastar - Rarity_R.fbx",
+  "ability": {
+    "name": "Speed Booster: Omaster",
+    "note": "[CTRL QL Restored Pokémon][Restored Pokémon] (if evolved). If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Bind",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 70,
+      "source_damage_or_stars": "70x",
+      "note": "Spin again until Bind* does not land - damage is multiplied by the number of Bind* spins. *The bttle opponent gains Wait X, where X is the number of Bind* spins.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Toxic",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "The battle opponent becomes noxious.",
+      "source_effect_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Blue Tentacles",
+      "type": "BLUE",
+      "size": 24,
+      "note": "This Pokémon moves to your P.C. The battle opponent moves to your P.C."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 594,
+    "pokemon_id_raw": "139",
+    "national_dex": 139,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "7.0.12",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Continental Crush",
+      "Hydro Vortex"
+    ]
+  }
+}

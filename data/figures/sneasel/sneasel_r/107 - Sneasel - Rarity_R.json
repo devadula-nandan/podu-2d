@@ -1,0 +1,84 @@
+{
+  "figure_id": "sneasel_107",
+  "display_name": "Sneasel R",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "ICE"
+  ],
+  "icon": "107 - Sneasel - Rarity_R.png",
+  "model": "res://assets/figures/models/sneasel/sneasel_r/107 - Sneasel - Rarity_R.fbx",
+  "ability": {
+    "name": "Team Play",
+    "note": "This Pokémon deals +20 damage for each friendly [CTRL FID 225][Weavile] on the field.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Quick Attack",
+      "type": "GOLD",
+      "size": 20,
+      "damage": 40,
+      "source_damage_or_stars": "40"
+    },
+    {
+      "name": "Fake Out",
+      "type": "PURPLE",
+      "size": 16,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "This Pokémon switches places with its battle opponent."
+    },
+    {
+      "name": "Fury Swipes",
+      "type": "WHITE",
+      "size": 56,
+      "damage": 10,
+      "source_damage_or_stars": "10x",
+      "note": "Spin again until Fury Swipes does not land - damage is multiplied by the number of Fury Swipes spins."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 107,
+    "pokemon_id_raw": "215",
+    "national_dex": 215,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 2,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "1.0 May",
+    "last_update": "5.0.9",
+    "evolves_from": [
+      236
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Subzero Slammer"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "figure_id": "feraligatr_060",
+  "display_name": "Feraligatr EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER"
+  ],
+  "icon": "060 - Feraligatr - Rarity_EX.png",
+  "model": "res://assets/figures/models/feraligatr/feraligatr_ex/060 - Feraligatr - Rarity_EX.fbx",
+  "ability": {
+    "name": "Speed Booster",
+    "note": "When this Pokémon evolves, it will gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Hydro Pump",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 160,
+      "source_damage_or_stars": "160"
+    },
+    {
+      "name": "Bite",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 100,
+      "source_damage_or_stars": "100"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Wash Away",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked 2 steps back and gains Wait.",
+      "source_effect_ids": [
+        7
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 60,
+    "pokemon_id_raw": "160",
+    "national_dex": 160,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "1.0 April",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      61
+    ],
+    "z_move_keys": [
+      "Hydro Vortex"
+    ]
+  }
+}

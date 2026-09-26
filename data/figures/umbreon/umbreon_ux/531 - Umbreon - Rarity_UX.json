@@ -1,0 +1,87 @@
+{
+  "figure_id": "umbreon_531",
+  "display_name": "Umbreon UX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "DARK"
+  ],
+  "icon": "res://data/figures/umbreon/umbreon_ux/531 - Umbreon - Rarity_UX.png",
+  "model": "res://assets/figures/models/umbreon/umbreon_ux/531 - Umbreon - Rarity_UX.fbx",
+  "ability": {
+    "name": "Dark Arrow",
+    "note": "This Pokémon can MP move through your Pokémon and opposing Psychic-type [CTRL NOTE][Pokémon] and Ghost-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gains +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Dark Moon",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Reduces the opponent's Z-Move gauge by two thirds of its max value."
+    },
+    {
+      "name": "Sucker Punch",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Moon Twinkle",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 70,
+      "source_damage_or_stars": "70",
+      "note": "Deals +20 damage for each [CTRL QL Moonblast][Pokémon] that knows Moonblast on the field."
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 12
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 531,
+    "pokemon_id_raw": "197 ux",
+    "national_dex": 197,
+    "variant": "ux",
+    "rarity": "UX",
+    "max_movement": 4,
+    "wheel_total": 96,
+    "evolves_from": [],
+    "evolves_to": [
+      "531 mega"
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.15",
+    "last_update": "7.0.15"
+  }
+}

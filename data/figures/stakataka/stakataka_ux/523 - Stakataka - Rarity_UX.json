@@ -1,0 +1,88 @@
+{
+  "figure_id": "stakataka_523",
+  "display_name": "Stakataka UX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "ROCK",
+    "STEEL"
+  ],
+  "icon": "res://data/figures/stakataka/stakataka_ux/523 - Stakataka - Rarity_UX.png",
+  "model": "res://assets/figures/models/stakataka/stakataka_ux/523 - Stakataka - Rarity_UX.fbx",
+  "ability": {
+    "name": "Ultra Stack",
+    "note": "Ultra Beast. Until the end of this Pokémon's first battle after moving to the field, the Blue Attacks of your Steel-type Pokémon are not lost from the effects of Abilities or Z-Moves. The added damage and number of persistent turns of Attack effects of this Pokémon are additively increased for each Pokémon in the Ultra Space.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Trick Room",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "For 5 turns, the Gold Attacks of all Pokémon become Misses, the MP of Pokémon that have MP 3 or higher become 1, and the MP of Pokémon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)."
+    },
+    {
+      "name": "Gyro Ball",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 179,
+      "source_damage_or_stars": "179",
+      "note": "Deals + 30 damage if the battle opponent's MP is higher than this Pokémon's MP."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Ultra Wall",
+      "type": "BLUE",
+      "size": 32,
+      "note": "The battle opponent gains Wait 2."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 523,
+    "pokemon_id_raw": "805",
+    "national_dex": 805,
+    "variant": null,
+    "rarity": "UX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "evolves_from": [
+      522
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Continental Crush",
+      "Corkscrew Crash"
+    ],
+    "material": 5000,
+    "first_appear": "7.0.7",
+    "last_update": "7.0.7"
+  }
+}

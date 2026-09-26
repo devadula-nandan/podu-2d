@@ -1,0 +1,84 @@
+{
+  "figure_id": "spiritomb_293",
+  "display_name": "Spiritomb R",
+  "available_in_roster": true,
+  "movement_points": 0,
+  "types": [
+    "GHOST",
+    "DARK"
+  ],
+  "icon": "293 - Spiritomb - Rarity_R.png",
+  "model": "res://assets/figures/models/spiritomb/spiritomb_r/293 - Spiritomb - Rarity_R.fbx",
+  "ability": {
+    "name": "Grudge Stone",
+    "note": "When this Pokémon moves from the bench to the field, spin a Pokémon. If it spins a White Attack, attach a Curse marker to it, Your Pokémon on the field can pass through this Pokémon when using an MP move.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Destiny Bond",
+      "type": "WHITE",
+      "size": 28,
+      "damage": 0,
+      "source_damage_or_stars": "0",
+      "note": "*If this Pokémon is knocked out, so is the battle opponent."
+    },
+    {
+      "name": "Shadow Sneak",
+      "type": "GOLD",
+      "size": 28,
+      "damage": 60,
+      "source_damage_or_stars": "60"
+    },
+    {
+      "name": "Curse",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 1,
+      "source_damage_or_stars": "☆",
+      "note": "Attach a Curse marker to the battle opponent. (A Pokémon that is knocked out in this condition is excluded from the duel.)"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 293,
+    "pokemon_id_raw": "442",
+    "national_dex": 442,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 0,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "4.0.2",
+    "evolves_from": [],
+    "evolves_to": [
+      294
+    ],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "Never-Ending Nightmare"
+    ]
+  }
+}

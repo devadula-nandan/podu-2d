@@ -51,7 +51,7 @@ test.describe('natural endings in the HUD', () => {
   test.describe.configure({ mode: 'serial' });
   test.setTimeout(90_000);
 
-  test('hotseat seed 2: Seat B goal win is visible', async ({ page }) => {
+  test('hotseat seed 2: Rival goal win is visible', async ({ page }) => {
     await startHotseat(page, '2');
     await expect(page.getByTestId('seed')).toContainText('0x00000002');
 
@@ -64,7 +64,7 @@ test.describe('natural endings in the HUD', () => {
     await clickLegal(page, 'Move Murkrow → r4c3');
 
     await expect(page.getByTestId('result')).toBeVisible({ timeout: 10_000 });
-    await expect(page.getByTestId('result')).toContainText(/Seat B wins/);
+    await expect(page.getByTestId('result')).toContainText(/Rival wins/);
     await expect(page.getByTestId('result')).toContainText(/goal/);
     await page.screenshot({ path: 'test-results/hud-goal-win.png', fullPage: true });
   });

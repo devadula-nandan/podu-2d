@@ -1,0 +1,89 @@
+{
+  "figure_id": "aerodactyl_563",
+  "display_name": "Aerodactyl EX",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "ROCK",
+    "FLYING"
+  ],
+  "icon": "563 - Aerodactyl - Rarity_EX.png",
+  "model": "res://assets/figures/models/aerodactyl/aerodactyl_ex/563 - Aerodactyl - Rarity_EX.fbx",
+  "ability": {
+    "name": "Air Power",
+    "note": "[CTRL QL Restored Pokémon][Restored Pokémon]. If this Pokémon is not affected by a special condition, it may MP move over Pokémon on the field that don't have [CTRL QL Soar][Soar]. Opposing Pokémon that are not Ghost- or Ground-type Pokémon cannot MP move through this Pokémon using the effect of an Ability. If this Pokémon is on the field, opposing Pokémon cannot use the effect of [CTRL PID 423][Air Balloon] to MP move over other Pokémon.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Stone Edge",
+      "type": "WHITE",
+      "size": 40,
+      "damage": 150,
+      "source_damage_or_stars": "150"
+    },
+    {
+      "name": "Sky Drop",
+      "type": "BLUE",
+      "size": 20,
+      "note": "This Pokémon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pokémon, the battle opponent gains Wait 5.",
+      "source_effect_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Taunt",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Until the end of your next turn, if the Pokémon hit by this Attack spins a Purple Attack or Blue Attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 563,
+    "pokemon_id_raw": "142 ex",
+    "national_dex": 142,
+    "variant": "ex",
+    "rarity": "EX",
+    "max_movement": 2,
+    "wheel_total": 96,
+    "first_appear": "7.0.10",
+    "last_update": "7.0.10",
+    "evolves_from": [
+      562
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Supersonic Skystrike",
+      "Continental Crush"
+    ]
+  }
+}

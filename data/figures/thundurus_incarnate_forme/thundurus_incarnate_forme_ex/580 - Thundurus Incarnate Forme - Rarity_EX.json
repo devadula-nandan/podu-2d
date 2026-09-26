@@ -1,0 +1,90 @@
+{
+  "figure_id": "thundurus_incarnate_forme_580",
+  "display_name": "Thundurus Incarnate Forme EX",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC",
+    "FLYING"
+  ],
+  "icon": "580 - Thundurus Incarnate Forme - Rarity_EX.png",
+  "model": "res://assets/figures/models/thundurus_incarnate_forme/thundurus_incarnate_forme_ex/580 - Thundurus Incarnate Forme - Rarity_EX.fbx",
+  "ability": {
+    "name": "Stormbringer's Mischief",
+    "note": "This Pokémon cannot win you the duel by moving to the goal point. This Pokémon may MP move through other Pokémon on the field. While this Pokémon is on the field, paralyzed Pokémon deal +30 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Thunderhead",
+      "type": "WHITE",
+      "size": 32,
+      "damage": 90,
+      "source_damage_or_stars": "90",
+      "note": "*All opposing Pokémon and all your Water-type Pokémon on the field spin. Those that spin Purple Attacks become paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Elusive Master",
+      "type": "BLUE",
+      "size": 24,
+      "note": "You may move this Pokémon to the bench. When you do, change this Pokémon's form, if possible."
+    },
+    {
+      "name": "Nasty Plot",
+      "type": "PURPLE",
+      "size": 32,
+      "stars": 3,
+      "source_damage_or_stars": "☆☆☆",
+      "note": "Excludes one of the opponent's used plates from the duel."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dodge",
+      "type": "BLUE",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 580,
+    "pokemon_id_raw": "642",
+    "national_dex": 642,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 3,
+    "wheel_total": 96,
+    "first_appear": "7.0.12",
+    "last_update": "7.0.12",
+    "evolves_from": [],
+    "evolves_to": [
+      581
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc",
+      "Supersonic Skystrike"
+    ]
+  }
+}

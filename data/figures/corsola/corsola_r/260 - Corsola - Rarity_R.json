@@ -1,0 +1,90 @@
+{
+  "figure_id": "corsola_260",
+  "display_name": "Corsola R",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "WATER",
+    "ROCK"
+  ],
+  "icon": "260 - Corsola - Rarity_R.png",
+  "model": "res://assets/figures/models/corsola/corsola_r/260 - Corsola - Rarity_R.fbx",
+  "ability": {
+    "name": "Coral Power",
+    "note": "If this Pokémon is not poisoned or noxious, while this Pokémon is on the field, your non-[CTRL FID 260][Corsola] Water-type Pokémon with MP1 gain +1 MP.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Mirror Coat",
+      "type": "PURPLE",
+      "size": 24,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent is knocked out if they spin purple."
+    },
+    {
+      "name": "Rockwall",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 50,
+      "source_damage_or_stars": "50",
+      "note": "*If the battle opponent's Attack is 120 damage or below, this Pokémon cannot be knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 8
+    },
+    {
+      "name": "Protect",
+      "type": "BLUE",
+      "size": 32,
+      "note": "This Pokémon gains Wait."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 260,
+    "pokemon_id_raw": "222",
+    "national_dex": 222,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 1,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "3.0.8",
+    "last_update": "3.0.8",
+    "evolves_from": [
+      259
+    ],
+    "evolves_to": [
+      "260 mega"
+    ],
+    "z_move_keys": [
+      "Continental Crush",
+      "Hydro Vortex"
+    ]
+  }
+}

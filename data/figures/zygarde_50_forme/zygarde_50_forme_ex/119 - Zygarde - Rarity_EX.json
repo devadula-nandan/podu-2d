@@ -1,0 +1,93 @@
+{
+  "figure_id": "zygarde_50_forme_119",
+  "display_name": "Zygarde 50% Forme EX",
+  "available_in_roster": true,
+  "movement_points": 1,
+  "types": [
+    "DRAGON",
+    "GROUND"
+  ],
+  "icon": "119 - Zygarde - Rarity_EX.png",
+  "model": "res://assets/figures/models/zygarde_50_forme/zygarde_50_forme_ex/119 - Zygarde - Rarity_EX.fbx",
+  "ability": {
+    "name": "Land's Call",
+    "note": "Your Ground-type Pokémon deal +10 damage when this Pokémon is on the field, unless this Pokémon is affected by a special condition.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Land's Wrath",
+      "type": "WHITE",
+      "size": 24,
+      "damage": 120,
+      "source_damage_or_stars": "120",
+      "note": "*All other Pokémon on the field spin - those that spin purple are knocked out."
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "WHITE",
+      "size": 36,
+      "damage": 160,
+      "source_damage_or_stars": "160"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Extreme Speed",
+      "type": "GOLD",
+      "size": 24,
+      "damage": 110,
+      "source_damage_or_stars": "110"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 119,
+    "pokemon_id_raw": "718",
+    "national_dex": 718,
+    "variant": null,
+    "rarity": "EX",
+    "max_movement": 1,
+    "wheel_total": 96,
+    "first_appear": "1.1",
+    "last_update": "7.0.14",
+    "evolves_from": [
+      118
+    ],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Devastating Drake",
+      "Tectonic Rage",
+      "Clangorous Soulblaze"
+    ]
+  }
+}

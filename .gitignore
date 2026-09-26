@@ -8,6 +8,7 @@ test-results/
 .vite/
 .rooms/
 .scratch/
+storybook-static/
 
 # Raw scraped HTML (~54MB, 598 pages). Reproducible with `node tools/fetch-all.mjs`,
 # which is incremental and skips anything already cached. The parsed JSON in

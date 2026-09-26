@@ -1,0 +1,80 @@
+{
+  "figure_id": "electrode_354",
+  "display_name": "Electrode R",
+  "available_in_roster": true,
+  "movement_points": 3,
+  "types": [
+    "ELECTRIC"
+  ],
+  "icon": "354 - Electrode - Rarity_R.png",
+  "model": "res://assets/figures/models/electrode/electrode_r/354 - Electrode - Rarity_R.fbx",
+  "ability": {
+    "name": "Aftermath Switch",
+    "note": "When this Pokémon is knocked out, you may knock out one of your [CTRL FID 123][Voltorb] on the field and all Pokémon adjacent to it.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 4
+    },
+    {
+      "name": "Shock Blast",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 40,
+      "source_damage_or_stars": "40",
+      "note": "*If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out."
+    },
+    {
+      "name": "Thunder Wave",
+      "type": "PURPLE",
+      "size": 48,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "The battle opponent becomes paralyzed.",
+      "source_effect_ids": [
+        2
+      ]
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 354,
+    "pokemon_id_raw": "101",
+    "national_dex": 101,
+    "variant": null,
+    "rarity": "R",
+    "max_movement": 3,
+    "material": 1800,
+    "wheel_total": 96,
+    "first_appear": "4.0.2",
+    "last_update": "4.0.2",
+    "evolves_from": [
+      353
+    ],
+    "evolves_to": [
+      "354 mega"
+    ],
+    "z_move_keys": [
+      "Gigavolt Havoc"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "figure_id": "scraggy_483",
+  "display_name": "Scraggy UC",
+  "available_in_roster": true,
+  "movement_points": 2,
+  "types": [
+    "DARK",
+    "FIGHTING"
+  ],
+  "icon": "483 - Scraggy - Rarity_UC.png",
+  "model": "res://assets/figures/models/scraggy/scraggy_uc/483 - Scraggy - Rarity_UC.fbx",
+  "ability": {
+    "name": "Rubbery Repulsion",
+    "note": "If the battle opponent of this Pokémon spins an Attack of 130 or more damage, this Pokémon is not knocked out. Instead. while the battle opponent is on the field, that Pokémon deals -10 damage.",
+    "effect_ids": []
+  },
+  "model_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "model_rotation_degrees": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "auto_fit_model": true,
+  "target_model_height": 0.9,
+  "wheel": [
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Headbutt",
+      "type": "WHITE",
+      "size": 44,
+      "damage": 70,
+      "source_damage_or_stars": "70"
+    },
+    {
+      "name": "Miss",
+      "type": "RED",
+      "size": 12
+    },
+    {
+      "name": "Leer",
+      "type": "PURPLE",
+      "size": 28,
+      "stars": 2,
+      "source_damage_or_stars": "☆☆",
+      "note": "Spin for adjacent opposing Pokémon. Any attacks spun become misses for the next turn."
+    }
+  ],
+  "source_data": {
+    "app_figure_id": 483,
+    "pokemon_id_raw": "559",
+    "national_dex": 559,
+    "variant": null,
+    "rarity": "UC",
+    "max_movement": 2,
+    "material": 450,
+    "wheel_total": 96,
+    "first_appear": "7.0.0",
+    "last_update": "7.0.0",
+    "evolves_from": [],
+    "evolves_to": [],
+    "z_move_keys": [
+      "Black Hole Eclipse",
+      "All-Out Pummeling"
+    ]
+  }
+}
