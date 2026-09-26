@@ -70,6 +70,11 @@ export default defineConfig({
     ],
   },
   build: { outDir: 'dist', sourcemap: true },
+  worker: {
+    // Module workers (`new Worker(..., { type: 'module' }`) need ES output;
+    // the default IIFE format breaks when the worker graph code-splits.
+    format: 'es',
+  },
   server: {
     host: true,
     port: 5173,
